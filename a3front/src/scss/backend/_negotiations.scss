@@ -1,0 +1,9 @@
+@import 'layout-backend';
+
+.module-negotiations {
+  //Variables
+  @import 'variables-backend';
+  // Global
+  @import 'global-backend';
+  @import 'icons';
+}

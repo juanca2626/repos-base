@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "code": "SIM",
+        "abbreviation": "SIM",
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Compartido"
+            },
+            {
+                "language_id": 2,
+                "value": "Shared"
+            },
+            {
+                "language_id": 3,
+                "value": "Compartilhado"
+            },
+            {
+                "language_id": 4,
+                "value": "Diviso"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "code": "PC",
+        "abbreviation": "PC",
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Privado"
+            },
+            {
+                "language_id": 2,
+                "value": "Private"
+            },
+            {
+                "language_id": 3,
+                "value": "Privado"
+            },
+            {
+                "language_id": 4,
+                "value": "Privato"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "code": "NA",
+        "abbreviation": "NA",
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Ninguno"
+            },
+            {
+                "language_id": 2,
+                "value": "None"
+            },
+            {
+                "language_id": 3,
+                "value": "Nenhum"
+            },
+            {
+                "language_id": 4,
+                "value": "Nessuno"
+            }
+        ]
+    }
+]

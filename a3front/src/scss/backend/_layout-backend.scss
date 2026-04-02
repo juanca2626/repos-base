@@ -1,0 +1,203 @@
+//Variables
+@import 'variables-backend';
+
+.backend-dashboard {
+  min-height: 100vh;
+
+  //Estilos de header
+  .ant-layout-header {
+    background: $color-primary;
+    padding-inline: 12px;
+    margin-top: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1001;
+
+    .language-selector {
+      width: 58px;
+
+      .ant-select-selector {
+        background-color: transparent;
+        color: $color-white;
+        border-radius: 0;
+      }
+
+      .ant-select-arrow {
+        color: $color-white;
+      }
+    }
+  }
+
+  .layout-content {
+    display: flex;
+
+    .sidebar-fixed {
+      position: fixed;
+      top: 63px;
+      z-index: 9;
+      height: calc(100vh - 111px);
+
+      .ant-layout-sider-trigger {
+        background-color: $color-black;
+        border: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  //Estilos de layout
+  .ant-layout-content {
+    background-color: rgb(205, 205, 205);
+    margin-top: 64px;
+
+    &.collapsed-content {
+      margin-left: 80px;
+    }
+
+    &.expanded-content {
+      margin-left: 200px;
+    }
+
+    .breadcrumb-routes.ant-breadcrumb {
+      background-color: $color-white;
+      padding: 14px 20px;
+      margin-bottom: 18px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    &-header {
+      background-color: $color-primary;
+      padding-left: 10px;
+    }
+
+    &-sider {
+      background-color: #2f353a;
+      padding: 0;
+
+      &-collapsed {
+        max-width: $side-collapsed-width !important;
+        min-width: $side-collapsed-width !important;
+        width: $side-collapsed-width !important;
+
+        .ant-layout-sider-trigger {
+          max-width: $side-collapsed-width;
+          min-width: $side-collapsed-width;
+          width: $side-collapsed-width;
+        }
+      }
+    }
+
+    .content-wrapper {
+      width: 100%;
+      background: #fff;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  //Estilos de menu
+  .ant-menu {
+    background-color: $color-black;
+    color: $color-white;
+
+    &-item-icon {
+      color: #73818f !important;
+    }
+
+    &-item {
+      border-radius: 0;
+      background-color: transparent;
+      padding-left: 14px !important;
+      margin-block: 0;
+      margin-inline: 0;
+
+      &:active {
+        // Estilos cuando se presiona el mouse sobre &-item
+        background-color: $color-primary;
+        color: $color-white;
+      }
+
+      &-selected {
+        color: $color-white;
+        border: none;
+        margin-inline: 0;
+        width: 100%;
+        background-color: $color-black-7;
+      }
+    }
+
+    .ant-menu-sub.ant-menu-inline {
+      background-color: #252a2e;
+
+      .ant-menu-item {
+        padding-left: 14px !important;
+      }
+    }
+
+    &-submenu {
+      color: $color-white;
+
+      &-title {
+        color: $color-white;
+        background: none;
+        padding-left: 14px !important;
+        padding-inline-end: 14px !important;
+      }
+
+      svg {
+        color: $color-black-4;
+        font-size: 0.6rem;
+      }
+
+      &-inline {
+        width: 100%;
+        border-radius: 0;
+      }
+
+      &-active:hover {
+        color: $color-white;
+        background-color: $color-primary;
+        border-radius: 0;
+      }
+    }
+
+    &-sub {
+      background-color: $color-black-2;
+    }
+
+    &-item-active {
+      color: $color-white;
+    }
+  }
+
+  .logo {
+    background: url('/images/logo_limatours.png') no-repeat;
+    float: left;
+  }
+
+  //Estilos de footer
+  .footer-fixed {
+    flex: 0 0 50px;
+    background: $color-black !important;
+    padding: 0;
+
+    &.collapsed-content {
+      margin-left: 80px;
+    }
+
+    &.expanded-content {
+      margin-left: 200px;
+    }
+
+    .footer-text {
+      padding-left: 10px;
+      color: $color-white;
+    }
+  }
+}

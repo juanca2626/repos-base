@@ -1,0 +1,88 @@
+.contact {
+    .hero__primary {
+        background: url('/images/llama-lito.png') no-repeat right center $gray_lighter;
+        color: $red_main;
+        background-size: 200px;
+        background-position: 95% 100%;
+        min-height: 235px !important;
+
+        p {
+            font-size: 4rem;
+        }
+    }
+
+
+    form {
+        //max-width: 800px;
+        text-align: center;
+        margin: 20px auto;
+
+        h3 {
+            text-align: center;
+            color: $black;
+            text-shadow: 1px 1px 0 rgba(white, 1);
+        }
+
+        label {
+            margin-bottom: 0;
+            margin-top: 2rem;
+            color: #3A3A3C;
+        }
+
+        sub {
+            top: 3.5rem;
+            right: 3rem;
+            color: #8e8e8e;
+        }
+
+        input, textarea, select {
+            border: 1.5px solid #e9e9e9;
+            outline: 0;
+            padding: 1em;
+            border-radius: 8px;
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            resize: none;
+
+            &[type="checkbox"] {
+                width: max-content;
+                margin-right: 1rem;
+            }
+
+            &:focus {
+                box-shadow: 0 0px 2px rgba($red_main, 1) !important;
+            }
+        }
+
+        select::after{
+            content:"\025be";
+            display:table-cell;
+            padding-top:7px;
+            text-align:center;
+            width:30px;
+            height:30px;
+            background-color:$red_main;
+            position:absolute;
+            top:0;
+            right:0px;
+            pointer-events: none;
+        }
+
+        #input-submit {
+            color: white;
+            background: $red_main;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+            }
+        }
+
+        textarea {
+            height: 126px;
+        }
+    }
+
+
+}

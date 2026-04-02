@@ -1,0 +1,65 @@
+.customize-table {
+  --easy-table-border: none;
+  --easy-table-row-border: none;
+  //header table
+  --easy-table-header-font-size: 0.875em;
+  --easy-table-header-height: 50px;
+  --easy-table-header-font-color: #ffffff;
+  --easy-table-header-background-color: #2f353a;
+
+  --easy-table-header-item-padding: 0.4em 0.9em;
+
+  --easy-table-body-even-row-font-color: #2f353a;
+  --easy-table-body-even-row-background-color: #ffffff;
+  //body table
+  --easy-table-body-row-font-color: #2f353a;
+  --easy-table-body-row-background-color: #ffffff;
+  --easy-table-body-row-height: 50px;
+  --easy-table-body-row-font-size: 0.875em;
+  --easy-table-body-item-padding: 0.4em 0.9em;
+
+  --easy-table-body-row-hover-font-color: #2f353a;
+  --easy-table-body-row-hover-background-color: #f1f8ff;
+
+  //footer table
+  --easy-table-footer-background-color: #ffffff;
+  --easy-table-footer-font-color: #2f353a;
+  --easy-table-footer-font-size: 0.875em;
+  --easy-table-footer-padding: 0px 10px;
+  --easy-table-footer-height: 50px;
+
+  --easy-table-rows-per-page-selector-width: 70px;
+  --easy-table-rows-per-page-selector-option-padding: 10px;
+
+  --easy-table-scrollbar-track-color: #2d3a4f;
+  --easy-table-scrollbar-color: #2d3a4f;
+  --easy-table-scrollbar-thumb-color: #4c5d7a;
+  --easy-table-scrollbar-corner-color: #2d3a4f;
+
+  --easy-table-loading-mask-background-color: #2d3a4f;
+
+  .vue3-easy-data-table__footer {
+    justify-content: center !important;
+    .buttons-pagination {
+      font-size: 1.2em !important;
+      .item {
+        &.button {
+          padding: 0.3em 1em;
+        }
+      }
+    }
+    .previous-page__click-button,
+    .next-page__click-button {
+      .arrow {
+        &.arrow-right,
+        &.arrow-left {
+          width: 0.8em !important;
+          height: 0.8em !important;
+        }
+      }
+    }
+    .pagination__rows-per-page {
+      display: none !important;
+    }
+  }
+}

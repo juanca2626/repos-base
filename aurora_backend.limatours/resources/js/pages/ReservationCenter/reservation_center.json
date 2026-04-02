@@ -1,0 +1,18 @@
+{
+  "es": {
+    "title": "Central Reservas",
+    "error": {
+      "messages": {
+        "system": "Error de Sistema"
+      }
+    }
+  },
+  "en": {
+    "title": "Reservation Center",
+    "error": {
+      "messages": {
+        "system": "Error System"
+      }
+    }
+  }
+}

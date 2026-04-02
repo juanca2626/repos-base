@@ -1,0 +1,34 @@
+{
+  "es": {
+    "title": "Mercado",
+    "market_name": "Mercado",
+    "status": {
+      "title": "Estado",
+      "active": "Activado",
+      "disable": "Desactivado"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario.",
+        "market_incorrect": "No puede registrar un mercado ya existente.",
+        "market_delete": "Error al eliminar el mercado"
+      }
+    }
+  },
+  "en": {
+    "title": "Markets",
+    "market_name": "Market",
+    "status": {
+      "title": "Status",
+      "active": "Activate",
+      "disable": "Desactivate"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form.",
+        "market_incorrect": "You can not register an existing market.",
+        "market_delete": "Error to delete market."
+      }
+    }
+  }
+}

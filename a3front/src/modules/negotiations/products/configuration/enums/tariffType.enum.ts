@@ -1,0 +1,6 @@
+export enum TariffType {
+  FLAT = 'FLAT',
+  PERIODS = 'PERIODS',
+  PROMOTIONAL = 'PROMOTIONAL',
+  SPECIFIC = 'SPECIFIC',
+}

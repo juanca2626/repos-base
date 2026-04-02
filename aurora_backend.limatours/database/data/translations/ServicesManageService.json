@@ -1,0 +1,52 @@
+{
+  "es": {
+    "schedule": "Horario",
+    "gallery": "Galeria",
+    "politics": "Politicas",
+    "includes": "Incluyentes",
+    "availability": "Disponibilidad",
+    "rates": "Tarifas",
+    "components": "Componentes",
+    "add": "Agregar",
+    "remove": "Eliminar",
+    "operability": "Operatividad",
+    "save": "Guardar",
+    "messages": {
+      "successfully": "Registrado correctamente",
+      "delete": "Eliminado correctamente"
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "service_incorrect": "No puede registrar los datos del hotel.",
+        "state_incorrect": "Seleccione un estado valido"
+      }
+    }
+  },
+  "en": {
+    "schedule": "Schedule",
+    "gallery": "Gallery",
+    "politics": "Politics",
+    "includes": "Includes",
+    "availability": "Availability",
+    "rates": "Rates",
+    "components": "Components",
+    "add": "Add",
+    "remove": "Remove",
+    "operability": "Operability",
+    "save": "Save",
+    "messages": {
+      "successfully": "Registered Successfully",
+      "delete": "Delete Successfully"
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "service_incorrect": "No puede registrar los datos del hotel.",
+        "state_incorrect": "Select the valid state"
+      }
+    }
+  }
+}

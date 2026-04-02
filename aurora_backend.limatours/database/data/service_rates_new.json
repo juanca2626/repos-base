@@ -1,0 +1,1587 @@
+[
+    {
+        "aurora_code": "PUV119",
+        "equivalence_aurora": 5838,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 66.80,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 35.01,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 22.49,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 17.20,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 15.32,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 12.99,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 13.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 11.56,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 10.42,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 11.90,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 11.30,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 10.47,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 9.76,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 9.16,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "NAZ415",
+        "equivalence_aurora": 5665,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 99.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 54.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 54.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 49.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 49.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 49.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 48.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 48.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 48.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 48.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 45.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 45.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 45.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 45.50,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [
+            {
+                "canpax": 1,
+                "price": 99.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 54.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 54.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 49.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 49.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 49.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 48.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 48.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 48.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 48.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 45.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 45.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 45.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 45.50,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            }
+        ],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "LINXMA",
+        "equivalence_aurora": 5836,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 118.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [
+            {
+                "canpax": 1,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 118.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            }
+        ],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "LINXMO",
+        "equivalence_aurora": 5643,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 29.03,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [
+            {
+                "canpax": 1,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 29.03,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            }
+        ],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "UR1X41",
+        "equivalence_aurora": 5664,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 61.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 41.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 35.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 33.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 33.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 33.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 32.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 30.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 29.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 29.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 29.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 29.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 29.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 29.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "URU8IM",
+        "equivalence_aurora": 5835,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 43.74,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [
+            {
+                "canpax": 1,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 49.20,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            }
+        ],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "CUZ467",
+        "equivalence_aurora": 5649,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 152.32,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 99.84,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 81.92,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 78.08,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 70.40,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 72.96,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 75.52,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 70.40,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 67.84,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 65.28,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 61.44,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 60.16,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 57.60,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 55.04,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "LINXMC",
+        "equivalence_aurora": 5827,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 59.00,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [
+            {
+                "canpax": 1,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 59.00,
+                "date_from": "2020-01-01",
+                "date_to": "2020-12-31"
+            }
+        ],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "CUZPQP",
+        "equivalence_aurora": 5671,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 1441.27,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 773.62,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 594.65,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 492.79,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 455.18,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 414.46,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 383.36,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 362.97,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 379.25,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 360.23,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 370.16,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 355.24,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 338.49,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 335.46,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "CUZPQN",
+        "equivalence_aurora": 5669,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 1391.27,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 723.62,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 544.65,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 442.79,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 405.18,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 364.46,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 333.36,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 312.97,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 329.25,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 310.23,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 320.16,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 305.24,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 13,
+                "price": 288.49,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 14,
+                "price": 285.46,
+                "date_from": "2019-01-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "LINXP1",
+        "equivalence_aurora": 5741,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 64.90,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "LINXP0",
+        "equivalence_aurora": 5742,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 79.06,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    },
+    {
+        "aurora_code": "LINXPE",
+        "equivalence_aurora": 5686,
+        "rates_2019": [
+            {
+                "canpax": 1,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 2,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 3,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 4,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 5,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 6,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 7,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 8,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 9,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 10,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 11,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            },
+            {
+                "canpax": 12,
+                "price": 83.78,
+                "date_from": "2019-05-01",
+                "date_to": "2019-12-31"
+            }
+        ],
+        "rates_2020": [],
+        "rates_2021": []
+    }
+]

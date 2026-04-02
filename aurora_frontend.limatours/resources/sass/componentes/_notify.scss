@@ -1,0 +1,62 @@
+//**********************************************************/
+//* NOTIFY */ Requiere custom.notify.js
+//**********************************************************/
+// https://codepen.io/christan0612/pen/NNjowE
+
+div[data-notify] {
+    width: auto;
+    min-width: 69px;
+    padding: 15px;
+    padding-right: 30px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0px 24px -3px rgba(0, 0, 0, 0.5);
+    color: #4f4b4b;
+    overflow: hidden;
+    animation: slideNotify .4s forwards;
+}
+
+div[data-notify]::before {
+    content: "";
+    display: block;
+    background: #2275d7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45px;
+    z-index: -1;
+}
+
+div[data-notify] button {
+    color: #000;
+    opacity: .35;
+    transition: opacity .4s;
+    outline: none !important;
+}
+
+div[data-notify] button:hover {
+    opacity: 1;
+}
+
+div[data-notify] [data-notify="title"] {
+    color: #2275d7;
+    margin-right: 10px;
+}
+
+div[data-notify] [data-notify="icon"] {
+    margin-right: 25px;
+    color: #ffffff;
+}
+
+@keyframes slideNotify {
+    0% {
+        transform: translateY(125%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

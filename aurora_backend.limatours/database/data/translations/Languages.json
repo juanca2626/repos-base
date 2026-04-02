@@ -1,0 +1,26 @@
+{
+  "es": {
+    "title": "Idiomas",
+    "language_name": "Idioma",
+    "language_flag_image": "Imagen de la bandera",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "language_incorrect": "No puede registrar un idioma ya existente",
+        "language_delete": "Error al eliminar el idioma"
+      }
+    }
+  },
+  "en": {
+    "title": "Languages",
+    "language_name": "Language",
+    "language_flag_image": "Flag Image",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "language_incorrect": "You can not register an existing language",
+        "language_delete": "Error to delete language"
+      }
+    }
+  }
+}

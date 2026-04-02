@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Hotel Categorias",
+    "hotelcategory_name": "Hotel Categoria",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario.",
+        "hotelcategory_incorrect": "No puede registrar una categoria de hotel ya existente.",
+        "hotelcategory_delete": "Error al eliminar la categoria del hotel"
+      }
+    }
+  },
+  "en": {
+    "title": "Hotel Categories",
+    "hotelcategory_name": "Hotel Category",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form.",
+        "hotelcategory_incorrect": "You can not register an existing hotel category.",
+        "hotelcategory_delete": "Error ato delete hotel category"
+      }
+    }
+  }
+}

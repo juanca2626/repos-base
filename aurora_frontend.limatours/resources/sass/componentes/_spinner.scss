@@ -1,0 +1,104 @@
+//**********************************************/
+//* SPINNER */ Requiere optimización
+//**********************************************/
+
+@mixin centroAbsoluto {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+
+#spinner-loader {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-5%);
+    z-index: 9999;
+}
+
+.spinner {
+    @include centroAbsoluto;
+    width: 60px;
+    height: 60px;
+    animation: rotate 2s infinite ease-in-out;
+    overflow: hidden;
+    background-color: #c3141a;
+
+    .logo {
+        @include centroAbsoluto;
+        background: red url("/images/demo/paquetes/logo.png") 100% 100%;
+        background-size: cover;
+        animation: rotate 2s infinite ease-in-out;
+    }
+}
+
+.spinner-text {
+    @include centroAbsoluto;
+    color: #bababa;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    transform: translateY(200%);
+    user-select: none;
+    animation: slide 2s forwards;
+    small {
+        display: block;
+        margin-top:-15px;
+        animation: opacity 1.5s infinite ease-out;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+
+    75% {
+        transform: perspective(120px) rotateX(0deg) rotateY(-180deg);
+    }
+
+    100% {
+        transform: perspective(120px) rotateX(0) rotateY(0);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(250%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(200%);
+    }
+}

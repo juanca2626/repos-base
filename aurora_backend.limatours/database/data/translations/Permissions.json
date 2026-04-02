@@ -1,0 +1,28 @@
+{
+  "es": {
+    "title": "Permisos",
+    "name": "Nombre",
+    "description": "Descripción",
+    "subTitle": "Ingrese con su cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "didYouForgotPassword": "¿Olvidó su contraseña?",
+    "login": "Ingresar",
+    "register": "Registrar",
+    "registerDescription": "Registrese en poco segundos y luego de la aprobación de un administrador podrá ingresar y realizar operaciones en el sistema.",
+    "registerButton": "¡Registrarse Ahora!"
+  },
+  "en": {
+    "title": "Permissions",
+    "name": "Name",
+    "description": "Description",
+    "subTitle": "Login with your account",
+    "email": "Email",
+    "password": "Password",
+    "didYouForgotPassword": "Did you forget your password",
+    "login": "Login",
+    "register": "Sign-Up",
+    "registerDescription": "Register in a few seconds and after the approval of an administrator you can enter and perform operations in the system.",
+    "registerButton": "¡Sign-Up Now!"
+  }
+}

@@ -1,0 +1,170 @@
+[
+    {
+        "aurora_code": "PUV119",
+        "equivalence_aurora": 5838,
+        "inclusion_id": 11,
+        "include": 1
+    },
+    {
+        "aurora_code": "PUV119",
+        "equivalence_aurora": 5838,
+        "inclusion_id": 241,
+        "include": 1
+    },
+    {
+        "aurora_code": "NAZ415",
+        "equivalence_aurora": 5665,
+        "inclusion_id": 9,
+        "include": 1
+    },
+    {
+        "aurora_code": "NAZ415",
+        "equivalence_aurora": 5665,
+        "inclusion_id": 18,
+        "include": 1
+    },
+    {
+        "aurora_code": "NAZ415",
+        "equivalence_aurora": 5665,
+        "inclusion_id": 11,
+        "include": 1
+    },
+    {
+        "aurora_code": "LINXMA",
+        "equivalence_aurora": 5836,
+        "inclusion_id": 15,
+        "include": 1
+    },
+    {
+        "aurora_code": "LINXMO",
+        "equivalence_aurora": 5643,
+        "inclusion_id": 242,
+        "include": 1
+    },
+    {
+        "aurora_code": "LINXMO",
+        "equivalence_aurora": 5643,
+        "inclusion_id": 25,
+        "include": 1
+    },
+    {
+        "aurora_code": "LINXMO",
+        "equivalence_aurora": 5643,
+        "inclusion_id": 33,
+        "include": 0
+    },
+    {
+        "aurora_code": "UR1X41",
+        "equivalence_aurora": 5664,
+        "inclusion_id": 141,
+        "include": 1
+    },
+    {
+        "aurora_code": "UR1X41",
+        "equivalence_aurora": 5664,
+        "inclusion_id": 29,
+        "include": 1
+    },
+    {
+        "aurora_code": "UR1X41",
+        "equivalence_aurora": 5664,
+        "inclusion_id": 2,
+        "include": 1
+    },
+    {
+        "aurora_code": "UR1X41",
+        "equivalence_aurora": 5664,
+        "inclusion_id": 11,
+        "include": 0
+    },
+    {
+        "aurora_code": "URU8IM",
+        "equivalence_aurora": 5835,
+        "inclusion_id": 1,
+        "include": 1
+    },
+    {
+        "aurora_code": "LINXMC",
+        "equivalence_aurora": 5827,
+        "inclusion_id": 15,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQP",
+        "equivalence_aurora": 5671,
+        "inclusion_id": 18,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQP",
+        "equivalence_aurora": 5671,
+        "inclusion_id": 321,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQP",
+        "equivalence_aurora": 5671,
+        "inclusion_id": 11,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQP",
+        "equivalence_aurora": 5671,
+        "inclusion_id": 15,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQP",
+        "equivalence_aurora": 5671,
+        "inclusion_id": 9,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQP",
+        "equivalence_aurora": 5671,
+        "inclusion_id": 119,
+        "include": 0
+    },
+    {
+        "aurora_code": "CUZPQN",
+        "equivalence_aurora": 5669,
+        "inclusion_id": 18,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQN",
+        "equivalence_aurora": 5669,
+        "inclusion_id": 321,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQN",
+        "equivalence_aurora": 5669,
+        "inclusion_id": 11,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQN",
+        "equivalence_aurora": 5669,
+        "inclusion_id": 15,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQN",
+        "equivalence_aurora": 5669,
+        "inclusion_id": 9,
+        "include": 1
+    },
+    {
+        "aurora_code": "CUZPQN",
+        "equivalence_aurora": 5669,
+        "inclusion_id": 119,
+        "include": 0
+    },
+    {
+        "aurora_code": "LINXP0",
+        "equivalence_aurora": 5742,
+        "inclusion_id": 18,
+        "include": 1
+    }
+]

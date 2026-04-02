@@ -1,0 +1,227 @@
+.hero__primary {
+  background: url('/images/bg-login.jpg') no-repeat center center fixed;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 572px;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  h1 {
+    font-size: 56px;
+    //line-height: 80px;
+    span {
+      font-size: 25px;
+      color: #e8f380;
+      border-bottom: 2px solid #e8f380;
+      padding-bottom: 12px;
+      line-height: 3;
+    }
+  }
+  p {
+    //font-size: 36px;
+    //padding-top: 2rem;
+    font-size: 3.3rem;
+    padding-top: 2rem;
+    line-height: normal;
+  }
+
+  .searcher {
+    background: rgba(255, 255, 255, 0.58);
+    letter-spacing: 1.5px;
+    margin: 1rem;
+    padding: 2rem 6rem;
+    border-radius: 10px;
+    @include tablet {
+    }
+    @include desktop {
+      margin: 2rem 18rem;
+      padding: 2rem 5rem;
+    }
+    .input-number {
+      border: transparent;
+      border-radius: 0.8rem 0rem 0rem 0.8rem;
+      overflow: hidden;
+      position: relative;
+      height: 40px;
+      width: 100%;
+      letter-spacing: 1.5px;
+      font-size: 1.6rem;
+      & input {
+        border: none;
+        display: inline-block;
+        height: 100%;
+        padding: 0 10px;
+        outline: none;
+        position: relative;
+        width: 150px;
+        color: #000000;
+      }
+      &.custom-select {
+        font-weight: normal;
+        color: #000000;
+        padding-left: 2rem;
+      }
+    }
+    .form-control {
+      border: transparent;
+      border-radius: 0;
+      padding-top: 0.3rem;
+      &.destination {
+        width: 50%;
+      }
+      &.interest {
+        width: 70%;
+      }
+    }
+
+    .search {
+      width: 100%;
+      position: relative;
+      display: flex;
+      &-term {
+        width: 340px;
+        border: 3px solid transparent;
+        border-right: none;
+        padding: 5px;
+        border-radius: 0;
+        outline: none;
+        color: #000000;
+        &:focus {
+          border-color: transparent !important;
+          outline: 0;
+          box-shadow: none;
+          transition: all 0.15s linear;
+        }
+      }
+      &-button {
+        width: 50px;
+        border: 1px solid transparent;
+        background: $red_main;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+        &__delete {
+          background: #cccccc;
+          border-radius: 0;
+          width: 50px;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .searcher,
+  .change-hotel {
+    .vs--searchable {
+      padding: 0.5rem 2rem !important;
+      .vs__search:focus {
+        //padding-top: 1.2rem;
+        border-color: transparent !important;
+        outline: 0;
+        box-shadow: none;
+        transition: all 0.15s linear;
+      }
+      .style-chooser .vs__clear,
+      .style-chooser .vs__open-indicator {
+        fill: #394066;
+      }
+    }
+
+    .vs--searchable:before {
+      content: '\e956' !important;
+      font-family: auroraclient !important;
+      font-size: 20px;
+      position: absolute;
+      right: 15px;
+      color: #343a40;
+      top: 4px;
+      left: 320px;
+    }
+    .vs--searchable .vs__dropdown-menu .vs__dropdown-option {
+      border-bottom: 1px solid $gray_lighter;
+    }
+    .vs--searchable .vs__dropdown-menu .vs__dropdown-option:before {
+      content: '\e9f9' !important;
+      font-family: auroraclient !important;
+      color: #bbbdbf;
+      font-size: 2rem;
+      position: absolute;
+      left: 15px;
+      top: 0;
+    }
+    .vs--searchable .vs__dropdown-menu .vs__dropdown-option.vs__dropdown-option--highlight:before {
+      content: '\e955' !important;
+      font-family: auroraclient !important;
+      color: $red_darker;
+      font-size: 2rem;
+      position: absolute;
+      left: 15px;
+      top: 0;
+    }
+
+    .vs--searchable .vs__selected-options .vs__selected {
+      border: 0;
+      margin: 0 0.3rem;
+      padding: 0 1.2rem;
+      height: 100%;
+      white-space: nowrap;
+      width: max-content;
+      overflow: hidden;
+    }
+  }
+}
+
+.hero__secondary {
+  background: url('/images/lito-contacto.jpg') no-repeat center center fixed;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 340px;
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  p {
+    line-height: 50px;
+  }
+}
+
+.aurora {
+  &__video {
+    padding: 5rem 0;
+    video {
+      width: 600px;
+    }
+  }
+  &__list {
+    h2 {
+      color: #000000;
+    }
+    li {
+      padding: 1rem 0;
+    }
+  }
+  &__description {
+    h2 {
+      color: #000000;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.site-footer {
+  background: $white_main;
+  .icons-redes {
+    font-size: 2.5rem;
+  }
+}

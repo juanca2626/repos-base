@@ -1,0 +1,200 @@
+.config-drawer {
+  .ant-drawer-content {
+    background: #ffffff;
+    box-shadow: -3px 0px 12px 0px #0000001a;
+    height: 1061px;
+  }
+
+  .ant-drawer-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .ant-drawer-title {
+      color: #2f353a;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    .ant-drawer-extra {
+      margin-left: auto;
+    }
+  }
+
+  .close-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .ant-drawer-body {
+    padding: 0;
+  }
+
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.custom-select-dropdown {
+  .ant-select-selector {
+    align-items: center !important;
+  }
+  .ant-select-item-option-content {
+    color: #2f353a !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .ant-select-item-option-active {
+    background-color: #f5f5f5 !important;
+    .ant-select-item-option-content {
+      color: #bd0d12 !important;
+    }
+  }
+
+  .ant-select-item-option-selected {
+    background-color: #f9f9f9 !important;
+    .ant-select-item-option-content {
+      font-weight: 600 !important;
+    }
+  }
+}
+
+.ant-select-item,
+.ant-select-item-option {
+  color: #575b5f !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.custom-datepicker-dropdown {
+  .ant-picker-panel-container {
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .ant-picker-date-panel {
+    width: 320px !important;
+  }
+
+  .ant-picker-body {
+    padding: 0 !important;
+  }
+
+  .ant-picker-panel {
+    border: none;
+  }
+
+  .ant-picker-header {
+    border-bottom: none;
+    padding: 8px 16px;
+
+    .ant-picker-header-view {
+      color: #636363;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+
+      button {
+        color: #636363;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+
+        &:hover {
+          color: #424242;
+        }
+      }
+    }
+
+    .ant-picker-prev-icon,
+    .ant-picker-next-icon {
+      color: #636363;
+    }
+
+    .ant-picker-super-prev-icon,
+    .ant-picker-super-next-icon,
+    .ant-picker-header-super-prev-btn,
+    .ant-picker-header-super-next-btn {
+      display: none !important;
+    }
+  }
+
+  .ant-picker-content {
+    border-collapse: separate !important;
+    border-spacing: 8px !important;
+
+    th {
+      color: #636363;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+    }
+
+    td {
+      padding: 0 !important;
+
+      .ant-picker-cell-inner {
+        width: 36px !important;
+        height: 32px !important;
+        min-width: 36px !important;
+        line-height: 32px !important;
+        border-radius: 2px;
+        border: 1px solid #c4c4c4;
+        color: #c4c4c4;
+        font-size: 14px;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: #f5f5f5 !important;
+          color: #424242;
+        }
+      }
+
+      &.ant-picker-cell-selected {
+        .ant-picker-cell-inner {
+          background: #424242 !important;
+          color: #ffffff !important;
+          border-color: #424242 !important;
+        }
+      }
+
+      &.ant-picker-cell-today {
+        .ant-picker-cell-inner {
+          border-color: #424242 !important;
+          color: #424242;
+
+          &::before {
+            border: none !important;
+          }
+        }
+      }
+
+      &:not(.ant-picker-cell-in-view) {
+        .ant-picker-cell-inner {
+          color: #e0e0e0;
+          border-color: #e0e0e0;
+        }
+      }
+    }
+  }
+
+  .ant-picker-footer {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "es": {
+    "title": "Usuarios",
+    "name": "Nombre",
+    "markets": "Mercados",
+    "mail": "Correo Electrónico",
+    "password": "Contraseña",
+    "repeate_password": "Repetir contraseña",
+    "rol": "Rol",
+    "all": "Todos",
+    "actions": "Acciones",
+    "user_type": "Tipo de usuario",
+    "search": {
+      "messages": {
+        "user_code_name_search": "código  ó Nombre Usuario"
+      }
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error en la carga de datos",
+        "information_complete": "Por favor verifique la información del formulario",
+        "validate_pass": "Las contraseñas no coinciden",
+        "validate_pass_post": "Debe ingresar una contraseña y su confirmación",
+        "select_rol": "Debe seleccionar un Rol",
+        "select_type": "Debe seleccionar un tipo de Usuario",
+        "user_code_name_search": "código  ó Nombre Usuario"
+      }
+    }
+  },
+  "en": {
+    "title": "Users",
+    "name": "Name",
+    "markets": "Markets",
+    "mail": "Email",
+    "password": "Password",
+    "repeate_password": "Repeate password",
+    "rol": "Rol",
+    "all": "All",
+    "user_type": "User Type",
+    "actions": "Actions",
+    "search": {
+      "messages": {
+        "user_code_name_search": "code or name User"
+      }
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please verifi information in form",
+        "validate_pass": "The password arent equals",
+        "validate_pass_post": "Debe ingresar una contraseña y su confirmación",
+        "select_rol": "Select a Rol",
+        "select_type": "Select a type User"
+      }
+    }
+  }
+}

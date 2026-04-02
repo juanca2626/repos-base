@@ -1,0 +1,156 @@
+[
+    { 
+        "aurora_code" : "REGALOS",
+        "name" : "Regalos",
+        "service_mask" : true,
+        "translate" : [
+            {
+                "language_id" : 1,
+                "name" : "Regalos",
+                "name_commercial" : "Regalos" 
+            },
+            {
+                "language_id" : 2,
+                "name" : "Gifts",
+                "name_commercial" : "Gifts"
+            },
+            {
+                "language_id" : 3,
+                "name" : "Presentes",
+                "name_commercial" : "Presentes"
+            }                             
+        ]
+    },
+    { 
+        "aurora_code" : "PROPINAS",
+        "name" : "Propinas",
+        "service_mask" : true,
+        "translate" : [
+            {
+                "language_id" : 1,
+                "name" : "Propinas",
+                "name_commercial" : "Propinas" 
+            },
+            {
+                "language_id" : 2,
+                "name" : "Tips",
+                "name_commercial" : "Tips"
+            },
+            {
+                "language_id" : 3,
+                "name" : "Pontas",
+                "name_commercial" : "Pontas"
+            }                             
+        ]
+    },
+    { 
+        "aurora_code" : "ALQSALAS",
+        "name" : "Alquiler de salas",
+        "service_mask" : true,
+        "translate" : [
+            {
+                "language_id" : 1,
+                "name" : "Alquiler de salas",
+                "name_commercial" : "Alquiler de salas" 
+            },
+            {
+                "language_id" : 2,
+                "name" : "Room rental",
+                "name_commercial" : "Room rental"
+            },
+            {
+                "language_id" : 3,
+                "name" : "Aluguer de quarto",
+                "name_commercial" : "Aluguer de quarto"
+            }                             
+        ]
+    },
+    { 
+        "aurora_code" : "CATERING",
+        "name" : "Catering",
+        "service_mask" : true,
+        "translate" : [
+            {
+                "language_id" : 1,
+                "name" : "Catering",
+                "name_commercial" : "Catering" 
+            },
+            {
+                "language_id" : 2,
+                "name" : "Gifts",
+                "name_commercial" : "Gifts"
+            },
+            {
+                "language_id" : 3,
+                "name" : "Restauração",
+                "name_commercial" : "Restauração"
+            }                             
+        ]
+    },
+    { 
+        "aurora_code" : "BUGANVILLA",
+        "name" : "Buganvilla",
+        "service_mask" : true,
+        "translate" : [
+            {
+                "language_id" : 1,
+                "name" : "Buganvilla",
+                "name_commercial" : "Buganvilla" 
+            },
+            {
+                "language_id" : 2,
+                "name" : "Bougainvillea",
+                "name_commercial" : "Bougainvillea"
+            },
+            {
+                "language_id" : 3,
+                "name" : "Buganvílias",
+                "name_commercial" : "Buganvílias"
+            }                             
+        ]
+    },
+    { 
+        "aurora_code" : "MINORTE",
+        "name" : "Minorte",
+        "service_mask" : true,
+        "translate" : [
+            {
+                "language_id" : 1,
+                "name" : "Minorte",
+                "name_commercial" : "Minorte" 
+            },
+            {
+                "language_id" : 2,
+                "name" : "Minorte",
+                "name_commercial" : "Minorte"
+            },
+            {
+                "language_id" : 3,
+                "name" : "Minorte",
+                "name_commercial" : "Minorte"
+            }                             
+        ]
+    }, 
+    { 
+        "aurora_code" : "TRUTOURS",
+        "name" : "Trujillo Tours",
+        "service_mask" : true,
+        "translate" : [
+            {
+                "language_id" : 1,
+                "name" : "Trujillo Tours",
+                "name_commercial" : "Trujillo Tours" 
+            },
+            {
+                "language_id" : 2,
+                "name" : "Trujillo Tours",
+                "name_commercial" : "Trujillo Tours"
+            },
+            {
+                "language_id" : 3,
+                "name" : "Trujillo Tours",
+                "name_commercial" : "Trujillo Tours"
+            }                             
+        ]
+    }       
+]

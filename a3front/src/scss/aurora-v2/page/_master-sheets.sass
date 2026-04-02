@@ -1,0 +1,1468 @@
+// COLORS
+$color-red-primary: #890005
+$color-red-secundary: #A71B20
+.color-red
+    color: $color-red-primary
+
+// global
+html,
+body
+    margin: 0
+    padding: 0
+    -moz-osx-font-smoothings: grayscale
+    -webkit-font-smoothing: antialiased
+    width: 100%
+*
+    box-sizing: border-box
+*:focus
+    border: none
+    box-shadow: none
+    outline: none !important
+a
+    text-decoration: none !important
+button
+    cursor: pointer
+    background: none
+    border: none
+.contenedor
+    max-width: 1192px
+    margin: auto
+.modal-backdrop.show
+    opacity: .85
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus
+    border-color: #66afe9 !important
+    outline: 0
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6)
+    transition: all .15s linear
+
+//_card.sass
+.card
+    border-radius: 10px
+    border: 1px solid #E9E9E9
+    .card-header-master
+        display: flex
+        height: 93px
+        width: 100%
+        background: #FAFAFA
+        border-bottom: 1px solid #E9E9E9
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
+        padding-left: 25px
+        padding-right: 25px
+        .card-header-dia
+            padding-top: 24px
+            width: 6%
+            font-size: 18px
+            font-weight: bold
+            color: $color-red-primary
+            // text-align: end
+            padding-right: 15px
+        .card-header-ruta
+            padding-top: 24px
+            width: 74%
+            .descripcion
+                font-weight: bold
+                font-size: 18px
+                margin-bottom: 4px
+            .info
+                font-size: 14px
+                color: #4F4B4B
+        .card-header-opciones
+            width: 7%
+            display: flex
+            justify-content: center
+            align-items: center
+            .content-icon
+                display: flex
+                justify-content: flex-end
+                width: 100%
+                .icon
+                    color: $color-red-secundary
+                    transition: all .1s linear
+                    &:hover
+                        color: $color-red-primary
+                .icon-estilo
+                    margin-right: 5px
+                    margin-left: 5px
+        .card-header-flecha
+            width: 13%
+            .content-icon
+                border-right: 1px solid #E9E9E9
+                padding-right: 20px
+                .icon
+                    font-weight: bold
+    .card-body-master
+        padding-top: 25px
+        padding-bottom: 38px
+        padding-right: 25px
+        padding-left: 25px
+        .card-body-itinerario
+            display: flex
+            width: 100%
+            margin-bottom: 15px
+            .card-body-itinerario-nota
+                text-align: end
+                padding-right: 15px
+                width: 6%
+            .card-body-itinerario-hora
+                font-size: 14px
+                color: #4F4B4B
+                width: 8%
+            .card-body-itinerario-codigo
+                color: #BBBDBF
+                font-size: 14px
+                font-weight: bold
+                width: 6%
+                margin-top: 1px
+            .card-body-itinerario-codigo-azul
+                color: #4A90E2
+            .card-body-itinerario-separacion
+                width: 1%
+                margin-top: -3px
+            .card-body-itinerario-info
+                font-size: 14px
+                width: 79%
+                margin-top: 1px
+        .card-body-separador
+            height: 1px
+            width: 25px
+            background: #B7BBC0
+            margin-left: 10%
+            margin-top: 30px
+            margin-bottom: 25px
+        .card-body-general
+            padding-left: 6%
+            margin-bottom: 26px
+            .title
+                font-size: 14px
+                font-weight: bold
+                margin-bottom: 12px
+            .web
+                font-size: 14px
+                color: #4F4B4B
+                margin-bottom: 3px
+            .info-content
+                display: flex
+
+                .info-general
+                    font-size: 14px
+                    color: #4F4B4B
+                    margin-right: 25px
+                    span
+                        &:first-child
+                            margin-right: 7px
+        .card-body-alternativa
+            margin-bottom: 0px
+
+//@import "components/buttons"
+.button-gris
+    width: 106px
+    height: 45px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    background: #4F4B4B
+    color: white
+    border-radius: 3px
+    transition: all .15s linear
+    &:hover
+        background: #393131
+    i
+        margin-right: 5px
+
+.button-red
+    width: 148px
+    height: 45px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    background: $color-red-primary
+    background: $color-red-secundary
+    color: white
+    border-radius: 3px
+    transition: all .15s linear
+    &:hover
+        background: $color-red-primary
+//@import "components/dropdown"
+//DROPDOWNS NOTA
+.dropdown-nota
+    margin-top: -3px
+    .dropdown-nota-button
+        color: #04B5AA
+        &::after
+            display: none
+    .dropdown-nota-mensaje
+        width: 435px
+        padding: 24px
+        border-radius: 5px
+        border: none
+        box-shadow: 0 2px 4px rgba(0,0,0,.25)
+        top: 388px !important
+        left: -21px !important
+        transform: translate3d(80px, -350px, 0px) !important
+        &:before
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 17px 16px
+            position: absolute
+            border-color: transparent transparent #fff
+            z-index: 1
+            left: 10px
+            top: -13px
+        &:after
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 17px 16px
+            position: absolute
+            border-color: transparent transparent rgba(0,0,0,.25)
+            opacity: .15
+            z-index: 0
+            left: 10px
+            top: -15px
+        .dropdown-content
+            background: #FAFAFA
+            padding-left: 26px
+            padding-right: 26px
+            padding-top: 25px
+            padding-bottom: 25px
+            border-radius: 10px
+            .dropdown-titulo
+                font-weight: bold
+                font-size: 16px
+                padding-left: 15px
+            .dropdown-info
+                display: flex
+                align-items: center
+                margin-bottom: 16px
+                padding-left: 15px
+                .hora
+                    color: #4F4B4B
+                    margin-right: 10px
+                    font-size: 14px
+                .codigo
+                    color: #BBBDBF
+                    font-size: 12px
+                    font-weight: bold
+                .codigo-azul
+                    color: #4A90E2
+                .separacion
+                    margin-left: 4px
+                    margin-right: 4px
+                    color: #4F4B4B
+                .lugar
+                    font-size: 12px
+                    margin-right: 15px
+                    font-weight: bold
+                .editar
+                    margin-right: 10px
+                    margin-top: -5px
+                    padding-right: 0px
+                .borrar
+                    margin-top: -5px
+                    padding-left: 0px
+            .dropdown-input
+                .dropdown-textarea
+                    width: 100%
+                    resize: none
+                    border: none
+                    font-size: 14px
+                    font-style: italic
+                    border: 1px solid #E9E9E9
+                    padding: 15px
+                    &:disabled
+                        border: none
+                        background: #FAFAFA
+            .dropdown-adjuntar
+                padding-left: 15px
+                button
+                    color: $color-red-primary
+
+
+//DROPDOWNS IMPORTAR
+.dropdown-importar
+    display: flex
+    align-items: center
+    .dropdown-nota-button
+        &::after
+            display: none
+    .dropdown-nota-mensaje
+        width: 200px
+        padding-left: 20px
+        padding-right: 20px
+        border-radius: 5px
+        border: none
+        box-shadow: 0 2px 4px rgba(0,0,0,.25)
+        top: 403px !important
+        left: -93px !important
+        transform: translate3d(80px, -350px, 0px) !important
+        &:before
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 17px 16px
+            position: absolute
+            border-color: transparent transparent #fff
+            z-index: 1
+            left: 10px
+            top: -13px
+        &:after
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 17px 16px
+            position: absolute
+            border-color: transparent transparent rgba(0,0,0,.25)
+            opacity: .15
+            z-index: 0
+            left: 10px
+            top: -15px
+        .dropdown-content
+            a
+                display: block
+                font-size: 13px
+                font-weight: bold
+                color: #4F4B4B !important
+                border-bottom: 1px solid #E9E9E9
+                padding-top: 9px
+                padding-bottom: 9px
+                transition: all .1s linear
+                &:hover
+                    color: #393131 !important
+                &:last-child
+                    border-bottom: none
+//@import "components/input-icono"
+.input-icono
+    position: relative
+    input
+        padding-left: 45px
+        height: 40px
+        border: 1px solid #E9E9E9
+        border-radius: 3px
+        width: 100%
+        font-size: 16px
+        &::placeholder
+            color: #BBBDBF
+            font-size: 14px
+    .icono
+        position: absolute
+        top: 11px
+        left: 17px
+        color: #BBBDBF
+        font-size: 18px
+.input-sin-icono
+    input
+        padding-left: 15px
+        height: 40px
+        border: 1px solid #E9E9E9
+        border-radius: 3px
+        width: 100%
+        font-size: 16px
+        &::placeholder
+            color: #BBBDBF
+            font-size: 14px
+//@import "components/modal-general"
+.modal-general
+    .modal-dialog
+        // max-width: 618px
+        .modal-content
+            position: relative
+            margin-top: 120px
+            .modal-cerrar
+                width: 124px
+                height: 64px
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                color: white
+                top: -64px
+                right: -30px
+            .modal-header
+                display: block
+                border-bottom: none
+                padding-left: 30px !important
+                padding-right: 30px !important
+                padding-top: 40px
+                padding-bottom: 0px
+            .modal-title
+                font-size: 28px
+                font-weight: bold
+                margin-bottom: 5px
+                span
+                    margin-left: 10px
+                    color: $color-red-primary
+                    font-size: 22px
+            .modal-subtitle
+                font-size: 14px
+                color: #4F4B4B
+                display: flex
+                justify-content: space-between
+            .modal-codigo
+                font-size: 18px !important
+                span
+                    margin-left: 5px
+            .modal-body
+                padding-left: 30px !important
+                padding-right: 30px !important
+            .modal-footer
+                border-top: none
+                padding-left: 42px
+                padding-right: 42px
+                padding-bottom: 30px
+                padding-top: 10px
+                .button-cancelar.cancelar-info
+                    &:hover
+                        background: #FAFAFA
+            .button-cancelar
+                width: 193px
+                height: 45px
+                display: flex
+                justify-content: center
+                align-items: center
+                border: 1px solid #4F4B4B
+                border-radius: 3px
+                font-size: 18px
+                font-weight: bold
+                color: #4F4B4B
+                margin: 0px
+                transition: all .1s linear
+                &:hover
+                    background: #FFF
+            .button-modal-gris
+                background: #4F4B4B
+                color: white
+                &:hover
+                    background: #393131
+            .button-actualizar
+                color: white
+                margin-left: 14px
+                background: $color-red-secundary
+                border: 1px solid $color-red-primary
+                &:hover
+                    background: $color-red-primary
+                &:disabled
+                    background: #E9E9E9
+                    color: white
+                    cursor: default
+                    border: 1px solid #E9E9E9
+
+//@import "components/modal-info"
+.modal-info
+    .modal-dialog
+        max-width: 618px
+        .modal-body
+            padding-left: 42px
+            padding-right: 35px
+            .modal-info-editar
+                background: #FAFAFA
+                border-radius: 10px
+                padding: 25px 20px
+                .input-icono
+                    margin-bottom: 9px
+                .modal-info-editar-inputs
+                    display: flex
+                    width: 100%
+                    .input-icono-fecha
+                        margin-right: 15px
+                        width: 40%
+                    .input-icono-numero
+                        margin-right: 15px
+                        width: 20%
+                    .input-icono-agregar
+                        width: 20%
+                        margin-right: 15px
+                    .input-icono-scort
+                        width: 20%
+                .input-icono-editar-textarea
+                    textarea
+                        width: 100%
+                        border: 1px solid #E9E9E9
+                        border-radius: 3px
+                        resize: none
+                        padding-left: 16px
+                        padding-top: 12px
+                        &::placeholder
+                            color: #BBBDBF
+                            font-size: 14px
+                .contenido-checkbox
+                    display: flex
+                    align-items: center
+                    margin-top: 15px
+                    .contenido-checkbox-descripcion
+                        font-size: 14px
+                        font-weight: bold
+                        margin-right: 22px
+                    .checkbox-primer-item
+                        margin-right: 30px
+            .modal-body-enlace
+                padding-top: 15px
+                border-top: 1px solid #F2F2F2
+                .modal-info-editar
+                    .enlace-content
+                        display: flex
+                        .enlace-descripcion
+                            font-size: 12px
+                            font-weight: bold
+                            color: #4F4B4B
+                            margin-right: 8px
+                        a
+                            color: $color-red-secundary
+                            margin-right: 10px
+                            font-size: 12px
+                            transition: all .1s linear
+                            &:hover
+                                color: $color-red-primary
+                        .enlace-copiar
+                            border-left: 1px solid #BBBDBF
+                            color: #4B94D8
+                            font-size: 12px
+                            padding-left: 10px
+                    .enlace-aviso
+                        color: #979797
+                        font-size: 10px
+                        line-height: 12px
+                        margin-top: 7px
+
+            .modal-info-borrar
+                font-size: 14px
+                color: #4F4B4B
+            .modal-info-pregunta
+                font-weight: bold
+                color: #4F4B4B
+                margin-top: 30px
+            .modal-info-editores
+                display: flex
+                .modal-info-descripcion
+                    font-size: 18px
+                    margin-right: 10px
+                .modal-info-avatares
+                    display: flex
+                    .avatar-content
+                        margin-right: 5px
+                        margin-left: 5px
+                        cursor: pointer
+                        img
+                            width: 27px
+                            height: 27px
+                            border-radius: 50%
+                            background-size: cover
+            .modal-info-parrafo
+                font-size: 14px
+                color: #4F4B4B
+                margin-top: 12px
+                margin-bottom: 12px
+
+
+//@import "components/modal-mensajes"
+.modal-mensajes
+    .modal-dialog
+        max-width: 1050px
+        .modal-content
+            .modal-header
+                padding-left: 47px
+                padding-right: 50px
+                .modal-subtitle
+                    align-items: center
+            .modal-body
+                padding-left: 42px
+                padding-right: 35px
+                .modal-mensaje-card
+                    background: #FAFAFA
+                    border-radius: 10px
+                    display: flex
+                    padding-left: 25px
+                    padding-right: 30px
+                    padding-top: 21px
+                    padding-bottom: 30px
+                    margin-bottom: 15px
+                    .mensaje-card-avatar
+                        margin-right: 24px
+                        img
+                            width: 52px
+                            height: 52px
+                            border-radius: 50%
+                    .mensaje-card-contenido
+                        width: 100%
+                        .mensaje-card-nombre
+                            font-size: 16px
+                            font-weight: bold
+                        .mensaje-card-info
+                            display: flex
+                            align-items: baseline
+                            .mensaje-card-info_hora
+                                font-size: 14px
+                                color: #4F4B4B
+                                margin-right: 12px
+                            .mensaje-card-info_editar
+                                margin-right: 3px
+                                button
+                                    color: #4F4B4B
+                                    transition: all .1s linear
+                                    &:hover
+                                        color: #393131
+                            .mensaje-card-info_responder
+                                button
+                                    color: #4F4B4B
+                                    transition: all .1s linear
+                                    &:hover
+                                        color: #393131
+
+                        .mensaje-card-textarea
+                            width: calc(100% + 30px)
+                            margin-left: -15px
+                            padding-right: 25px
+                            textarea
+                                width: 100%
+                                resize: none
+                                border: none
+                                font-size: 14px
+                                font-style: italic
+                                border: 1px solid #E9E9E9
+                                padding: 15px
+
+                                &:disabled
+                                    border: none
+                                    background: #FAFAFA
+                        .mensaje-card-adjunto
+                            button
+                                color: $color-red-secundary
+                                font-size: 14px
+                                &:hover
+                                    color: $color-red-primary
+                                i
+                                    margin-right: 5px
+                                span
+                                    text-decoration: underline
+                        .mensaje-card-adjunto-editando
+                            display: flex
+                            justify-content: flex-end
+                            button
+                                &:first-child
+                                    margin-right: 20px
+                                    transition: all .1s linear
+                                    &:hover
+                                        i,span
+                                            color: $color-red-primary
+                                i
+                                    color: $color-red-secundary
+                                    margin-right: 5px
+                                    font-size: 17px
+                                span
+                                    color: $color-red-secundary
+                                    font-size: 14px
+                                    font-weight: bold
+                                    text-decoration: underline
+                        .mensaje-card-separador
+                            width: 100%
+                            height: 1px
+                            background: #E9E9E9
+                            margin-top: 30px
+                            margin-bottom: 30px
+                        .mensaje-card-respuesta
+                            display: flex
+                            position: relative
+                            .mensaje-card-icon-responder
+                                position: absolute
+                                left: -55px
+                                top: 20px
+                                i
+                                    font-size: 20px
+                                    color: #BBBDBF
+                .modal-mensaje-card-nuevo
+                    background: #F3F9FF
+                    .mensaje-card-contenido
+                        .mensaje-card-nombre
+                            position: relative
+                            display: inline
+                            &:after
+                                content: ""
+                                position: absolute
+                                width: 7px
+                                height: 7px
+                                border-radius: 50%
+                                right: -12px
+                                top: 4px
+                                background: #4A90E2
+                        .mensaje-card-textarea
+                            textarea
+                                &:disabled
+                                    border: none
+                                    background: #F3F9FF
+                .modal-mensaje-card-comentar
+                    .mensaje-card-contenido
+                        .modal-mensaje-comentar
+                            display: flex
+                            margin-bottom: 15px
+                            .mensaje-card-avatar
+                                margin-right: 8px
+                                img
+                                    height: 20px
+                                    width: 20px
+                        .mensaje-card-textarea
+                            margin-left: -5px
+                            margin-bottom: 10px
+                .modal-mensaje-card-respondiendo
+                    .mensaje-card-contenido
+                        .mensaje-card-respondiendo
+                            .mensaje-card-avatar
+                                img
+                                    width: 20px
+                                    height: 20px
+                            .mensaje-card-contenido
+                                margin-left: -30px
+                                .mensaje-card-nombre
+                                    margin-left: 15px
+                                    margin-bottom: 10px
+                                .mensaje-card-textarea
+                                    margin-bottom: 10px
+//@import "components/modal-notas"
+.modal-notas
+    .modal-dialog
+        max-width: 1050px
+        .modal-content
+            .modal-header
+                padding-left: 47px
+                padding-right: 50px
+                .modal-subtitle
+                    align-items: center
+            .modal-body
+                padding-left: 42px
+                padding-right: 35px
+                .modal-card-notas
+                    .nota
+                        background: #FAFAFA
+                        border-radius: 10px
+                        padding-top: 25px
+                        padding-left: 28px
+                        padding-right: 33px
+                        padding-bottom: 13px
+                        margin-bottom: 15px
+                        .nota-header
+                            margin-bottom: 10px
+                            .nota-header-title
+                                display: flex
+                                font-size: 16px
+                                font-weight: bold
+                            .nota-header-subtitle
+                                display: flex
+                                align-items: center
+                                .nota-header-hora
+                                    color: #4F4B4B
+                                    font-size: 14px
+                                    margin-right: 12px
+                                .nota-header-codigo
+                                    color: #4A90E2
+                                    font-weight: bold
+                                    font-size: 14px
+                                .nota-header-sin-codigo
+                                    color: #BBBDBF
+                                    font-weight: normal
+                                    font-size: 12px
+                                .nota-header-info
+                                    font-size: 14px
+                                    font-weight: bold
+                                    margin-right: 15px
+                                    .separador
+                                        margin-left: 4px
+                                        margin-right: 4px
+                                .nota-header-editar
+                                    button
+                                        margin-bottom: 5px
+                                        i
+                                            color: #4F4B4B
+                                            font-size: 16px
+                                            transition: all .1s linear
+                                            &:hover
+                                                color: #393131
+                                .nota-header-borrar
+                                    button
+                                        margin-bottom: 5px
+                                        i
+                                            color: #4F4B4B
+                                            font-size: 16px
+                        .nota-body
+                            .nota-body-textarea
+                                margin-bottom: 0px
+                                textarea
+                                    width: 100%
+                                    border: none
+                                    resize: none
+                                    background: #FFFFFF
+                                    border: 1px solid #E9E9E9
+                                    padding-top: 20px
+                                    padding-left: 20px
+                                    padding-right: 25px
+                                    font-size: 16px
+                                    font-style: italic
+                                    color: #4F4B4B
+                                    padding-bottom: 10px
+                                    &:disabled
+                                        background: #FAFAFA
+                                        border: none
+                                        padding-left: 0px
+                                        padding-top: 0px
+                            .nota-body-editando
+                                display: flex
+                                margin-bottom: 10px
+                                margin-top: 10px
+                                .avatar-content
+                                    margin-right: 10px
+                                    margin-top: -2px
+                                    img
+                                        width: 16px
+                                        height: 16px
+                                        border-radius: 50%
+                                .editando
+                                    font-weight: bold
+                                    font-size: 16px
+                            .nota-body-adjunto
+                                button
+                                    color: $color-red-primary
+                                    font-size: 14px
+                                    i
+                                        margin-right: 5px
+                                    span
+                                        text-decoration: underline
+                            .nota-body-adjunto-editando
+                                display: flex
+                                justify-content: flex-end
+                                margin-bottom: 20px
+                                margin-top: 10px
+                                .button-adjuntar
+                                    color: $color-red-secundary
+                                    font-weight: bold
+                                    margin-right: 25px
+                                    &:hover
+                                        color: $color-red-primary
+                                    i
+                                        margin-right: 5px
+                                        font-size: 17px
+                                    span
+                                        text-decoration: underline
+
+//@import "components/modal-editar-dia"
+.modal-editar-dia
+    .modal-dialog
+        max-width: 1050px
+        .modal-content
+            .modal-header
+                padding-left: 47px
+                padding-right: 50px
+                .modal-subtitle
+                    align-items: center
+            .modal-body
+                padding-left: 42px
+                padding-right: 35px
+                .modal-card-editar-content
+                    display: flex
+                    background: #FAFAFA
+                    border-radius: 10px
+                    padding-top: 22px
+                    padding-bottom: 22px
+                    padding-left: 20px
+                    padding-right: 35px
+                    .modal-card-editar-numero
+                        width: 60px
+                        margin-right: 8px
+                        input
+                            height: 40px
+                            border: 1px solid #E9E9E9
+                            width: 100%
+                            padding-left: 24px
+                    .modal-card-editar-titulo
+                        width: calc(100% - 260px)
+                    .modal-card-editar-fecha
+                        width: 200px
+                        margin-left: 8px
+                .modal-card-subtitle
+                    font-weight: bold
+                    font-size: 14px
+                    color: #979797
+                    margin-top: 40px
+                    margin-bottom: 25px
+                .modal-card-itinerario
+                    background: #FAFAFA
+                    border-radius: 10px
+                    padding-bottom: 10px
+                    .modal-card-itinerario-header
+                        display: flex
+                        padding-top: 25px
+                        .drag
+                            width: 60px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                        .hora
+                            width: 95px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                            margin-right: 8px
+                            text-align: center
+                        .codigo
+                            width: 95px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                            margin-right: 8px
+                            text-align: center
+                        .descripcion
+                            width: calc(100% - 386px)
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                            text-align: center
+                        .nota
+                            width: 70px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                            text-align: center
+                        .borrar
+                            width: 50px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+
+                    .modal-card-itinerario-content
+                        .celda-content
+                            .celda
+                                display: flex
+                                padding-top: 7px
+                                padding-bottom: 7px
+                                width: 100%
+                                .drag
+                                    width: 60px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    cursor: grab
+                                    &:active
+                                        cursor: grabbing
+                                    i
+                                        font-size: 20px
+                                        color: #979797
+                                .hora
+                                    width: 95px
+                                    margin-right: 8px
+                                .codigo
+                                    width: 95px
+                                    margin-right: 8px
+                                .codigo-azul
+                                    input
+                                        border: 1px solid #A7CEF1
+                                        background: #F3F9FF
+                                        color: #4B94D8
+                                        font-weight: bold
+                                .descripcion
+                                    width: calc(100% - 386px)
+                                .descripcion
+                                    position: relative
+                                    button
+                                        position: absolute
+                                        right: 15px
+                                        color: #979797
+                                        top: 9px
+                                .descripcion-azul
+                                    position: relative
+                                    input
+                                        border: 1px solid #A7CEF1
+                                        background: #F3F9FF
+                                    button
+                                        position: absolute
+                                        right: 15px
+                                        color: #4B94D8
+                                        top: 9px
+                                .nota
+                                    width: 70px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    padding-left: 12px
+                                    label
+                                        margin-bottom: 23px
+                                .borrar
+                                    width: 50px
+                                    display: flex
+                                    align-items: center
+                                    i
+                                        font-size: 18px
+                                        color: #979797
+                                        transition: all .15s linear
+                                        &:hover
+                                            color: #393131
+                                .borrar-nuevo-dia
+                                    i
+                                        color: #E9E9E9
+                            .celda-vacio
+                                .descripcion
+                                    position: relative
+                                    button
+                                        position: absolute
+                                        right: 15px
+                                        color: #E9E9E9
+                                        top: 9px
+                            .celda-nota-trabajo
+                                padding-left: 163px
+                                padding-right: 120px
+                                background: #F2F2F2
+                                padding-top: 14px
+                                padding-bottom: 25px
+                                textarea
+                                    width: 100%
+                                    resize: none
+                                    border: 1px solid #E9E9E9
+                                    padding-left: 17px
+                                    padding-top: 14px
+                                    font-size: 14px
+                                    border-radius: 3px
+                                    &::placeholder
+                                        color: #BBBDBF
+                                input
+                                    width: 50%
+                                    resize: none
+                                    border: 1px solid #E9E9E9
+                                    padding-left: 17px
+                                    font-size: 14px
+                                    border-radius: 3px
+                                    &::placeholder
+                                        color: #BBBDBF
+                                button
+                                    color: $color-red-primary
+                                    font-size: 14px
+                                    font-weight: bold
+                                    margin-top: 10px
+                                    span
+                                        margin-left: 5px
+                                        text-decoration: underline
+                            .celda-nota-sin-resultado
+                                padding-left: 163px
+                                padding-right: 120px
+                                background: #FAFAFA
+                                padding-top: 1px
+                                padding-bottom: 15px
+                                .aviso
+                                    width: 100%
+                                    height: 26px
+                                    background: #FFF7CD
+                                    padding-left: 17px
+                                    display: flex
+                                    align-items: center
+                                    color: #714C37
+                                    font-size: 14px
+                        .app-draggable
+                            div
+                                .sortable-chosen
+                                    div
+                                        .drag
+                                            &:active
+                                                cursor: grabbing
+
+                .modal-card-select
+                    background: #FAFAFA
+                    border-radius: 10px
+                    padding-left: 20px
+                    padding-right: 20px
+                    .modal-card-select-header
+                        display: flex
+                        padding-top: 25px
+                        padding-bottom: 5px
+                        .select
+                            width: 100px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                            text-align: center
+                        .nombre
+                            width: 300px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                        .checkin
+                            width: 100px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                        .checkout
+                            width: 100px
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                        .incluye
+                            font-size: 12px
+                            font-weight: bold
+                            color: #BBBDBF
+                    .modal-card-select-content
+                        .celda
+                            display: flex
+                            padding-bottom: 16px
+                            padding-top: 16px
+                            border-bottom: 1px solid #E9E9E9
+                            &:last-child
+                                border-bottom: none
+                            .select
+                                width: 100px
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                label
+                                    margin-bottom: 20px
+                            .nombre
+                                width: 300px
+                                font-size: 14px
+                                color: #979797
+                            .checkin
+                                width: 100px
+                                font-size: 14px
+                                color: #979797
+                            .checkout
+                                width: 100px
+                                font-size: 14px
+                                color: #979797
+                            .incluye
+                                font-size: 14px
+                                color: #979797
+//@import "components/contenido-checkbox"
+.checkbox-general
+    display: block
+    position: relative
+    padding-left: 25px
+    margin-bottom: 0px
+    cursor: pointer
+    font-size: 12px
+    color: #4F4B4B
+    input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+    .checkmark
+        position: absolute
+        top: 0
+        left: 0
+        height: 20px
+        width: 20px
+        border-radius: 50%
+        background-color: white
+        border: 1px solid #B7BBC0
+        transition: all .1s linear
+    &:hover input ~ .checkmark
+        // background-color: #ccc
+        border: 1px solid #393131
+    input:checked ~ .checkmark
+        background-color: $color-red-primary
+    input:checked ~ .checkmark:after
+        display: block
+    .checkmark:after
+        top: 5px
+        left: 5px
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background: white
+.checkmark:after
+    content: ""
+    position: absolute
+    display: none
+
+.checkbox-general-2
+    display: block
+    position: relative
+    padding-left: 35px
+    margin-bottom: 12px
+    cursor: pointer
+    font-size: 22px
+    color: #4F4B4B
+    user-select: none
+    input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        height: 0px
+        width: 0px
+    .checkmark
+        position: absolute
+        top: 0
+        left: 0
+        height: 21px
+        width: 21px
+        border-radius: 3px
+        background-color: white
+        border: 1px solid #B7BBC0
+        transition: all .1s linear
+    &:hover input ~ .checkmark
+        // background-color: #ccc
+        // background-color: white
+        // border: 1px solid #eee
+        border: 1px solid #393131
+    input:checked ~ .checkmark
+        background-color: $color-red-primary
+    input:checked ~ .checkmark:after
+        display: block
+    .checkmark:after
+        content: "\2143"
+        color: white
+        font-weight: bold
+        font-size: 16px
+        top: -4px
+        left: 5px
+        transform: rotate(45deg)
+.checkmark:after
+    content: ""
+    position: absolute
+    display: none
+
+//@import "layouts/header"
+header
+    height: 62px
+    background: $color-red-primary
+    display: flex
+    justify-content: center
+    align-items: center
+    .header-content
+        color: white
+        font-size: 30px
+//@import "layouts/footer"
+footer
+    background: #f0f3f5
+
+//layout/hojas-master
+.page-hojas-master
+    .contenedor
+        .input-filtrar
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            border-bottom: 1px solid #E9E9E9
+            padding-bottom: 32px
+            margin-top: -20px
+            .input-icono-filtrar
+                position: relative
+                margin-right: 20px
+                input
+                    width: 420px
+                    height: 40px
+                    padding-left: 18px
+                    border: 1px solid #E9E9E9
+                    border-radius: 3px
+
+                i
+                    position: absolute
+                    right: 15px
+                    color: #979797
+                    top: 12px
+        .hojas-master
+            .hojas-master-header
+                display: flex
+                padding-top: 33px
+                padding-bottom: 27px
+                div
+                    font-weight: bold
+                    font-size: 12px
+                    text-align: center
+                .codigo
+                    width: 120px
+                .descripcion
+                    width: calc(100% - 760px)
+                .cliente
+                    width: 140px
+                .salida
+                    width: 160px
+                .paxes
+                    width: 80px
+                .leaders
+                    width: 80px
+                .compartir
+                    width: 80px
+
+                .editar
+                    width: 50px
+                .borrar
+                    width: 50px
+            .hojas-master-body
+                .celda
+                    display: flex
+                    background: #FAFAFA
+                    height: 68px
+                    border-radius: 10px
+                    margin-bottom: 11px
+                    align-items: center
+                    div
+                        text-align: center
+                    .codigo
+                        width: 120px
+                        font-size: 14px
+                        color: #4F4B4B
+                    .descripcion
+                        width: calc(100% - 760px)
+                        text-align: start
+                        padding-left: 50px
+                        color: black
+                    .cliente
+                        width: 140px
+                        font-size: 14px
+                        color: #4F4B4B
+                    .salida
+                        width: 160px
+                        font-size: 14px
+                        color: #4F4B4B
+                    .paxes
+                        width: 80px
+                        font-size: 14px
+                        color: #4F4B4B
+                    .leaders
+                        width: 80px
+                        font-size: 14px
+                        color: #4F4B4B
+                    .compartir
+                        width: 80px
+                        span
+                            margin-left: 6px
+                            font-size: 14px
+                    .editar
+                        width: 50px
+                    .borrar
+                        width: 50px
+                        margin-left: -15px
+
+// index
+.page-hoja-master
+    .contenedor
+        .titulo
+            margin-top: 45px
+            font-weight: bold
+            font-size: 32px
+        .conectados
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            .conectados-descripcion
+                font-style: italic
+                font-size: 12px
+                margin-right: 10px
+                color: #4F4B4B
+            .conectados-avatares
+                display: flex
+                .avatar-content
+                    margin-right: 5px
+                    margin-left: 5px
+                    cursor: pointer
+                    img
+                        width: 27px
+                        height: 27px
+                        border-radius: 50%
+                        background-size: cover
+        .subtitulo
+            font-size: 18px
+            font-weight: bold
+            span
+                font-weight: normal
+                margin-left: 11px
+                font-style: italic
+                font-size: 16px
+                color: #4F4B4B
+        .tour
+            display: flex
+            justify-content: space-between
+            margin-bottom: 30px
+            .tour-info
+                display: flex
+                align-items: center
+                .tour-info-codigo
+                    font-size: 14px
+                    color: #4F4B4B
+                    border-right: 1px solid #E9E9E9
+                    padding-right: 15px
+                .tour-info-descripcion
+                    color: #4F4B4B
+                    font-size: 14px
+                    font-weight: bold
+                    border-right: 1px solid #E9E9E9
+                    padding-right: 15px
+                    padding-left: 15px
+                    span
+                        margin-left: 7px
+                        font-weight: normal
+                .tour-info-modal
+                    button
+                        font-weight: bold
+                        color: $color-red-secundary
+                        padding-left: 15px
+                        transition: all .15s linear
+                        font-size: 14px
+                        &:hover
+                            color: $color-red-primary
+                        span
+                            margin-left: 4px
+            .tour-opciones
+                display: flex
+                align-items: center
+                .icono
+                    font-size: 18px
+                    color: black
+                .descargar
+                    margin-right: 5px
+                    display: flex
+                    align-items: center
+                    transition: all .1s linear
+                    height: 18px
+                    padding-right: 5px
+                    &:nth-child(4)
+                        border-right: 1px solid #E9E9E9
+                        padding-right: 16px
+                    &:hover
+                        span,a,button,.numero
+                            color: #393131
+                    span,a,button,.numero
+                        color: #4F4B4B
+
+                    .numero
+                        font-size: 14px
+                        margin-left: 4px
+                        margin-top: 2px
+                        font-weight: bold
+                    .descargar-tooltip
+                        display: flex
+                        align-items: center
+                .mensajes
+                    position: relative
+                    margin-right: 25px
+                    border-right: none
+                .mesajes-nuevo
+                    &:after
+                        content: ""
+                        position: absolute
+                        width: 7px
+                        height: 7px
+                        border-radius: 50%
+                        right: -5px
+                        top: 0px
+                        background: #4A90E2
+                .button-gris
+                    margin-right: 6px
+    .contenedor-cards
+        .card
+            margin-bottom: 20px

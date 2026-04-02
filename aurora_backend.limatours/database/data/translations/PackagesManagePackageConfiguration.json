@@ -1,0 +1,54 @@
+{
+  "es": {
+    "taxes": "Impuestos",
+    "configuration": "Configuración",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "status": "Estatus",
+    "delete": "Eliminar",
+    "it_allows": "Permite",
+    "children": "Niños",
+    "guide": "Guía",
+    "limit_confirmation": "Límite de horas de confirmación",
+    "age_minimum": "Edad mínima",
+    "age_maximum": "Edad máxima",
+    "infants": "Infantes",
+    "age": "Edad",
+    "hours": "Horas",
+    "apply": "Aplica",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "system": "Ocurrió un error interno por favor inténtelo más tarde",
+        "range_children_invalid": "Edades no válidas respecto a los rangos ya registrados"
+      }
+    },
+    "success": "Guardado correctamente"
+  },
+  "en": {
+    "taxes": "Taxes",
+    "configuration": "Configuration",
+    "active": "Active",
+    "inactive": "Inactive",
+    "status": "Status",
+    "delete": "Delete",
+    "it_allows": "It allows",
+    "children": "Children",
+    "guide": "Guide",
+    "limit_confirmation": "Limit of confirmation hours",
+    "age_minimum": "Age minimum",
+    "age_maximum": "Age maximum",
+    "infants": "Infants",
+    "age": "Age",
+    "hours": "Hours",
+    "apply": "Apply",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "system": "An internal error occurred please try again later",
+        "range_children_invalid": "Invalid ages with respect to the ranges already registered"
+      }
+    },
+    "success": "Stored Correctly"
+  }
+}

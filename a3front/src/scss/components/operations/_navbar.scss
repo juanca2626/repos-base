@@ -1,0 +1,36 @@
+.navbar-nav {
+  display: block;
+  flex-wrap: wrap;
+  gap: 25px;
+  .nav-link {
+    font-size: 0.813em;
+    font-weight: 700;
+    color: $color-white !important;
+  }
+
+  .nav-link-lang {
+    height: 35px;
+    width: 82px;
+    margin: 7px 0 0 20px;
+    color: $color-primary !important;
+    background: $color-white;
+  }
+  .btn-circle {
+    width: 40px;
+    height: 40px;
+    padding: 6px 0px;
+    margin: 5px 5px 0 0;
+    border-radius: 25px;
+    border: 1px solid $color-white;
+    color: $color-black-6;
+    text-align: center;
+    line-height: 1.42857;
+    background: $color-white;
+  }
+  .nav_perfil {
+    border: 2px solid $color-border-profile;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+  }
+}

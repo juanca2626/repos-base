@@ -1,0 +1,18 @@
+{
+    "preset": "psr12",
+    "rules": {
+        "simplified_null_return": true,
+        "blank_line_before_statement": {
+            "statements": ["return", "try"]
+        },
+        "binary_operator_spaces": {
+            "operators": {
+                "=>": "align_single_space_minimal"
+            }
+        },
+        "trim_array_spaces": false,
+        "new_with_braces": {
+            "anonymous_class": false
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "es": {
+    "title": "Traducciones",
+    "translate": "Traducción",
+    "languages": "Idiomas",
+    "type": "Tipo"
+  },
+  "en": {
+    "title": "Translations",
+    "translate": "Translate",
+    "languages": "Languages",
+    "type": "Type"
+  }
+}

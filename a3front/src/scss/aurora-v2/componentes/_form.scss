@@ -1,0 +1,59 @@
+.form {
+  background: $gris_fondo-bloque;
+  border-radius: 10px;
+  padding: 30px 60px 15px 25px;
+  position: relative;
+  &-row {
+    margin-bottom: 15px;
+    margin-left: -10px;
+    margin-right: -10px;
+    .form-group {
+      margin-bottom: 0;
+      padding: 0 10px;
+      .form-control {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.45rem;
+        line-height: 19px;
+        color: $negro;
+        .vs__dropdown-menu {
+          &:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-right: 17px solid transparent;
+            border-top: 0 solid transparent;
+            border-left: 17px solid transparent;
+            border-bottom: 16px solid $blanco;
+            position: absolute;
+            top: -16px;
+            left: 10%;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+  &-btn-action {
+    margin-top: 28px;
+    margin-bottom: 50px;
+    a {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 17px;
+      text-decoration-line: underline !important;
+      color: $gris_oscuro;
+      position: relative;
+      padding-left: 22px;
+      margin: 0 11px;
+      cursor: pointer;
+      i {
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

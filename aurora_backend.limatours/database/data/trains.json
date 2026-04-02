@@ -1,0 +1,12 @@
+[
+	{
+		"id" : 1,
+		"code" : "IR",
+		"name" : "Inca Rail"
+	},
+	{
+		"id" : 2,
+		"code" : "PR",
+		"name" : "Perú Rail"
+	}
+]

@@ -1,0 +1,21 @@
+version: 0.2
+ 
+phases:
+  install:
+    commands:
+      - npm install -g serverless@3.38.0
+      - npm install --omit=dev
+  post_build:
+    commands:
+      - export SLS_CONCURRENCY=1
+      - serverless deploy --stage $stage
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
+
+cache:
+  paths:
+    - node_modules/**/*
+    - .serverless/**/*
+    - package-lock.json

@@ -1,0 +1,36 @@
+{
+  "es": {
+    "Contacts": "Contactos",
+    "Users": "Usuarios",
+    "up_cross_selling": "Up / Cross Selling",
+    "configuration": "Configuración",
+    "bedrooms": "Habitaciones",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "manage_hotel_incorrect": "Seleccione un hotel valido",
+        "manage_hotel_delete": "Error al eliminar el hotel"
+      }
+    }
+  },
+  "en": {
+    "title": "Manage Hotels",
+    "manage_hotel_name": "Manage Hotel",
+    "transaction_report": "Transaction Report",
+    "information": "Information",
+    "gallery": "Gallery",
+    "Inventory": "Inventory",
+    "Contacts": "Contacts",
+    "Users": "Users",
+    "up_cross_selling": "Up / Cross Selling",
+    "configuration": "Configuration",
+    "bedrooms": "Bedrooms",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "Administrar Hoteles_incorrect": "Select the valid hotel",
+        "Administrar Hoteles_delete": "Error delete hotel"
+      }
+    }
+  }
+}

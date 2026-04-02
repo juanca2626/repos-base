@@ -1,0 +1,22 @@
+{
+  "es": {
+    "title": "Roles",
+    "name": "Nombre",
+    "description": "Descripción",
+    "slug": "Slug",
+    "level": "Nivel",
+    "permissions": {
+      "title": "Editar Permisos"
+    }
+  },
+  "en": {
+    "title": "Roles",
+    "name": "Name",
+    "description": "Description",
+    "slug": "Slug",
+    "level": "Level",
+    "permissions": {
+      "title": "Edit Permissions"
+    }
+  }
+}

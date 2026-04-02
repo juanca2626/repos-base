@@ -1,0 +1,387 @@
+.vehicle-form-container {
+  width: 100%;
+  padding: 24px 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #ffffff;
+}
+
+.registered-count {
+  color: #2f353a;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vehicle-list-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vehicle-content-box {
+  width: 422px;
+  min-height: 262px;
+  background: #ebf5ff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid transparent;
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-title {
+    color: #2f353a;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Inter';
+  }
+
+  .car-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: #2f353a;
+  }
+
+  .icon-save {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: #babcbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: #1284ed;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.box-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .form-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .field-label {
+    color: #2f353a;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter';
+  }
+
+  .label-with-tooltip {
+    display: flex;
+    align-items: end;
+    gap: 4px;
+  }
+
+  .custom-box-select {
+    width: 173px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :deep(.ant-select-selection-item) {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  .range-inputs {
+    display: flex;
+
+    &.has-error {
+      .range-input {
+        border-color: #ff3b3b;
+        border-width: 1px 1px 1px 0px;
+
+        &:first-child {
+          border-left: 1px solid #ff3b3b;
+        }
+      }
+    }
+
+    .range-input {
+      width: 96px;
+      height: 40px;
+      background: #ffffff;
+      border: 1px solid #bdbdbd;
+
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+        border-right: none;
+      }
+
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+
+      :deep(.ant-input) {
+        border: none !important;
+        box-shadow: none !important;
+        text-align: center;
+        color: #2f353a;
+        font-family: 'Inter';
+        font-weight: 400;
+      }
+
+      .range-label {
+        font-size: 14px;
+        color: #bdbdbd;
+        font-family: 'Inter';
+        font-weight: 400;
+        user-select: none;
+      }
+    }
+  }
+
+  .capacity-alert {
+    width: 211px;
+    height: 32px;
+    background: #feefef;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+    gap: 4px;
+    margin-left: -13px;
+
+    .alert-text {
+      color: #da1414;
+      font-size: 12px;
+      font-family: 'Inter';
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .custom-number-input {
+    width: 55px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #bdbdbd;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+
+    .number-controls {
+      position: absolute;
+      right: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn-step {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .row-checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-checkbox {
+    :deep(.ant-checkbox-inner) {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+
+    :deep(.ant-checkbox-checked .ant-checkbox-inner) {
+      background-color: #bd0d12;
+      border-color: #bd0d12;
+    }
+
+    .checkbox-text {
+      font-family: 'Inter';
+      color: #2f353a;
+      font-weight: 500;
+    }
+  }
+
+  .representative-quantity {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .qty-label {
+      font-family: 'Inter';
+    }
+
+    .qty-input {
+      width: 116px;
+      height: 36px;
+      border: 1px solid #babcbd;
+      border-radius: 4px;
+    }
+  }
+}
+
+.summary-card {
+  width: 422px;
+  border: 1px solid #babcbd;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .summary-header {
+    background: #ebf5ff;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-car-summary {
+      width: 16px;
+      height: 16px;
+    }
+
+    .unit-name {
+      color: #2f353a;
+      font-weight: 600;
+      font-size: 14px;
+      margin-left: 8px;
+      margin-right: 12px;
+    }
+
+    .unit-usage {
+      color: #2f353a;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .icon-edit {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .summary-details {
+    padding: 12px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    border-top: none;
+
+    .details-column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .detail-item {
+      color: #2f353a !important;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'Inter';
+      display: flex;
+      gap: 4px;
+
+      .detail-value {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.add-unit-container {
+  width: 422px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-add-unit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #1284ed;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.anim-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-select-dropdown {
+  .ant-select-item-option-content {
+    color: #2f353a !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+}

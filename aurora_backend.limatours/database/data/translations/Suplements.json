@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Suplementos",
+    "suplement_name": "Suplemento",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "suplement_incorrect": "Seleccione un suplemento valido",
+        "suplement_delete": "Error al eliminar el suplemento"
+      }
+    }
+  },
+  "en": {
+    "title": "Suplements",
+    "suplement_name": "Suplement",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "suplement_incorrect": "Select the valid suplement",
+        "suplement_delete": "Error delete suplement"
+      }
+    }
+  }
+}

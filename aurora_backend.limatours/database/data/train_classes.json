@@ -1,0 +1,38 @@
+[
+	{
+		"id" : 1,
+		"name" : "THE FIRST CLASS"
+	},
+	{
+		"id" : 2,
+		"name" : "THE VOYAGER"
+	},
+	{
+		"id" : 3,
+		"name" : "TURISTA"
+	},
+	{
+		"id" : 4,
+		"name" : "THE PRIVATE"
+	},
+	{
+		"id" : 5,
+		"name" : "PREMIUM ECONOMY"
+	},
+	{
+		"id" : 6,
+		"name" : "THE VOYAGER BIMODAL"
+	},
+	{
+		"id" : 7,
+		"name" : "THE 360°"
+	},
+	{
+		"id" : 8,
+		"name" : "THE FIRST CLASS BIMODAL"
+	},
+	{
+		"id" : 9,
+		"name" : "THE 360° BIMODAL"
+	}
+]

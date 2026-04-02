@@ -1,0 +1,64 @@
+{
+  "es": {
+    "title": "Impuestos",
+    "tax": "Impuesto",
+    "service": "Servicio",
+    "minor_policy": "Poílitica Menores",
+    "min_child": "Minima Edad",
+    "max_child": "Maxima Edad",
+    "allows_child": "Permite Niños",
+    "min_teenagers": "Minima Edad",
+    "max_teenagers": "Maxima Edad",
+    "allows_teenagers": "Permite Infantes",
+    "aplique": "Aplica",
+    "Amount": "Monto",
+    "success_insert": "La actualizacion se realizo con exíto",
+    "error_insert": "Ocurrio un error al realizar la actualizacion",
+    "alert_insert": "Debe actualizar alguna celda",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "status": "Estatus",
+    "new_contact": "Nuevo Contacto",
+    "list_contact": "Lista de Contactos",
+    "list_user": "Lista de Usuarios",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "hotel_incorrect": "Seleccione un hotel valido",
+        "manage_hotel_delete": "Error al eliminar el contacto"
+      }
+    }
+  },
+  "en": {
+    "title": "Taxes",
+    "tax": "Tax",
+    "service": "Service",
+    "minor_policy": "Minos Policy",
+    "min_child": "Minimun Child",
+    "max_child": "Maximun Child",
+    "allows_child": "Allows Child",
+    "min_teenagers": "Minimun Teenagers",
+    "max_teenagers": "Maximun Teenagers",
+    "allows_teenagers": "Allows Teenagers",
+    "aplique": "Aplique",
+    "Amount": "Amount",
+    "success_insert": "The registration was successful",
+    "error_insert": "An error occurred while performing a registration",
+    "alert_insert": "You must update some cell",
+    "active": "Active",
+    "inactive": "Inactive",
+    "hotel": "Hotel",
+    "status": "Status",
+    "edit": "Edit",
+    "delete": "Delete",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "hotel_incorrect": "Select the valid hotel",
+        "Administrar Contacts_delete": "Error delete contacts"
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.prices-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  .title-main {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2f353a;
+  }
+
+  .title-hint {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #9e9e9e;
+  }
+}
+
+.schedules-wrapper {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chevron-button {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #ffffff;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  padding: 0;
+
+  &:hover:not(:disabled) {
+    background-color: #f5f5f5;
+  }
+
+  &:active:not(:disabled) {
+    background-color: #ededed;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #fafafa;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: #575b5f;
+  }
+}
+
+.schedules-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--items-per-page), 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.schedule-card {
+  width: 100%;
+  max-width: 324px;
+  border: 0.5px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 9px 10px 9px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    border-color: #bfbfbf;
+  }
+
+  &.selected {
+    border-color: #c63838;
+    // background-color: #fff5f5;
+  }
+}
+
+.schedule-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #2f353a;
+  font-weight: 500;
+}
+
+.schedule-radio {
+  :deep(.ant-radio-checked) {
+    .ant-radio-inner {
+      border-color: #c63838;
+    }
+
+    .ant-radio-inner::after {
+      background-color: #c63838;
+    }
+  }
+}
+
+.schedule-time-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clock-icon {
+  color: #575b5f;
+  font-size: 14px;
+}
+
+.schedule-time-title {
+  font-family: 'Inter', sans-serif;
+  color: #2f353a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .schedule-card {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .schedules-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Exports\RequestAurora;
+
+use Illuminate\Contracts\View\View;
+use Maatwebsite\Excel\Concerns\Exportable;
+use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\FromView;
+
+class RequestHotelsWithRateProtection implements FromView
+{
+    use Exportable;
+
+    protected $hotels;
+
+    public function __construct($hotels)
+    {
+        $this->hotels = $hotels;
+    }
+
+    public function view(): View
+    {
+        return
+            view('exports.reports_aurora.hotels_with_rate_protection', [
+                'hotels' => $this->hotels,
+            ]);
+    }
+}

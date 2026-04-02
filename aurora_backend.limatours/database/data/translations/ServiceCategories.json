@@ -1,0 +1,28 @@
+{
+  "es": {
+    "title": "Tipo de servicio",
+    "service_category_name": "Tipo de servicio",
+    "service_sub_category_name": "Sub Tipo de servicio",
+    "name": "Nombre",
+    "name_subtypes": "Sub Tipos",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario"
+      }
+    }
+  },
+  "en": {
+    "title": "Type of service",
+    "name_subtypes": "Sub Types",
+    "service_category_name": "Type of service",
+    "service_sub_category_name": "Sub Type of service",
+    "name": "Name",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form"
+      }
+    }
+  }
+}

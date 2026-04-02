@@ -1,0 +1,36 @@
+{
+  "es": {
+    "title": "Amenidades",
+    "amenity_name": "Amenidad",
+    "amenity_image": "Imagen de Amenidad",
+    "status": {
+      "title": "Estado",
+      "active": "Activo",
+      "disable": "Desactivado"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario.",
+        "amenity_incorrect": "No puede registrar una amenidad ya existente.",
+        "amenity_delete": "Error al eliminar la amenidad."
+      }
+    }
+  },
+  "en": {
+    "title": "Amenities",
+    "amenity_name": "Amenity",
+    "amenity_image": "Amenity Image",
+    "status": {
+      "title": "Status",
+      "active": "Active",
+      "disable": "Disable"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form.",
+        "amenity_incorrect": "You can not register an existing amenity.",
+        "amenity_delete": "Error to delete amenity"
+      }
+    }
+  }
+}

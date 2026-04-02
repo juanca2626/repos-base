@@ -1,0 +1,29 @@
+.sidebar-component {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  text-decoration: none;
+  box-shadow: inset -1px 0 0 rgb(0 0 0 / 10%);
+  background-color: $color-black;
+  .sidebar_title {
+    margin: 45px 32px 0 0;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: $color-white;
+    background: $color-black;
+  }
+  .space {
+    min-height: 96.5vh;
+    margin: 0;
+    text-decoration: none;
+  }
+  .sidebar_footer {
+    background: $color-black;
+  }
+  .svg-inline--fa {
+    height: 0.9em;
+  }
+}

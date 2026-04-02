@@ -1,0 +1,4 @@
+export enum ConfirmationTypeEnum {
+  CONFIRMATION = 'CONFIRMATION',
+  RECONFIRMATION = 'RECONFIRMATION',
+}

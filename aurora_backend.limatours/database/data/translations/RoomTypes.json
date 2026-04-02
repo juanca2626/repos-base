@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Tipo de Habitación",
+    "roomtype_name": "tipo de habitación",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "roomtype_incorrect": "No puede registrar un tipo de habitación ya existente.",
+        "roomtype_delete": "Error al eliminar el tipo de habitación"
+      }
+    }
+  },
+  "en": {
+    "title": "Room Types",
+    "roomtype_name": "room types",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "roomtype_incorrect": "You can not register an existing room type",
+        "roomtype_delete": "Error to delete room type"
+      }
+    }
+  }
+}

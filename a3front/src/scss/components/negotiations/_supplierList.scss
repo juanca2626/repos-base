@@ -1,0 +1,141 @@
+@import '@/scss/_variables.scss';
+
+.custom-list-dropdown-actions {
+  width: 180px;
+  border-radius: 8px !important;
+  padding: 0 !important;
+
+  :deep(.ant-dropdown-menu-item) {
+    padding: 16px;
+
+    .ant-dropdown-menu-title-content {
+      span {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .container-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .icon-menu-item {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.custom-filter-form-drawer {
+  .ant-btn {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+  }
+
+  .ant-collapse {
+    &-header {
+      padding: 0 0 1rem 0 !important;
+      .ant-collapse-expand-icon {
+        .ant-collapse-arrow {
+          font-size: 1rem;
+        }
+      }
+    }
+    &-content {
+      &-box {
+        padding: 0.25rem 0.125rem 1.5rem !important;
+      }
+    }
+  }
+
+  .ant-drawer-wrapper-body {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .ant-drawer-footer {
+    border-top: none !important;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .ant-drawer-body {
+    padding: 0;
+  }
+
+  .ant-drawer-header {
+    padding: 0;
+    padding-bottom: 24px;
+    margin: 0;
+  }
+
+  .ant-drawer-close {
+    padding: 0;
+    margin: 0;
+    font-size: 22px !important;
+    color: $color-black !important;
+  }
+
+  .ant-drawer-header-title {
+    flex-direction: row-reverse;
+  }
+}
+
+.supplier-common-filter {
+  .filters-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .group-more-filters {
+    display: flex;
+    gap: 2.5rem;
+  }
+}
+
+.supplier-common-filter-form {
+  padding-right: 5px;
+
+  .custom-filter-checkbox {
+    .checkbox-label {
+      font-size: 16px;
+      font-weight: 400;
+      color: $color-black;
+    }
+  }
+
+  .title-section {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.supplier-common-container-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon-wrapper {
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+
+  .btn-icon {
+    width: 19px;
+    height: 19px;
+    color: $color-blue;
+  }
+}

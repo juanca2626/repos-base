@@ -1,0 +1,142 @@
+{
+  "es": {
+    "advance": "Avance",
+    "title": "Hoteles",
+    "hotel_name": "Hotel",
+    "chain_name": "Cadena",
+    "country_name": "Pais",
+    "state_name": "Estado/Departamento",
+    "city_name": "Ciudad",
+    "district_name": "Distrito",
+    "zone_name": "Zona",
+    "currency_name": "Moneda",
+    "status_name": "Estado",
+    "detail_tab": "Detalle",
+    "description_address_tab": "Descripción y Dirección",
+    "amenity_tab": "Amenidades",
+    "hoteltype_name": "Tipo",
+    "category_name": "Categoría",
+    "typeclass_name": "Clase",
+    "stars_name": "Estrellas",
+    "checkintime_name": "Hora de ingreso",
+    "checkouttime_name": "Hora de salida",
+    "latitude_name": "Latitud",
+    "longitude_name": "Longitud",
+    "zipcode_name": "Código postal",
+    "website_name": "Dirección web",
+    "notes": "Notas",
+      "summary": "Resumen",
+      "notify_new_hotel": "Notificar hotel nuevo",
+    "hotel_description": "Descripción",
+    "hotel_address": "Dirección",
+    "hotel_image": "Logotipo",
+    "hotel_tag_amenity": "Agregue un nuevo amenity",
+    "hotel_amenity": "Busque o agregue un amenity",
+    "channel_code": "Código",
+    "channel_state": "Estado",
+    "hotel_auroracode": "Código Aurora",
+    "hotel_ubigeo": "País - Región",
+    "hotel_channel": "Channels",
+    "hotel_gallery": "Galeria",
+    "manage_hotel": "Administrar Hotel",
+    "status": {
+      "active": "Activado",
+      "disable": "Desactivado"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "hotel_chain_complete": "Seleccione una cadena asociada al hotel",
+        "hotel_country_complete": "Seleccione el país de ubicación del hotel",
+        "hotel_state_complete": "Seleccione el estado/departamento de ubicación del hotel",
+        "hotel_city_complete": "Seleccione la ciudad de ubicación del hotel",
+        "hotel_district_complete": "Seleccione el distrito de ubicación del hotel",
+        "hotel_currency_complete": "Seleccione la moneda de uso del hotel",
+        "hotel_hoteltype_complete": "Seleccione el tipo del hotel",
+        "hotel_category_complete": "Seleccione la categoria del hotel",
+        "hotel_typeclass_complete": "Seleccione la clase del hotel",
+        "hotel_incorrect": "No puede registrar datos de un hotel con un código aurora existente.",
+        "gallery_incorrect": "No puede registrar el logotipo del hotel.",
+        "hotel_delete": "Error al eliminar un hotel"
+      }
+    },
+    "search": {
+      "messages": {
+        "hotel_chain_search": "Cadena",
+        "hotel_ubigeo_search": "Ciudades",
+        "hotel_status_search": "Status",
+        "hotel_aurora_name_search": "código AURORA ó Nombre hotel"
+      }
+    }
+  },
+  "en": {
+    "advance": "Advance",
+    "title": "Hotels",
+    "hotel_name": "Hotel",
+    "chain_name": "Chain",
+    "country_name": "Country",
+    "state_name": "State/Departament",
+    "city_name": "City",
+    "district_name": "District",
+    "zone_name": "Zone",
+    "currency_name": "Currency",
+    "status_name": "Status",
+    "detail_tab": "Detail",
+    "description_address_tab": "Description and Address",
+    "amenity_tab": "Amenity",
+    "hoteltype_name": "Type",
+    "category_name": "Category",
+    "typeclass_name": "Class",
+    "stars_name": "Stars",
+    "checkintime_name": "Check-in-time",
+    "checkouttime_name": "Check-out-time",
+    "latitude_name": "Latitude",
+    "longitude_name": "Longitude",
+    "zipcode_name": "Zip Code",
+    "website_name": "Website",
+    "hotel_description": "Description",
+      "notes": "Notes",
+      "summary": "Summary",
+      "notify_new_hotel": "Notify new hotel",
+    "hotel_address": "Address",
+    "hotel_image": "Logotipe",
+    "hotel_tag_amenity": "Add this as new amenity",
+    "hotel_amenity": "Search or add a amenity",
+    "channel_code": "Code",
+    "channel_state": "Status",
+    "hotel_auroracode": "Aurora Code",
+    "hotel_ubigeo": "Country - State",
+    "hotel_channel": "Channels",
+    "hotel_gallery": "Gallery",
+    "manage_hotel": "Manage Hotel",
+    "status": {
+      "active": "Activated",
+      "disable": "Disabled"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "hotel_chain_complete": "Select the chain associated at hotel",
+        "hotel_country_complete": "Select the country to locate of hotel",
+        "hotel_state_complete": "Select the state/department to locate of hotel",
+        "hotel_city_complete": "Select the city to locate of hotel",
+        "hotel_district_complete": "Select the district to locate of hotel",
+        "hotel_currency_complete": "Select the currency to use of hotel",
+        "hotel_hoteltype_complete": "Select the type of hotel",
+        "hotel_category_complete": "Select the category of hotel",
+        "hotel_typeclass_complete": "Select the type of class of hotel",
+        "hotel_incorrect": "You can not register data from a hotel with a existing aurora code",
+        "gallery_incorrect": "You can not register the logotype of a hotel.",
+        "hotel_delete": "Error to delete hotel"
+      }
+    },
+    "search": {
+      "messages": {
+        "hotel_chain_search": "Chain",
+        "hotel_ubigeo_search": "Cities",
+        "hotel_status_search": "Status",
+        "hotel_aurora_name_search": "AURORA code or name hotel"
+      }
+    }
+  }
+}

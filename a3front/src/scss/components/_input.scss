@@ -1,0 +1,25 @@
+.form-control {
+  border: 0.063em solid $color-black-4 !important;
+  border-radius: 0.25em !important;
+  padding: 0.25em 0.5em !important;
+  height: 2.188em !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+  &::placeholder {
+    color: $color-black-4 !important;
+  }
+}
+
+.form-check-input {
+  border-radius: 2px !important;
+}
+.form-check-input:checked {
+  background-color: $color-primary !important;
+  border-color: $color-primary !important;
+  &:focus {
+    border-color: $color-primary !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,242 @@
+html,
+body {
+  // NECESARIO PARA EL NUEVO SCROLLBAR
+  height: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+  body {
+    font-family: $font_basic;
+    font-size: 1.6rem;
+    //line-height: 19px;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+.background-secondary {
+  background: $gray_lighter;
+}
+
+.simplescrollup__button {
+  //position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  transition: 1s all;
+  z-index: 10000;
+}
+.simplescrollup__button--show {
+  transform: translateX(0);
+}
+.simplescrollup__button--hide {
+  transform: translateX(100px);
+}
+.color-primary {
+  color:$red_main;
+}
+
+#modal-detail-servicios b {
+  display:block;
+}
+
+
+.box-details {
+  font-size: 15px;
+  letter-spacing: normal;
+  a {
+    color: $red_main;
+    border-bottom: 1px solid $red_main;
+    cursor: pointer;
+    &:hover {
+      color: $red_main;
+    }
+  }
+}
+
+.vue-numeric-input{
+    width: 122px !important;
+
+    .numeric-input{
+        text-align: center !important;
+        border: 0px !important;
+        height: 30px !important;
+    }
+
+    .btn-decrement .btn-icon:before{
+        background-color: #C4C4C4 !important;
+    }
+
+    .btn-increment .btn-icon:before{
+        background-color: #787885 !important;
+    }
+
+    .btn-increment .btn-icon:after{
+        background-color: #787885 !important;
+    }
+
+    .btn{
+        background: white !important;
+        box-shadow: none !important;
+        &.btn-increment{
+            border:1px solid #787885 !important;
+        }
+
+        &.btn-decrement{
+            border:1px solid #C4C4C4 !important;
+        }
+    }
+
+}
+
+.input-actions {
+  .btn {
+    outline: transparent;
+    border-radius:100%;
+    width:3rem;
+    height:3rem;
+    text-align:center;
+  }
+  .btn-minus {
+    width:calc(3rem - 2px);
+    height:calc(3rem - 2px);
+    border: 1px solid #C4C4C4;
+    color:#C4C4C4;
+  }
+  .btn-plus {
+    width:calc(3rem - 2px);
+    height:calc(3rem - 2px);
+    border: 1px solid #787885;
+    color:#787885;
+  }
+  .number-count {
+    padding: 1rem 2rem;
+  }
+  .icon-ac-plus,
+  .icon-ac-minus {
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+}
+
+.status {
+  &-ok {
+    color: #06C270;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &-rq {
+    color: #FFCC00;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.title-section {
+  font-size: 3rem!important;
+  font-weight: 400;
+}
+
+.price-reservation {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: $red_main;
+}
+
+
+.details-booking {
+  background: #F5F5F5;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.p-booking {
+  font-size: 14px;
+}
+
+.form-control {
+  .send {
+    width: 90%;
+    height: 35px;
+  }
+  .fa-paper-plane {
+    color: #c4c4c4;
+  }
+}
+
+input:focus {
+  //border-color: inherit!important;
+  //outline: 0;
+  //box-shadow: none!important;
+  //transition: all 0.15s linear;
+}
+
+#NOThidingScrollBar{
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+    outline: 1px solid #C4C4C4;
+    background: white;
+    border-radius: 3em!important;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border-radius: 1em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #C4C4C4;
+    outline: none;
+    border-radius: 1em;
+  }
+}
+
+.filter__tabs {
+
+  .filter__btn {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    background: none;
+    border-radius: 3px;
+    color: #595d61;
+    cursor: pointer;
+    transition-property: background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    font-weight: 500;
+    &.is-checked {
+
+      background-color: #fff;
+      color: #eb5757;
+      font-weight: 500;
+      &:hover {
+        background-color: #e8e8e8;
+        border-color: #e8e8e8;
+      }
+    }
+
+    &:hover {
+      border-color: #727475;
+      background-color: #e8e8e8;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.validate_rooms{
+    border: solid 2px $red;
+    border-radius: 14px;
+}
+
+.vue-numeric-input .numeric-input{
+    border-radius: 12px !important;
+}
+
+

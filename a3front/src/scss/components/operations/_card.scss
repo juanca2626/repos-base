@@ -1,0 +1,57 @@
+.card {
+  border: $color-black-8 !important;
+  height: max-content;
+  .card-header {
+    padding: 12px 12px 12px 25px;
+    border: none;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $color-black;
+    background-color: $color-white-3 !important;
+  }
+  .i {
+    cursor: pointer;
+  }
+  .i:hover {
+    color: $color-primary;
+  }
+  .card-body {
+    border: 2px solid $color-white-3 !important;
+    .btn {
+      font-weight: 600;
+      color: $color-primary;
+      transition: none;
+      --bs-btn-border-width: none;
+    }
+    .btn:hover {
+      border: none !important;
+      border-color: none !important;
+      color: none;
+      background-color: none !important;
+    }
+  }
+  .card-title {
+    font-weight: 500;
+    font-size: $font-size-md;
+    color: $color-black;
+  }
+  .card-text {
+    font-size: $font-size-sm;
+    color: $color-black;
+  }
+  .card-p {
+    font-size: $font-size-xs;
+  }
+
+  .locked {
+    font-size: $font-size-sm !important;
+    color: $color-error-dark !important;
+    background: $color-state-ligth;
+    .text-locked {
+      padding-top: 3px;
+      font-weight: 400;
+      font-size: $font-size-xs !important;
+      color: $color-error-dark;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"queueName":"sqs-notifications-dev","metadata":{"origin":"Files_ms","destination":"Files_ms","user":1,"service":"files_ms create file","notify":["lsv@limatours.com.pe"]},"payload":[{"type":"new","file_id":92,"file_itinerary_id":null,"correos":"juanca2626@gmail.com","notas":null,"send_communication_file_itinerary_id":1469}]}

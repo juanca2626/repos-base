@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Experiencias",
+    "experience_name": "Experiencia",
+    "name": "Nombre",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario"
+      }
+    }
+  },
+  "en": {
+    "title": "Experiences",
+    "experience_name": "Experience",
+    "name": "Name",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form"
+      }
+    }
+  }
+}

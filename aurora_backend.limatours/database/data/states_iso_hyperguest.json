@@ -1,0 +1,856 @@
+[
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "BRC   ",
+    "codgru": "AR    ",
+    "descri": "SAN CARLOS DE BARILOCHE"
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "COR   ",
+    "codgru": "AR    ",
+    "descri": "CORDOBA"
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ROS   ",
+    "codgru": "AR    ",
+    "descri": "ROSARIO                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "SLA   ",
+    "codgru": "AR    ",
+    "descri": "SALTA                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OMO   ",
+    "codgru": "AR    ",
+    "descri": "COMODORIO RIVADAVIA           "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ONP   ",
+    "codgru": "AR    ",
+    "descri": "CONCEPCION URUGUAY            "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ACS   ",
+    "codgru": "AR    ",
+    "descri": "ACASSUSO                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "AZL   ",
+    "codgru": "AR    ",
+    "descri": "AZUL                          "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "AHA   ",
+    "codgru": "AR    ",
+    "descri": "BAHIA BLANCA                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ECC   ",
+    "codgru": "AR    ",
+    "descri": "BECCAR                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ERZ   ",
+    "codgru": "AR    ",
+    "descri": "BERAZATEGUI                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "BUE   ",
+    "codgru": "AR    ",
+    "descri": "BUENOS AIRES                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "CGM   ",
+    "codgru": "AR    ",
+    "descri": "CANADA DE GOMEZ               "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "SSE   ",
+    "codgru": "AR    ",
+    "descri": "CASEROS                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RRT   ",
+    "codgru": "AR    ",
+    "descri": "CORRIENTES                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ESQ   ",
+    "codgru": "AR    ",
+    "descri": "ESQUEL                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "AGE   ",
+    "codgru": "AR    ",
+    "descri": "GENERAL ROLA                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RNA   ",
+    "codgru": "AR    ",
+    "descri": "HERNANDO                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "JUJ   ",
+    "codgru": "AR    ",
+    "descri": "JUJUY                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "JUI   ",
+    "codgru": "AR    ",
+    "descri": "JUNIN                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "APL   ",
+    "codgru": "AR    ",
+    "descri": "LA PLATA                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OMD   ",
+    "codgru": "AR    ",
+    "descri": "LOMAS DE ZAMORA               "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OML   ",
+    "codgru": "AR    ",
+    "descri": "LOMAS DEL MIRADOR             "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ARZ   ",
+    "codgru": "AR    ",
+    "descri": "MARTINEZ                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NUV   ",
+    "codgru": "AR    ",
+    "descri": "NUEVE DE JULIO                "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OLR   ",
+    "codgru": "AR    ",
+    "descri": "OLAVARRIA                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "AAA   ",
+    "codgru": "AR    ",
+    "descri": "PARANA                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "PEJ   ",
+    "codgru": "AR    ",
+    "descri": "PEHUAJO                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OSD   ",
+    "codgru": "AR    ",
+    "descri": "POSADAS                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RAF   ",
+    "codgru": "AR    ",
+    "descri": "RAFAELA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RAJ   ",
+    "codgru": "AR    ",
+    "descri": "RAMOS MEJIA                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RIU   ",
+    "codgru": "AR    ",
+    "descri": "RIO CUARTO                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IOA   ",
+    "codgru": "AR    ",
+    "descri": "RIO GRANDE                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IOT   ",
+    "codgru": "AR    ",
+    "descri": "RIO TERCERO                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NFR   ",
+    "codgru": "AR    ",
+    "descri": "SAN FRANCISCO                 "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NIS   ",
+    "codgru": "AR    ",
+    "descri": "SN ISIDRO                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NJA   ",
+    "codgru": "AR    ",
+    "descri": "SAN JUAN                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NLS   ",
+    "codgru": "AR    ",
+    "descri": "SAN LUIS                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NME   ",
+    "codgru": "AR    ",
+    "descri": "SAN MIGUEL TUCUMAN            "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NRF   ",
+    "codgru": "AR    ",
+    "descri": "SAN RAFAEL                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "DOJ   ",
+    "codgru": "AR    ",
+    "descri": "SAN SALVADOR JUJUY            "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NTF   ",
+    "codgru": "AR    ",
+    "descri": "SANTA FE                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NTG   ",
+    "codgru": "AR    ",
+    "descri": "SANTIAGO DE ESTERO            "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NTT   ",
+    "codgru": "AR    ",
+    "descri": "SANTO TOME                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OUL   ",
+    "codgru": "AR    ",
+    "descri": "SAO PAULO                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "UTH   ",
+    "codgru": "AR    ",
+    "descri": "SUTHERLAND                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "TND   ",
+    "codgru": "AR    ",
+    "descri": "TANDIL                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "TRW   ",
+    "codgru": "AR    ",
+    "descri": "TRELEW                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "TUU   ",
+    "codgru": "AR    ",
+    "descri": "TUCUMAN                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "VED   ",
+    "codgru": "AR    ",
+    "descri": "VENADO TUERTO                 "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ILR   ",
+    "codgru": "AR    ",
+    "descri": "VILLA REGINA                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ILM   ",
+    "codgru": "AR    ",
+    "descri": "VILLA MARIA                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ILB   ",
+    "codgru": "AR    ",
+    "descri": "VILLA BOSCH                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ILD   ",
+    "codgru": "AR    ",
+    "descri": "WILDE                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ZAR   ",
+    "codgru": "AR    ",
+    "descri": "ZARATE                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "PUM   ",
+    "codgru": "AR    ",
+    "descri": "PTO MADRYN - CHUBUT           "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "FIM   ",
+    "codgru": "AR    ",
+    "descri": "FIRMAT                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IRJ   ",
+    "codgru": "AR    ",
+    "descri": "LA RIOJA                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NQN   ",
+    "codgru": "AR    ",
+    "descri": "NEUQUEN                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "USH   ",
+    "codgru": "AR    ",
+    "descri": "USHUAIA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "AEP   ",
+    "codgru": "AR    ",
+    "descri": "AEROPARQUE (BUENOS AIRES)     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "MDQ   ",
+    "codgru": "AR    ",
+    "descri": "MAR DEL PLATA                 "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RGL   ",
+    "codgru": "AR    ",
+    "descri": "RIO GALLEGOS                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "MDZ   ",
+    "codgru": "AR    ",
+    "descri": "MENDOZA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "SRC   ",
+    "codgru": "AR    ",
+    "descri": "SANTA ROSA, LA PAMPA          "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "EZE   ",
+    "codgru": "AR    ",
+    "descri": "EZEIZA                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IGR   ",
+    "codgru": "AR    ",
+    "descri": "PUERTO IGUAZU                 "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ECF   ",
+    "codgru": "AR    ",
+    "descri": "CALAFATE                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "CDO   ",
+    "codgru": "AR    ",
+    "descri": "CORDOVA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "CUE   ",
+    "codgru": "EC    ",
+    "descri": "CUENCA                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "MRR   ",
+    "codgru": "EC    ",
+    "descri": "MACARA, ECUADOR               "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "MBT   ",
+    "codgru": "EC    ",
+    "descri": "AMBATO                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GYE   ",
+    "codgru": "EC    ",
+    "descri": "GUAYAQUIL                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "LOJ   ",
+    "codgru": "EC    ",
+    "descri": "LOJA                          "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ACL   ",
+    "codgru": "EC    ",
+    "descri": "MACHALA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "TMA   ",
+    "codgru": "EC    ",
+    "descri": "MANTA                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "POV   ",
+    "codgru": "EC    ",
+    "descri": "PORTOVIEJO                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "UIO   ",
+    "codgru": "EC    ",
+    "descri": "QUITO                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RIM   ",
+    "codgru": "EC    ",
+    "descri": "RIOBAMBA                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GPS   ",
+    "codgru": "EC    ",
+    "descri": "GALAPAGOS                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OTA   ",
+    "codgru": "EC    ",
+    "descri": "OTAVALO                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "MNB   ",
+    "codgru": "EC    ",
+    "descri": "PUERTO LOPEZ                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "TNW   ",
+    "codgru": "EC    ",
+    "descri": "TENA                          "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "LTX   ",
+    "codgru": "EC    ",
+    "descri": "COTOPAXI                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ECT   ",
+    "codgru": "EC    ",
+    "descri": "BAÑOS DE AGUA SANTA           "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GYY   ",
+    "codgru": "EC    ",
+    "descri": "ISLA ISABELA                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "SMB   ",
+    "codgru": "EC    ",
+    "descri": "SAN MIGUEL DE LOS BANCOS      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "EEO   ",
+    "codgru": "EC    ",
+    "descri": "OTAVALO                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GZZ   ",
+    "codgru": "EC    ",
+    "descri": "ISLA SANTA CRUZ               "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GXX   ",
+    "codgru": "EC    ",
+    "descri": "ISLA SAN CRISTOBAL            "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "EXN   ",
+    "codgru": "EC    ",
+    "descri": "AHUANO                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "BAQ   ",
+    "codgru": "CO    ",
+    "descri": "BARRANQUILLA                  "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "CLO   ",
+    "codgru": "CO    ",
+    "descri": "CALI                          "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "MDE   ",
+    "codgru": "CO    ",
+    "descri": "MEDELLIN                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "SMR   ",
+    "codgru": "CO    ",
+    "descri": "SANTA MARTA                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ADZ   ",
+    "codgru": "CO    ",
+    "descri": "SAN ANDRES                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ANQ   ",
+    "codgru": "CO    ",
+    "descri": "ANTIOQUIA                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "AUC   ",
+    "codgru": "CO    ",
+    "descri": "ARAUCA                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IAA   ",
+    "codgru": "CO    ",
+    "descri": "ARMENIA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "BOG   ",
+    "codgru": "CO    ",
+    "descri": "BOGOTA                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "BUM   ",
+    "codgru": "CO    ",
+    "descri": "BUCARAMANGA                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GOC   ",
+    "codgru": "CO    ",
+    "descri": "CARTAGO                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "CTG   ",
+    "codgru": "CO    ",
+    "descri": "CARTAGENA                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "CUU   ",
+    "codgru": "CO    ",
+    "descri": "CUCUTA                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GIT   ",
+    "codgru": "CO    ",
+    "descri": "GIRARDOT                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "GCB   ",
+    "codgru": "CO    ",
+    "descri": "GRAN COLUMBIA                 "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IBA   ",
+    "codgru": "CO    ",
+    "descri": "ABAGUE                        "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IPI   ",
+    "codgru": "CO    ",
+    "descri": "IPIALES                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "LET   ",
+    "codgru": "CO    ",
+    "descri": "LETICIA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NIZ   ",
+    "codgru": "CO    ",
+    "descri": "MANIZALES                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "IAM   ",
+    "codgru": "CO    ",
+    "descri": "MONTERIA                      "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "EIV   ",
+    "codgru": "CO    ",
+    "descri": "NEIVA                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "APM   ",
+    "codgru": "CO    ",
+    "descri": "PALMIRA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "OPS   ",
+    "codgru": "CO    ",
+    "descri": "PASTO                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ERR   ",
+    "codgru": "CO    ",
+    "descri": "PEREIRA                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "POY   ",
+    "codgru": "CO    ",
+    "descri": "POPAYAN                       "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "NTM   ",
+    "codgru": "CO    ",
+    "descri": "SANTA MARIA                   "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "SIJ   ",
+    "codgru": "CO    ",
+    "descri": "SINCELEJO                     "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "ULU   ",
+    "codgru": "CO    ",
+    "descri": "TULUA                         "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "VAU   ",
+    "codgru": "CO    ",
+    "descri": "VALLEDUPAR                    "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "VIV   ",
+    "codgru": "CO    ",
+    "descri": "VILLAVICENCIO                 "
+  },
+  {
+    "nroemp": "5",
+    "identi": "C     ",
+    "codigo": "RLT   ",
+    "codgru": "CO    ",
+    "descri": "WORLD TRADE CENTER            "
+  }
+]

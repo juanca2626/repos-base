@@ -1,0 +1,58 @@
+.float-covid {
+  background-color: #979797;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  top: 200px;
+  right: -49px;
+  margin: 0;
+  position: fixed;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  text-align: center;
+  align-items: center;
+  padding: 5px 15px;
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    background-color: #979797;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    background-color: #979797;
+  }
+  100% {
+    opacity: 1;
+  }
+}

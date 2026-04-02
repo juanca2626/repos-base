@@ -1,0 +1,133 @@
+{
+  "es": [
+	{
+		"nrolin" : 1,
+		"texto" : "INFORMACIÓN BANCARIA ",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "BANCO DE CREDITO DEL PERU, MIAMI AGENCY 121 Alhambra Plaza, Suite 1200; Coral Gables, FL 33134 U.S.A.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "67015355",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "BCPLUS33",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "LIMA TOURS S.A.C",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "201 03 00 10004367",
+		"estado" : "OK"
+	}
+  ]
+,
+  "en": [
+	{
+		"nrolin" : 1,
+		"texto" : "BANKING INFORMATION",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "BANCO DE CREDITO DEL PERU, MIAMI AGENCY 121 Alhambra Plaza, Suite 1200; Coral Gables, FL 33134 U.S.A.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "67015355",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "BCPLUS33",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "LIMA TOURS S.A.C",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "201 03 00 10004367",
+		"estado" : "OK"
+	}
+  ]
+,
+  "pt": [
+	{
+		"nrolin" : 1,
+		"texto" : "INFORMAÇÕES BANCÁRIAS",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "BANCO DE CREDITO DEL PERU, AGÊNCIA MIAMI 121 Alhambra Plaza, Suite 1200; Coral Gables, FL 33134 EUA",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "67015355",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "BCPLUS33",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "LIMA TOURS S.A.C",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "201 03 00 10004367",
+		"estado" : "OK"
+	}
+  ]
+,
+  "it": [
+	{
+		"nrolin" : 1,
+		"texto" : "INFORMAZIONI BANCARIE",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "BANCO DE CREDITO DEL PERU, AGENZIA MIAMI 121 Alhambra Plaza, Suite 1200; Coral Gables, FL 33134 U.S.A.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "67015355",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "BCPLUS33",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "LIMA TOURS S.A.C",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "201 03 00 10004367",
+		"estado" : "OK"
+	}
+  ]
+}

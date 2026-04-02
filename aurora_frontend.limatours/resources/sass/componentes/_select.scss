@@ -1,0 +1,112 @@
+//**********************************************/
+//* SELECT */ Requiere custom.combo.js
+//**********************************************/
+// https://www.w3schools.com/howto/howto_custom_select.asp
+// https://stackoverflow.com/questions/807878/javascript-that-executes-after-page-load
+
+.custom-combo {
+    position: relative;
+}
+
+.custom-combo select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: $rojo;
+    border: 1px solid $rojo;
+    transition: background .1s;
+}
+
+.select-selected:hover {
+    border: 1px solid $rosado;
+}
+
+.select-selected.select-arrow-active {
+    border: 1px solid $rojo;
+    background: $rojo_oscuro;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    font-family: aurora !important;
+    position: absolute;
+    pointer-events: none;
+    border: 0;
+    content: "\E92E";
+
+    font-size: 1.6rem;
+    line-height: normal;
+    top: 11px;
+    right: 10px;
+    color: #fff;
+    transform: rotate(0deg);
+    transition: transform .15s;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active::after {
+    border-color: transparent transparent #fff transparent;
+    top: 11px;
+    transform: rotate(90deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .1s;
+}
+
+.select-selected {
+    padding: 8px 32px 8px 16px;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: $rojo;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxx - xxxxxxxxxxxxxxxxxxxxxxxx */
+.custom-combo {
+    .select-items {
+        background: white;
+        border: 0!important;
+        margin-top: .3rem;
+        box-shadow: 1px 2px 1px 2px #7d7d7d38;
+        div{
+            color: white;
+            padding: 8px 16px;
+            border: 1px solid rgba(209, 209, 209, 0.1)!important;
+            cursor: pointer;
+            font-size: 14px;
+            -webkit-transition: all 0.1s;
+            transition: all 0.1s;
+        }        
+    }
+
+}
+

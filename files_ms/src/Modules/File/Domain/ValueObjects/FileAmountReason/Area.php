@@ -1,0 +1,13 @@
+<?php
+
+namespace Src\Modules\File\Domain\ValueObjects\FileAmountReason;
+
+use Src\Shared\Domain\ValueObjects\StringOrNullableValueObject;
+
+final class Area extends StringOrNullableValueObject
+{
+    public function __construct(string|null $name)
+    {
+        parent::__construct($name);
+    }
+}

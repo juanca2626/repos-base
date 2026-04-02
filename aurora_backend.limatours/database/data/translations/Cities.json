@@ -1,0 +1,28 @@
+{
+  "es": {
+    "title": "Estados",
+    "state_name": "Estado",
+    "city_name": "Ciudad",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "state_incorrect": "Seleccione un estado valido",
+        "city_delete": "Error al eliminar la ciudad"
+      }
+    }
+  },
+  "en": {
+    "title": "States",
+    "state_name": "State",
+    "city_name": "City",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "state_incorrect": "Select the valid state",
+        "city_delete": "Error delete city"
+      }
+    }
+  }
+}

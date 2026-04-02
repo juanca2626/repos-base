@@ -1,0 +1,25 @@
+{
+  "es": {
+    "title": "Clasificaciones",
+    "classification_name": "Clasificación",
+    "name": "Nombre",
+    "amenity_name": "Amenidad",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario"
+      }
+    }
+  },
+  "en": {
+    "title": "Classifications",
+    "classification": "Classification",
+    "name": "Name",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form"
+      }
+    }
+  }
+}

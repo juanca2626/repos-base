@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Meals",
+    "meal_name": "Meal",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "meal_incorrect": "No puede registrar un meal ya existente.",
+        "meal_delete": "Error al eliminar el meal"
+      }
+    }
+  },
+  "en": {
+    "title": "Meals",
+    "meal_name": "Meal",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "meal_incorrect": "You can not register an existing meal",
+        "meal_delete": "Error to delete meal"
+      }
+    }
+  }
+}

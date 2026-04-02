@@ -1,0 +1,40 @@
+<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
+class ReservationPackageClientMail extends Mailable implements ShouldQueue
+{
+    use Queueable, SerializesModels;
+
+    public $reservation;
+    public $tries = 3;
+
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct($reservation)
+    {
+        $this->reservation = $reservation;
+
+        $this->connection = 'hotel_reservations_emails';
+
+        $this->queue = 'email';
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->markdown('emails.reservations.package.client');
+    }
+}

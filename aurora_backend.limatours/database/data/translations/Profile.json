@@ -1,0 +1,30 @@
+{
+  "es": {
+    "title": "Perfil",
+    "name": "Nombre",
+    "email": "Correo",
+    "password": "Clave",
+    "confirm_password": "Confirmar clave",
+    "error": {
+      "messages": {
+        "profile_error": "Error en datos ingresados",
+        "precess_exit": "Proceso realizado con exíto",
+        "profile_complete": "Completar informacion en el formulario"
+      }
+    }
+  },
+  "en": {
+    "title": "Profile",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confir Password",
+    "error": {
+      "messages": {
+        "profile_error": "Error in information charge",
+        "precess_exit": "Proceso realizado con exíto",
+        "profile_complete": "Please complete information in form"
+      }
+    }
+  }
+}

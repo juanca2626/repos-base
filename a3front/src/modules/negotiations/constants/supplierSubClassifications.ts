@@ -1,0 +1,21 @@
+// src/constants/supplierSubClassifications.ts
+
+export enum SupplierSubClassifications {
+  TOURIST_TRANSPORT = 1,
+  TOURIST_TRAINS = 2,
+  THIRD_PARTY_TRANSPORT = 3,
+  OVERFLIGHT = 4,
+  AIRLINE = 5,
+  BOAT_CATAMARAN = 6,
+  CRUISES = 7,
+  RESTAURANT = 8,
+  GASTRONOMIC_EXPERIENCES = 9,
+  HOTEL_RESTAURANT = 10,
+  HOUSE_RESTAURANT = 11,
+  TOUR_OPERATORS = 12,
+  ADVENTURE_OPERATORS = 13,
+  MUSEUMS = 14,
+  GUIDE = 15,
+  MISCELLANEOUS = 16,
+  TRUNKS = 17,
+}

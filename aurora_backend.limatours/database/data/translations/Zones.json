@@ -1,0 +1,28 @@
+{
+  "es": {
+    "city_name": "Ciudad",
+    "zone_name": "Zona",
+    "ubigeo": "Ubigeo",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "city_incorrect": "Seleccione una ciudad valida",
+        "zone_delete": "Error al eliminar la zona"
+      }
+    }
+  },
+  "en": {
+    "city_name": "City",
+    "zone_name": "Zone",
+    "ubigeo": "Ubigeo",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "city_incorrect": "Select the valid city",
+        "zone_delete": "Error delete zone"
+      }
+    }
+  }
+}

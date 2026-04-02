@@ -1,0 +1,150 @@
+//Buttons
+.btn-primary {
+  background-color: $rojo_oscuro;
+  border: 0;
+  color: $blanco;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 40px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $rojo !important;
+    border-color: $rojo !important;
+    box-shadow: inherit !important;
+  }
+}
+
+.btn-cancelar {
+  background-color: #bbbdbf;
+  border: 0;
+  color: $blanco;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 40px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #bbbdbf !important;
+    border-color: #bbbdbf !important;
+    box-shadow: inherit !important;
+    color: $blanco !important;
+  }
+}
+
+.btn-seleccionar {
+  background-color: $blanco;
+  border: 3px solid $rojo;
+  border-radius: 5px;
+  color: $rojo;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 16px;
+  padding: 3px 12px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $rojo !important;
+    border-color: $rojo !important;
+    box-shadow: inherit !important;
+    text-decoration: none;
+    color: $blanco;
+  }
+}
+
+.btn-link {
+  color: $blanco;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  width: 140px;
+  margin: 0 auto;
+  white-space: nowrap;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blanco !important;
+  }
+}
+
+.btn-Link-Underline {
+  color: $rojo !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.btn-slim {
+  font-size: 16px;
+  padding: 0 35px;
+  height: 35px;
+  line-height: 33px;
+}
+
+.remove-form {
+  position: absolute;
+  right: 10px;
+  margin-top: 8px;
+  .btn {
+    border-radius: 100px;
+    background-color: $gris_oscuro;
+    font-weight: bold;
+    padding: 1.5px 4px;
+    i {
+      color: $blanco;
+      font-size: 1rem;
+      line-height: normal;
+      vertical-align: text-bottom;
+    }
+    &:focus,
+    &:active {
+      outline: inherit !important;
+      box-shadow: 0 0 0 0.2rem rgba(205, 205, 205, 0.25);
+    }
+  }
+}
+
+.form-check {
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    background-color: $blanco;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    height: 14px;
+    width: 14px;
+    font: 10px arial;
+    border: 1px solid #bbbdbf;
+    outline: none;
+  }
+  input:checked {
+    background-color: $rojo;
+    border: 1px solid $rojo;
+    color: #fff;
+    &:before {
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      content: '\02143';
+      font-family: 'aurora' !important;
+      transform: rotate(40deg);
+    }
+  }
+}

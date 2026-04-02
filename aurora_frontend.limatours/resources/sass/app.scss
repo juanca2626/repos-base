@@ -1,0 +1,260 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//Aurora icons
+@import 'icons';
+
+// Variables
+@import 'variables';
+
+.vs--searchable:before {
+    display:none!important;
+}
+
+.v-select.disabled {
+    pointer-events: none;
+    color: #bfcbd9;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: #eef1f6;
+    border-color: #d1dbe5;
+}
+
+#filter_city {
+    padding: 5px !important;
+}
+
+#filter_city:before {
+    content: none !important;
+}
+
+#filter_city > .vs__dropdown-menu {
+    width: 100% !important;
+}
+
+.vuecal__header.fixed {
+    position: fixed;
+    z-index: 99999;
+    background-color: #FFF;
+    width: 100%;
+}
+
+._options {
+    width: 450px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    border: 1px dashed #ccc;
+    border-radius: 0;
+}
+
+._options_service:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -36px;
+    width: 0;
+    height: 0;
+    border-width: 18px;
+    border-color: transparent rgba(0, 0, 0, 0.03) transparent transparent !important;
+}
+
+.vs__selected-options {
+    max-width: 100% !important;
+}
+
+.v-select {
+    max-width: 100% !important;
+}
+
+.modal--cotizacion__header {
+    position: relative;
+}
+
+._options_service {
+    position: absolute !important;
+    width: 350px;
+    right: -130px;
+    top: -5px;
+    z-index: 9999;
+    border: 0px !important;
+    border-radius: 0 !important;
+}
+
+._options_service textarea {
+    font-size: 11px;
+    resize: none;
+}
+
+._options.hide {
+    left: -450px !important;
+}
+
+._options > .btn {
+    position: absolute;
+    right: -53px;
+    border-radius: 0;
+    border: 1px dashed #ccc;
+    bottom: 0;
+}
+
+._options > .card {
+    border-radius: 0;
+}
+
+._options > .card textarea {
+    resize: none;
+    width: 100%;
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.badge.filter {
+    font-size: 1.1em !important;
+    padding: 0.1em !important;
+}
+
+.modal--cotizacion__body .datepicker {
+    width: auto !important;
+    height: auto !important;
+    line-height: inherit !important;
+    border-radius: 0 !important;
+    display: inline !important;
+}
+
+.vuecal__event-content, .vuecal__event-title {
+    -webkit-hyphens: inherit !important;
+    hyphens: inherit !important;
+    cursor: pointer !important;
+}
+
+table.table.table-xs.table-striped.table-hover .datepicker {
+    width: 100px !important;
+}
+
+table.table.table-xs.table-striped.table-hover input {
+    width: 68px !important;
+}
+
+.EVENT {
+    border: 1px solid #eee !important;
+    color: #333 !important;
+}
+
+.EVENT.TIN, .EVENT.TRF, .EVENT.TRP, .EVENT.TOT {
+    background-color: #FBC73B !important;
+}
+
+.EVENT.RES {
+    background-color: #C8E7A9 !important;
+}
+
+.EVENT {
+    background-color: #81D7F7 !important;
+}
+
+.EVENT.PCK, .EVENT.EXC {
+    background-color: #C8E7A9 !important;
+}
+
+#table-reset {
+    width: 100% !important;
+}
+
+#table-reset, #table-reset > tr > td {
+    border: 0 !important;
+}
+
+.v-select > .vs__dropdown-menu {
+    width: 100% !important;
+    margin-top: 5px !important;
+}
+
+.v-select > .vs__dropdown-menu li {
+    font-size: 12px !important;
+}
+
+.border-red {
+    border-color: #dc3545 !important;
+    border-width: 2px !important;
+}
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
+//Vue Select
+@import "~vue-select/src/scss/vue-select.scss";
+
+//Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+//Componentes
+@import 'componentes/input';
+@import 'componentes/button';
+@import 'componentes/links';
+@import 'componentes/alertas';
+@import 'componentes/form';
+@import 'componentes/dropdown-menu';
+@import 'componentes/pagination';
+
+@import 'componentes/datepicker-vue';
+@import 'componentes/dropdown-habitacion';
+@import 'componentes/carrito';
+@import 'componentes/notificaciones';
+@import 'componentes/recordatorio';
+@import 'componentes/modal';
+@import 'componentes/mapa';
+
+@import 'componentes/notify';
+@import 'componentes/scrollbar';
+@import 'componentes/select';
+@import 'componentes/spinner';
+@import 'componentes/tooltip';
+@import 'componentes/toast';
+@import 'componentes/carousel';
+
+@import 'componentes/modales';
+
+@import 'componentes/table';
+//globales
+@import 'global';
+
+//Layout
+@import 'layout/header';
+
+//Aurora Client
+@import 'aurora-client/app';
+
+//Views
+@import 'login/view';
+@import 'page/home';
+@import 'page/hotel';
+@import 'page/services';
+@import 'page/board';
+@import 'page/reserva';
+@import 'page/reportes';
+@import 'page/paquetes';
+@import 'page/cotizador';
+@import 'page/ncotizador';
+@import 'page/consulta-files';
+@import 'page/central-ots';
+@import 'page/multimedia';
+@import 'page/train';
+//@import 'page/paquetes';
+@import 'page/master-sheets';
+@import 'page/series-groups';
+@import 'page/series-groups-old';
+@import 'page/account';
+@import 'page/files';
+@import 'page/files-dashboard';
+@import 'page/animated';
+
+
+
+

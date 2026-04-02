@@ -1,0 +1,238 @@
+// @import 'ant-design-vue/dist/antd.less';
+
+@import 'variables';
+
+// custom-variables.less
+$blue-5: #eb5757; // o el valor de color que prefieras
+$blue-6: red;
+
+// Base
+$primary-color: #bd0d12;
+$dark-color: #2f353a;
+$border-radius-base: 4px;
+$font-size-base: 16px;
+// $border-color-base: $blue-6;
+// $input-border-color: $border-color-base;
+$input-hover-border-color: $primary-color;
+
+// height HotelFormRules
+$height-base: 35px;
+$height-lg: 50px;
+$height-sm: 28px;
+
+// Tag
+$tag-default-bg: #ededff;
+$tag-default-color: red;
+
+// Button
+$btn-default-bg: #f8f8f8;
+$btn-default-border: #0000;
+$btn-font-size-md: 16px;
+$btn-height-base: $height-lg;
+$btn-height-sm: $height-base;
+
+// Select
+// $select-item-selected-color: #FFF;
+$select-selection-item-bg: #06c270;
+
+// Menu
+$menu-dark-bg: $dark-color;
+
+// //layout
+// // $height-lg: 45px;
+// // $select-single-item-height-lg: 45px;
+
+.ant-layout {
+  &-header {
+    background-color: $primary-color;
+    padding-left: 20px;
+  }
+
+  &-sider {
+    height: calc(100vh - 64px);
+    background-color: $dark-color;
+  }
+
+  &-content {
+    max-height: calc(100vh - 64px);
+    overflow: auto;
+  }
+}
+
+.header-items {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-menu {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* VERTICAL LAYOUT*/
+#verticalLayout {
+  $header-height: 55px;
+  $sider-collapsed-width: 50px;
+  // background-color: red;
+  // min-height: max-content
+
+  .ant-layout {
+    background-color: rgb(205, 205, 205);
+
+    &-header {
+      background-color: $primary-color;
+      padding-left: 10px;
+    }
+
+    &-sider {
+      height: calc(100vh - #{$header-height});
+      background-color: #2f353a;
+      padding: 0;
+
+      &-collapsed {
+        max-width: $sider-collapsed-width !important;
+        min-width: $sider-collapsed-width !important;
+        width: $sider-collapsed-width !important;
+
+        .ant-layout-sider-trigger {
+          max-width: $sider-collapsed-width;
+          min-width: $sider-collapsed-width;
+          width: $sider-collapsed-width;
+        }
+      }
+    }
+
+    &-content {
+      // min-height: 1000px;
+    }
+  }
+
+  .ant-menu {
+    background-color: #2f353a;
+    color: #ffffff;
+
+    &-item {
+      // width: 100%;
+      border-radius: 0;
+      background-color: none;
+      // margin: 0;
+      // padding: 0;
+      // padding: 11px 10px 11px 15px;
+      // border: 1px solid blue;
+
+      &:active {
+        // Estilos cuando se presiona el mouse sobre &-item
+        background-color: $primary-color;
+        color: #ffffff;
+      }
+
+      &-selected {
+        // margin: 0px;
+        color: #ffffff;
+        border: none;
+        background-color: $primary-color;
+      }
+    }
+
+    &-submenu {
+      color: #ffffff;
+
+      &-title {
+        color: #ffffff;
+        background: none;
+        // margin: 0;
+      }
+
+      &-inline {
+        width: 100%;
+        border-radius: 0;
+        // margin: 0px;
+      }
+
+      &-active:hover {
+        color: #ffffff;
+        background-color: $primary-color;
+      }
+
+      &-arrow {
+        // inset-inline-end: 5px !important;
+      }
+    }
+
+    &-sub {
+      background-color: #212121;
+    }
+
+    &-item-active {
+      color: #ffffff;
+    }
+  }
+}
+
+.vLayout {
+  .ant-modal-content {
+    // background-color: $primary-color !important;
+    padding: 0;
+    // border-radius: 8px;
+    .ant-modal-close {
+      .ant-modal-close-x {
+        .anticon {
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    .ant-modal-header {
+      background-color: $primary-color;
+      // color: #ffffff !important;
+      .ant-modal-title {
+        .custom-header {
+          background-color: $primary-color;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 8px 8px 0 0;
+          color: #ffffff;
+
+          h5 {
+            margin: 0;
+            padding: 10px 15px;
+          }
+
+          .icon-close {
+            cursor: pointer;
+
+            svg {
+              width: 25px;
+              height: 25px;
+              position: relative;
+              top: 2px;
+              right: 10px;
+
+              path {
+                stroke: white;
+
+                .icon-close:hover & {
+                  stroke: #ff0000; // Cambia el color de las líneas al pasar el mouse
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ant-modal-body {
+    }
+
+    .ant-modal-footer {
+      // padding: 5px;
+      padding: 15px !important;
+      margin: 0;
+      background-color: #f2f2f2;
+      border-radius: 0 0 8px 8px;
+    }
+  }
+}

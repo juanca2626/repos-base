@@ -1,0 +1,86 @@
+[
+  {
+    "type": "physicalintensity",
+    "object_id": 1,
+    "slug": "physicalintensity_name",
+    "value": "normal",
+    "language_id": 1
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 1,
+    "slug": "physicalintensity_name",
+    "value": "normal",
+    "language_id": 2
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 1,
+    "slug": "physicalintensity_name",
+    "value": "normal",
+    "language_id": 3
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 1,
+    "slug": "physicalintensity_name",
+    "value": "normale",
+    "language_id": 4
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 2,
+    "slug": "physicalintensity_name",
+    "value": "moderado",
+    "language_id": 1
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 2,
+    "slug": "physicalintensity_name",
+    "value": "moderate",
+    "language_id": 2
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 2,
+    "slug": "physicalintensity_name",
+    "value": "moderado",
+    "language_id": 3
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 2,
+    "slug": "physicalintensity_name",
+    "value": "moderato",
+    "language_id": 4
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 3,
+    "slug": "physicalintensity_name",
+    "value": "intenso",
+    "language_id": 1
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 3,
+    "slug": "physicalintensity_name",
+    "value": "intense",
+    "language_id": 2
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 3,
+    "slug": "physicalintensity_name",
+    "value": "intenso",
+    "language_id": 3
+  },
+  {
+    "type": "physicalintensity",
+    "object_id": 3,
+    "slug": "physicalintensity_name",
+    "value": "intenso",
+    "language_id": 4
+  }
+]

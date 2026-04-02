@@ -1,0 +1,46 @@
+{
+  "es": {
+    "title": "Markup",
+    "new_markup": "Nuevo Markup",
+    "period": "Periodo",
+    "markup_hotel": "Markup Hotel",
+    "markup_service": "Markup Service",
+    "range_user": "Alcance",
+    "edit": "Editar",
+    "all": "Todos",
+    "select_period": "Seleccione Periodo",
+    "delete": "Eliminar",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "select_period": "Seleccione un periodo",
+        "hotel_incorrect": "Seleccione un hotel valido",
+        "existing": "Periodo ya registrado",
+        "manage_hotel_delete": "Error al eliminar el contacto",
+        "markup_incorrect": "Error al registrar los datos"
+      }
+    }
+  },
+  "en": {
+    "title": "Markup",
+    "new_markup": "Nuevo Markup",
+    "period": "Periodo",
+    "markup_hotel": "Markup Hotel",
+    "markup_service": "Markup Service",
+    "status": "Status",
+    "edit": "Edit",
+    "all": "Todos",
+    "select_period": "Select Period",
+    "delete": "Delete",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "select_period": "Select period",
+        "existing": "period already registered",
+        "hotel_incorrect": "Select the valid hotel",
+        "Administrar Contacts_delete": "Error delete contacts",
+        "markup_incorrect": "Error to the  register data"
+      }
+    }
+  }
+}

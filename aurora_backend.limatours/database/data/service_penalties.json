@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "amount",
+        "status": 1
+    },
+    {
+        "id": 2,
+        "name": "percentage",
+        "status": 1
+    }
+]

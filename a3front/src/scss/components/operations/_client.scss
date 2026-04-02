@@ -1,0 +1,87 @@
+.client-component {
+  .row {
+    --bs-gutter-x: 1.1rem;
+  }
+  .scroll {
+    overflow-x: auto;
+    height: 49px;
+  }
+  hr {
+    width: 95%;
+  }
+
+  .m {
+    margin-left: 74px;
+  }
+
+  .m2 {
+    margin-right: 35px !important;
+  }
+
+  .m3 {
+    margin-right: 35px !important;
+  }
+
+  .client_title_red {
+    display: inline;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $color-primary;
+  }
+
+  .client_title_black {
+    display: inline;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $color-black;
+  }
+
+  .client_exist_title {
+    display: inline-block;
+    margin: 65px;
+    font-weight: bold;
+    font-size: $font-size-lg;
+    color: $color-black;
+  }
+
+  .client_label {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-weight: 500;
+    margin: 20px 0 0 65px;
+    font-size: $font-size-sm;
+  }
+
+  .text-input {
+    border: 1px solid #ced4da;
+    width: 100%;
+    padding: 6px 6px 6px 18px;
+  }
+
+  .text-input2 {
+    border: 1px solid #ced4da;
+    margin-right: 19px;
+    padding: 6px 6px 6px 18px;
+  }
+
+  .text-input2:focus {
+    border: 1px solid #ced4da;
+    outline: none;
+  }
+
+  .text-input:focus {
+    border: 1px solid #ced4da;
+    outline: none;
+  }
+
+  .client_exist {
+    .m {
+      margin-right: 180px;
+    }
+
+    .btn_exist {
+      margin: 30px 45px 0 0;
+    }
+  }
+}

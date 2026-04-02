@@ -1,0 +1,23 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@operations/*": ["./src/modules/operations/*"],
+      "@ordercontrol/*": ["./src/modules/order-control/*"]
+    }
+  },
+  "allowJs": true, //Permite la importación y el uso de archivos JavaScript.
+  "checkJs": false // TypeScript verificará los errores en los archivos JavaScript
+}

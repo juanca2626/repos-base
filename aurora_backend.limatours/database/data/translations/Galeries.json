@@ -1,0 +1,38 @@
+{
+  "es": {
+    "title": "Galerias",
+    "galery_name": "Galeria",
+    "galery_image": "Imagen",
+    "galery_type": "Tipo",
+    "galery_position": "Posición",
+    "type": "Tipo",
+    "position": "Posición",
+    "image": "Imagen",
+    "state": "Estatus",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario.",
+        "galery_incorrect": "No puede registrar una galeria ya existente.",
+        "galery_delete": "Error al eliminar la galeria."
+      }
+    }
+  },
+  "en": {
+    "title": "Galeries",
+    "galery_name": "Galery",
+    "galery_image": "Image",
+    "galery_type": "Type",
+    "galery_position": "Position",
+    "type": "Type",
+    "position": "Position",
+    "image": "Image",
+    "state": "State",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form.",
+        "galery_incorrect": "You can not register an existing galery.",
+        "galery_delete": "Error to delete galery"
+      }
+    }
+  }
+}

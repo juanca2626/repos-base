@@ -1,0 +1,26 @@
+export { default as BasicIcon } from './BasicIcon.vue';
+export { default as StaffIcon } from './StaffIcon.vue';
+export { default as PriceIcon } from './PriceIcon.vue';
+export { default as QuotaIcon } from './QuotaIcon.vue';
+
+export { default as EartIcon } from './EartIcon.vue';
+export { default as PlaneIcon } from './PlaneIcon.vue';
+export { default as MapIcon } from './MapIcon.vue';
+export { default as ConfettiIcon } from './ConfettiIcon.vue';
+export { default as CalendarDayIcon } from './CalendarDayIcon.vue';
+export { default as EditPencilIcon } from './EditPencilIcon.vue';
+export { default as SaveIcon } from './SaveIcon.vue';
+export { default as PlusCircleIcon } from './PlusCircleIcon.vue';
+export { default as TrashIcon } from './TrashIcon.vue';
+export { default as IconChevronLeft } from './IconChevronLeft.vue';
+export { default as IconChevronRight } from './IconChevronRight.vue';
+export { default as IconArrowRightLong } from './IconArrowRightLong.vue';
+export { default as IconArrowUpLong } from './IconArrowUpLong.vue';
+export { default as RepeatIcon } from './RepeatIcon.vue';
+export { default as UserGroupIcon } from './UserGroupIcon.vue';
+export { default as UserIcon } from './UserIcon.vue';
+export { default as ChildIcon } from './ChildIcon.vue';
+export { default as GearIcon } from './GearIcon.vue';
+export { default as TagIcon } from './TagIcon.vue';
+export { default as SyncIcon } from './SyncIcon.vue';
+export { default as TrainIcon } from './TrainIcon.vue';

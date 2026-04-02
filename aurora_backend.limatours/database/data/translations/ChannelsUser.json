@@ -1,0 +1,58 @@
+{
+  "es": {
+    "title": "Usuarios",
+    "name": "Nombre",
+    "range_user": "Alcance",
+    "password": "Clave",
+    "code": "Codigo",
+    "confirm_password": "Confirmar Clave",
+    "surname": "SurName",
+    "lastname": "LastName",
+    "users": "Usuarios",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "status": "Estatus",
+    "email": "Correo",
+    "new_user": "Nuevo Usuario",
+    "new_contact": "Nuevo Contacto",
+    "list_contact": "Lista de Contactos",
+    "list_user": "Lista de Usuarios",
+    "access_hotel": "Acceso solo a este hotel",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "hotel_incorrect": "Seleccione un hotel valido",
+        "manage_hotel_delete": "Error al eliminar el contacto"
+      }
+    }
+  },
+  "en": {
+    "title": "User",
+    "name": "Name",
+    "code": "Code",
+    "password": "Clave",
+    "confirm_password": "Confirmar Clave",
+    "new_user": "New User",
+    "new_contact": "New Contact",
+    "list_contact": "List Contact",
+    "list_user": "List Users",
+    "access_hotel": "Access only on this hotel",
+    "active": "Active",
+    "inactive": "Inactive",
+    "users": "Users",
+    "hotel": "Hotel",
+    "status": "Status",
+    "edit": "Edit",
+    "email": "Email",
+    "delete": "Delete",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "hotel_incorrect": "Select the valid hotel",
+        "Administrar Contacts_delete": "Error delete contacts"
+      }
+    }
+  }
+}

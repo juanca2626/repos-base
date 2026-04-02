@@ -1,0 +1,18 @@
+.checkbox-ui {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  .fa-check-square:before {
+    color: $red_main;
+  }
+
+  .fa-square:before {
+    color: #858585;
+  }
+
+  .checkbox-ui input {
+    display: none;
+  }
+}

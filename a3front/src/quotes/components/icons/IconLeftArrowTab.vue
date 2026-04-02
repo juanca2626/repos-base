@@ -1,0 +1,15 @@
+<script setup lang="ts"></script>
+
+<template>
+  <svg fill="none" height="21" viewBox="0 0 20 21" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M12.5 15.5L7.5 10.5L12.5 5.5"
+      stroke="#C4C4C4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+    />
+  </svg>
+</template>
+
+<style scoped lang="scss"></style>

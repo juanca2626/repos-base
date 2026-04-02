@@ -1,0 +1,191 @@
+[
+	{
+		"code" : "A",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Boutique"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Boutique"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Boutique"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Boutique"
+			}
+		]
+	},
+	{
+		"code" : "B",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Lujo"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Luxury"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Luxo"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Luxury"
+			}
+		]
+	},
+	{
+		"code" : "C",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Super Lujo"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Deluxe"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Super Luxo"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Superior Luxury"
+			}
+		]
+	},
+	{
+		"code" : "D",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Primera Superior"
+			},
+			{
+				"language_id" : 2,
+				"value" : "First Class"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Primeira Superior"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Superior First"
+			}
+		]
+	},
+	{
+		"code" : "E",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Primera"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Superior"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Primeira"
+			},
+			{
+				"language_id" : 4,
+				"value" : "First Class"
+			}
+		]
+	},
+	{
+		"code" : "F",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Turista"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Comfort"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Turistica"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Tourist"
+			}
+		]
+	},
+	{
+		"code" : "G",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Turista Superior"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Standard"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Turistica Superior"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Tourist Superior"
+			}
+		]
+	},
+	{
+		"code" : "H",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Logde / Resort"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Logde / Resort"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Logde / Resort"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Logde / Resort"
+			}
+		]
+	},
+	{
+		"code" : "I",
+		"translations" : [
+			{
+				"language_id" : 1,
+				"value" : "Hostal"
+			},
+			{
+				"language_id" : 2,
+				"value" : "Hostal"
+			},
+			{
+				"language_id" : 3,
+				"value" : "Hostal"
+			},
+			{
+				"language_id" : 4,
+				"value" : "Hostal"
+			}
+		]
+	}
+]

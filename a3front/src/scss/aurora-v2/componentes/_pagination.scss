@@ -1,0 +1,41 @@
+.pagination {
+  margin-top: 20px;
+}
+
+.page-link {
+  //color: #A71B20;
+  color: #4f4b4b;
+  padding: 8px 10px;
+  transition: all 0.1s;
+}
+
+.page-link:hover {
+  z-index: 2;
+  text-decoration: none;
+  transition: all 0.1s;
+  background: #ffeaeb;
+  color: #a71b20;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #a71b20;
+  border-color: #a71b20;
+}
+
+.page-item.disabled .page-link {
+  color: #b1b1b1;
+  background-color: #fafafa;
+}

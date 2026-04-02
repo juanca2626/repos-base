@@ -1,0 +1,65 @@
+[
+	{
+		"id" : 1,
+		"code" : 1,
+		"train_class_id" : 1,
+		"train_id" : 1,
+		"name" : "THE FIRST CLASS"
+	},
+	{
+		"id" : 2,
+		"code" : 2,
+		"train_class_id" : 2,
+		"train_id" : 1,
+		"name" : "THE VOYAGER"
+	},
+	{
+		"id" : 3,
+		"code" : 3,
+		"train_class_id" : 3,
+		"train_id" : 1,
+		"name" : "TURISTA"
+	},
+	{
+		"id" : 4,
+		"code" : 4,
+		"train_class_id" : 4,
+		"train_id" : 1,
+		"name" : "THE PRIVATE"
+	},
+	{
+		"id" : 5,
+		"code" : 5,
+		"train_class_id" : 5,
+		"train_id" : 1,
+		"name" : "PREMIUM ECONOMY"
+	},
+	{
+		"id" : 6,
+		"code" : 6,
+		"train_class_id" : 6,
+		"train_id" : 1,
+		"name" : "THE VOYAGER BIMODAL"
+	},
+	{
+		"id" : 7,
+		"train_class_id" : 7,
+		"train_id" : 1,
+		"code" : 7,
+		"name" : "THE 360°"
+	},
+	{
+		"id" : 8,
+		"code" : 8,
+		"train_class_id" : 8,
+		"train_id" : 1,
+		"name" : "THE FIRST CLASS BIMODAL"
+	},
+	{
+		"id" : 9,
+		"code" : 9,
+		"train_class_id" : 9,
+		"train_id" : 1,
+		"name" : "THE 360° BIMODAL"
+	}
+]

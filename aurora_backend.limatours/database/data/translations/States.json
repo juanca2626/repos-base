@@ -1,0 +1,28 @@
+{
+  "es": {
+    "title": "Estados",
+    "state_name": "Estado",
+    "country_name": "Pais",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "country_incorrect": "Seleccione un país valido",
+        "state_delete": "Error al eliminar el estado"
+      }
+    }
+  },
+  "en": {
+    "title": "States",
+    "state_name": "State",
+    "country_name": "Country",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "country_incorrect": "Select the valid country",
+        "state_delete": "Error delete state"
+      }
+    }
+  }
+}

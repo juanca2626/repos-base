@@ -1,0 +1,66 @@
+{
+  "es": {
+    "title": "Vendedor",
+    "new_seller": "Nuevo Vendedor",
+    "name": "Nombre",
+    "email": "Correo",
+    "code": "Codigo",
+    "password": "Clave",
+    "confirm_password": "Confirmar clave",
+    "status": "Estatus",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "photo": "Foto",
+    "dni": "Dni",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "all": "Todos",
+    "select_status": "Seleccione estado",
+    "search": {
+      "messages": {
+        "seller_name_search": "Nombre del Vendedor"
+      }
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "select_period": "Seleccione un periodo",
+        "incorrect": "Error al realizar el proceso",
+        "manage_hotel_delete": "Error al eliminar el contacto"
+      }
+    },
+    "flag_reservation": "Reservas Desactivadas"
+  },
+  "en": {
+    "title": "Seller",
+    "new_seller": "New Seller",
+    "name": "Name",
+    "email": "Email",
+    "code": "Code",
+    "password": "Password",
+    "confirm_password": "Confir Password",
+    "status": "Status",
+    "edit": "Edit",
+    "delete": "Delete",
+    "photo": "Photo",
+    "dni": "Dni",
+    "active": "Active",
+    "inactive": "Inactive",
+    "all": "All",
+    "select_status": "Select status",
+    "search": {
+      "messages": {
+        "seller_name_search": "Seller Name"
+      }
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "select_period": "Select period",
+        "incorrect": "Failed to perform the process",
+        "Administrar Contacts_delete": "Error delete contacts"
+      }
+    },
+    "flag_reservation": "Reservations Disabled"
+  }
+}

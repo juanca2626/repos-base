@@ -1,0 +1,237 @@
+.page-trains{
+    padding: 50px 0;
+    background: $blanco;
+    .container{
+        &-heigth{
+            min-height: 210px;
+        }
+        h2{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3.2rem;
+            line-height: 38px;
+            color: $gris_oscuro;
+            margin-bottom: 32px;
+        }
+        h3{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.6rem;
+            line-height: 34px;
+            color: $gris_oscuro;
+            margin-bottom: 32px;
+        }
+        h4{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2rem;
+            color: $gris_oscuro;
+        }
+
+        .formato-gris {
+            color: $gris_claro;
+        }
+        .form{
+            &-group{
+                padding: 0 5px;
+                
+                .form-control{
+                    padding-left: 41px;
+                }
+                &.destino{
+                    width: 30%;
+                    .vs--searchable  {
+                        .vs__selected-options {
+                            .vs__selected {
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+                &.fecha{
+                    width: 20.5%;
+                }
+                &.habitacion{
+                    width: 28.5%;
+                }
+                &.train{
+                    width: 17.5%;
+                }
+            }
+            &-train{
+                padding: 30px 20px 15px 20px;
+            }
+        }
+        .hoteles-encontrados {
+            line-height: 2.5;
+        }
+
+    }
+    //  primera vista
+    .one-view  {
+        .container{
+            width: 100%;
+            background: #fff;
+            margin: auto;
+            border:none;
+            padding: 0;
+            margin-bottom: 5rem;
+            .btn-secondary{
+                border-radius: 50%;
+                padding: .1rem .7rem;
+                border: 1.5px solid #007eff;
+                background: white;
+                color: #007eff;
+            }
+            .btn-secondary:focus,
+            .btn-secondary:hover,
+            .btn-secondary:active,
+            .btn-secondary:not(:disabled):not(.disabled):active {
+                border-radius: 50%;
+                padding: .1rem .7rem;
+                border: 1.5px solid #007eff;
+                background: white;
+                color: #007eff;
+                box-shadow: none;
+            }
+            .head-result{
+                font-weight: 600;
+                font-size: 12px;
+                color: #8e8e8e;
+                text-transform: uppercase;
+            }
+            .body-result {
+                background: #ffffff;
+                color: #4f4b4b;
+                font-weight: normal;
+                font-size: 14px;
+                position: relative;
+                border-bottom: 1px solid #e9e9e9;
+                padding: 2.5rem 0;
+                margin-bottom: 2rem;
+
+                .col-1,
+                .col-2,
+                .col-3 {
+                    padding-left: 13px;
+                    padding-right: 13px;
+                }
+                span{
+                    font-size: 13px;
+                    color: #4f4b4b;
+                    margin-left: 3px;
+                }
+                div{
+                    display: block;
+                    margin-top: 6px;
+                    font-size: 12px;
+                    .price {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    .tarifa {
+                        font-size: 10px;
+                    }
+                    span{
+                        font-size: 10px;
+                        color: #4f4b4b;
+                        margin-left: 2px;
+                    }
+                }
+
+                a{
+                    color: $rojo;
+                }
+
+
+                .object-fit_cover {
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    width: 105%;
+                    height: 60px;
+                    border-radius: 5px;
+                    border: 1px solid #dbdbdb;
+                }
+
+            }
+        }
+    }
+    //  Segunda vista
+    .second-view {
+        .container {
+            .image-cover {
+                -o-object-fit: cover;
+                object-fit: cover;
+                width: 250px;
+                height: 150px;
+                border-radius: 0;
+                border: none;
+            }
+            .image-icon {
+                width: 80px;
+                height: 30px;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+            h3 {
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+            span {
+                color: #C4C4C4;
+                font-size: 10px;
+            }
+
+            .box-icons {
+                color: #4F4B4B;
+                font-size: 17px;
+                margin-left: 4rem;
+                i {
+                    margin-right: 1rem;
+                }
+                span {
+                    color: #A71B20;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+
+            .dropdown-menu {
+                padding: 1rem;
+            }
+
+            .btn-secondary{
+                border-radius: 50%;
+                padding: .1rem .7rem;
+                border: none;
+                background: white;
+                color: #007eff;
+            }
+            .btn-secondary:focus,
+            .btn-secondary:hover,
+            .btn-secondary:active,
+            .btn-secondary:not(:disabled):not(.disabled):active {
+                border-radius: 50%;
+                padding: .1rem .7rem;
+                border: none;
+                background: white;
+                color: #007eff;
+                box-shadow: none;
+            }
+
+
+        }
+
+    }
+
+    .modal-footer {
+        .btn-primary {
+            width: 100px!important;
+            margin: 2rem!important;
+        }
+    }
+
+
+}
+@import 'componentes/tabs';
+@import 'componentes/filtros';

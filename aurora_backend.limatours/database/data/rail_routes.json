@@ -1,0 +1,34 @@
+[
+	{
+		"id" : 1,
+		"name" : "OLLANTAYTAMBO - MACHU PICCHU"
+	},
+	{
+		"id" : 2,
+		"name" : "MACHU PICCHU - OLLANTAYTAMBO"
+	},
+	{
+		"id" : 3,
+		"name" : "POROY - MACHU PICCHU"
+	},
+	{
+		"id" : 4,
+		"name" : "MACHU PICCHU - POROY"
+	},
+	{
+		"id" : 5,
+		"name" : "CUSCO (SAN PEDRO) - MACHU PICCHU"
+	},
+	{
+		"id" : 6,
+		"name" : "MACHU PICCHU - CUSCO (SAN PEDRO)"
+	},
+	{
+		"id" : 7,
+		"name" : "AGUAS CALIENTES - HIDROELÉCTRICA"
+	},
+	{
+		"id" : 8,
+		"name" : "HIDROELÉCTRICA - AGUAS CALIENTES"
+	}
+]

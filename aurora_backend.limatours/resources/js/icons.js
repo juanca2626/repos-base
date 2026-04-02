@@ -1,0 +1,194 @@
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+    faAngleDoubleLeft,
+    faAngleDoubleRight,
+    faAngleDown,
+    faAngleLeft,
+    faAngleRight,
+    faAngleUp,
+    faBan,
+    faBars,
+    faBed,
+    faBell,
+    faBoxes,
+    faCheck,
+    faCheckCircle,
+    faCheckDouble,
+    faCircle,
+    faClock,
+    faConciergeBell,
+    faDonate,
+    faDotCircle,
+    faDrumstickBite,
+    faEdit,
+    faExclamationCircle,
+    faExclamationTriangle,
+    faExternalLinkAlt,
+    faFileAlt,
+    faFutbol,
+    faGlobe,
+    faGlobeAmericas,
+    faHeartbeat,
+    faHiking,
+    faHotel,
+    faImages,
+    faIndustry,
+    faKey,
+    faLanguage,
+    faLink,
+    faListAlt,
+    faLock,
+    faLockOpen,
+    faMapSigns,
+    faMinus,
+    faMoneyBill,
+    faMoneyBillWaveAlt,
+    faMoneyCheckAlt,
+    faPlus,
+    faPowerOff,
+    faSearch,
+    faShareAlt,
+    faSignInAlt,
+    faSortDown,
+    faSortUp,
+    faTachometerAlt,
+    faTasks,
+    faTimes,
+    faTimesCircle,
+    faTrash,
+    faUser,
+    faUserFriends,
+    faUserLock,
+    faUserTie,
+    faVectorSquare,
+    faCheckSquare,
+    faSquare,
+    faExchangeAlt,
+    faCogs,
+    faFileExcel,
+    faBusinessTime,
+    faEnvelope,
+    faImage,
+    faTrashRestore,
+    faSave,
+    faFilter,
+    faTicketAlt,
+    faUnlockAlt,
+    faFileSignature,
+    faFolder,
+    faPercent,
+    faHandHoldingUsd,
+    faRoute,
+    faStarHalfAlt,
+    faCubes,
+    faTags,
+    faListOl,
+    faQuestionCircle,
+    faFileInvoiceDollar,
+    faCopy,
+    faHistory,
+    faBaby,
+    faLayerGroup,
+    faUserGraduate,
+    faSitemap,
+    faSync,
+    faSyncAlt,
+    faSpinner
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faUser)
+library.add(faBars)
+library.add(faLock)
+library.add(faUserFriends)
+library.add(faPlus)
+library.add(faTachometerAlt)
+library.add(faPowerOff)
+library.add(faDotCircle)
+library.add(faTimes)
+library.add(faGlobe)
+library.add(faMoneyBill)
+library.add(faLanguage)
+library.add(faShareAlt)
+library.add(faLink)
+library.add(faExternalLinkAlt)
+library.add(faMoneyBill)
+library.add(faConciergeBell)
+library.add(faMapSigns)
+library.add(faListAlt)
+library.add(faDonate)
+library.add(faBed)
+library.add(faMoneyBillWaveAlt)
+library.add(faDrumstickBite)
+library.add(faGlobeAmericas)
+library.add(faHotel)
+library.add(faFutbol)
+library.add(faFileAlt)
+library.add(faVectorSquare)
+library.add(faUserTie)
+library.add(faExclamationCircle)
+library.add(faExclamationTriangle)
+library.add(faUserLock)
+library.add(faSignInAlt)
+library.add(faTrash)
+library.add(faLockOpen)
+library.add(faCircle)
+library.add(faCheckCircle)
+library.add(faTimesCircle)
+library.add(faMoneyCheckAlt)
+library.add(faKey)
+library.add(faSearch)
+library.add(faAngleLeft)
+library.add(faAngleDoubleLeft)
+library.add(faAngleRight)
+library.add(faAngleDoubleRight)
+library.add(faEdit)
+library.add(faImages)
+library.add(faHeartbeat)
+library.add(faBan)
+library.add(faBell)
+library.add(faTasks)
+library.add(faCheckDouble)
+library.add(faHiking)
+library.add(faBoxes)
+library.add(faIndustry)
+library.add(faCheck)
+library.add(faMinus)
+library.add(faSortUp)
+library.add(faSortDown)
+library.add(faAngleDown)
+library.add(faAngleUp)
+library.add(faVectorSquare)
+library.add(faCheckSquare)
+library.add(faSquare)
+library.add(faExchangeAlt)
+library.add(faCogs)
+library.add(faFileExcel)
+library.add(faBusinessTime)
+library.add(faEnvelope)
+library.add(faImage)
+library.add(faTrashRestore)
+library.add(faSave)
+library.add(faFilter)
+library.add(faTicketAlt)
+library.add(faUnlockAlt)
+library.add(faFileSignature)
+library.add(faFolder)
+library.add(faPercent)
+library.add(faHandHoldingUsd)
+library.add(faRoute)
+library.add(faStarHalfAlt)
+library.add(faCubes)
+library.add(faTags)
+library.add(faListOl)
+library.add(faQuestionCircle)
+library.add(faFileInvoiceDollar)
+library.add(faCopy)
+library.add(faHistory)
+library.add(faBaby)
+library.add(faLayerGroup)
+library.add(faUserGraduate)
+library.add(faSitemap)
+library.add(faSync)
+library.add(faSyncAlt)
+library.add(faSpinner)
+library.add(faClock)

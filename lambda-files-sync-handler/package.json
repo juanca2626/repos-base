@@ -1,0 +1,21 @@
+{
+  "name": "files-sync-handler",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "serverless-domain-manager": "^7.0.2",
+    "serverless-esbuild": "^1.55.1",
+    "serverless-iam-roles-per-function": "^3.2.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "firebase-admin": "^13.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "serverless": "^3.38.0"
+  }
+}

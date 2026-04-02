@@ -1,0 +1,80 @@
+
+
+.table-series {
+  .t-header {
+    display: -webkit-box;
+    display: flex;
+    padding-top: 33px;
+    padding-bottom: 27px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    .selector {
+      width: 100px;
+    }
+    .codigo {
+      width: 120px;
+    }
+    .descripcion {
+      width: 280px;
+    }
+    .cliente, descripcion-s {
+      width: 200px;
+    }
+    .salida {
+      width: 150px;
+    }
+    .paxes {
+      width: 120px;
+    }
+    .leaders {
+      width: 120px;
+    }
+    .icon {
+      width: 80px;
+      font-size: 15px;
+    }
+  }
+  .t-body {
+    .celda {
+      display: flex;
+      background: #FAFAFA;
+      height: 68px;
+      border-radius: 10px;
+      margin-bottom: 11px;
+      -webkit-box-align: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      .selector {
+        width: 100px;
+      }
+      .codigo {
+        width: 120px;
+      }
+      .descripcion {
+        width: 320px;
+      }
+      .cliente {
+        width: 220px;
+      }
+      .salida {
+        width: 220px;
+      }
+      .paxes {
+        width: 120px;
+      }
+      .leaders {
+        width: 120px;
+      }
+      .icon {
+        width: 90px;
+      }
+    }
+    .c-active {
+      background: #f0f7ff;
+      font-weight: 600;
+    }
+  }
+}

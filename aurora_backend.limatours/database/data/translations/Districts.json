@@ -1,0 +1,28 @@
+{
+  "es": {
+    "city_name": "Ciudad",
+    "district_name": "Distrito",
+    "ubigeo": "Ubigeo",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "city_incorrect": "Seleccione una ciudad valida",
+        "district_delete": "Error al eliminar el distrito"
+      }
+    }
+  },
+  "en": {
+    "city_name": "City",
+    "district_name": "District",
+    "ubigeo": "Ubigeo",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "city_incorrect": "Select the valid city",
+        "district_delete": "Error delete district"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+export enum StatusTariff {
+  CONFIRMED = 'CONFIRMED',
+  PROTECTED = 'PROTECTED',
+  CLOSED = 'CLOSED',
+  FINALIZED = 'FINALIZED',
+  DYNAMIC = 'DYNAMIC',
+}

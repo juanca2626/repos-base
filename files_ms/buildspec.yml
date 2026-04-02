@@ -1,0 +1,38 @@
+version: 0.2
+phases:
+  install:
+    on-failure: ABORT
+    runtime-versions:
+      php: 8.2
+    commands:
+      - echo "Instalando dependencias necesarias..."
+  pre_build:
+    on-failure: ABORT
+    commands:
+      - echo 'Iniciando sesión en Amazon ECR...'
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $REPOSITORY
+  build:
+    on-failure: ABORT
+    commands:
+      - echo "Copiando archivo .env para producción"
+      - cp .env.prod .env
+       # Aquí usamos un argumento para la imagen base
+      - BASE_IMAGE=$REPOSITORY_PHP
+      - echo "Construyendo imagen de Docker usando $BASE_IMAGE para el entorno $ENVIRONMENT..."
+      - docker build --build-arg BASE_IMAGE=$BASE_IMAGE -t $IMAGE .
+      - docker tag $IMAGE:$IMAGE_TAG $REPOSITORY/$IMAGE:$IMAGE_TAG
+  post_build:
+    on-failure: ABORT
+    commands:
+      - echo "Verificando las imágenes construidas..."
+      - docker images ls -a
+      # Pushing la imagen al repositorio ECR
+      - echo "Pushing la imagen al repositorio ECR..."
+      - docker push $REPOSITORY/$IMAGE:$IMAGE_TAG
+      # Creando el archivo de definición de imagen para despliegue
+      - echo "Creando imagedefinitions.json para despliegue..."
+      - printf '[{"name":"files-ms","imageUri":"%s"}]' $REPOSITORY/$IMAGE:$IMAGE_TAG > imagedefinitions.json
+
+artifacts:
+  files:
+    - imagedefinitions.json

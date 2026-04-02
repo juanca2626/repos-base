@@ -1,0 +1,72 @@
+{
+  "es": {
+    "title": "Clientes",
+    "manage_client": "Administrar Cliente",
+    "advance": "Avance",
+    "code": "Codigo",
+    "name": "Nombre",
+    "service": "S%",
+    "hotel": "H%",
+    "logo": "Logo",
+    "state": "Estatus",
+    "market": "Mercado",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "have_credit": "Tiene credito",
+    "credit_line": "Linea de credito",
+    "state_name": "Estado/Departamento",
+    "status_name": "Estado",
+    "all": "Todos",
+    "select_status": "Seleccione estatus",
+    "manage_hotel": "Administrar Hotel",
+    "search": {
+      "messages": {
+        "client_code_name_search": "código  ó Nombre cliente"
+      }
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "client_market_complete": "Selecione un mercado para asociar al cliente",
+        "hotel_incorrect": "No puede registrar datos de un hotel con un código aurora existente.",
+        "gallery_incorrect": "No puede registrar el logotipo del hotel.",
+        "hotel_delete": "Error al eliminar un hotel",
+        "credit_line": "Error Debe ingresar una linea de credíto"
+      }
+    }
+  },
+  "en": {
+    "title": "Clients",
+    "manage_client": "Manages Client",
+    "advance": "Advance",
+    "code": "Code",
+    "name": "Name",
+    "service": "S%",
+    "hotel": "H%",
+    "logo": "Logo",
+    "state": "Status",
+    "market": "Market",
+    "active": "Active",
+    "inactive": "Inactive",
+    "all": "All",
+    "have_credit": "Tiene credito",
+    "credit_line": "Linea de credito",
+    "state_name": "State/Departament",
+    "select_status": "Select status",
+    "manage_hotel": "Manage Hotel",
+    "search": {
+      "messages": {
+        "client_code_name_search": "code or name client"
+      }
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "client_market_complete": "Select a market to associate with the client",
+        "gallery_incorrect": "You can not register the logotype of a hotel.",
+        "hotel_delete": "Error to delete hotel",
+        "credit_line": "Error You must enter a credit line"
+      }
+    }
+  }
+}

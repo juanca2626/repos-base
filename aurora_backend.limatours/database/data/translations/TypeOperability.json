@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Tipo de operatividad",
+    "type_operability_name": "Tipo de operatividad",
+    "name": "Nombre",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario"
+      }
+    }
+  },
+  "en": {
+    "title": "Type of operability",
+    "type_operability_name": "Type of Operability",
+    "name": "Name",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+/dist/
+public/
+
+/src/quotes/
+/src/views/negotiations/
+/src/views/operations/

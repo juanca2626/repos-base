@@ -1,0 +1,67 @@
+{
+  "es": {
+    "advance": "Avance",
+    "title": "Habitaciones",
+    "room_name": "Nombre de Habitación",
+    "room_description": "Descripción",
+    "room_details": "Detalle",
+    "room_galery": "Galería",
+    "room_position": "Posición",
+    "room_image": "Imágen",
+    "room_type_id": "Tipo de Habitación",
+    "gallery_add_images": "Agregue sus Imágenes",
+    "room_type": "Tipo",
+    "room_floor": "Piso",
+    "room_number": "Número",
+    "num_beds": "Número de Camas",
+    "max_capacity": "Capacidad Máxima",
+    "min_adults": "Mínimo de Adultos",
+    "max_adults": "Máximo de Adultos",
+    "max_child": "Máximo de Niños",
+    "max_infants": "Máximo de Infantes",
+    "min_inventory": "Mínimo de Inventario",
+    "state": "Estado",
+    "channel_code": "Código",
+    "channel_state": "Estado",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "channel_incorrect": "No puede registrar una Habitación ya existente.",
+        "channel_delete": "Error al eliminar la habitación"
+      }
+    },
+    "accept": "Aceptar"
+  },
+  "en": {
+    "advance": "Advance",
+    "title": "Rooms",
+    "room_name": "Room Name",
+    "room_description": "Description",
+    "room_details": "Details",
+    "room_galery": "Galery",
+    "room_position": "Position",
+    "room_image": "Image",
+    "room_type_id": "Room Type",
+    "gallery_add_images": "Add yours Images",
+    "room_type": "Type",
+    "room_floor": "Floor",
+    "room_number": "Number",
+    "num_beds": "Num Beds",
+    "max_capacity": "Max Capacity",
+    "min_adults": "Min Adults",
+    "max_adults": "Max Adults",
+    "max_child": "Max Child",
+    "max_infants": "Max Infants",
+    "min_inventory": "Min Inventory",
+    "state": "State",
+    "channel_code": "Code",
+    "channel_state": "State",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "channel_incorrect": "You can not register an existing room.",
+        "channel_delete": "Error to delete room"
+      }
+    }
+  }
+}

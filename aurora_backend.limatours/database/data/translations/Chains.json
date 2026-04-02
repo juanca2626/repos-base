@@ -1,0 +1,44 @@
+{
+  "es": {
+    "title": "Cadena",
+    "chain_name": "Cadena",
+    "multiple_property": "Definir Multiple Propiedad",
+    "quantity_hotels": "Cantidad Hoteles",
+    "add": "Agregar",
+    "discount": "Descuento",
+    "quantity": "Cantidad",
+    "status": {
+      "title": "Estado",
+      "active": "Activado",
+      "disable": "Desactivado"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario.",
+        "chain_incorrect": "No puede registrar una cadena ya existente.",
+        "chain_delete": "Error al eliminar la cadena"
+      }
+    }
+  },
+  "en": {
+    "title": "Chains",
+    "chain_name": "Chain",
+    "multiple_property": "Define Multiple Property",
+    "quantity_hotels": "Quantity Hotels",
+    "add": "Add",
+    "quantity": "Quantity",
+    "discount": "Discount",
+    "status": {
+      "title": "Status",
+      "active": "Activate",
+      "disable": "Desactivate"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form.",
+        "chain_incorrect": "You can not register an existing chain.",
+        "chain_delete": "Error to delete chain."
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import '@/scss/_variables.scss';
+
+.title-section-form {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-black;
+
+  &-flex {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.section-form-button-edit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-blue;
+  cursor: pointer;
+}
+
+.divider-section {
+  border-top: 1px solid $color-black-4;
+  margin-top: 1rem;
+}
+
+.button-primary-add-record {
+  font-size: 16px !important;
+  height: 48px;
+  gap: 8px;
+  background: $color-white;
+  color: $color-black;
+  border: 1px solid $color-black;
+  box-shadow: none !important;
+
+  &:hover {
+    color: $color-black;
+    background: $color-white-2;
+    border: 1px solid $color-black !important;
+  }
+}
+
+.button-action-black {
+  font-size: 16px !important;
+  height: 48px;
+  border-radius: 5px;
+  border-width: 1px;
+  color: $color-white;
+  background: $color-black;
+  border-color: $color-black !important;
+
+  &:hover {
+    color: $color-white;
+    background: $color-black-2;
+    border-color: $color-black-2 !important;
+  }
+}
+
+.button-action-primary-strong {
+  font-size: 16px !important;
+  height: 48px;
+  border-radius: 5px;
+  border-width: 1px;
+  color: $color-white;
+  background: $color-primary-strong;
+  border-color: $color-primary-strong !important;
+
+  &:hover {
+    color: $color-white;
+    background: $color-primary-60;
+    border-color: $color-primary-60 !important;
+  }
+}
+
+.button-cancel-white {
+  font-size: 16px !important;
+  height: 48px;
+  border-radius: 5px;
+  background: $color-white;
+  color: $color-black;
+  border: 1px solid $color-black;
+  box-shadow: none !important;
+
+  &:hover {
+    color: $color-black;
+    background: $color-white-2;
+    border: 1px solid $color-black !important;
+  }
+}
+
+.edit-data-summary {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  row-gap: 6px;
+  margin-bottom: 6px;
+
+  .summary-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-black-3;
+  }
+
+  .summary-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-black-3;
+    margin-right: 10px;
+  }
+
+  .ellipsis-text {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+  }
+}
+
+.summary-item {
+  font-size: 14px;
+  color: $color-black-3;
+
+  &-title {
+    font-weight: 600;
+  }
+
+  &-description {
+    font-weight: 400;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.pl-edit-data-summary {
+  padding-left: 16px;
+}
+
+.b-bottom {
+  padding-bottom: 24px;
+  margin-bottom: 18px !important;
+  border-bottom: 1px solid #babcbd;
+}

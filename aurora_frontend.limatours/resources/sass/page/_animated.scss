@@ -1,0 +1,535 @@
+$faa-speed-coeff-fast: 0.5;
+$faa-speed-coeff-slow: 1.5;
+
+$faa-bounce-speed: 2s;
+@keyframes bounce {
+    0%, 10%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40%, 60% {
+        transform: translateY(-15px);
+    }
+}
+@keyframes bounce-reverse {
+    0%, 10%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40%, 60% {
+        transform: translateY(15px);
+    }
+}
+.faa-bounce.animated,
+.faa-bounce.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce {
+    animation: bounce $faa-bounce-speed ease infinite;
+}
+.faa-bounce.animated.faa-fast,
+.faa-bounce.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-fast {
+    animation: bounce ($faa-bounce-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-bounce.animated.faa-slow,
+.faa-bounce.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-slow {
+    animation: bounce ($faa-bounce-speed * $faa-speed-coeff-slow) ease infinite;
+}
+.faa-bounce.faa-reverse.animated,
+.faa-bounce.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse {
+    animation: bounce-reverse $faa-bounce-speed ease infinite;
+}
+.faa-bounce.faa-reverse.animated.faa-fast,
+.faa-bounce.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse.faa-fast {
+    animation: bounce-reverse ($faa-bounce-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-bounce.faa-reverse.animated.faa-slow,
+.faa-bounce.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse.faa-slow {
+    animation: bounce-reverse ($faa-bounce-speed * $faa-speed-coeff-slow) ease infinite;
+}
+
+$faa-burst-speed: 2s;
+@keyframes burst {
+    0% {
+        opacity:.6;
+    }
+    50% {
+        transform:scale(1.8);
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+.faa-burst.animated,
+.faa-burst.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-burst {
+    animation: burst $faa-burst-speed infinite linear;
+}
+.faa-burst.animated.faa-fast,
+.faa-burst.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-fast {
+    animation: burst ($faa-burst-speed * $faa-speed-coeff-fast) infinite linear;
+}
+.faa-burst.animated.faa-slow,
+.faa-burst.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-slow {
+    animation: burst ($faa-burst-speed * $faa-speed-coeff-slow) infinite linear;
+}
+
+$faa-falling-speed: 2s;
+@keyframes falling {
+    0% {
+        transform:translateY(-50%);
+        opacity:0;
+    }
+    50% {
+        transform:translateY(0%);
+        opacity:1;
+    }
+    100% {
+        transform:translateY(50%);
+        opacity:0;
+    }
+}
+@keyframes falling-reverse {
+    0% {
+        transform:translateY(50%);
+        opacity:0;
+    }
+    50% {
+        transform:translateY(0%);
+        opacity:1;
+    }
+    100% {
+        transform:translateY(-50%);
+        opacity:0;
+    }
+}
+.faa-falling.animated,
+.faa-falling.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling {
+    animation: falling $faa-falling-speed linear infinite;
+}
+.faa-falling.animated.faa-fast,
+.faa-falling.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-fast {
+    animation: falling ($faa-falling-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-falling.animated.faa-slow,
+.faa-falling.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-slow {
+    animation: falling ($faa-falling-speed * $faa-speed-coeff-slow) linear infinite;
+}
+.faa-falling.faa-reverse.animated,
+.faa-falling.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse,
+.faa-rising.animated,
+.faa-rising.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-rising {
+    animation: falling-reverse $faa-falling-speed linear infinite;
+}
+.faa-falling.faa-reverse.animated.faa-fast,
+.faa-falling.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse.faa-fast,
+.faa-rising.animated.faa-fast,
+.faa-rising.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-fast {
+    animation: falling-reverse ($faa-falling-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-falling.faa-reverse.animated.faa-slow,
+.faa-falling.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse.faa-slow,
+.faa-rising.animated.faa-slow,
+.faa-rising.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-slow {
+    animation: falling-reverse ($faa-falling-speed * $faa-speed-coeff-slow) linear infinite;
+}
+
+$faa-flash-speed: 2s;
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+.faa-flash.animated,
+.faa-flash.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-flash {
+    animation: flash $faa-flash-speed ease infinite;
+}
+.faa-flash.animated.faa-fast,
+.faa-flash.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-fast {
+    animation: flash ($faa-flash-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-flash.animated.faa-slow,
+.faa-flash.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-slow {
+    animation: flash ($faa-flash-speed * $faa-speed-coeff-slow) ease infinite;
+}
+
+$faa-float-speed: 2s;
+@keyframes float{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+.faa-float.animated,
+.faa-float.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-float {
+    animation: float $faa-float-speed linear infinite;
+}
+.faa-float.animated.faa-fast,
+.faa-float.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-float.faa-fast {
+    animation: float ($faa-float-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-float.animated.faa-slow,
+.faa-float.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-float.faa-slow {
+    animation: float ($faa-float-speed * $faa-speed-coeff-slow) linear infinite;
+}
+
+$faa-horizontal-speed: 2s;
+@keyframes horizontal {
+    0%, 12%, 24%, 36%, 100% {
+        transform: translate(0,0);
+    }
+    6%, 18%, 30% {
+        transform: translate(5px,0);
+    }
+}
+@keyframes horizontal-reverse {
+    0%, 12%, 24%, 36%, 100% {
+        transform: translate(0,0);
+    }
+    6%, 18%, 30% {
+        transform: translate(-5px,0);
+    }
+}
+.faa-horizontal.animated,
+.faa-horizontal.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal {
+    animation: horizontal $faa-horizontal-speed ease infinite;
+}
+.faa-horizontal.animated.faa-fast,
+.faa-horizontal.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-fast {
+    animation: horizontal ($faa-horizontal-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-horizontal.animated.faa-slow,
+.faa-horizontal.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-slow {
+    animation: horizontal ($faa-horizontal-speed * $faa-speed-coeff-slow) ease infinite;
+}
+.faa-horizontal.faa-reverse.animated,
+.faa-horizontal.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-reverse {
+    animation: horizontal-reverse $faa-horizontal-speed ease infinite;
+}
+.faa-horizontal.faa-reverse.animated.faa-fast,
+.faa-horizontal.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-reverse.faa-fast {
+    animation: horizontal-reverse ($faa-horizontal-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-horizontal.faa-reverse.animated.faa-slow,
+.faa-horizontal.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-reverse.faa-slow {
+    animation: horizontal-reverse ($faa-horizontal-speed * $faa-speed-coeff-slow) ease infinite;
+}
+
+$faa-passing-speed: 2s;
+@keyframes passing {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}
+@keyframes passing-reverse {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+.faa-passing.animated,
+.faa-passing.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing {
+    animation: passing $faa-passing-speed linear infinite;
+}
+.faa-passing.animated.faa-fast,
+.faa-passing.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-fast {
+    animation: passing ($faa-passing-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-passing.animated.faa-slow,
+.faa-passing.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-slow {
+    animation: passing ($faa-passing-speed * $faa-speed-coeff-slow) linear infinite;
+}
+.faa-passing.faa-reverse.animated,
+.faa-passing.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-reverse {
+    animation: passing-reverse $faa-passing-speed linear infinite;
+}
+.faa-passing.faa-reverse.animated.faa-fast,
+.faa-passing.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.reverse.faa-fast {
+    animation: passing-reverse ($faa-passing-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-passing.faa-reverse.animated.faa-slow,
+.faa-passing.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-reverse.faa-slow {
+    animation: passing-reverse ($faa-passing-speed * $faa-speed-coeff-slow) linear infinite;
+}
+
+$faa-pulse-speed: 2s;
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+}
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+    animation: pulse $faa-pulse-speed linear infinite;
+}
+.faa-pulse.animated.faa-fast,
+.faa-pulse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-pulse.faa-fast {
+    animation: pulse ($faa-pulse-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-pulse.animated.faa-slow,
+.faa-pulse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-pulse.faa-slow {
+    animation: pulse ($faa-pulse-speed * $faa-speed-coeff-slow) linear infinite;
+}
+
+$faa-ring-speed: 2s;
+@keyframes ring {
+    0% {
+        transform: rotate(-15deg);
+    }
+    2% {
+        transform: rotate(15deg);
+    }
+    4%, 12% {
+        transform: rotate(-18deg);
+    }
+    6%, 14% {
+        transform: rotate(18deg);
+    }
+    8% {
+        transform: rotate(-22deg);
+    }
+    10% {
+        transform: rotate(22deg);
+    }
+    16% {
+        transform: rotate(-12deg);
+    }
+    18% {
+        transform: rotate(12deg);
+    }
+    20%, 100% {
+        transform: rotate(0deg);
+    }
+}
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-ring {
+    animation: ring $faa-ring-speed ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0px;
+    transform-origin-z: initial;
+}
+.faa-ring.animated.faa-fast,
+.faa-ring.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-ring.faa-fast {
+    animation: ring ($faa-ring-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-ring.animated.faa-slow,
+.faa-ring.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-ring.faa-slow {
+    animation: ring ($faa-ring-speed * $faa-speed-coeff-slow) ease infinite;
+}
+
+$faa-shake-speed: 2.5s;
+.faa-shake.animated,
+.faa-shake.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-shake {
+    animation: wrench $faa-shake-speed ease infinite;
+}
+.faa-shake.animated.faa-fast,
+.faa-shake.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-shake.faa-fast {
+    animation: wrench ($faa-shake-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-shake.animated.faa-slow,
+.faa-shake.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-shake.faa-slow {
+    animation: wrench ($faa-shake-speed * $faa-speed-coeff-slow) ease infinite;
+}
+
+$faa-spin-speed: 1.5s;
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin-reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-359deg);
+    }
+}
+.faa-spin.animated,
+.faa-spin.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-spin {
+    animation: spin $faa-spin-speed linear infinite;
+}
+.faa-spin.animated.faa-fast,
+.faa-spin.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-fast {
+    animation: spin ($faa-spin-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-spin.animated.faa-slow,
+.faa-spin.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-slow {
+    animation: spin ($faa-spin-speed * $faa-speed-coeff-slow) linear infinite;
+}
+.faa-spin.faa-reverse.animated,
+.faa-spin.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse {
+    animation: spin-reverse $faa-spin-speed linear infinite;
+}
+.faa-spin.faa-reverse.animated.faa-fast,
+.faa-spin.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse.faa-fast {
+    animation: spin-reverse ($faa-spin-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-spin.faa-reverse.animated.faa-slow,
+.faa-spin.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse.faa-slow {
+    animation: spin-reverse ($faa-spin-speed * $faa-speed-coeff-slow) linear infinite;
+}
+
+$faa-tada-speed: 2s;
+@keyframes tada {
+    0% {
+        transform: scale(1);
+    }
+    10%, 20%  {
+        transform: scale(.9) rotate(-8deg);;
+    }
+    30%, 50%, 70%  {
+        transform: scale(1.3) rotate(8deg);
+    }
+    40%, 60%  {
+        transform: scale(1.3) rotate(-8deg);
+    }
+    80%, 100%  {
+        transform: scale(1) rotate(0);
+    }
+}
+.faa-tada.animated,
+.faa-tada.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-tada {
+    animation: tada $faa-tada-speed linear infinite;
+}
+.faa-tada.animated.faa-fast,
+.faa-tada.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-tada.faa-fast {
+    animation: tada ($faa-tada-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-tada.animated.faa-slow,
+.faa-tada.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-tada.faa-slow {
+    animation: tada ($faa-tada-speed * $faa-speed-coeff-slow) linear infinite;
+}
+
+$faa-vertical-speed: 2s;
+@keyframes vertical {
+    0%, 8%, 16% {
+        transform: translate(0,-3px);
+    }
+    4%, 12%, 20% {
+        transform: translate(0,3px);
+    }
+    22%, 100% {
+        transform: translate(0,0);
+    }
+}
+.faa-vertical.animated,
+.faa-vertical.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-vertical {
+    animation: vertical $faa-vertical-speed ease infinite;
+}
+.faa-vertical.animated.faa-fast,
+.faa-vertical.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-fast {
+    animation: vertical ($faa-vertical-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-vertical.animated.faa-slow,
+.faa-vertical.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-slow {
+    animation: vertical ($faa-vertical-speed * $faa-speed-coeff-slow) ease infinite;
+}
+
+$faa-vertical-speed: 2s;
+@keyframes vertical {
+    0%, 8%, 16% {
+        transform: translate(0,-3px);
+    }
+    4%, 12%, 20% {
+        transform: translate(0,3px);
+    }
+    22%, 100% {
+        transform: translate(0,0);
+    }
+}
+.faa-vertical.animated,
+.faa-vertical.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-vertical {
+    animation: vertical $faa-vertical-speed ease infinite;
+}
+.faa-vertical.animated.faa-fast,
+.faa-vertical.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-fast {
+    animation: vertical ($faa-vertical-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-vertical.animated.faa-slow,
+.faa-vertical.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-slow {
+    animation: vertical ($faa-vertical-speed * $faa-speed-coeff-slow) ease infinite;
+}

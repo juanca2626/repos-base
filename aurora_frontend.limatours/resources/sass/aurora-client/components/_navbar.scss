@@ -1,0 +1,147 @@
+.navbar-client {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    background: $white_main;
+    font-family: $font_basic;
+    font-size: 15px;
+    //width: 100%;
+    //z-index: 10000;
+    &-brand-client {
+        background: $red_main;
+        padding: 0 5px;
+        margin: 0;
+
+        img {
+            width: 100px;
+            @include tablet {
+                width: 130px;
+            }
+            @include desktop {
+                width: 160px;
+            }
+        }
+    }
+
+    .navbar-brand-client img {
+        width: 190px;
+        margin-bottom: -9px;
+        position: relative;
+        z-index: 999999999;
+    }
+
+    &:focus,
+    &:active {
+        background: $white_main;
+        outline: inherit;
+        box-shadow: inherit !important;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            padding-right: 2.5rem;
+            padding-left: 2.5rem;
+            font-weight: 500;
+
+            &.link-icon {
+                font-size: 20px;
+                padding-right: 1rem;
+                padding-left: 1rem;
+
+                .icon-user {
+                    background: $red_main;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    color: $white_main;
+                }
+
+                .icon-menu-client {
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    color: $red_main;
+                }
+            }
+        }
+    }
+
+    .form-control {
+        //height: auto!important;
+        border: 1px solid transparent;
+    }
+
+    .vs--searchable {
+        //padding: .5rem!important;
+        width: 60px;
+        padding-left: 0 !important;
+
+        .vs__search:focus {
+            //padding-top: 1.2rem;
+            border-color: transparent !important;
+            outline: 0;
+            box-shadow: none;
+            transition: all 0.15s linear;
+        }
+
+        .vs__selected {
+            color: $red_main;
+        }
+
+        .style-chooser .vs__clear,
+        .style-chooser .vs__open-indicator {
+            fill: #394066;
+        }
+    }
+
+    .vs--searchable:before {
+        content: "\e956" !important;
+        font-family: auroraclient !important;
+        font-size: 20px;
+        position: absolute;
+        right: 15px;
+        color: $red_main;
+        top: 4px;
+        left: 25px;
+    }
+
+    .vs--searchable .vs__dropdown-menu .vs__dropdown-option:before {
+        content: "" !important;
+        color: #BBBDBF;
+        font-size: 2rem;
+        position: absolute;
+        left: 15px;
+        top: 0;
+    }
+
+    .vs--searchable .vs__dropdown-menu .vs__dropdown-option.vs__dropdown-option--highlight:before {
+        content: "" !important;
+        color: $red_darker;
+        font-size: 2rem;
+        position: absolute;
+        left: 15px;
+        top: 0;
+    }
+
+    .dropdown-toggle {
+
+        border: 0px solid transparent !important;
+
+        &:hover {
+            color: inherit !important;
+        }
+
+        &::after {
+
+        }
+    }
+
+    .cotizacion-client:before, .cotizacion-client:after {
+        left: 90% !important;
+    }
+}

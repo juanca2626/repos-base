@@ -1,0 +1,615 @@
+service: lambda-files-sync-handler
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region,'us-east-1'}
+  # memorySize: 512  # Aumentar la memoria a 512 MB
+  timeout: 180
+
+  environment:
+    STAGE: ${self:custom.STAGE}
+    BACKEND_URL_FILES_ONEDB: ${self:custom.FILES_ONEDB}
+    BACKEND_URL_INFORMIX: ${self:custom.INFORMIX}
+    BACKEND_URL_NEW_AURORA: ${self:custom.NEW_AURORA}
+    BACKEND_URL_AUTH_COGNITO: ${self:custom.AUTH_COGNITO}
+    BACKEND_URL_AMAZON: ${self:custom.AMAZON}
+    BACKEND_URL_AURORA: ${self:custom.AURORA}
+    BACKEND_URL_AURORA_PROD: ${self:custom.AURORA_PROD}
+    BACKEND_URL_S3: ${self:custom.S3}
+    BACKEND_URL_HYPERGUEST: ${self:custom.HYPERGUEST}
+    TOKEN_HYPERGUEST: ${self:custom.TOKEN_HYPERGUEST}
+    CLIENT_APP_ID: ${self:custom.CLIENT_APP_ID}
+    CLIENT_APP_SECRET: ${self:custom.CLIENT_APP_SECRET}
+    USER_POOL_URL: ${self:custom.USER_POOL_URL}
+    WEBSOCKET_ENDPOINT: ${self:custom.WEBSOCKET_ENDPOINT}
+    WEBSOCKET_TABLE_NAME: ${self:custom.WEBSOCKET_TABLE_NAME}
+
+custom:
+  STAGE: ${self:provider.stage}
+  FILES_ONEDB: ${ssm:/FILES_ONEDB/baseURL/${self:provider.stage}}
+  INFORMIX: ${ssm:/NodeIFX/baseURL/${self:provider.stage}}
+  NEW_AURORA: ${ssm:/MsFiles/baseURL/${self:provider.stage}}
+  AUTH_COGNITO: ${ssm:/A3/Auth/baseURL/${self:provider.stage}}
+  AMAZON: ${ssm:/SQS/baseURL/${self:provider.stage}}
+  AURORA: ${ssm:/A2/baseURL/${self:provider.stage}}
+  AURORA_PROD: ${ssm:/A2/baseURL/prod}
+  S3: ${ssm:/S3/baseURL/prod}
+  HYPERGUEST: ${ssm:/Hyperguest/baseURL/${self:provider.stage}}
+  TOKEN_HYPERGUEST: ${ssm:/Hyperguest/token/${self:provider.stage}}
+  CLIENT_APP_ID: ${ssm:/Cognito/CLIENT_APP2_ID/${self:provider.stage}}
+  CLIENT_APP_SECRET: ${ssm:/Cognito/CLIENT_APP2_SECRET/${self:provider.stage}}
+  USER_POOL_URL: ${ssm:/Cognito/DOMAIN/${self:provider.stage}}
+  WEBSOCKET_ENDPOINT: ${ssm:/WEBSOCKET/baseURL/${self:provider.stage}}
+  WEBSOCKET_TABLE_NAME: WebSocketConnections
+  esbuild:
+    bundle: true
+    minify: true
+    sourcemap: false
+    target: node20
+    exclude: ['aws-sdk']
+
+functions:
+  create-fx:
+    name: lambda-files-sync-create-${self:provider.stage}
+    handler: src/create/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - create
+              - Arn
+          batchSize: 1
+  update-fx:
+    name: lambda-files-sync-update-${self:provider.stage}
+    handler: src/update/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - update
+              - Arn
+          batchSize: 1
+  schedule-fx:
+    name: lambda-files-sync-schedule-${self:provider.stage}
+    handler: src/schedule/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - schedule
+              - Arn
+          batchSize: 1
+  vip-fx:
+    name: lambda-files-sync-vip-${self:provider.stage}
+    handler: src/vip/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - vip
+              - Arn
+          batchSize: 1
+  amounts-fx:
+    name: lambda-files-sync-amounts-${self:provider.stage}
+    handler: src/amounts/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - amounts
+              - Arn
+          batchSize: 1
+  accommodations-fx:
+    name: lambda-files-sync-accommodations-${self:provider.stage}
+    handler: src/accommodations/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - accommodations
+              - Arn
+          batchSize: 1
+  cancellation-fx:
+    name: lambda-files-sync-cancellation-${self:provider.stage}
+    handler: src/cancellation/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - cancellation
+              - Arn
+          batchSize: 1
+  add-fx:
+    name: lambda-files-sync-add-${self:provider.stage}
+    handler: src/add/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - add
+              - Arn
+          batchSize: 1
+  cancel-file-fx:
+    name: lambda-files-sync-cancel-file-${self:provider.stage}
+    handler: src/cancel-file/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - cancelFile
+              - Arn
+          batchSize: 1
+  activate-file-fx:
+    name: lambda-files-sync-activate-file-${self:provider.stage}
+    handler: src/activate-file/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - activateFile
+              - Arn
+          batchSize: 1
+  repository-fx:
+    name: lambda-files-sync-repository-${self:provider.stage}
+    handler: src/repository/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - repository
+              - Arn
+          batchSize: 1
+  passengers-fx:
+    name: lambda-files-sync-passengers-${self:provider.stage}
+    handler: src/passengers/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - passengers
+              - Arn
+          batchSize: 1
+  flights-fx:
+    name: lambda-files-sync-flights-${self:provider.stage}
+    handler: src/flights/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - flights
+              - Arn
+          batchSize: 1
+  confirmation-code-fx:
+    name: lambda-files-sync-confirmation-code-${self:provider.stage}
+    handler: src/confirmation-code/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - confirmationCode
+              - Arn
+          batchSize: 1
+  communication-hotel-fx:
+    name: lambda-files-sync-communication-hotel-${self:provider.stage}
+    handler: src/communication-hotel/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - communicationHotel
+              - Arn
+          batchSize: 1
+  notification-master-services-fx:
+    name: lambda-files-sync-notification-master-services-${self:provider.stage}
+    handler: src/notification-master-services/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - notificationMasterServices
+              - Arn
+          batchSize: 1
+  date-fx:
+    name: lambda-files-sync-date-${self:provider.stage}
+    handler: src/date/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - date
+              - Arn
+          batchSize: 1
+  statement-fx:
+    name: lambda-files-sync-statement-${self:provider.stage}
+    handler: src/statement/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - statement
+              - Arn
+          batchSize: 1
+  notification-status-fx:
+    name: lambda-files-sync-notification-status-${self:provider.stage}
+    handler: src/notification-status/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - notificationStatus
+              - Arn
+          batchSize: 1
+  unlock-file-fx:
+    name: lambda-files-sync-unlock-file-${self:provider.stage}
+    handler: src/unlock-file/handler.handler
+    reservedConcurrency: 3
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - unlockFile
+              - Arn
+          batchSize: 1
+resources:
+  Resources:
+    # CREATE
+    create:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-create-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - createDead
+              - Arn
+          maxReceiveCount: 50
+    createDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-create-dead-${self:provider.stage}
+    
+    # UPDATE
+    update:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-update-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - updateDead
+              - Arn
+          maxReceiveCount: 50
+    updateDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-update-dead-${self:provider.stage}
+
+    # SCHEDULE
+    schedule:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-schedule-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - scheduleDead
+              - Arn
+          maxReceiveCount: 50
+    scheduleDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-schedule-dead-${self:provider.stage}
+    
+    # VIP
+    vip:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-vip-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - vipDead
+              - Arn
+          maxReceiveCount: 50
+    vipDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-vip-dead-${self:provider.stage}
+
+    # AMOUNTS
+    amounts:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-amounts-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - amountsDead
+              - Arn
+          maxReceiveCount: 50
+    amountsDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-amounts-dead-${self:provider.stage}
+
+    # ACCOMMODATIONS
+    accommodations:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-accommodations-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - accommodationsDead
+              - Arn
+          maxReceiveCount: 50
+    accommodationsDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-accommodations-dead-${self:provider.stage}
+
+    # CANCELLATION
+    cancellation:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-cancellation-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - cancellationDead
+              - Arn
+          maxReceiveCount: 50
+    cancellationDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-cancellation-dead-${self:provider.stage}
+
+    # ADD
+    add:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-add-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - addDead
+              - Arn
+          maxReceiveCount: 50
+    addDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-add-dead-${self:provider.stage}
+
+    # CANCEL FILE
+    cancelFile:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-cancel-file-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - cancelFileDead
+              - Arn
+          maxReceiveCount: 50
+    cancelFileDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-cancel-file-dead-${self:provider.stage}
+
+    # ACTIVATE FILE
+    activateFile:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-activate-file-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - activateFileDead
+              - Arn
+          maxReceiveCount: 50
+    activateFileDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-activate-file-dead-${self:provider.stage}
+
+    # REPOSITORY FILE
+    repository:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-repository-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - repositoryDead
+              - Arn
+          maxReceiveCount: 50
+    repositoryDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-repository-dead-${self:provider.stage}
+
+    # PASSENGERS
+    passengers:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-passengers-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - passengersDead
+              - Arn
+          maxReceiveCount: 50
+    passengersDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-passengers-dead-${self:provider.stage}
+
+    # FLIGHTS
+    flights:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-flights-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - flightsDead
+              - Arn
+          maxReceiveCount: 50
+    flightsDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-flights-dead-${self:provider.stage}
+
+    # CONFIRMATION CODE ROOM
+    confirmationCode:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-confirmation-code-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - confirmationCodeDead
+              - Arn
+          maxReceiveCount: 50
+    confirmationCodeDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-confirmation-code-dead-${self:provider.stage}
+
+    #COMMUNICATION HOTEL
+    communicationHotel:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-communication-hotel-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - communicationHotelDead
+              - Arn
+          maxReceiveCount: 50
+    communicationHotelDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-communication-hotel-dead-${self:provider.stage}
+
+    # NOTIFICATION MASTER SERVICES
+    notificationMasterServices:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-notification-master-services-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - notificationMasterServicesDead
+              - Arn
+          maxReceiveCount: 50
+    notificationMasterServicesDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-notification-master-services-dead-${self:provider.stage}
+
+    # DATE
+    date:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-date-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - dateDead
+              - Arn
+          maxReceiveCount: 50
+    dateDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-date-dead-${self:provider.stage}
+
+    # STATEMENT
+    statement:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-statement-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - statementDead
+              - Arn
+          maxReceiveCount: 50
+    statementDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-statement-dead-${self:provider.stage}
+
+    # NOTIFICATION STATUS
+    notificationStatus:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-notification-status-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - notificationStatusDead
+              - Arn
+          maxReceiveCount: 50
+    notificationStatusDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-notification-status-dead-${self:provider.stage}
+
+    # UNLOCK FILE
+    unlockFile:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: sqs-files-sync-unlock-file-${self:provider.stage}
+        VisibilityTimeout: 200 # Mayor que el timeout de Lambda
+        RedrivePolicy:
+          deadLetterTargetArn:
+            Fn::GetAtt:
+              - unlockFileDead
+              - Arn
+          maxReceiveCount: 50
+    unlockFileDead:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: sqs-files-sync-unlock-file-dead-${self:provider.stage}

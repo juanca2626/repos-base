@@ -1,0 +1,38 @@
+{
+  "es": {
+    "title": "Administrar Paquetes",
+    "manage_package_name": "Administrar Paquete",
+    "texts": "Textos",
+    "gallery": "Galería",
+    "customers": "Clientes",
+    "outputs": "Salidas",
+    "configurations": "Configuraciones",
+    "rooms": "Habitaciones",
+    "rates": "Tarifas",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "manage_package_incorrect": "Seleccione un paquete valido",
+        "manage_package_delete": "Error al eliminar el paquete"
+      }
+    }
+  },
+  "en": {
+    "title": "Manage Packages",
+    "manage_package_name": "Manage package",
+    "texts": "Texts",
+    "gallery": "Gallery",
+    "customers": "Customers",
+    "outputs": "Outputs",
+    "configurations": "Configurations",
+    "rooms": "Rooms",
+    "rates": "Rates",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "manage_package_incorrect": "Select the valid package",
+        "manage_package_delete": "Error delete package"
+      }
+    }
+  }
+}

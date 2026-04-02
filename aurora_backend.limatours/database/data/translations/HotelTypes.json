@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Tipo de Hoteles",
+    "hoteltype_name": "Tipo de Hotel",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "hoteltype_incorrect": "No puede registrar un tipo de hotel ya existente.",
+        "hoteltype_delete": "Error al eliminar un tipo de hotel"
+      }
+    }
+  },
+  "en": {
+    "title": "Hotel Types",
+    "hoteltype_name": "Hotel Type",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "hoteltype_incorrect": "You can not register an existing hotel type",
+        "hoteltype_delete": "Error to delete hotel type"
+      }
+    }
+  }
+}

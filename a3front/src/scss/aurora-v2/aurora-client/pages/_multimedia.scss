@@ -1,0 +1,175 @@
+.clients-multimedia {
+  .hero__multimedia {
+    background: url('/images/bg-multimedia.png') no-repeat center center fixed;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    text-align: center;
+    color: #fff;
+    padding-top: 120px;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    .searcher {
+      background: rgba(255, 255, 255, 0.58);
+      margin: 2rem 30rem;
+      letter-spacing: 1.5px;
+      padding: 2rem 6rem;
+      border-radius: 10px;
+    }
+
+    .search {
+      width: max-content;
+    }
+  }
+  .select-image {
+    position: absolute;
+    padding: 0.1rem 0.2rem 0rem 0.18rem;
+    background: #ffffff;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 3rem 3rem;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    .grid__item {
+      border-radius: 0rem;
+      .card {
+        height: auto;
+        .card__img {
+          height: auto;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.grid_multimedia {
+  display: grid;
+  grid-gap: 3rem 3rem;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.pagination > li {
+  display: inline;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 10px 16px;
+  margin-left: -2px;
+  line-height: 1.42857143;
+  color: #000 !important;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  z-index: 3;
+  color: #000;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  z-index: 2;
+  color: #c63838;
+  cursor: default;
+  background: linear-gradient(-68deg, #fff, #fff);
+  border-color: transparent;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
+  color: #c63838 !important;
+  cursor: not-allowed;
+  background-color: #ffffff;
+  border-color: transparent;
+}
+
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.pagination a {
+  cursor: pointer;
+}

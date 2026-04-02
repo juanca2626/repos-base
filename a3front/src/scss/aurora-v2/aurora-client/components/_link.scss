@@ -1,0 +1,41 @@
+a {
+  color: $red_main;
+  transition: color 0.15s linear;
+  &:hover {
+    color: $red_darker;
+  }
+}
+
+a.link {
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+
+  & .icon {
+    margin-right: 5px;
+  }
+  & span {
+    text-decoration: underline;
+    color: $red_main;
+    transition: color 0.15s linear;
+  }
+  &:hover {
+    text-decoration: none;
+    & span {
+      text-decoration: none;
+      color: $red_darker;
+    }
+  }
+}
+.link-footer {
+  color: #000;
+  font-weight: 600;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.link-up {
+  font-size: 2rem;
+  font-weight: 600;
+}

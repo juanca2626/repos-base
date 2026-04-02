@@ -1,0 +1,45 @@
+{
+  "invoice": "FACTURA No",
+  "your_ref": "REF",
+  "name_passenger_group": "NOMBRE DE PASAJERO / GRUPO",
+  "arrival_date": "FECHA DE LLEGADA",
+  "departure_date": "FECHA DE SALIDA",
+  "deadline": "Fecha límite",
+  "message_1": "PARA QUE SE PROPORCIONEN SERVICIOS A SU PASAJERO / GRUPO MENCIONADO ARRIBA",
+  "description": "Descripción",
+  "qty": "QTY",
+  "unit_price": "Precio unitario",
+  "total": "TOTAL",
+  "payment_details": "Detalles de pago",
+  "message_2": "POR FAVOR, ENVIÉ EL PAGO POR TRASNFERENCIA BANCARIA Y MENSAJE RÁPIDO MT 103",
+  "bank": "BANCO",
+  "swift": "SWIFT",
+  "credit": "AL CREDITO DE",
+  "account": "CUENTA N°",
+  "for": "Para",
+  "identify": "identificar su pago",
+  "please": "por favor incluya la siguiente referencia",
+  "file_number": "Número de file",
+  "statement": "Statements",
+  "group_name": "Nombre del grupo",
+  "concepts": [
+    {
+        "name": "PRECIO NETO POR PERSONA - HAB SIMPLE"
+    },
+    {
+        "name": "PRECIO NETO POR PERSONA - HAB DOBLE"
+    },
+    {
+        "name": "PRECIO NETO POR PERSONA - HAB TRIPLE"
+    },
+    {
+        "name": "TICKETS AÉREOS DOMÉSTICOS"
+    },
+    {
+        "name": "TICKETS AÉREOS INTERNACIONALES"
+    },
+    {
+        "name": "OTROS"
+    } 
+  ] 
+}

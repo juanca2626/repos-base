@@ -1,0 +1,40 @@
+{
+  "es": {
+    "component": "Componente",
+    "components": "Componentes",
+    "equivalence_stela": "Código de Stela",
+    "equivalence_aurora": "Código de Aurora",
+    "code": "Código",
+    "status": "Estado",
+    "markup": "Mark up",
+    "filter": "Filtrar por código o nombre de servicio",
+    "error": {
+      "messages": {
+        "system": "Por favor inténtalo más tarde",
+        "already_added": "Cliente ya agregado"
+      }
+    },
+    "buttons": {
+      "add": "Agregar"
+    }
+  },
+  "en": {
+    "component": "Component",
+    "components": "Components",
+    "equivalence_stela": "Stela Code",
+    "equivalence_aurora": "Aurora Code",
+    "code": "Code",
+    "status": "Status",
+    "markup": "Mark up",
+    "filter": "Filter by code or service name",
+    "error": {
+      "messages": {
+        "system": "Please try again later",
+        "already_added": "Component already added"
+      }
+    },
+    "buttons": {
+      "add": "Agregar"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '@/scss/_variables.scss';
+
+.product-configuration-form-drawer {
+  .header-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .ant-drawer-header {
+    padding: 16px 24px;
+    margin: 0;
+  }
+
+  .ant-drawer-footer {
+    padding: 20px 24px;
+    margin: 0;
+  }
+
+  .ant-drawer-wrapper-body {
+    padding: 0px;
+  }
+
+  .ant-drawer-body {
+    padding: 0;
+  }
+
+  .ant-drawer-close {
+    padding: 0;
+    margin: 0;
+    font-size: 18px !important;
+    color: $color-black-4 !important;
+  }
+
+  .ant-drawer-header-title {
+    flex-direction: row-reverse;
+  }
+}

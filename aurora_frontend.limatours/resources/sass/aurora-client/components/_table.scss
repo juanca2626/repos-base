@@ -1,0 +1,71 @@
+.policies {
+  table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    tr {
+      border: 1px solid $red_main;
+      padding: 5px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid $red_main;
+    }
+    th {
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: $white_main;
+      background: $red_main;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    table {
+      border: 0;
+      thead {
+        display: none;
+      }
+      tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ccc;
+        border-bottom: 2px solid #ddd;
+      }
+      td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border: transparent;
+        border-bottom: 1px dotted #ccc;
+        &:last-child {
+          border-bottom: 0;
+        }
+        &:before {
+          content: attr(data-label);
+          float: left;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $red_main;
+          font-size: 12px;
+        }
+      }
+
+    }
+
+
+  }
+
+  .pd-table {
+    @include desktop {
+      padding: 3rem 10rem;
+    }
+  }
+
+}

@@ -1,0 +1,16 @@
+.vs__dropdown-toggle {
+  .vs__selected-options {
+    .vs__selected {
+      font-size: $font-size-md;
+    }
+  }
+}
+.multiselect {
+  .vs__selected {
+    background-color: $color-tag-card;
+    color: $color-white;
+    .vs__deselect {
+      fill: $color-white;
+    }
+  }
+}

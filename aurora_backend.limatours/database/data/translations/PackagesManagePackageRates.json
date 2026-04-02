@@ -1,0 +1,49 @@
+{
+  "es": {
+    "title": "Tarifas",
+    "rate": "Tarifa",
+    "rate_name": "Nombre de Tarifa",
+    "rate_description": "Descripción",
+    "rate_details": "Detalle",
+    "rate_gallery": "Galería",
+    "rate_image": "Imagen",
+    "type": "Tipo",
+    "class": "Clase",
+    "code": "Código",
+    "stela_code": "Código de Stela",
+    "from": "Desde",
+    "to": "Hasta",
+    "channel_state": "Estado",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "incorrect": "No puede registrar una Tarifa ya existente.",
+        "delete": "Error al eliminar la Tarifa"
+      }
+    },
+    "accept": "Aceptar"
+  },
+  "en": {
+    "title": "Rates",
+    "rate": "Rate",
+    "rate_name": "Rate Name",
+    "rate_description": "Description",
+    "rate_details": "Details",
+    "rate_gallery": "Galery",
+    "rate_image": "Image",
+    "type": "Type",
+    "class": "Class",
+    "code": "Code",
+    "stela_code": "Stela Code",
+    "from": "From",
+    "to": "To",
+    "channel_state": "State",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "incorrect": "You can not register an existing rate.",
+        "delete": "Error to delete rate"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "es": {
+    "rate": "Tarifa",
+    "inventory": "Inventario",
+    "add_inventory": "Asignar Inventario",
+    "blocked_days": "Bloquear Días",
+    "enabled_days": "Desbloquear Días",
+    "add_by_range_dates": "Asignar por Rango de Fechas",
+    "blocked_by_range_dates": "Bloquear por Rango de Fechas",
+    "no_policies": "No hay Politicas Asociadas a Ninguna Habitación",
+    "range_by_dates": "Rango de Fechas",
+    "availability": "Disponiblidad",
+    "process": "Procesar",
+    "enabled": "Desbloquear",
+    "blocked": "Bloquear",
+    "process_with_add_others": "Asignar + Procesar Otros",
+    "error": {
+      "messages": {
+        "dates_incomplete": "Seleccione un rango de fechas",
+        "days_incomplete": "Seleccione al menos 1 día de la semana",
+        "manage_hotel_delete": "Error al eliminar el contacto"
+      }
+    }
+  },
+  "en": {
+    "rate": "Rate",
+    "inventory": "Inventory",
+    "add_inventory": "Add Inventory",
+    "blocked_days": "Bloqued Days",
+    "enabled_days": "Enabled Days",
+    "add_by_range_dates": "Add By Range Dates",
+    "blocked_by_range_dates": "Blocked by Range Dates",
+    "no_policies": "There are no policies associated with any room",
+    "range_by_dates": "Range by Dates",
+    "availability": "Availability",
+    "process": "Process",
+    "enabled": "Unlocked",
+    "blocked": "Blocked",
+    "process_with_add_others": "Add + Process Others",
+    "error": {
+      "messages": {
+        "dates_incomplete": "Please complete range dates",
+        "days_incomplete": "Select at least 1 day of the week",
+        "Administrar Contacts_delete": "Error delete contacts"
+      }
+    }
+  }
+}

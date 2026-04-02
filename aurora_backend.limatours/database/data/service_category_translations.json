@@ -1,0 +1,226 @@
+[
+    {
+        "type": "servicecategory",
+        "object_id": 1,
+        "slug": "servicecategory_name",
+        "value": "TRANSFER",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 1,
+        "slug": "servicecategory_name",
+        "value": "TRANSFERêNCIAS",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 1,
+        "slug": "servicecategory_name",
+        "value": "TRASFERIMENTI",
+        "language_id": 4
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 1,
+        "slug": "servicecategory_name",
+        "value": "TRASLADOS",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 10,
+        "slug": "servicecategory_name",
+        "value": "RESTAURANT",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 10,
+        "slug": "servicecategory_name",
+        "value": "RESTAURANTE",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 10,
+        "slug": "servicecategory_name",
+        "value": "RESTAURANTE",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 10,
+        "slug": "servicecategory_name",
+        "value": "RISTORANTE",
+        "language_id": 4
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 11,
+        "slug": "servicecategory_name",
+        "value": "ADDITIONAL",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 11,
+        "slug": "servicecategory_name",
+        "value": "ADDIZIONALE",
+        "language_id": 4
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 11,
+        "slug": "servicecategory_name",
+        "value": "ADICIONAL",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 11,
+        "slug": "servicecategory_name",
+        "value": "ADICIONALES",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 12,
+        "slug": "servicecategory_name",
+        "value": "ASISTENCIA",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 12,
+        "slug": "servicecategory_name",
+        "value": "ASSISTANCE",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 12,
+        "slug": "servicecategory_name",
+        "value": "ASSISTENZA",
+        "language_id": 4
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 12,
+        "slug": "servicecategory_name",
+        "value": "ASSISTÊNCIA",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 13,
+        "slug": "servicecategory_name",
+        "value": "TRAIN",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 13,
+        "slug": "servicecategory_name",
+        "value": "TREM",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 13,
+        "slug": "servicecategory_name",
+        "value": "TREN",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 13,
+        "slug": "servicecategory_name",
+        "value": "TRENO",
+        "language_id": 4
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 2,
+        "slug": "servicecategory_name",
+        "value": "PACCHETTO",
+        "language_id": 4
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 2,
+        "slug": "servicecategory_name",
+        "value": "PACKAGE",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 2,
+        "slug": "servicecategory_name",
+        "value": "PACOTE",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 2,
+        "slug": "servicecategory_name",
+        "value": "PAQUETE",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 7,
+        "slug": "servicecategory_name",
+        "value": "BIGLIETTI",
+        "language_id": 4
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 7,
+        "slug": "servicecategory_name",
+        "value": "BILHETES",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 7,
+        "slug": "servicecategory_name",
+        "value": "ENTRADAS",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 7,
+        "slug": "servicecategory_name",
+        "value": "ENTRANCES",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 9,
+        "slug": "servicecategory_name",
+        "value": "TOUR",
+        "language_id": 1
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 9,
+        "slug": "servicecategory_name",
+        "value": "TOUR",
+        "language_id": 2
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 9,
+        "slug": "servicecategory_name",
+        "value": "TOUR",
+        "language_id": 3
+    },
+    {
+        "type": "servicecategory",
+        "object_id": 9,
+        "slug": "servicecategory_name",
+        "value": "TOUR",
+        "language_id": 4
+    }
+]

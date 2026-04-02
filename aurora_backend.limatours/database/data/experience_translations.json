@@ -1,0 +1,226 @@
+[
+    {
+        "type": "experience",
+        "object_id": 1,
+        "slug": "experience_name",
+        "value": "ADVENTURE",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 1,
+        "slug": "experience_name",
+        "value": "AVENTURA",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 1,
+        "slug": "experience_name",
+        "value": "AVENTURA",
+        "language_id": 3
+    },
+    {
+        "type": "experience",
+        "object_id": 1,
+        "slug": "experience_name",
+        "value": "AVVENTURA",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 2,
+        "slug": "experience_name",
+        "value": "CUCINA",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 2,
+        "slug": "experience_name",
+        "value": "GASTRONOMIA",
+        "language_id": 3
+    },
+    {
+        "type": "experience",
+        "object_id": 2,
+        "slug": "experience_name",
+        "value": "GASTRONOMY",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 2,
+        "slug": "experience_name",
+        "value": "GASTRONOMÍA",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 3,
+        "slug": "experience_name",
+        "value": "NATURA",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 3,
+        "slug": "experience_name",
+        "value": "NATURALEZA",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 3,
+        "slug": "experience_name",
+        "value": "NATURE",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 3,
+        "slug": "experience_name",
+        "value": "NATUREZA",
+        "language_id": 3
+    },
+    {
+        "type": "experience",
+        "object_id": 4,
+        "slug": "experience_name",
+        "value": "HEALTH & WELLNESS",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 4,
+        "slug": "experience_name",
+        "value": "HEALTH & WELLNESS",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 4,
+        "slug": "experience_name",
+        "value": "HEALTH & WELLNESS",
+        "language_id": 3
+    },
+    {
+        "type": "experience",
+        "object_id": 4,
+        "slug": "experience_name",
+        "value": "HEALTH & WELLNESS",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 5,
+        "slug": "experience_name",
+        "value": "HISTORIA & CULTURA VIVA",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 5,
+        "slug": "experience_name",
+        "value": "HISTORIA E CULTURA VIVA",
+        "language_id": 3
+    },
+    {
+        "type": "experience",
+        "object_id": 5,
+        "slug": "experience_name",
+        "value": "HISTORY AND LIVING",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 5,
+        "slug": "experience_name",
+        "value": "STORIA E CULTURA VIVA",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 6,
+        "slug": "experience_name",
+        "value": "FAMIGLIA",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 6,
+        "slug": "experience_name",
+        "value": "FAMILIA",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 6,
+        "slug": "experience_name",
+        "value": "FAMILY",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 6,
+        "slug": "experience_name",
+        "value": "FAMÍLIA",
+        "language_id": 3
+    },
+    {
+        "type": "experience",
+        "object_id": 7,
+        "slug": "experience_name",
+        "value": "LUJO",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 7,
+        "slug": "experience_name",
+        "value": "LUSSO",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 7,
+        "slug": "experience_name",
+        "value": "LUXO",
+        "language_id": 3
+    },
+    {
+        "type": "experience",
+        "object_id": 7,
+        "slug": "experience_name",
+        "value": "LUXURY",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 8,
+        "slug": "experience_name",
+        "value": "HONEYMOON",
+        "language_id": 4
+    },
+    {
+        "type": "experience",
+        "object_id": 8,
+        "slug": "experience_name",
+        "value": "ROMANCE",
+        "language_id": 1
+    },
+    {
+        "type": "experience",
+        "object_id": 8,
+        "slug": "experience_name",
+        "value": "ROMANCE",
+        "language_id": 2
+    },
+    {
+        "type": "experience",
+        "object_id": 8,
+        "slug": "experience_name",
+        "value": "ROMANCE",
+        "language_id": 3
+    }
+]

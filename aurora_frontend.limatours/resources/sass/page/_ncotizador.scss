@@ -1,0 +1,674 @@
+@import '../variables';
+.page-cotizacion {
+    .box-filters {
+        border: 2px solid #f8f9fa;
+        width: 50%;
+        border-radius: 10px;
+        background: #fafafa;
+        padding: 2rem;
+        box-shadow: 2px 2px 3px 3px #d6d6d6;
+    }
+    .a-filtros{
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+    .markup {
+        font-size: 14px;
+        font-weight: bold;
+        color: $gris_oscuro;
+    }
+
+    .box-acciones {
+        border-radius: 10px;
+        padding: 19px 27px;
+        background: #fff6f6;
+        color: $rojo-oscuro;
+        font-size: 15px;
+        a{
+            cursor: pointer;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .box-close {
+        color: $rojo-oscuro;
+        font-size: 15px;
+        background: #fff6f6;
+        position: relative;
+        line-height: 2.5;
+        border-radius: 5px;
+        left: 55%;
+        //margin-left: 1025px;
+        a{
+            cursor: pointer;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .box-icons {
+        color: $rojo-oscuro;
+        font-size: 15px;
+        position: relative;
+        line-height: 2.5;
+        border-radius: 5px;
+        //margin-left: 1025px;
+        a{
+            cursor: default;
+        }
+    }
+
+    .dropdown-menu_body {
+        .btn-acciones__guardar {
+            width: 120px;
+            background: $rojo;
+            font-size: 12px;
+            line-height: 2;
+            padding: .5rem 2rem;
+            border-radius: 5px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .form {
+            padding: 1rem;
+            margin: 5px;
+            text-align: center;
+            input {
+                width: 70px;
+                height: 25px;
+                padding: 0 5px;
+                border: 1px solid #e9ecef;
+                border-radius: 5px;
+                outline: none;
+            }
+
+        }
+    }
+    .handle {
+        float: left;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .btn-success {
+        color: #fff;
+        font-size: 13px;
+        font-weight: bold;
+        width: 140px;
+        padding: 1rem;
+        margin: 0 .1rem;
+    }
+
+    .cotizacion-editar {
+        &--rangos {
+            width: 100px;
+            .dropdown-menu {
+                width: auto;
+                table  {
+                    thead {
+                        th{
+                            background-color: $gris-oscuro;
+                            color: #fff;
+                            text-align: center;
+                            font-size: 11px;
+                        }
+                    }
+                    tbody {
+                        th {
+                            padding: 18px 10px;
+                            text-align: center;
+                        }
+                        td {
+                            &.icon {
+                                text-align: center;
+                                font-size: 15px;
+                                color: $rojo;
+                                padding: 1rem .5rem;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+                .form-control {
+                    font-size: 11px;
+                    height: 30px;
+                    width: 65px;
+                    text-align: center;
+                    padding: 5px 10px;
+                    &.start,
+                    &.end {
+                        width: 55px;
+                    }
+                }
+            }
+        }
+    }
+
+    .icon-eliminar {
+        color: $rojo;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+
+
+    .tbl--cotizacion {
+        padding-top: 20px;
+        .icon-eye-off {
+            font-size: 12px;
+            color: #6c757d;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .icon-eye{
+            font-size: 12px;
+            font-weight: bold;
+            color: #ce3b4d;
+            cursor: pointer;
+        }
+        &__header {
+            padding: 15px 75px;
+        }
+        &__header-range {
+            padding: 15px!important;
+            padding-left: 68px!important;
+        }
+
+
+        &__fecha {
+            width: 160px;
+        }
+        &__descripcion {
+            width: 100px;
+        }
+        &__descripcion {
+            width: 260px;
+        }
+        &__detalle {
+            width: 195px;
+            padding-left: 40px;
+        }
+        &__editar {
+            width: 45px;
+        }
+        &__precio {
+            width: 50px;
+            margin-left: -20px;
+        }
+        &__acomodacion {
+            width: 25px;
+            margin-left: 13px;
+        }
+
+    }
+
+    .prod-estado {
+        font-size: 10px;
+        color: #979797;
+        .estado {
+            background: $gris_border;
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 25px;
+            margin: 0 auto;
+            &.estado-ok {
+                background: $turquesa;
+            }
+            &.estado-rq {
+                background: $rosado;
+            }
+        }
+    }
+
+    .cotizaciones-listado {
+        .box-eliminar {
+            margin: .3rem 1.5rem;
+            padding: 1.5rem 3.5rem;
+            border-radius: 5px 5px 0 0;
+            background: #FAFAFA;
+        }
+        .draggable {
+            ul {
+                padding-left: 0;
+                .producto {
+                    border-radius: 5px;
+                    padding: 12px;
+                    display: -webkit-box;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    background: $gris_fondo-bloque;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        -webkit-box-shadow: 2px 2px 3px 3px rgba(214,214,214,1);
+                        -moz-box-shadow: 2px 2px 3px 3px rgba(214,214,214,1);
+                        box-shadow: 2px 2px 3px 3px rgba(214,214,214,1);
+
+                    }
+                    .prod {
+                        &-acciones {
+                            @extend %producto-info-small;
+                            width: 8.5%;
+                            white-space: nowrap;
+                            padding: 0px 20px 0 0;
+                             .icon-drag {
+                                color: $gris_icons;
+                                font-size: 20px;
+                                font-weight: 400;
+                            }
+                            a {
+                                text-decoration: none;
+                                .icon-plus-circle{
+                                    color: $rojo;
+
+                                }
+                            }
+                            .form-check-input {
+                                position: relative;
+                                margin: 0 10px;
+                            }
+                        }
+                        &-fecha {
+                            @extend %producto-info-small;
+                            width: 13%;
+                            text-align: center;
+                            .date {
+                                font-size: 12px;
+                                width: 80px;
+                                text-align: center;
+                                display: inline;
+                                padding: 0 6px;
+                                height: 30px;
+                                &-disabled {
+                                    width: 80px;
+                                    height: 30px;
+                                    font-size: 12px;
+                                    text-align: center;
+                                    padding: 1rem;
+                                    border-radius: .2rem;
+                                    padding: 0 5px;
+                                    margin: 0 2px;
+                                    display: inline;
+                                }
+                            }
+
+
+                            .link {
+                                font-size: 13px;
+                                text-decoration: underline;
+                            }
+                        }
+                        &-pax {
+                            @extend %producto-info-small;
+                            width: 6%;
+                            text-align: center;
+                            .select-pax {
+                                display: inline;
+                                padding: .5rem;
+                                border: 1px solid #E9E9E9;
+                                border-radius: 3px;
+                                font-size: 12px;
+                                outline: none;
+                                width: 48px;
+                            }
+                        }
+                        &-descripcion {
+                            @extend %producto-info-small;
+                            width: 29%;
+                            font-size: 12px;
+                            .id {
+                                font-weight: bold;
+                                font-size: 12px;
+                            }
+                            .texto {
+                                font-size: 12px;
+                                text-align: left;
+                            }
+                            .cargar {
+                                .link {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        &-tipo {
+                            @extend %producto-info-small;
+                            .btn-icon {
+                                padding: 0;
+                                .icon {
+                                    color: $gris_icons;
+                                    line-height: 10px;
+                                }
+                                .icon-lock-switch,
+                                .icon-globe-switch {
+                                    color: $rojo;
+                                    font-size: 27px;
+                                }
+                            }
+                        }
+                        &-detalle {
+                            @extend %producto-info-small;
+                            width: 13%;
+                            position: relative;
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 12px;
+                            &--editar {
+                                position: absolute;
+                                font-weight: normal;
+                                right: 0;
+                            }
+                            .form-control {
+                                font-size: 13px;
+                            }
+                            .form-group {
+                                margin: 2px 5px;
+                            }
+                            span {
+                                margin: 0 3px;
+                            }
+                            small {
+                                margin-left: 3px;
+                            }
+                        }
+                        &-editar {
+                            @extend %producto-info-small;
+                            text-align: left;
+                            width: 4%;
+                            .btn-icon {
+                                margin-top: -2px;
+                                .icon {
+                                    color: $rojo;
+                                    line-height: 10px;
+                                }
+                            }
+                        }
+                        &-precio {
+                            @extend %producto-info-small;
+                            width: 8%;
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                        &-acomodacion {
+                            @extend %producto-info-small;
+                            width: 4%;
+                            .btn-icon {
+                                margin-top: -2px;
+                                .icon {
+                                    color: $gris_icons;
+                                    line-height: 10px;
+                                }
+                                .icon-user-switch {
+                                    color: $rojo;
+                                    font-size: 20px
+                                }
+                            }
+                        }
+                        &-group {
+                            width: 100%;
+                            .line_vertical {
+                                width: 50px;
+                                position: absolute;
+                                top: 220px;
+                                left: 160px;
+                                z-index: 555;
+                                transform: rotate(45deg);
+                                -o-transform: rotate(45deg);
+                                -moz-transform: rotate(45deg);
+                                -webkit-transform: rotate(90deg);
+                                border-bottom: 1px solid #212529;
+                            }
+                            .prod {
+
+                                &-acciones {
+                                    width: 11%;
+                                    text-align: end;
+                                }
+                                &-fecha {
+                                    width: 8%;
+                                    .fecha {
+                                        font-size: 12px;
+                                        background: #ffff;
+                                        height: 40px;
+                                        width: 85px;
+                                        padding: 10px;
+                                        text-align: center;
+                                    }
+                                }
+                                &-estado {
+                                    width: 11%;
+                                    text-align: end;
+                                }
+                                &-descripcion {
+                                    width: 30%;
+                                }
+                                &-precio {
+                                    width: 8%;
+                                }
+                                &-acomodacion {
+                                    .dropdown-menu__cotizacion {
+                                        .btn-acciones {
+                                            font-size: 18px;
+                                            height: 35px;
+                                            font-weight: normal;
+                                            line-height: 1;
+                                            width: 50px;
+                                        }
+                                    }
+                                }
+                                &-descripcion {
+                                    text-align: left;
+                                }
+                                &-detalle {
+                                    width: 12%;
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+            }
+
+
+        }
+
+    }
+
+    /********************************************/
+
+    .cotizacion-incluir .btn-secondary {
+        margin: 0 0 0 5px;
+        font-size: 16px;
+        height: 34px;
+        padding: 0 25px;
+        font-style: normal;
+        line-height: 30px;
+    }
+
+    .cotizacion-incluir {
+        padding: 15px;
+        padding-right: 0;
+        .btn-success {
+            color: $rosado;
+            font-size: 14px;
+            font-weight: 600;
+            width: 159px;
+            padding: 1rem;
+            margin: 0 0.1rem;
+            border-radius: 5px;
+            border: 2px solid $rosado;
+            font-size: 14px;
+            padding: 8px;
+            background: transparent;
+        }
+        .btn-success:hover,
+        .btn-success:active,
+        .btn-success:focus {
+            font-weight: 600;
+            width: 159px;;
+            font-size: 14px;
+            padding: 1rem;
+            margin: 0 0.1rem;
+            border-radius: 5px;
+            font-size: 14px;
+            padding: 8px;
+            background: transparent;
+            border: 2px solid $rosado;
+            box-shadow: inherit!important;
+
+        }
+
+
+    }
+
+    .cotizacion-incluir .btn-link {
+        display: none;
+    }
+
+    .cotizacion-cotizar {
+        margin-top: 10px;
+        padding-top: 25px;
+        border-top: 1px solid #e9e9e9;
+        &.line-bottom {
+            margin-bottom: 50px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9e9e9;
+        }
+    }
+
+    .cotizacion-cotizar .btn-primary {
+        width: auto;
+        padding: 0 80px;
+        float: right;
+    }
+
+    .box-table{
+        width: 100%;
+        padding: 4rem 30rem;
+
+        .table {
+            min-width: 60px;
+        }
+    }
+
+    //**********************************************/
+    // LISTADO (cotizador)
+    //**********************************************/
+
+    .cotizacion-listado {
+        border-top: 1px solid $gris_border;
+        .producto {
+            border-radius: 5px;
+            padding: 0 10px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+            .row {
+                div {
+                    padding: 15px 4px 10px;
+                }
+                small {
+                    font-weight: normal;
+                }
+                .icon {
+                    font-size: 18px;
+                    font-weight: normal;
+                    line-height: 16px;
+                }
+            }
+        }
+        /* -------------- POR RANGOS -------------- */
+        .cotizacion-rangos {
+            .tbl--cotizacion__header {
+                padding: 15px 100px;
+                .tbl--cotizacion__fecha {
+                    width: 220px;
+                }
+                .tbl--cotizacion__noche {
+                    width: 100px;
+                }
+                .tbl--cotizacion__descripcion {
+                    width: 300px;
+                }
+                .tbl--cotizacion__acomodacion {
+                    width: 85px;
+                }
+            }
+            ul  {
+                .producto {
+
+                    border-radius: 5px;
+                    padding: 12px;
+                    display: -webkit-box;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    background: #FAFAFA;
+                    .prod-acciones {
+                        width: 8.5%;
+                        white-space: nowrap;
+                        padding: 0px 20px 0 0;
+                        .icon-drag {
+                            color: #BBBDBF;
+                            font-size: 20px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown-menu__opciones {
+        &.dropdown-menu {
+            transform: translate3d(450px, 74px, 0px)!important;
+            a {
+                display: block;
+                white-space: nowrap;
+                text-align: right;
+                font-size: 14px;
+                font-weight: 700;
+                color: #000;
+                text-decoration: none!important;
+                -webkit-transition: color .15s linear;
+                transition: color .15s linear;
+                cursor: pointer;
+            }
+            h5 {
+                font-weight: 700;
+                padding-top: 6px;
+                padding-bottom: 1px;
+            }
+            label {
+                font-weight: normal;
+            }
+            select {
+                border: 1px solid #ddd;
+                padding: 2px 3px;
+                background-color: #fff;
+                border-radius: 3px;
+            }
+            .btn-secondary {
+                background-color: transparent;
+                border: 1px solid #890005;
+                color: #890005;
+            }
+            .btn-primary {
+                font-size: 10px;
+                height: 30px;
+                line-height: 0;
+                padding: 0 10px!important;
+}
+}
+
+
+}
+
+}

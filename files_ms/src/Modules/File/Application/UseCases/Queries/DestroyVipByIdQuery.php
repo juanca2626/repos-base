@@ -1,0 +1,24 @@
+<?php
+
+namespace Src\Modules\File\Application\UseCases\Queries;
+
+use Src\Modules\File\Domain\Repositories\VipRepositoryInterface;
+use Src\Shared\Domain\QueryInterface;
+
+class DestroyVipByIdQuery implements QueryInterface
+{
+    private VipRepositoryInterface $vipRepository;
+
+    public function __construct(private readonly int $id)
+    {
+        $this->vipRepository = app()->make(VipRepositoryInterface::class);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function handle(): bool
+    {
+        return $this->vipRepository->delete($this->id);
+    }
+}

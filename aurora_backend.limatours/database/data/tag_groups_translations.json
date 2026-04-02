@@ -1,0 +1,58 @@
+[
+  {
+    "type": "taggroup",
+    "object_id": 1,
+    "slug": "taggroup_name",
+    "value": "GENERALES",
+    "language_id": 1
+  },
+  {
+    "type": "taggroup",
+    "object_id": 1,
+    "slug": "taggroup_name",
+    "value": "GENERALI",
+    "language_id": 4
+  },
+  {
+    "type": "taggroup",
+    "object_id": 1,
+    "slug": "taggroup_name",
+    "value": "GERAL",
+    "language_id": 3
+  },
+  {
+    "type": "taggroup",
+    "object_id": 1,
+    "slug": "taggroup_name",
+    "value": "GENERAL",
+    "language_id": 2
+  },
+  {
+    "type": "taggroup",
+    "object_id": 2,
+    "slug": "taggroup_name",
+    "value": "EXCLUSIVE",
+    "language_id": 2
+  },
+  {
+    "type": "taggroup",
+    "object_id": 2,
+    "slug": "taggroup_name",
+    "value": "EXCLUSIVO",
+    "language_id": 3
+  },
+  {
+    "type": "taggroup",
+    "object_id": 2,
+    "slug": "taggroup_name",
+    "value": "EXCLUSIVOS",
+    "language_id": 1
+  },
+  {
+    "type": "taggroup",
+    "object_id": 2,
+    "slug": "taggroup_name",
+    "value": "ESCLUSIVO",
+    "language_id": 4
+  }
+]

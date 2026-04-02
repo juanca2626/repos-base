@@ -1,0 +1,34 @@
+{
+  "es": {
+    "title": "Impuestos",
+    "tax_name": "Nombre",
+    "country_name": "Pais",
+    "tax_value": "Impuesto",
+    "service_name": "Nombre",
+    "service_value": "Servicio",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "country_incorrect": "Seleccione un país valido",
+        "state_delete": "Error al eliminar el estado"
+      }
+    }
+  },
+  "en": {
+    "title": "Taxes",
+    "tax_name": "Name",
+    "country_name": "Country",
+    "tax_value": "Tax",
+    "service_name": "Name",
+    "service_value": "Service",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "country_incorrect": "Select the valid country",
+        "state_delete": "Error delete state"
+      }
+    }
+  }
+}

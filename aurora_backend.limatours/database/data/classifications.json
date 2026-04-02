@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Terrestre"
+            },
+            {
+                "language_id": 2,
+                "value": "Land"
+            },
+            {
+                "language_id": 3,
+                "value": "Terrestre"
+            },
+            {
+                "language_id": 4,
+                "value": "Terrestre"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Aéreo"
+            },
+            {
+                "language_id": 2,
+                "value": "Air"
+            },
+            {
+                "language_id": 3,
+                "value": "Aérea"
+            },
+            {
+                "language_id": 4,
+                "value": "Aria"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Marítimo"
+            },
+            {
+                "language_id": 2,
+                "value": "Maritime"
+            },
+            {
+                "language_id": 3,
+                "value": "Marítimo"
+            },
+            {
+                "language_id": 4,
+                "value": "Marittimo"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Lacustre"
+            },
+            {
+                "language_id": 2,
+                "value": "Lacustrine"
+            },
+            {
+                "language_id": 3,
+                "value": "Lacustre"
+            },
+            {
+                "language_id": 4,
+                "value": "Lacustre"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Fluvial"
+            },
+            {
+                "language_id": 2,
+                "value": "River"
+            },
+            {
+                "language_id": 3,
+                "value": "River"
+            },
+            {
+                "language_id": 4,
+                "value": "Fluviale"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "translations": [
+            {
+                "language_id": 1,
+                "value": "Tren"
+            },
+            {
+                "language_id": 2,
+                "value": "Train"
+            },
+            {
+                "language_id": 3,
+                "value": "Trem"
+            },
+            {
+                "language_id": 4,
+                "value": "Treno"
+            }
+        ]
+    }
+]

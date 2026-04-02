@@ -1,0 +1,71 @@
+{
+  "es": {
+    "title": "Información",
+    "name": "Nombre",
+    "range_user": "Alcance",
+    "multi_hotel": "Para Multiples Hoteles",
+    "one_hotel": "Para un Hotel",
+    "surname": "SurName",
+    "lastname": "LastName",
+    "position": "Cargo",
+    "contacts": "Contactos",
+    "users": "Usuarios",
+    "hotel": "Hotel",
+    "code": "Codigo",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "status": "Estatus",
+    "email": "Correo",
+    "new_user": "Nuevo Usuario",
+    "new_contact": "Nuevo Contacto",
+    "list_contact": "Lista de Contactos",
+    "list_user": "Lista de Usuarios",
+    "access_hotel": "Acceso solo a este hotel",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "hotel_incorrect": "Seleccione un hotel valido",
+        "user_incorrect": "Verifique la informacion enviada",
+        "contact_delete": "Error al eliminar el contacto",
+        "user_delete": "Error al eliminar el usuario"
+      }
+    }
+  },
+  "en": {
+    "title": "Information",
+    "name": "Name",
+    "range_user": "Range",
+    "multi_hotel": "Multi Hotels",
+    "one_hotel": "One Hotel",
+    "surname": "SurName",
+    "lastname": "LastName",
+    "position": "Position",
+    "contacts": "Contacts",
+    "code": "Code",
+    "new_user": "New User",
+    "new_contact": "New Contact",
+    "list_contact": "List Contact",
+    "list_user": "List Users",
+    "access_hotel": "Access only on this hotel",
+    "active": "Active",
+    "inactive": "Inactive",
+    "users": "Users",
+    "hotel": "Hotel",
+    "status": "Status",
+    "edit": "Edit",
+    "email": "Email",
+    "delete": "Delete",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "hotel_incorrect": "Select the valid hotel",
+        "Administrar Contacts_delete": "Error delete contacts",
+        "user_incorrect": "Verify the information sent",
+        "contact_delete": "Error al eliminar el contacto",
+        "user_delete": "Error al eliminar el usuario"
+      }
+    }
+  }
+}

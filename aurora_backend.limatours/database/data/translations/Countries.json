@@ -1,0 +1,32 @@
+{
+  "es": {
+    "title": "Países",
+    "country_name": "País",
+    "local_tax": "Aplica Impuestos para Nacionales",
+    "local_service": "Aplica Servicios para Nacionales",
+    "foreign_tax": "Aplica Impuestos para Extranjeros",
+    "foreign_service": "Aplica Servicios Para Extranjeros",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "country_incorrect": "Seleccione un país valido",
+        "country_delete": "Error al eliminar el país"
+      }
+    }
+  },
+  "en": {
+    "title": "Countries",
+    "country_name": "Country",
+    "local_tax": "Applies Taxes for Nationals",
+    "local_service": "Apply Services for Nationals",
+    "foreign_tax": "Applies Taxes for Foreigners",
+    "foreign_service": "Apply Services for Foreigners",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "country_incorrect": "Select the valid country",
+        "country_delete": "Error delete country"
+      }
+    }
+  }
+}

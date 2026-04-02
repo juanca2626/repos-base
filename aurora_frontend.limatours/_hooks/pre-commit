@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+# Based on code from http://tech.zumba.com/2014/04/14/control-code-quality/
+
+PROJECT=$(php -r "echo dirname(dirname(dirname(realpath('$0'))));")
+STAGED_FILES_CMD=$(git diff --cached --name-only --diff-filter=ACMR HEAD | grep \\.php)
+DIFF_SUFFIX="_diff"
+PHPCS_SUFFIX="_phpcs.json"
+declare -i ERROR_COUNTER=0
+
+if [ "$#" -eq 1 ]
+then
+    oIFS=$IFS
+    IFS='
+    '
+    SFILES="$1"
+    IFS=$oIFS
+fi
+SFILES=${SFILES:-$STAGED_FILES_CMD}
+
+if [ "$FILES" != "" ]
+then
+    echo "Sniffing your code..."
+
+    # Ensure all JavaScript files staged for commit pass standard code style
+    function xargs-r() {
+      # Portable version of "xargs -r". The -r flag is a GNU extension that
+      # prevents xargs from running if there are no input files.
+      if IFS= read -r -d $'\n' path; then
+        { echo "$path"; cat; } | xargs $@
+      fi
+    }
+    git diff --name-only --cached --relative | grep '\.js\?$' | sed 's/[^[:alnum:]]/\\&/g' | xargs -r -E '' -t ./node_modules/.bin/standard
+    if [[ $? -ne 0 ]]; then
+      echo 'JavaScript Standard Style errors were detected. Aborting commit.'
+      exit 1
+    fi
+
+    # Ensure all JavaScript files staged for commit pass standard code style
+    function xargs-r() {
+      # Portable version of "xargs -r". The -r flag is a GNU extension that
+      # prevents xargs from running if there are no input files.
+      if IFS= read -r -d $'\n' path; then
+        { echo "$path"; cat; } | xargs $@
+      fi
+    }
+    git diff --name-only --cached --relative | grep '\.vue\?$' | sed 's/[^[:alnum:]]/\\&/g' | xargs -r -E '' -t ./node_modules/.bin/standard --fix  --parser vue-eslint-parser --plugin vue
+    if [[ $? -ne 0 ]]; then
+      echo 'JavaScript Standard Style errors were detected. Aborting commit.'
+      exit 1
+    fi
+fi
+
+exit $?

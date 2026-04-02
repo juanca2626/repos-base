@@ -1,0 +1,46 @@
+{
+  "es": {
+    "name": "Nombre",
+    "commercial_name": "Nombre Comercial",
+    "policy_name": "Política",
+    "meal_name": "Meal",
+    "date_range": "Rango de Fechas",
+    "room": "Habitación",
+    "adult": "Adulto",
+    "child": "Niño",
+    "infant": "Infante",
+    "extra": "Extra",
+    "days": {
+      "all": "Todos",
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "thursday": "Jueves",
+      "friday": "Viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo"
+    }
+  },
+  "en": {
+    "name": "Name",
+    "commercial_name": "Commercial Name",
+    "policy_name": "Politics",
+    "meal_name": "Meal",
+    "date_range": "Date Range",
+    "room": "Room",
+    "adult": "Adult",
+    "child": "Child",
+    "infant": "Infant",
+    "extra": "Extra",
+    "days": {
+      "all": "All",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '@/scss/_variables.scss';
+
+.product-config-multi-select {
+  gap: 8px;
+
+  .option-multi-select {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+
+    .icon-color-selected {
+      color: $color-primary-strong;
+      border-radius: 20px !important;
+    }
+
+    .icon-color-not-selected {
+      color: $color-gray-ligth;
+    }
+
+    span {
+      font-weight: 400;
+      color: $color-black;
+    }
+  }
+}
+
+.form-container {
+  padding: 24px;
+
+  &-is-general {
+    border-top: 1px solid $color-black-8;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .cancel-button {
+    width: 140px;
+    height: 50px;
+  }
+
+  .next-button {
+    min-width: 140px;
+    height: 50px;
+
+    &:disabled {
+      color: $color-white-4;
+      background: $color-black-5;
+      border-color: $color-black-5 !important;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "es": {
+    "title": "Monedas",
+    "currency_name": "Moneda",
+    "symbol": "Simbolo",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "currency_incorrect": "No puede registrar datos de una moneda ya existente.",
+        "currency_delete": "Error al eliminar moneda"
+      }
+    }
+  },
+  "en": {
+    "title": "Currencies",
+    "currency_name": "Currency",
+    "symbol": "Symbol",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in ,",
+        "currency_incorrect": "You can not register data from an existing currency.",
+        "currency_delete": "Error to delete currency."
+      }
+    }
+  }
+}

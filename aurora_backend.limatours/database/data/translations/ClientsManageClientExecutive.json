@@ -1,0 +1,38 @@
+{
+  "es": {
+    "title": "Ejecutivos",
+    "market": "Mercado",
+    "all": "Todos",
+    "available_executives": "Ejecutivos Disponibles",
+    "executives_added": "Ejecutivos Agregados",
+    "update": "Actualizar",
+    "personal_markup": "Markup Personalizado",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "select_period": "Seleccione un periodo",
+        "add_markup": "Ingrese un markup %",
+        "hotel_incorrect": "Seleccione un hotel valido",
+        "manage_hotel_delete": "Error al eliminar el contacto"
+      }
+    }
+  },
+  "en": {
+    "title": "Executives",
+    "market": "Market",
+    "all": "All",
+    "available_executives": "Enable Executives",
+    "executives_added": "Executives Added",
+    "personal_markup": "Personal Markup",
+    "update": "Update",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "select_period": "Select period",
+        "add_markup": "Add markup %",
+        "hotel_incorrect": "Select the valid hotel",
+        "Administrar Contacts_delete": "Error delete contacts"
+      }
+    }
+  }
+}

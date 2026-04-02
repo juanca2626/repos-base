@@ -1,0 +1,618 @@
+[
+  {
+    "type": "tag",
+    "object_id": 1,
+    "slug": "tag_name",
+    "value": "GENERAL",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 1,
+    "slug": "tag_name",
+    "value": "GENERALE",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 1,
+    "slug": "tag_name",
+    "value": "GERAL",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 1,
+    "slug": "tag_name",
+    "value": "GENERAL",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 2,
+    "slug": "tag_name",
+    "value": "EXCLUSIVE",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 2,
+    "slug": "tag_name",
+    "value": "EXCLUSIVO",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 2,
+    "slug": "tag_name",
+    "value": "EXCLUSIVO",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 2,
+    "slug": "tag_name",
+    "value": "ESCLUSIVO",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 3,
+    "slug": "tag_name",
+    "value": "REGIONALE",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 3,
+    "slug": "tag_name",
+    "value": "REGIONAL",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 3,
+    "slug": "tag_name",
+    "value": "REGIONAL",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 3,
+    "slug": "tag_name",
+    "value": "REGIONAL",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 4,
+    "slug": "tag_name",
+    "value": "AVENTURA",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 4,
+    "slug": "tag_name",
+    "value": "ADVENTURE",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 4,
+    "slug": "tag_name",
+    "value": "AVENTURA",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 4,
+    "slug": "tag_name",
+    "value": "AVVENTURA",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 5,
+    "slug": "tag_name",
+    "value": "PARTENZA FISSA",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 5,
+    "slug": "tag_name",
+    "value": "PARTENZA FISSA",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 5,
+    "slug": "tag_name",
+    "value": "PARTENZA FISSA",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 5,
+    "slug": "tag_name",
+    "value": "PARTENZA FISSA",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 6,
+    "slug": "tag_name",
+    "value": "PARTENZA GIORNALIERA",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 6,
+    "slug": "tag_name",
+    "value": "PARTENZA GIORNALIERA",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 6,
+    "slug": "tag_name",
+    "value": "PARTENZA GIORNALIERA",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 6,
+    "slug": "tag_name",
+    "value": "PARTENZA GIORNALIERA",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 7,
+    "slug": "tag_name",
+    "value": "PARTENZA SPA/ING",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 7,
+    "slug": "tag_name",
+    "value": "PARTENZA SPA/ING",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 7,
+    "slug": "tag_name",
+    "value": "PARTENZA SPA/ING",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 7,
+    "slug": "tag_name",
+    "value": "PARTENZA SPA/ING",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 8,
+    "slug": "tag_name",
+    "value": "PROMOTIONS",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 8,
+    "slug": "tag_name",
+    "value": "PROMOZIONI",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 8,
+    "slug": "tag_name",
+    "value": "PROMOÇÕES",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 8,
+    "slug": "tag_name",
+    "value": "PROMOCIONES",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 9,
+    "slug": "tag_name",
+    "value": "INTI RAYMI",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 9,
+    "slug": "tag_name",
+    "value": "INTI RAYMI",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 9,
+    "slug": "tag_name",
+    "value": "INTI RAYMI",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 9,
+    "slug": "tag_name",
+    "value": "INTI RAYMI",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 10,
+    "slug": "tag_name",
+    "value": "AMAZON STAR",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 10,
+    "slug": "tag_name",
+    "value": "AMAZON STAR",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 10,
+    "slug": "tag_name",
+    "value": "AMAZON STAR",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 10,
+    "slug": "tag_name",
+    "value": "AMAZON STAR",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 11,
+    "slug": "tag_name",
+    "value": "LUXO",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 11,
+    "slug": "tag_name",
+    "value": "LUSSO",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 11,
+    "slug": "tag_name",
+    "value": "LUXURY",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 11,
+    "slug": "tag_name",
+    "value": "LUJO",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 12,
+    "slug": "tag_name",
+    "value": "CLÁSSICOS",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 12,
+    "slug": "tag_name",
+    "value": "CLASSICI",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 12,
+    "slug": "tag_name",
+    "value": "CLASICOS",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 12,
+    "slug": "tag_name",
+    "value": "CLASSICS",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 13,
+    "slug": "tag_name",
+    "value": "CLASSICI - MULTICITÀ",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 13,
+    "slug": "tag_name",
+    "value": "CLASICOS - MULTICIUDAD",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 13,
+    "slug": "tag_name",
+    "value": "CLÁSSICOS - MULTICIDADE",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 13,
+    "slug": "tag_name",
+    "value": "CLASSICS - MULTICITY",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 14,
+    "slug": "tag_name",
+    "value": "CLASSICI - EXPRESS",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 14,
+    "slug": "tag_name",
+    "value": "CLASSICS - EXPRESS",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 14,
+    "slug": "tag_name",
+    "value": "CLASICOS - EXPRESS",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 14,
+    "slug": "tag_name",
+    "value": "CLÁSSICOS - EXPRESS",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 15,
+    "slug": "tag_name",
+    "value": "GASTRONOMIC",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 15,
+    "slug": "tag_name",
+    "value": "GASTRONOMICO",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 15,
+    "slug": "tag_name",
+    "value": "GASTRONÓMICOS",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 15,
+    "slug": "tag_name",
+    "value": "GASTRONÔMICO",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 16,
+    "slug": "tag_name",
+    "value": "FAMILIAR",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 16,
+    "slug": "tag_name",
+    "value": "FAMIGLIA",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 16,
+    "slug": "tag_name",
+    "value": "FAMILY",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 16,
+    "slug": "tag_name",
+    "value": "FAMILIAR",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 17,
+    "slug": "tag_name",
+    "value": "NATURE AND EXPERIENTIAL",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 17,
+    "slug": "tag_name",
+    "value": "NATURA ED ESPERIENZIALE",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 17,
+    "slug": "tag_name",
+    "value": "NATUREZA E EXPERIÊNCIA",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 17,
+    "slug": "tag_name",
+    "value": "NATURALEZA Y VIVENCIAL",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 18,
+    "slug": "tag_name",
+    "value": "ROMANCE",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 18,
+    "slug": "tag_name",
+    "value": "ROMANCE",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 18,
+    "slug": "tag_name",
+    "value": "ROMANCE",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 18,
+    "slug": "tag_name",
+    "value": "ROMANCE",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 19,
+    "slug": "tag_name",
+    "value": "EXTENSION",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 19,
+    "slug": "tag_name",
+    "value": "EXTENSION",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 19,
+    "slug": "tag_name",
+    "value": "EXTENSÃO",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 19,
+    "slug": "tag_name",
+    "value": "ESTENSIONE",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 20,
+    "slug": "tag_name",
+    "value": "PROMOTIONS",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 20,
+    "slug": "tag_name",
+    "value": "PROMOÇÕES",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 20,
+    "slug": "tag_name",
+    "value": "PROMOZIONI",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 20,
+    "slug": "tag_name",
+    "value": "PROMOCIONES",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 21,
+    "slug": "tag_name",
+    "value": "PROMOZIONALE",
+    "language_id": 4
+  },
+  {
+    "type": "tag",
+    "object_id": 21,
+    "slug": "tag_name",
+    "value": "PROMOCIONAL",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 21,
+    "slug": "tag_name",
+    "value": "PROMOCIONAL",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 21,
+    "slug": "tag_name",
+    "value": "PROMOTIONS",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 22,
+    "slug": "tag_name",
+    "value": "CYBER MAYO",
+    "language_id": 2
+  },
+  {
+    "type": "tag",
+    "object_id": 22,
+    "slug": "tag_name",
+    "value": "CYBER MAYO",
+    "language_id": 3
+  },
+  {
+    "type": "tag",
+    "object_id": 22,
+    "slug": "tag_name",
+    "value": "CYBER MAYO",
+    "language_id": 1
+  },
+  {
+    "type": "tag",
+    "object_id": 22,
+    "slug": "tag_name",
+    "value": "CYBER MAYO",
+    "language_id": 4
+  }
+]

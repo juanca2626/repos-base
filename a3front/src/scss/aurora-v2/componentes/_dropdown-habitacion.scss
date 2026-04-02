@@ -1,0 +1,82 @@
+.habitacion {
+  &.dropdown {
+    &.show {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}
+.container_quantity_persons_rooms {
+  &.dropdown-menu {
+    top: 63px !important;
+    left: 13px !important;
+    transform: none !important;
+    &.show {
+      display: block !important;
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+  .num-hab {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    .form-control {
+      width: 58px;
+      float: left;
+      margin-right: 16px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height: 19px;
+      color: $negro;
+      padding: 0 0 0 5px !important;
+    }
+    label {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height: 19px;
+      color: $negro;
+      margin: 0;
+    }
+  }
+  .container_quantity_persons_rooms_selects {
+    .form-control {
+      width: 58px;
+      padding: 0 0 0 5px !important;
+    }
+  }
+  hr {
+    margin: 20px 0;
+  }
+  .quantity-persons-rooms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    h4 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 17px;
+      color: $negro;
+      margin-bottom: 0;
+      padding-right: 22px;
+      white-space: nowrap;
+    }
+    .form-group {
+      padding: 0 6px;
+      width: 70px;
+      label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 17px;
+        color: #000000;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

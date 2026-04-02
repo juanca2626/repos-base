@@ -1,0 +1,64 @@
+{
+  "es": {
+    "title": "Paquetes",
+    "package": "Paquete",
+    "code": "Código",
+    "category": "Categoría",
+    "rate": "Tarifa",
+    "status": "Estado",
+    "progress": "Progreso",
+    "destinations": "Destinos",
+    "manage_package": "Administrar Paquete",
+    "from": "Desde",
+    "to": "Hasta",
+    "duration": "Duración",
+    "nights": "Noches",
+    "package_auroracode": "Código Aurora",
+    "package_physical_intensity": "Intensidad Física",
+    "package_rate_type": "Tipo de Tarifa",
+    "package_rate_fixed": "Fijo",
+    "package_rate_dynamic": "Dinámico",
+    "error": {
+      "messages": {
+        "package_aurora_code_complete": "Por favor ingrese el código de Aurora",
+        "package_duration_complete": "Por favor ingrese la duración del paquete correctamente",
+        "information_complete": "Completar informacion en el formulario",
+        "package_physical_intensity_complete": "Seleccione la intensidad física del paquete",
+        "package_class_complete": "Seleccione el tipo del paquete",
+        "package_incorrect": "No puede registrar datos de un paquete con un código aurora existente.",
+        "package_delete": "Error al eliminar un paquete"
+      }
+    }
+  },
+  "en": {
+    "title": "Packages",
+    "package": "Package",
+    "code": "Code",
+    "category": "Category",
+    "rate": "Rate",
+    "status": "Status",
+    "progress": "Progress",
+    "destinations": "Destinations",
+    "manage_package": "Manage Package",
+    "from": "From",
+    "to": "To",
+    "duration": "Duration",
+    "nights": "Nights",
+    "package_auroracode": "Aurora code",
+    "package_physical_intensity": "Physical Intensity",
+    "package_rate_type": "Rate type",
+    "package_rate_fixed": "Fixed",
+    "package_rate_dynamic": "Dynamic",
+    "error": {
+      "messages": {
+        "package_aurora_code_complete": "Please enter the Aurora code",
+        "package_duration_complete": "Please enter the duration of the package correctly",
+        "information_complete": "Please complete information in form",
+        "package_physical_intensity_complete": "Select the physical intensity of the package",
+        "package_class_complete": "Select the class of package",
+        "package_incorrect": "You can not register data from a package with a existing aurora code",
+        "package_delete": "Error to delete package"
+      }
+    }
+  }
+}

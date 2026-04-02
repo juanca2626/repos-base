@@ -1,0 +1,323 @@
+.modal-dialog {
+  .modal-content {
+    //width: max-content;
+  }
+  .modal-header {
+    background: transparent;
+    .close {
+      transition: all 0.25s;
+      outline: none !important;
+    }
+  }
+  .modal-body {
+    padding: 4rem!important;
+    border-radius: 10px!important;
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 18px!important;
+      color: #000;
+    }
+    p {
+      color: $red_main;
+      font-weight: 700;
+      margin: 0;
+    }
+    .datepicker-calender {
+      background: #F5F5F5;
+      width: max-content;
+      padding: .8rem .63rem;
+      border-radius: .8rem;
+      font-size: 15px;
+
+      &__secondary {
+        background: white;
+        border: 1px solid #C4C4C4;
+        padding: 1rem;
+        border-radius: .8rem;
+        input {
+          background: white;
+          color: $black;
+          width: 143px;
+        }
+        .icon-ac-calendar1 {
+          color: #C4C4C4;
+          font-size: 2rem;
+        }
+      }
+
+      .icon-ac-calendar1 {
+        color: #C4C4C4;
+        font-size: 2rem;
+      }
+      label {
+        font-weight: 700;
+      }
+      input {
+        background: #F5F5F5;
+        color: $red_main;
+        width: 115px;
+      }
+    }
+    .vc-container {
+      width: max-content;
+      background: #F5F5F5;
+      border: transparent;
+      font-family: 'Montserrat';
+      padding: 2rem;
+      .vc-svg-icon[data-v-19b6cf78] {
+        color: $red_main;
+      }
+    }
+    .content-calendar{
+      h2 {
+        color: $red_main;
+        margin-bottom: 3rem;
+        font-size: 18px!important;
+      }
+      p {
+        color: $red_main;
+        font-weight: 700;
+        margin: 0;
+      }
+      .datepicker-calender {
+        background: #F5F5F5;
+        width: max-content;
+        padding: .8rem .63rem;
+        border-radius: .8rem;
+        font-size: 15px;
+
+        &__secondary {
+          background: white;
+          border: 1px solid #C4C4C4;
+          padding: 1rem;
+          border-radius: .8rem;
+          input {
+            background: white;
+            color: $black;
+            width: 143px;
+          }
+          .icon-ac-calendar1 {
+            color: #C4C4C4;
+            font-size: 2rem;
+          }
+        }
+
+        .icon-ac-calendar1 {
+          color: #C4C4C4;
+          font-size: 2rem;
+        }
+        label {
+          font-weight: 700;
+        }
+        input {
+          background: #F5F5F5;
+          color: $red_main;
+          width: 115px;
+        }
+      }
+      .vc-container {
+        width: max-content;
+        background: #F5F5F5;
+        border: transparent;
+        font-family: 'Montserrat';
+        padding: 2rem;
+        .vc-svg-icon[data-v-19b6cf78] {
+          color: $red_main;
+        }
+      }
+    }
+    .content-pax {
+      color: #3A3A3C;
+      h2 {
+        color: $red_main;
+        margin-bottom: 3rem;
+        font-size: 18px!important;
+      }
+
+      p {
+        color: $black;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .fa-circle:before {
+        color: #a8a8a8;
+      }
+
+      .fa-dot-circle:before {
+        color: $red_main;
+      }
+
+
+      .input-actions {
+        .btn {
+          outline: transparent;
+          border-radius:100%;
+          width:3rem;
+          height:3rem;
+          text-align:center;
+        }
+        .btn-minus {
+          width:calc(3rem - 2px);
+          height:calc(3rem - 2px);
+          border: 1px solid #C4C4C4;
+          color:#C4C4C4;
+        }
+        .btn-plus {
+          width:calc(3rem - 2px);
+          height:calc(3rem - 2px);
+          border: 1px solid #787885;
+          color:#787885;
+        }
+        .number-count {
+          padding: 1rem 2rem;
+        }
+        .icon-ac-plus,
+        .icon-ac-minus {
+          padding: 0;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+
+      }
+
+      .vs--searchable {
+        padding-left: 15px!important;
+        width: 200px;
+        &:before {
+          content: "\E956" !important;
+          font-family: auroraclient !important;
+          font-size: 20px;
+          position: absolute;
+          right: 15px;
+          top: 4px;
+          left: 165px;
+          color: #BBBDBF;
+        }
+        .vs__dropdown-menu {
+          .vs__dropdown-option {
+            &:before {
+              content: "" !important;
+              color: #BBBDBF;
+              font-size: 2rem;
+              position: absolute;
+              left: 170px;
+              top: 0;
+            }
+          }
+        }
+        .vs__selected-options {
+          .vs__search {
+            &:focus {
+              outline: none!important;
+              box-shadow: none!important;
+              border: none!important;
+              height: auto!important;
+            }
+          }
+        }
+
+      }
+
+      .span-xs {
+        font-size: 14px;
+      }
+      .text-total {
+        width: 220px;
+      }
+      .total-price {
+        font-size: 28px;
+        font-weight: 600;
+        color: $red_main;
+      }
+
+
+    }
+    .content-hotel {
+      .vs--searchable {
+        padding-left: 15px!important;
+        width: 200px;
+        background: #C4C4C4;
+        color: white;
+        &:before {
+          content: "\E956" !important;
+          font-family: auroraclient !important;
+          font-size: 20px;
+          position: absolute;
+          right: 15px;
+          top: 4px;
+          left: 165px;
+          color: #FFFFFF;
+        }
+        .vs__dropdown-menu {
+          .vs__dropdown-option {
+            padding: .2rem 1rem!important;
+            &:before {
+              content: "" !important;
+              color: #FFFFFF;
+              font-size: 2rem;
+              position: absolute;
+              left: 0px;
+              top: 0;
+            }
+          }
+        }
+        .vs__selected-options {
+          .vs__search {
+            &:focus {
+              outline: none!important;
+              box-shadow: none!important;
+              border: none!important;
+              height: auto!important;
+            }
+          }
+        }
+
+      }
+      .v-select input {
+        height: auto;
+      }
+      .vs--searchable .vs__selected-options .vs__selected {
+        color: #FFFFFF;
+        font-size: 14px;
+      }
+      .vs__dropdown-toggle {
+        ul {
+          z-index: 2000;
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    display: none;
+  }
+
+}
+
+.modal-dialog .modal-body {
+  font-size: 15px;
+  color: #212529;
+  border-radius: 10px 10px 10px 10px !important;
+  padding: 50px !important;
+}
+
+
+#modalCalender___BV_modal_body_.modal-dialog.modal-body {
+  width: max-content!important;
+}
+
+#modalCalender___BV_modal_body_.modal-dialog.modal-content {
+  width: max-content!important;
+}
+
+#modalCalender___BV_modal_body_.modal-body {
+  width: max-content!important;
+}
+
+#modalCalender___BV_modal_body_{
+  width: max-content!important;
+}
+#modalCalender___BV_modal_content_ {
+  width: max-content!important;
+}

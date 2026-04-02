@@ -1,0 +1,29 @@
+a {
+  color: $rojo;
+  transition: color 0.15s linear;
+  &:hover {
+    color: $rojo-oscuro;
+  }
+}
+
+a.link {
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+
+  & .icon {
+    margin-right: 5px;
+  }
+  & span {
+    text-decoration: underline;
+    color: $rojo;
+    transition: color 0.15s linear;
+  }
+  &:hover {
+    text-decoration: none;
+    & span {
+      text-decoration: none;
+      color: $rojo-oscuro;
+    }
+  }
+}

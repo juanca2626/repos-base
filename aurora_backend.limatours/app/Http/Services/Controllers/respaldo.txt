@@ -1,0 +1,2885 @@
+public function hotels(Request $request)
+    {
+
+
+        if (Auth::user()->user_type_id == 4) {
+            $client_id = ClientSeller::select('client_id')->where('user_id', Auth::user()->id)->first();
+            $client_id = $client_id["client_id"];
+        }
+
+        if (Auth::user()->user_type_id == 3) {
+            $client_id = $request->post('client_id');
+        }
+
+        $hotels_id = $request->post('hotels_id');
+        if (!isset($hotels_id)) {
+            $hotels_id = [];
+        }
+
+        $hotels_search_code = $request->post('hotels_search_code');
+        if (!isset($hotels_search_code)) {
+            $hotels_search_code = '';
+        }
+
+        $destiny = $request->post('destiny');
+        $date_from = $request->post('date_from');
+        $date_to = $request->post('date_to');
+        $typeclass = $request->post('typeclass_id');
+        $quantity_rooms = (int)$request->post('quantity_rooms');
+        $quantity_persons_rooms = $request->post('quantity_persons_rooms');
+        if ($request->has('lang') and !empty($request->post('lang'))) {
+            $lang_iso = $request->post('lang');
+        } else {
+            $lang_iso = 'es';
+        }
+        $language = Language::where('iso', $lang_iso)->first();
+        $search_parameters = [
+            'client_id' => $client_id,
+            'destiny' => $destiny,
+            'date_from' => $date_from,
+            'date_to' => $date_to,
+            'typeclass_id' => $typeclass,
+            'quantity_persons_rooms' => $quantity_persons_rooms
+        ];
+
+        $destiny_codes = explode(",", $destiny["code"]);
+        $country_id = "";
+        $state_id = "";
+        $city_id = "";
+        $district_id = "";
+
+        //separar codigos de destino
+        for ($i = 0; $i < count($destiny_codes); $i++) {
+            if ($i == 0) {
+                $country_id = $destiny_codes[$i];
+            }
+            if ($i == 1) {
+                $state_id = $destiny_codes[$i];
+            }
+            if ($i == 2) {
+                $city_id = $destiny_codes[$i];
+            }
+            if ($i == 3) {
+                $district_id = $destiny_codes[$i];
+            }
+        }
+
+        $typeclass_id = "";
+        //Asignar si existe filtro por clase de hotel
+        if ($typeclass != "all" && $typeclass != "hotel_id") {
+            $typeclass_id = $typeclass;
+        }
+        //estas dos variables se usan si en la busqueda se necesitan niños child_min_age se usa para
+        // identificar la edad minima de los niños de la busqueda y accept_child se usa para verificar si el hotel acepta niños
+        $child_min_age = 0;
+        $accept_child = false;
+
+        $total_people_adults = 0;
+        $total_people_child = 0;
+        //logica que verifica si en la busqueda tienen niños
+        foreach ($quantity_persons_rooms as $room) {
+            $total_people_adults += $room["adults"];
+            $total_people_child += $room["child"];
+            if ($room["child"] > 0) {
+                $accept_child = true;
+                foreach ($room["ages_child"] as $child) {
+                    if ($child_min_age === 0) {
+                        $child_min_age = (int)$child["age"];
+                    }
+                    if ($child["age"] < $child_min_age) {
+                        $child_min_age = (int)$child["age"];
+                    }
+                }
+            }
+        }
+
+        $total_people_search = $total_people_adults + $total_people_child;
+
+        $from = Carbon::parse($date_from);
+        $to = Carbon::parse($date_to);
+
+        $this->setClient($client_id);
+        $period = $from->year;
+
+        if ($accept_child) {
+            //Logica para verificar si los hoteles aceptan niños
+            $hotels_client_hotel_id_list = $this->getClientHotelsIds($country_id, $state_id, $city_id, $district_id,
+                $typeclass_id, $period, $hotels_id, $hotels_search_code, $child_min_age);
+        } else {
+            $hotels_client_hotel_id_list = $this->getClientHotelsIds($country_id, $state_id, $city_id, $district_id,
+                $typeclass_id, $period, $hotels_id, $hotels_search_code);
+        }
+
+
+        $reservation_days = $from->diffInDays($to);
+        $reservation_start_date = Carbon::now('America/Lima')->startOfDay();
+        $days_advance_reservation = $reservation_start_date->diffInDays($from);
+
+        $from = $from->format('Y-m-d');
+        $today = Carbon::now('America/Lima')->startOfDay()->format('Y-m-d');
+        //TODO asgregar validacion que el to debe de ser mayor o igual que el from
+        $to = $to->subDay(1)->format('Y-m-d');
+
+        $current_date = Carbon::now('America/Lima')->startOfDay();
+        $check_in = Carbon::parse($date_from);
+        $check_out = Carbon::parse($date_to);
+
+        $hotels_client = [];
+        $rate_plans_rooms_aurora = [];
+        if ($from > $today) {
+            $rate_plan_room_ids_include = [];
+            //TODO agregar validacion extra dado los hoteles resultantes $hotels_client_hotel_id_list
+//            $allotments = $this->getArrayIdsRatesPlansRoomsAllotment($client_id, $reservation_start_date, $from);
+//            if (count($allotments) > 0) {
+//                foreach ($allotments as $allotment) {
+//                    array_push($rate_plan_room_ids_include, $allotment);
+//                }
+//            }
+
+            //TODO excluir todas las tarifas que no hayan cumplido con la logica de allotment
+            $rate_plan_room_aurora_time_stay = $this->getArrayIdsRatesPlansRoomsAuroraTimeStay($hotels_client_hotel_id_list,
+                $from, $reservation_days, $period);
+            if (count($rate_plan_room_aurora_time_stay) > 0) {
+                foreach ($rate_plan_room_aurora_time_stay as $aurora_time_stay) {
+                    array_push($rate_plan_room_ids_include, $aurora_time_stay);
+                }
+            }
+
+            //TODO agregar a la logica que si trae niños al menos igual a 0
+            //validacion de tarifas Aurora para ver si tienen una rate_plan_calendary y un importe de adulto o importe total > 0 para el rango de fechas de reservacion
+            $rate_plan_room_ids_include = $this->getArrayIdsRatesPlansRoomsCalendarsInRangeReservationDaysAndAmountAdultOrAmountTotal($hotels_client_hotel_id_list,
+                $from, $to, $rate_plan_room_ids_include, $reservation_days);
+
+            //Esto es para tarifas de Channels validando tiempo de estadia y dias de anticipacion de reserva
+            $rate_plan_room_channels_time_stay_and_days_advance_reservation = $this->getArrayIdsRatesPlansRoomsChannelsTimeStayAndDaysAdvanceReservation($hotels_client_hotel_id_list,
+                $from, $days_advance_reservation, $reservation_days);
+
+            $rate_test = [];
+            if (count($rate_plan_room_channels_time_stay_and_days_advance_reservation) > 0) {
+                //Validacion de tarifas de channel para ver si tiene un importe para el numero de adultos de busqueda o tiene un importe total por habitacion
+                $rate_plan_room_channels_validate_calendar = $this->getArrayIdsRatesPlansRoomsChannelsCalendar($hotels_client_hotel_id_list,
+                    $from, $to, $rate_plan_room_channels_time_stay_and_days_advance_reservation, $reservation_days,
+                    $quantity_persons_rooms);
+                if (count($rate_plan_room_channels_validate_calendar) > 0) {
+
+                    foreach ($rate_plan_room_channels_validate_calendar as $rate_channel) {
+                        array_push($rate_plan_room_ids_include, $rate_channel);
+                    }
+                }
+            }
+
+            // print_r($rate_plan_room_ids_include);
+
+            // die('..');
+
+            //Obtener Tarifas OnRequest
+            $rates_plan_rooms_on_request = $rate_plan_room_ids_include;
+
+            //validacion de tarifas para ver si tienen inventario de al menos 1 para el rango de fechas de reservacion que no estan en una bolsa
+            $rate_plan_room_ids_include = $this->getArrayIdsRatesPlansRoomsHaveOneInventory($rate_plan_room_ids_include,
+                $hotels_client_hotel_id_list, $from, $to, $reservation_days);
+
+            $rates_plan_rooms_on_request = array_diff($rates_plan_rooms_on_request,
+                $rate_plan_room_ids_include);
+
+
+//    print_r($rates_plan_rooms_on_request);
+
+//    print_r($rate_plan_room_ids_include);
+//    die('..');
+
+
+            $hotels_client = $this->getClientHotelsAvail($client_id, $period, $hotels_client_hotel_id_list, $date_from,
+                $date_to, $from, $to, $reservation_days, $rate_plan_room_ids_include, $country_id, $state_id, $city_id,
+                $district_id, $typeclass_id, $hotels_id, $language->id);
+        }
+
+        //    print_r($hotels_client);
+        // echo json_encode($hotels_client);
+        //    die('..');
+
+
+        //Mejores Opciones por hotel
+        foreach ($hotels_client as $index_hotel => $hotel_client) {
+            $hotels_client[$index_hotel]['best_options'] = [
+                "quantity_rooms" => 0,
+                "quantity_adults" => 0,
+                "quantity_child" => 0,
+                "total_taxes_and_services_amount" => 0,
+                "total_supplements_amount" => 0,
+                "total_sub_rate_amount" => 0,
+                "total_rate_amount" => 0,
+                "rooms" => [],
+            ];
+
+            foreach ($quantity_persons_rooms as $index => $quantity_person_room) {
+                //Calculo  y Seleccion para adultos y niños
+                if ($quantity_person_room["child"] > 0) {
+                    if ($quantity_person_room["adults"] >= 1) {
+                        //buscar si hay una habitacion con la misma capacidad o mayor de la cantidad de personas que esta buscando
+                        foreach ($hotel_client['hotel']['rooms'] as $index_room => $room) {
+                            $ocupacion_habitacion = $room["max_capacity"];
+                            // Cantidad igual a la cantidad de personas que esta buscando
+                            if ($ocupacion_habitacion >= ($quantity_person_room["adults"] + $quantity_person_room["child"])) {
+                                $room['tarifas_seleccionadas'] = [];
+                                $tarifas_seleccionadas = [];
+
+                                $room["quantity_adults"] = 0;
+                                $room["quantity_child"] = 0;
+                                $room["quantity_infants"] = 0;
+                                $room["quantity_rooms"] = 0;
+                                $room["total_amount"] = 0;
+
+                                foreach ($room["rates_plan_room"] as $rates_plan_room_index => $rates_plan_room) {
+                                    if ($rates_plan_room["channel_id"] == 1) {
+//                                        $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["policies_rates"]["max_occupancy"];
+                                        $ocupacion_tarifa = $room['room_type']['occupation'];
+                                    } else {
+                                        $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["max_occupancy"];
+                                        if ($ocupacion_tarifa == null) {
+                                            $ocupacion_tarifa = $ocupacion_habitacion;
+                                        }
+                                    }
+
+                                    //check exist price child
+                                    $check_exist_price_child = false;
+                                    $quantity_check_price_child = 0;
+                                    for ($j = 0; $j < count($rates_plan_room["calendarys"]); $j++) {
+                                        if ($rates_plan_room["calendarys"][$j]["rate"][0]["price_child"] == 0 || $rates_plan_room["calendarys"][$j]["rate"][0]["price_child"] > 0) {
+                                            $quantity_check_price_child++;
+                                        }
+                                    }
+                                    if ($quantity_check_price_child == count($rates_plan_room["calendarys"])) {
+                                        $check_exist_price_child = true;
+                                    }
+
+                                    //check exist price extra
+                                    $check_exist_price_extra = false;
+                                    $quantity_check_price_extra = 0;
+                                    for ($j = 0; $j < count($rates_plan_room["calendarys"]); $j++) {
+                                        if ($rates_plan_room["calendarys"][$j]["rate"][0]["price_extra"] > 0 || $rates_plan_room["calendarys"][$j]["rate"][0]["price_total"] > 0) {
+                                            $quantity_check_price_extra++;
+                                        }
+                                    }
+                                    if ($quantity_check_price_extra == count($rates_plan_room["calendarys"])) {
+                                        $check_exist_price_extra = true;
+                                    }
+                                    //TODO crear una validacion antes que debe restringir la cantidad de personas por lo permitido en la habitacion
+                                    $quantity_persons = $this->getQuantityPersons($quantity_person_room["adults"],
+                                        $quantity_person_room["child"], $ocupacion_habitacion, $ocupacion_tarifa,
+                                        $room["min_adults"], $room["max_adults"], $room["max_child"],
+                                        $quantity_person_room["ages_child"], $hotel_client['hotel']['min_age_child'],
+                                        $hotel_client['hotel']['max_age_child']);
+
+                                    if ($check_exist_price_child) {
+                                        if (($quantity_persons["quantity_extras"] > 0 && $check_exist_price_extra) || $quantity_persons["quantity_extras"] == 0) {
+                                            $policies_cancellation = [];
+                                            if ($rates_plan_room["channel_id"] == 1) {
+                                                $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                    $quantity_persons["quantity_adults"],
+                                                    $quantity_persons["quantity_child"],
+                                                    $quantity_persons["quantity_extras"]);
+                                            } else {
+                                                $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                    $rates_plan_room["id"],
+                                                    $room["max_capacity"],
+                                                    $quantity_persons["quantity_adults"],
+                                                    $quantity_persons["quantity_child"],
+                                                    $quantity_persons["quantity_extras"]);
+
+                                            }
+
+                                            if (!$rates_plan_room_new) {
+                                                continue;
+                                            }
+
+                                            $rate = [
+                                                'total_amount' => $rates_plan_room_new["total_amount"],
+                                                'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                'total_amount_child' => $rates_plan_room_new["total_amount_child"],
+                                                'total_amount_infants' => 0,
+                                                'total_amount_extras' => $rates_plan_room_new["total_amount_extra"],
+//                                                'quantity_adults' => $quantity_person_room["adults"],
+//                                                'quantity_child' => $quantity_person_room["child"],
+                                                'quantity_adults' => $quantity_persons["quantity_adults"],
+                                                'quantity_child' => $quantity_persons["quantity_child"],
+                                                'quantity_infants' => 0,
+                                                'quantity_extras' => $quantity_persons["quantity_extras"],
+                                                'ages_child' => $quantity_person_room["ages_child"],
+                                                'people_coverage' => $quantity_person_room["adults"] + $quantity_person_room["child"],
+                                                'quantity_inventory_taken' => 1,
+                                                'policy_cancellation' => [],
+                                                'policies_cancellation' => [],
+                                                'taxes_and_services' => [],
+                                                'supplements' => [],
+                                                'rate' => $rates_plan_room_new,
+                                            ];
+
+                                            $room["quantity_adults"] += $quantity_person_room["adults"];
+                                            $room["quantity_child"] += $quantity_person_room["child"];
+                                            $room["quantity_infants"] = 0;
+                                            $room["quantity_rooms"] += 1;
+                                            $room["total_amount"] += $rates_plan_room_new["total_amount"];
+
+                                            $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += 1;
+                                            $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+                                            $hotels_client[$index_hotel]['best_options']['quantity_child'] += $quantity_person_room["child"];
+
+                                            $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $rates_plan_room_new["total_amount"];
+                                            $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $rate["total_amount"];
+                                            array_push($room['tarifas_seleccionadas'], $rate);
+                                            array_push($hotels_client[$index_hotel]['best_options']['rooms'], $room);
+                                            break 2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                else {
+                    //Calculo  y Seleccion para solo adultos
+                    $find_room_same_occupation = false;
+                    $find_room_with_lower_occupancy = false;
+                    //buscar si hay una habitacion con la misma capacidad de la cantidad de personas que esta buscando
+                    foreach ($hotel_client['hotel']['rooms'] as $index_room => $room) {
+                        $cupos_personas_disponibles = 0;
+                        $room['tarifas_seleccionadas'] = [];
+                        $tarifas_seleccionadas = [];
+                        $ocupacion_habitacion = $room["max_capacity"];
+
+                        $room["quantity_adults"] = 0;
+                        $room["quantity_child"] = 0;
+                        $room["quantity_infants"] = 0;
+                        $room["quantity_rooms"] = 0;
+                        $room["total_amount"] = 0;
+
+                        if ($ocupacion_habitacion == $quantity_person_room["adults"]) {
+                            //                        die('entro aqui 1');
+                            foreach ($room["rates_plan_room"] as $rates_plan_room_index => $rates_plan_room) {
+                                if ($rates_plan_room["channel_id"] == 1) {
+//                                    $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["policies_rates"]["max_occupancy"];
+                                    $ocupacion_tarifa = $room['room_type']['occupation'];
+                                } else {
+                                    $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["max_occupancy"];
+
+                                    if ($ocupacion_tarifa == null) {
+                                        $ocupacion_tarifa = $ocupacion_habitacion;
+                                    }
+                                }
+                                $min_inventory = 0;
+
+                                if (count($rates_plan_room["inventories"]) == 0) {
+                                    $rates_plan_room["inventories"] = $rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"];
+                                }
+
+                                for ($i = 0; $i < count($rates_plan_room["inventories"]); $i++) {
+                                    if ($i === 0) {
+                                        $min_inventory = $rates_plan_room["inventories"][0]["inventory_num"] - $rates_plan_room["inventories"][0]["total_booking"];
+                                    } else {
+                                        if ($rates_plan_room["inventories"][$i]["inventory_num"] < $min_inventory) {
+                                            $min_inventory = $rates_plan_room["inventories"][$i]["inventory_num"] - $rates_plan_room["inventories"][$i]["total_booking"];
+                                        }
+                                    }
+                                }
+
+                                $inventory_rate = $min_inventory;
+                                //check exist price extra
+                                $check_exist_price_extra = false;
+                                $quantity_check_price_extra = 0;
+                                for ($j = 0; $j < count($rates_plan_room["calendarys"]); $j++) {
+                                    if ($rates_plan_room["calendarys"][$j]["rate"][0]["price_extra"] > 0 || $rates_plan_room["calendarys"][$j]["rate"][0]["price_total"] > 0) {
+                                        $quantity_check_price_extra++;
+                                    }
+                                }
+                                if ($quantity_check_price_extra == count($rates_plan_room["calendarys"])) {
+                                    $check_exist_price_extra = true;
+                                }
+                                //end check exist price extra
+
+                                $quantity_persons = $this->getQuantityPersons($quantity_person_room["adults"], 0,
+                                    $ocupacion_habitacion, $ocupacion_tarifa, $room["min_adults"], $room["max_adults"],
+                                    $room["max_child"]);
+                                if (($quantity_persons["quantity_extras"] > 0 && $check_exist_price_extra) || $quantity_persons["quantity_extras"] == 0) {
+                                    $policies_cancellation = [];
+                                    if ($rates_plan_room["channel_id"] == 1) {
+                                        $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                            $hotel_client['hotel']['markup'], $rates_plan_room),
+                                            $quantity_persons["quantity_adults"], 0,
+                                            $quantity_persons["quantity_extras"]);
+                                    } else {
+                                        $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                            $hotel_client['hotel']['markup'], $rates_plan_room),
+                                            $rates_plan_room["id"], $room["max_capacity"],
+                                            $quantity_persons["quantity_adults"], 0,
+                                            $quantity_persons["quantity_extras"]);
+                                    }
+
+                                    if ($rates_plan_room_new) {
+                                        $rate = [
+                                            'total_amount' => $rates_plan_room_new["total_amount"],
+                                            'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                            'total_amount_child' => 0,
+                                            'total_amount_infants' => 0,
+                                            'total_amount_extras' => $rates_plan_room_new["total_amount_extra"],
+//                                            'quantity_adults' => $quantity_person_room["adults"],
+                                            'quantity_adults' => $quantity_persons["quantity_adults"],
+                                            'quantity_child' => 0,
+                                            'quantity_infants' => 0,
+                                            'quantity_extras' => $quantity_persons["quantity_extras"],
+                                            'ages_child' => [],
+                                            'people_coverage' => $quantity_person_room["adults"],
+                                            'quantity_inventory_taken' => 1,
+                                            'policy_cancellation' => [],
+                                            'policies_cancellation' => [],
+                                            'taxes_and_services' => [],
+                                            'supplements' => [],
+                                            'rate' => $rates_plan_room_new,
+                                        ];
+
+                                        $room["quantity_adults"] += $quantity_person_room["adults"];
+                                        $room["quantity_child"] = 0;
+                                        $room["quantity_infants"] = 0;
+                                        $room["quantity_rooms"] += 1;
+                                        $room["total_amount"] += $rates_plan_room_new["total_amount"];
+
+                                        $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += 1;
+                                        $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+
+                                        $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $rates_plan_room_new["total_amount"];
+                                        $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $rate["total_amount"];
+
+                                        array_push($room['tarifas_seleccionadas'], $rate);
+                                        array_push($hotels_client[$index_hotel]['best_options']['rooms'], $room);
+
+                                        $find_room_same_occupation = true;
+                                        break 2;
+                                    }
+                                }
+                                if (($quantity_persons["quantity_extras"] > 0 && !$check_exist_price_extra)) {
+                                    $result = $ocupacion_tarifa * $inventory_rate;
+                                    $num_hab_req = (int)ceil($quantity_person_room["adults"] / $ocupacion_tarifa);
+                                    $policies_cancellation = [];
+
+                                    if ($rates_plan_room["channel_id"] == 1) {
+                                        $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                            $hotel_client['hotel']['markup'], $rates_plan_room),
+                                            $quantity_persons["quantity_adults"], 0, 0);
+                                    } else {
+                                        $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                            $hotel_client['hotel']['markup'], $rates_plan_room),
+                                            $rates_plan_room["id"], $room["max_capacity"],
+                                            $quantity_persons["quantity_adults"], 0, 0);
+                                    }
+
+                                    if ($rates_plan_room_new) {
+                                        if ($result >= $quantity_person_room["adults"]) {
+                                            $cupos_personas = $quantity_person_room["adults"];
+                                            $new_adults = $ocupacion_tarifa;
+
+                                            $total_amount = 0;
+                                            for ($i = 0; $i < $num_hab_req; $i++) {
+                                                if ($cupos_personas > 0) {
+                                                    if (($cupos_personas - $ocupacion_tarifa) <= 0) {
+                                                        $new_adults = $cupos_personas;
+                                                    } else {
+                                                        $new_adults = $ocupacion_tarifa;
+                                                        $cupos_personas -= $ocupacion_tarifa;
+                                                    }
+                                                }
+
+                                                $rate = [
+                                                    'total_amount' => $rates_plan_room_new["total_amount"],
+                                                    'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                    'total_amount_child' => 0,
+                                                    'total_amount_infants' => 0,
+                                                    'total_amount_extras' => 0,
+                                                    'quantity_adults' => $new_adults,
+                                                    'quantity_child' => 0,
+                                                    'quantity_infants' => 0,
+                                                    'quantity_extras' => 0,
+                                                    'ages_child' => [],
+                                                    'people_coverage' => $new_adults,
+                                                    'quantity_inventory_taken' => 1,
+                                                    'policy_cancellation' => [],
+                                                    'policies_cancellation' => [],
+                                                    'taxes_and_services' => [],
+                                                    'supplements' => [],
+                                                    'rate' => $rates_plan_room_new,
+                                                ];
+
+                                                array_push($room['tarifas_seleccionadas'], $rate);
+
+                                                $total_amount += $rates_plan_room_new["total_amount"];
+                                            }
+
+                                            $room["quantity_adults"] += $quantity_person_room["adults"];
+                                            $room["quantity_child"] = 0;
+                                            $room["quantity_infants"] = 0;
+                                            $room["quantity_rooms"] += $num_hab_req;
+                                            $room["total_amount"] += $total_amount;
+
+
+                                            array_push($hotels_client[$index_hotel]['best_options']['rooms'], $room);
+                                            $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += $num_hab_req;
+                                            $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+
+                                            $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $total_amount;
+                                            $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $rate["total_amount"];
+
+                                            $find_room_same_occupation = true;
+
+                                            break 2;
+
+                                        }
+                                    }
+                                    if ($result < $quantity_person_room["adults"]) {
+                                        if ($cupos_personas_disponibles === 0) {
+                                            $cupos_personas_disponibles += $result;
+                                            $cupos = $result;
+                                        } else {
+                                            $cupos = $cupos_personas_disponibles + $result;
+
+                                            if ($cupos > $quantity_person_room['adults']) {
+                                                $cupos = ($quantity_person_room['adults'] - $cupos_personas_disponibles);
+                                                $cupos_personas_disponibles += $cupos;
+                                            }
+                                            if ($cupos < $quantity_person_room['adults']) {
+                                                $cupos_personas_disponibles += $result;
+                                            }
+                                        }
+
+                                        for ($i = 0; $i < $inventory_rate; $i++) {
+                                            $rate = [
+                                                'total_amount' => $rates_plan_room_new["total_amount"],
+                                                'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                'total_amount_child' => 0,
+                                                'total_amount_infants' => 0,
+                                                'total_amount_extras' => 0,
+                                                'quantity_adults' => $cupos,
+                                                'quantity_child' => 0,
+                                                'quantity_infants' => 0,
+                                                'quantity_extras' => 0,
+                                                'ages_child' => [],
+                                                'people_coverage' => $cupos,
+                                                'quantity_inventory_taken' => 1,
+                                                'policy_cancellation' => [],
+                                                'policies_cancellation' => [],
+                                                'taxes_and_services' => [],
+                                                'supplements' => [],
+                                                'rate' => $rates_plan_room_new,
+                                            ];
+
+                                            array_push($tarifas_seleccionadas, $rate);
+                                        }
+                                    }
+                                }
+                            }
+                            if ($cupos_personas_disponibles == $quantity_person_room['adults']) {
+                                foreach ($tarifas_seleccionadas as $tarifa) {
+                                    $room["quantity_adults"] += $tarifa['people_coverage'];
+                                    $room["quantity_child"] = 0;
+                                    $room["quantity_infants"] = 0;
+                                    $room["quantity_rooms"] += $tarifa['quantity_inventory_taken'];
+                                    $room["total_amount"] += $tarifa['total_amount'];
+
+                                    $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += $tarifa['quantity_inventory_taken'];
+                                    $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $tarifa['people_coverage'];
+                                    $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $tarifa['total_amount'];
+
+                                    $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $tarifa['rate']["total_amount"];
+                                    $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $tarifa["total_amount"];
+
+
+                                    array_push($room['tarifas_seleccionadas'], $tarifa);
+                                }
+
+                                array_push($hotels_client[$index_hotel]['best_options']['rooms'], $room);
+                                $find_room_same_occupation = true;
+
+                                break 2;
+                            }
+                        }
+                    }
+
+                    if (!$find_room_same_occupation) {
+//                        die('entro aqui 2');
+                        //buscar si hay una habitacion con menor capacidad con inventario que cubra la cantidad de personas que esta buscando
+                        foreach ($hotel_client['hotel']['rooms'] as $index_room => $room) {
+                            $room['tarifas_seleccionadas'] = [];
+                            $tarifas_seleccionadas = [];
+                            $cupos_personas_disponibles = 0;
+                            $ocupacion_habitacion = $room["max_capacity"];
+
+                            $room["quantity_adults"] = 0;
+                            $room["quantity_child"] = 0;
+                            $room["quantity_infants"] = 0;
+                            $room["quantity_rooms"] = 0;
+                            $room["total_amount"] = 0;
+
+                            if ($ocupacion_habitacion < $quantity_person_room["adults"]) {
+                                foreach ($room["rates_plan_room"] as $rates_plan_room_index => $rates_plan_room) {
+                                    if ($rates_plan_room["channel_id"] == 1) {
+//                                        $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["policies_rates"]["max_occupancy"];
+                                        $ocupacion_tarifa = $room['room_type']['occupation'];
+                                    } else {
+                                        $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["max_occupancy"];
+
+                                        if ($ocupacion_tarifa == null) {
+                                            $ocupacion_tarifa = $ocupacion_habitacion;
+                                        }
+                                    }
+                                    $min_inventory = 0;
+                                    //TODO agregar validacion que reste al inventario la diferencia entre reservas - cancelaciones
+
+                                    if (count($rates_plan_room["inventories"]) == 0) {
+                                        $rates_plan_room["inventories"] = $rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"];
+                                    }
+
+                                    for ($i = 0; $i < count($rates_plan_room["inventories"]); $i++) {
+                                        if ($i === 0) {
+                                            $min_inventory = $rates_plan_room["inventories"][0]["inventory_num"] - $rates_plan_room["inventories"][0]["total_booking"];
+                                        } else {
+                                            if ($rates_plan_room["inventories"][$i]["inventory_num"] < $min_inventory) {
+                                                $min_inventory = $rates_plan_room["inventories"][$i]["inventory_num"] - $rates_plan_room["inventories"][$i]["total_booking"];
+                                            }
+                                        }
+                                    }
+
+                                    $inventory_rate = $min_inventory;
+
+                                    //check exist price extra
+                                    $check_exist_price_extra = false;
+                                    $quantity_check_price_extra = 0;
+                                    for ($j = 0; $j < count($rates_plan_room["calendarys"]); $j++) {
+                                        if ($rates_plan_room["calendarys"][$j]["rate"][0]["price_extra"] > 0 || $rates_plan_room["calendarys"][$j]["rate"][0]["price_total"] > 0) {
+                                            $quantity_check_price_extra++;
+                                        }
+                                    }
+                                    if ($quantity_check_price_extra == count($rates_plan_room["calendarys"])) {
+                                        $check_exist_price_extra = true;
+                                    }
+                                    //end check exist price extra
+
+                                    $result = $ocupacion_habitacion * $inventory_rate;
+
+                                    $num_hab_req = (int)ceil($quantity_person_room["adults"] / $ocupacion_habitacion);
+
+                                    if ($ocupacion_tarifa >= $ocupacion_habitacion) {
+                                        if ($rates_plan_room["channel_id"] == 1) {
+                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                $room["max_adults"], 0, 0);
+                                        } else {
+                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                $rates_plan_room["id"], $room["max_capacity"], $room["max_adults"], 0,
+                                                0);
+                                        }
+
+                                        if ($rates_plan_room_new) {
+                                            if ($result >= $quantity_person_room["adults"]) {
+                                                $cupos_personas = $quantity_person_room["adults"];
+                                                $new_adults = $ocupacion_habitacion;
+                                                $total_amount = 0;
+                                                for ($i = 0; $i < $num_hab_req; $i++) {
+                                                    if ($cupos_personas > 0) {
+                                                        if (($cupos_personas - $ocupacion_habitacion) <= 0) {
+                                                            $new_adults = $cupos_personas;
+                                                        } else {
+                                                            $new_adults = $ocupacion_habitacion;
+                                                            $cupos_personas -= $ocupacion_habitacion;
+                                                        }
+                                                    }
+
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => 0,
+                                                        'quantity_adults' => $new_adults,
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => 0,
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $new_adults,
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+
+                                                    array_push($room['tarifas_seleccionadas'], $rate);
+
+                                                    $total_amount += $rates_plan_room_new["total_amount"];
+                                                }
+
+                                                $room["quantity_adults"] += $quantity_person_room["adults"];
+                                                $room["quantity_child"] = 0;
+                                                $room["quantity_infants"] = 0;
+                                                $room["quantity_rooms"] += $num_hab_req;
+                                                $room["total_amount"] += $total_amount;
+
+                                                $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += $num_hab_req;
+                                                $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+
+                                                $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $total_amount;
+                                                $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $total_amount;
+
+
+                                                array_push($hotels_client[$index_hotel]['best_options']['rooms'],
+                                                    $room);
+                                                $find_room_with_lower_occupancy = true;
+                                                break 2;
+                                            }
+                                            if ($result < $quantity_person_room["adults"]) {
+                                                if ($cupos_personas_disponibles === 0) {
+                                                    $cupos_personas_disponibles += $result;
+                                                    $cupos = $result;
+                                                } else {
+
+                                                    $cupos = $cupos_personas_disponibles + $result;
+
+                                                    if ($cupos >= $quantity_person_room['adults']) {
+                                                        $cupos = ($quantity_person_room['adults'] - $cupos_personas_disponibles);
+                                                        $cupos_personas_disponibles += $cupos;
+                                                    } else {
+                                                        $cupos_personas_disponibles += $result;
+                                                    }
+                                                }
+
+                                                for ($i = 0; $i < $inventory_rate; $i++) {
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => 0,
+                                                        'quantity_adults' => $ocupacion_habitacion,
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => 0,
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $ocupacion_habitacion,
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+
+                                                    array_push($tarifas_seleccionadas, $rate);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    if ($ocupacion_tarifa < $ocupacion_habitacion) {
+                                        $result = $ocupacion_habitacion * $inventory_rate;
+                                        $num_hab_req = (int)ceil($quantity_person_room["adults"] / $ocupacion_habitacion);
+                                        if ($check_exist_price_extra) {
+                                            $quantity_person_extras = $ocupacion_habitacion - $ocupacion_tarifa;
+
+                                            if ($result >= $quantity_person_room["adults"]) {
+                                                $cupos_personas = $quantity_person_room["adults"];
+//                                                $new_adults = $ocupacion_habitacion;
+                                                $new_adults = $ocupacion_tarifa;
+                                                $total_amount = 0;
+                                                for ($i = 0; $i < $num_hab_req; $i++) {
+                                                    if ($cupos_personas > 0) {
+                                                        if (($cupos_personas - $ocupacion_habitacion) <= 0) {
+//                                                            $new_adults = $cupos_personas;
+                                                            $new_adults = $ocupacion_tarifa;
+                                                            $quantity_person_extras = $cupos_personas - $ocupacion_tarifa;
+                                                        } else {
+//                                                            $new_adults = $ocupacion_habitacion;
+                                                            $new_adults = $ocupacion_tarifa;
+                                                            $quantity_person_extras = $ocupacion_habitacion - $ocupacion_tarifa;
+                                                            $cupos_personas -= $ocupacion_habitacion;
+                                                        }
+                                                    }
+                                                    //if ($new_adults == $ocupacion_habitacion) {
+                                                    if ($rates_plan_room["channel_id"] == 1) {
+                                                        $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                            $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                            $room["max_adults"], 0, $quantity_person_extras);
+                                                    } else {
+                                                        $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                            $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                            $rates_plan_room["id"], $room["max_capacity"],
+                                                            $room["max_adults"], 0, $quantity_person_extras);
+                                                    }
+                                                    // $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $room["max_adults"], 0, $quantity_person_extras);
+                                                    /*} else {
+                                                         $quantity_person_extras = 0;
+                                                         if ($rates_plan_room["channel_id"] == 1) {
+                                                             $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                 $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                 $room["max_adults"], 0, 0);
+                                                         } else {
+                                                             $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                 $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                 $rates_plan_room["id"], $room["max_capacity"],
+                                                                 $room["max_adults"], 0, 0);
+                                                         }
+                                                         //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $room["max_adults"], 0, 0);
+                                                     }*/
+
+                                                    if (!$rates_plan_room_new) {
+                                                        continue;
+                                                    }
+
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => $rates_plan_room_new["total_amount_extra"],
+                                                        'quantity_adults' => $new_adults,
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => $quantity_person_extras,
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $new_adults,
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+
+                                                    array_push($room['tarifas_seleccionadas'], $rate);
+
+                                                    $total_amount += $rates_plan_room_new["total_amount"];
+                                                }
+
+                                                $room["quantity_adults"] += $quantity_person_room["adults"];
+                                                $room["quantity_child"] = 0;
+                                                $room["quantity_infants"] = 0;
+                                                $room["quantity_rooms"] += $num_hab_req;
+                                                $room["total_amount"] += $total_amount;
+
+                                                array_push($hotels_client[$index_hotel]['best_options']['rooms'],
+                                                    $room);
+
+                                                $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += 1;
+                                                $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+
+                                                $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $total_amount;
+                                                $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $total_amount;
+
+                                                break 2;
+                                            }
+                                            if ($result < $quantity_person_room["adults"]) {
+                                                if ($cupos_personas_disponibles === 0) {
+                                                    $cupos_personas_disponibles += $result;
+                                                    $cupos = $result;
+                                                } else {
+                                                    $cupos = $cupos_personas_disponibles + $result;
+                                                    if ($cupos > $quantity_person_room['adults']) {
+                                                        $cupos = ($quantity_person_room['adults'] - $cupos_personas_disponibles);
+                                                        $cupos_personas_disponibles += $cupos;
+                                                    } elseif ($cupos < $quantity_person_room['adults']) {
+                                                        $cupos_personas_disponibles += $result;
+                                                        $cupos = $result;
+                                                    }
+                                                }
+                                                $personas_restantes = $cupos;
+                                                $finished_search = false;
+                                                for ($i = 0; $i < $inventory_rate; $i++) {
+                                                    if (($personas_restantes - $ocupacion_habitacion) >= 0) {
+                                                        $personas_restantes -= $ocupacion_habitacion;
+                                                        if ($rates_plan_room["channel_id"] == 1) {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $ocupacion_tarifa, 0, $quantity_person_extras);
+                                                        } else {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                                $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $rates_plan_room["id"], $room["max_capacity"],
+                                                                $ocupacion_tarifa, 0, $quantity_person_extras);
+                                                            if (!$rates_plan_room_new) {
+                                                                continue;
+                                                            }
+                                                        }
+                                                        //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $ocupacion_tarifa, 0, $quantity_person_extras);
+                                                    } else {
+                                                        if ($personas_restantes > $ocupacion_tarifa) {
+                                                            $personas_extras = $cupos - $ocupacion_tarifa;
+                                                            $new_adults = $cupos - $personas_extras;
+                                                            if ($rates_plan_room["channel_id"] == 1) {
+                                                                $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                    $new_adults, 0, $personas_extras);
+                                                            } else {
+                                                                $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                                    $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                        $hotel_client['hotel']['markup'],
+                                                                        $rates_plan_room),
+                                                                    $rates_plan_room["id"], $room["max_capacity"],
+                                                                    $new_adults, 0, $personas_extras);
+                                                            }
+                                                            //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $new_adults, 0, $personas_extras);
+                                                        } else {
+                                                            if ($rates_plan_room["channel_id"] == 1) {
+                                                                $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                    $personas_restantes, 0, 0);
+                                                            } else {
+                                                                $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                                    $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                        $hotel_client['hotel']['markup'],
+                                                                        $rates_plan_room),
+                                                                    $rates_plan_room["id"], $room["max_capacity"],
+                                                                    $personas_restantes, 0, 0);
+                                                            }
+                                                            //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $personas_restantes, 0, 0);
+                                                        }
+
+                                                        if (!$rates_plan_room_new) {
+                                                            continue;
+                                                        }
+
+                                                        $finished_search = true;
+                                                    }
+
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => $rates_plan_room_new["total_amount_extra"],
+                                                        'quantity_adults' => $rates_plan_room_new["quantity_adults"],
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => $rates_plan_room_new["quantity_extras"],
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $rates_plan_room_new["quantity_adults"] + $rates_plan_room_new["quantity_extras"],
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+
+                                                    array_push($tarifas_seleccionadas, $rate);
+
+                                                    if ($finished_search) {
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        } else {
+                                            $result = $ocupacion_tarifa * $inventory_rate;
+                                            if ($result >= $quantity_person_room["adults"]) {
+                                                $cupos_personas = $quantity_person_room["adults"];
+                                                $new_adults = $ocupacion_tarifa;
+
+                                                $total_amount = 0;
+                                                for ($i = 0; $i < $num_hab_req; $i++) {
+                                                    if ($cupos_personas > 0) {
+                                                        if (($cupos_personas - $ocupacion_tarifa) <= 0) {
+                                                            $new_adults = $cupos_personas;
+                                                        } else {
+                                                            $new_adults = $ocupacion_tarifa;
+                                                            $cupos_personas -= $ocupacion_tarifa;
+                                                        }
+                                                    }
+                                                    if ($new_adults == $ocupacion_tarifa) {
+                                                        if ($rates_plan_room["channel_id"] == 1) {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $ocupacion_tarifa, 0, 0);
+                                                        } else {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                                $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $rates_plan_room["id"], $room["max_capacity"],
+                                                                $ocupacion_tarifa, 0, 0);
+                                                        }
+                                                        //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $ocupacion_tarifa, 0, 0);
+                                                    } else {
+                                                        if ($rates_plan_room["channel_id"] == 1) {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $cupos_personas, 0, 0);
+                                                        } else {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                                $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $rates_plan_room["id"], $room["max_capacity"],
+                                                                $cupos_personas, 0, 0);
+                                                        }
+                                                        //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $cupos_personas, 0, 0);
+                                                    }
+                                                    if (!$rates_plan_room_new) {
+                                                        continue;
+                                                    }
+
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => $rates_plan_room_new["total_amount_extra"],
+                                                        'quantity_adults' => $rates_plan_room_new["quantity_adults"],
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => 0,
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $rates_plan_room_new["quantity_adults"],
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+
+                                                    array_push($room['tarifas_seleccionadas'], $rate);
+
+                                                    $total_amount += $rates_plan_room_new["total_amount"];
+                                                }
+
+                                                $room["quantity_adults"] += $quantity_person_room["adults"];
+                                                $room["quantity_child"] = 0;
+                                                $room["quantity_infants"] = 0;
+                                                $room["quantity_rooms"] += $num_hab_req;
+                                                $room["total_amount"] += $total_amount;
+
+                                                array_push($hotels_client[$index_hotel]['best_options']['rooms'],
+                                                    $room);
+
+                                                $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += $num_hab_req;
+                                                $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+
+                                                $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $total_amount;
+                                                $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $total_amount;
+
+                                                $find_room_with_lower_occupancy = true;
+                                                break 2;
+                                            }
+                                            if ($result < $quantity_person_room["adults"]) {
+
+                                                if ($cupos_personas_disponibles === 0) {
+                                                    $cupos_personas_disponibles += $result;
+                                                    $cupos = $result;
+                                                } else {
+                                                    $cupos = $cupos_personas_disponibles + $result;
+                                                    if ($cupos > $quantity_person_room['adults']) {
+                                                        $cupos = ($quantity_person_room['adults'] - $cupos_personas_disponibles);
+                                                        $cupos_personas_disponibles += $cupos;
+                                                    } elseif ($cupos < $quantity_person_room['adults']) {
+                                                        $cupos_personas_disponibles += $result;
+                                                        $cupos = $result;
+                                                    }
+                                                }
+                                                $personas_restantes = $cupos;
+                                                $finished_search = false;
+                                                for ($i = 0; $i < $inventory_rate; $i++) {
+                                                    if (($personas_restantes - $ocupacion_tarifa) >= 0) {
+                                                        $personas_restantes -= $ocupacion_tarifa;
+                                                        if ($rates_plan_room["channel_id"] == 1) {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $ocupacion_tarifa, 0, 0);
+                                                        } else {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                                $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $rates_plan_room["id"], $room["max_capacity"],
+                                                                $ocupacion_tarifa, 0, 0);
+
+                                                            if (!$rates_plan_room_new) {
+                                                                continue;
+                                                            }
+                                                        }
+                                                        //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $ocupacion_tarifa, 0, 0);
+                                                        if ($personas_restantes == 0) {
+                                                            $finished_search = true;
+                                                        }
+                                                    } else {
+                                                        if ($rates_plan_room["channel_id"] == 1) {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $personas_restantes, 0, 0);
+                                                        } else {
+                                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons(
+                                                                $this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                                    $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                                $rates_plan_room["id"], $room["max_capacity"],
+                                                                $personas_restantes, 0, 0);
+
+                                                            if (!$rates_plan_room_new) {
+                                                                continue;
+                                                            }
+                                                        }
+                                                        //$rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],$hotel_client['hotel']['markup'],$rates_plan_room), $personas_restantes, 0, 0);
+
+                                                        $finished_search = true;
+                                                    }
+
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => 0,
+                                                        'quantity_adults' => $rates_plan_room_new["quantity_adults"],
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => 0,
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $rates_plan_room_new["quantity_adults"],
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+                                                    array_push($tarifas_seleccionadas, $rate);
+
+                                                    if ($finished_search) {
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                if ($cupos_personas_disponibles == $quantity_person_room['adults']) {
+
+                                    foreach ($tarifas_seleccionadas as $tarifa) {
+                                        $room["quantity_adults"] += $tarifa['people_coverage'];
+                                        $room["quantity_child"] = 0;
+                                        $room["quantity_infants"] = 0;
+                                        $room["quantity_rooms"] += $tarifa['quantity_inventory_taken'];
+                                        $room["total_amount"] += $tarifa['total_amount'];
+
+                                        $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += $tarifa['quantity_inventory_taken'];
+                                        $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $tarifa['people_coverage'];
+                                        $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $tarifa['total_amount'];
+
+                                        $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $tarifa['rate']['total_amount'];
+                                        $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $tarifa['total_amount'];
+
+                                        array_push($room['tarifas_seleccionadas'], $tarifa);
+                                    }
+
+                                    array_push($hotels_client[$index_hotel]['best_options']['rooms'], $room);
+                                    $find_room_with_lower_occupancy = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+
+                    if (!$find_room_with_lower_occupancy && !$find_room_same_occupation) {
+//                        die('entro aqui 3');
+                        //buscar si hay una habitacion con mayor capacidad con inventario que cubra la cantidad de personas que esta buscando
+                        foreach ($hotel_client['hotel']['rooms'] as $index_room => $room) {
+                            $cupos_personas_disponibles = 0;
+                            $room['tarifas_seleccionadas'] = [];
+                            $tarifas_seleccionadas = [];
+                            $ocupacion_habitacion = $room["max_capacity"];
+
+                            $room["quantity_adults"] = 0;
+                            $room["quantity_child"] = 0;
+                            $room["quantity_infants"] = 0;
+                            $room["quantity_rooms"] = 0;
+                            $room["total_amount"] = 0;
+
+                            if ($ocupacion_habitacion > $quantity_person_room["adults"]) {
+                                foreach ($room["rates_plan_room"] as $rates_plan_room_index => $rates_plan_room) {
+                                    if ($rates_plan_room["channel_id"] == 1) {
+//                                        $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["policies_rates"]["max_occupancy"];
+                                        $ocupacion_tarifa = $room['room_type']['occupation'];
+                                    } else {
+                                        $ocupacion_tarifa = $rates_plan_room["calendarys"][0]["max_occupancy"];
+                                        if ($ocupacion_tarifa == null) {
+                                            $ocupacion_tarifa = $ocupacion_habitacion;
+                                        }
+                                    }
+                                    $min_inventory = 0;
+                                    if (count($rates_plan_room["inventories"]) > 0) {
+                                        for ($i = 0; $i < count($rates_plan_room["inventories"]); $i++) {
+                                            if ($i === 0) {
+                                                $min_inventory = $rates_plan_room["inventories"][0]["inventory_num"] - $rates_plan_room["inventories"][0]["total_booking"];
+                                            } else {
+                                                if ($rates_plan_room["inventories"][$i]["inventory_num"] < $min_inventory) {
+                                                    $min_inventory = $rates_plan_room["inventories"][$i]["inventory_num"] - $rates_plan_room["inventories"][$i]["total_booking"];
+                                                }
+                                            }
+                                        }
+                                    } else {
+
+                                        for ($i = 0; $i < count($rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"]); $i++) {
+                                            if ($i === 0) {
+                                                $min_inventory = $rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"][0]["inventory_num"] - $rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"][0]["total_booking"];
+                                            } else {
+                                                if ($rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"][$i]["inventory_num"] < $min_inventory) {
+                                                    $min_inventory = $rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"][$i]["inventory_num"] - $rates_plan_room["bag_rate"]["bag_room"]["inventory_bags"][$i]["total_booking"];
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    $inventory_rate = $min_inventory;
+
+                                    //check exist price extra
+                                    $check_exist_price_extra = false;
+                                    $quantity_check_price_extra = 0;
+                                    for ($j = 0; $j < count($rates_plan_room["calendarys"]); $j++) {
+                                        if ($rates_plan_room["calendarys"][$j]["rate"][0]["price_extra"] > 0 || $rates_plan_room["calendarys"][$j]["rate"][0]["price_total"] > 0) {
+                                            $quantity_check_price_extra++;
+                                        }
+                                    }
+                                    if ($quantity_check_price_extra == count($rates_plan_room["calendarys"])) {
+                                        $check_exist_price_extra = true;
+                                    }
+                                    //end check exist price extra
+
+                                    $quantity_persons = $this->getQuantityPersons($quantity_person_room["adults"], 0,
+                                        $ocupacion_habitacion, $ocupacion_tarifa, $room["min_adults"],
+                                        $room["max_adults"], $room["max_child"]);
+
+                                    if (($quantity_persons["quantity_extras"] > 0 && $check_exist_price_extra) || $quantity_persons["quantity_extras"] == 0) {
+                                        if ($rates_plan_room["channel_id"] == 1) {
+                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                $quantity_persons["quantity_adults"], 0,
+                                                $quantity_persons["quantity_extras"]);
+                                        } else {
+                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                $rates_plan_room["id"], $room["max_capacity"],
+                                                $quantity_persons["quantity_adults"], 0,
+                                                $quantity_persons["quantity_extras"]);
+                                        }
+                                        if ($rates_plan_room_new) {
+                                            $rate = [
+                                                'total_amount' => $rates_plan_room_new["total_amount"],
+                                                'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                'total_amount_child' => 0,
+                                                'total_amount_infants' => 0,
+                                                'total_amount_extras' => $rates_plan_room_new["total_amount_extra"],
+//                                                'quantity_adults' => $quantity_person_room["adults"],
+                                                'quantity_adults' => $quantity_persons["quantity_adults"],
+                                                'quantity_child' => 0,
+                                                'quantity_infants' => 0,
+                                                'quantity_extras' => $quantity_persons["quantity_extras"],
+                                                'ages_child' => [],
+                                                'people_coverage' => $quantity_person_room["adults"],
+                                                'quantity_inventory_taken' => 1,
+                                                'policy_cancellation' => [],
+                                                'policies_cancellation' => [],
+                                                'taxes_and_services' => [],
+                                                'supplements' => [],
+                                                'rate' => $rates_plan_room_new,
+                                            ];
+
+                                            $room["quantity_adults"] += $quantity_person_room["adults"];
+                                            $room["quantity_child"] = 0;
+                                            $room["quantity_infants"] = 0;
+                                            $room["quantity_rooms"] += 1;
+                                            $room["total_amount"] += $rate['total_amount'];
+
+                                            $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += 1;
+                                            $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+
+                                            $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $rate['rate']['total_amount'];
+                                            $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $rate['total_amount'];
+
+                                            array_push($room['tarifas_seleccionadas'], $rate);
+                                            array_push($hotels_client[$index_hotel]['best_options']['rooms'], $room);
+                                            break 2;
+                                        }
+                                    }
+                                    if (($quantity_persons["quantity_extras"] > 0 && !$check_exist_price_extra)) {
+                                        $result = $ocupacion_tarifa * $inventory_rate;
+                                        $num_hab_req = (int)ceil($quantity_person_room["adults"] / $ocupacion_tarifa);
+
+                                        if ($rates_plan_room["channel_id"] == 1) {
+                                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                $quantity_persons["quantity_adults"], 0, 0);
+                                        } else {
+                                            $rates_plan_room_new = $this->calculateRatePlanRoomChannelsCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                                $hotel_client['hotel']['markup'], $rates_plan_room),
+                                                $rates_plan_room["id"], $room["max_capacity"],
+                                                $quantity_persons["quantity_adults"], 0, 0);
+                                        }
+
+                                        if ($rates_plan_room_new) {
+                                            if ($result >= $quantity_person_room["adults"]) {
+                                                $cupos_personas = $quantity_person_room["adults"];
+                                                $new_adults = $ocupacion_tarifa;
+                                                $total_amount = 0;
+                                                for ($i = 0; $i < $num_hab_req; $i++) {
+                                                    if ($cupos_personas > 0) {
+                                                        if (($cupos_personas - $ocupacion_tarifa) <= 0) {
+                                                            $new_adults = $cupos_personas;
+                                                        } else {
+                                                            $new_adults = $ocupacion_tarifa;
+                                                            $cupos_personas -= $ocupacion_tarifa;
+                                                        }
+                                                    }
+
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => 0,
+                                                        'quantity_adults' => $new_adults,
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => 0,
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $new_adults,
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+
+                                                    array_push($room['tarifas_seleccionadas'], $rate);
+
+                                                    $total_amount += $rates_plan_room_new["total_amount"];
+                                                }
+
+                                                $room["quantity_adults"] += $quantity_person_room["adults"];
+                                                $room["quantity_child"] = 0;
+                                                $room["quantity_infants"] = 0;
+                                                $room["quantity_rooms"] += $num_hab_req;
+                                                $room["total_amount"] += $total_amount;
+
+                                                array_push($hotels_client[$index_hotel]['best_options']['rooms'],
+                                                    $room);
+
+                                                $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += $num_hab_req;
+                                                $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $quantity_person_room["adults"];
+
+                                                $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $total_amount;
+                                                $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $total_amount;
+                                                break 2;
+                                            }
+                                            if ($result < $quantity_person_room["adults"]) {
+                                                if ($cupos_personas_disponibles === 0) {
+                                                    $cupos_personas_disponibles += $result;
+                                                    $cupos = $result;
+                                                } else {
+                                                    $cupos = $cupos_personas_disponibles + $result;
+
+                                                    if ($cupos > $quantity_person_room['adults']) {
+                                                        $cupos = ($quantity_person_room['adults'] - $cupos_personas_disponibles);
+                                                        $cupos_personas_disponibles += $cupos;
+                                                    }
+                                                    if ($cupos < $quantity_person_room['adults']) {
+                                                        $cupos_personas_disponibles += $result;
+                                                    }
+                                                }
+                                                for ($i = 0; $i < $inventory_rate; $i++) {
+                                                    $rate = [
+                                                        'total_amount' => $rates_plan_room_new["total_amount"],
+                                                        'total_amount_adult' => $rates_plan_room_new["total_amount_adult"],
+                                                        'total_amount_child' => 0,
+                                                        'total_amount_infants' => 0,
+                                                        'total_amount_extras' => 0,
+                                                        'quantity_adults' => $cupos,
+                                                        'quantity_child' => 0,
+                                                        'quantity_infants' => 0,
+                                                        'quantity_extras' => 0,
+                                                        'ages_child' => [],
+                                                        'people_coverage' => $cupos,
+                                                        'quantity_inventory_taken' => 1,
+                                                        'policy_cancellation' => [],
+                                                        'policies_cancellation' => [],
+                                                        'taxes_and_services' => [],
+                                                        'supplements' => [],
+                                                        'rate' => $rates_plan_room_new,
+                                                    ];
+
+                                                    array_push($tarifas_seleccionadas, $rate);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                if ($cupos_personas_disponibles == $quantity_person_room['adults']) {
+                                    foreach ($tarifas_seleccionadas as $tarifa) {
+                                        $room["quantity_adults"] += $tarifa['people_coverage'];
+                                        $room["quantity_child"] = 0;
+                                        $room["quantity_infants"] = 0;
+                                        $room["quantity_rooms"] += $tarifa['quantity_inventory_taken'];
+                                        $room["total_amount"] += $tarifa['total_amount'];
+
+                                        $hotels_client[$index_hotel]['best_options']['quantity_rooms'] += $tarifa['quantity_inventory_taken'];
+                                        $hotels_client[$index_hotel]['best_options']['quantity_adults'] += $tarifa['people_coverage'];
+
+                                        $hotels_client[$index_hotel]['best_options']['total_sub_rate_amount'] += $tarifa['rate']['total_amount'];
+                                        $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $tarifa['total_amount'];
+
+                                        array_push($room['tarifas_seleccionadas'], $tarifa);
+                                    }
+
+                                    array_push($hotels_client[$index_hotel]['best_options']['rooms'], $room);
+                                    break 2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Calcular suplementos
+        foreach ($hotels_client as $index_hotel => $hotel_client) {
+            foreach ($hotel_client['best_options']['rooms'] as $roomInd => $room) {
+                foreach ($room['tarifas_seleccionadas'] as $tarInd => $tarifa) {
+                    $supplements = $this->calculateRateSupplementsRequired(
+                        $tarifa['rate']["rates_plans_id"],
+                        $hotel_client["hotel_id"],
+                        $from,
+                        $to,
+                        $client_id,
+                        $tarifa['quantity_adults'],
+                        $tarifa['quantity_child'],
+                        $tarifa['ages_child'],
+                        $tarifa['rate']['markup']
+                    );
+
+                    $tarifa['total_amount'] += $supplements["total_amount"];
+                    $tarifa['supplements'] = $supplements;
+
+                    $hotels_client[$index_hotel]['best_options']['total_rate_amount'] += $supplements["total_amount"];
+                    $hotels_client[$index_hotel]['best_options']['total_supplements_amount'] += $supplements["total_amount"];
+
+                    $hotels_client[$index_hotel]['best_options']['rooms'][$roomInd]['total_amount'] += $supplements["total_amount"];
+
+                    $hotels_client[$index_hotel]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd] = $tarifa;
+                }
+            }
+        }
+
+        // Calcular taxes and services
+        foreach ($hotels_client as $hotelInd => $hotel_client) {
+            // Filtar lo Texes and services que seran aplicadon al hotel segun si el cliente es local o extranjero
+            $applicable_fees = $this->getHotelApplicableFees($this->client(), $hotel_client['hotel']);
+
+            foreach ($hotel_client['best_options']['rooms'] as $roomInd => $room) {
+                if (empty($hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['total_taxes_and_services_amount'])) {
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['total_taxes_and_services_amount'] = 0;
+                }
+
+                foreach ($room['tarifas_seleccionadas'] as $tarInd => $tarifas_seleccionada) {
+                    if (empty($hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd]['total_taxes_and_services_amount'])) {
+                        $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd]['total_taxes_and_services_amount'] = 0;
+                    }
+
+                    $taxes_and_services = $this->addHotelExtraFees($applicable_fees,
+                        $tarifas_seleccionada['rate']["rate_plan"], $tarifas_seleccionada["total_amount"]);
+
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd]['total_amount'] += $taxes_and_services['amount_fees'];
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd]['taxes_and_services'] = $taxes_and_services;
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd]['total_taxes_and_services_amount'] += $taxes_and_services['amount_fees'];
+
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['total_amount'] += $taxes_and_services['amount_fees'];
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['total_taxes_and_services_amount'] += $taxes_and_services['amount_fees'];
+                    $hotels_client[$hotelInd]['best_options']['total_taxes_and_services_amount'] += $taxes_and_services['amount_fees'];
+                    $hotels_client[$hotelInd]['best_options']['total_rate_amount'] += $taxes_and_services['amount_fees'];
+                }
+            }
+        }
+
+        // Calcular politicas de cancelacion de la mejor seleccion
+        foreach ($hotels_client as $hotelInd => $hotel_client) {
+            // sacamos la cantidad de habitaciones seleccionadas
+            $rooms_quantity = count($hotel_client['best_options']['rooms']);
+            // contamos la cantidad total de pasajeros seleccionados
+            $guest_quantity = 0;
+            foreach ($hotel_client['best_options']['rooms'] as $room) {
+                foreach ($room['tarifas_seleccionadas'] as $tarifas_seleccionada) {
+                    $guest_quantity += $tarifas_seleccionada['people_coverage'];
+                }
+            }
+
+            if ($guest_quantity == 0) {
+                continue;
+            }
+
+            foreach ($hotel_client['best_options']['rooms'] as $roomInd => $room) {
+                foreach ($room['tarifas_seleccionadas'] as $tarInd => $tarifas_seleccionada) {
+                    if ($tarifas_seleccionada['rate']['channel_id'] == 1) {
+                        $selected_policies_cancelation = collect($tarifas_seleccionada['rate']["calendarys"][0]["policies_rates"]["policies_cancelation"]);
+                    } else {
+                        if (count($tarifas_seleccionada['rate']['policies_cancelation']) == 0) {
+                            $selected_policies_cancelation = collect($tarifas_seleccionada['rate']["calendarys"][0]["policies_cancelation"]);
+                        } else {
+                            $selected_policies_cancelation = collect($tarifas_seleccionada['rate']['policies_cancelation']);
+                        }
+                    }
+
+                    $policy_cancellation_calculated = $this->calculateCancellationlPolicies($current_date,
+                        $check_in, $check_out, $tarifas_seleccionada["total_amount"],
+                        $selected_policies_cancelation, $guest_quantity, $rooms_quantity);
+
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd]['policy_cancellation'] = $policy_cancellation_calculated['next_penalty'];
+                    $hotels_client[$hotelInd]['best_options']['rooms'][$roomInd]['tarifas_seleccionadas'][$tarInd]['policies_cancellation'] = $policy_cancellation_calculated['penalties'];
+                }
+            }
+        }
+
+        //Agregar las tarifas On Request
+        $rates_on_request = [];
+        if (isset($rates_plan_rooms_on_request)) {
+            $rates_on_request = RatesPlansRooms::whereIn('id', $rates_plan_rooms_on_request)
+                ->when(count($hotels_id) > 0, function ($query) use ($hotels_id) {
+                    return $query->whereHas('rate_plan', function ($query) use ($hotels_id) {
+                        $query->whereIn('hotel_id', $hotels_id);
+                    });
+                })
+                ->with([
+//                'policies_cancelation' => function ($query) use ($from, $to, $period, $rates_plan_room) {
+                    'policies_cancelation' => function ($query) {
+                        $query->where('type', 'cancellations');
+                        $query->with([
+                            'policy_cancellation_parameter' => function ($query) {
+                                $query->where('min_day', '>=', 0);
+                                $query->where('max_day', '<>', 0);
+                                $query->with('penalty');
+                            },
+                        ]);
+                    },
+                ])
+                ->with([
+                    'descriptions' => function ($query) {
+
+                    }
+                ])
+                ->with([
+                    'calendarys' => function ($query) use ($from, $to) {
+                        $query->where('date', '>=', $from);
+                        $query->where('date', '<=', $to);
+                        $query->orderBy('date');
+                        $query->with([
+                            'policies_rates' => function ($query) {
+                                $query->with([
+                                    'policies_cancelation' => function ($query) {
+//                                        $query->with('policy_cancellation_parameter');
+                                        $query->where('type', 'cancellations');
+                                        $query->with([
+                                            'policy_cancellation_parameter' => function ($query) {
+                                                $query->where('min_day', '>=', 0);
+                                                $query->where('max_day', '<>', 0);
+                                                $query->with('penalty');
+                                            },
+                                        ]);
+                                    },
+                                ]);
+                                $query->with([
+                                    'translations' => function ($query) {
+                                        $query->where('type', 'rate_policies');
+                                    },
+                                ]);
+                            },
+                        ]);
+                        $query->with('rate');
+                    },
+                ])->with('channel')
+                ->with('rate_plan.meal.translations')
+                ->with([
+                    'rate_plan' => function ($query) use ($period) {
+                        $query->with('translations');
+                        $query->with([
+                            'meal.translations',
+                            'markup' => function ($query) use ($period) {
+                                $query->where('period', '>=', $period);
+                            },
+                        ]);
+                    },
+                ])
+                ->with([
+                    'inventories' => function ($query) use ($from, $to) {
+                        $query->where('date', '>=', $from);
+                        $query->where('date', '<=', $to);
+                    },
+                ])
+                ->with([
+                    'room' => function ($query) {
+                        $query->with([
+                            'galeries' => function ($query) {
+                                $query->select('object_id', 'url');
+                                $query->where('type', 'room');
+                            },
+                        ]);
+
+                        $query->with([
+                            'channels' => function ($query) {
+                                $query->wherePivot('state', '=', 1);
+                                $query->wherePivot('code', '!=', '');
+                                $query->wherePivot('code', '!=', 'null');
+                            },
+                        ]);
+
+                        $query->with([
+                            'room_type' => function ($query) {
+                                $query->select('id', 'occupation');
+                                $query->with([
+                                    'translations' => function ($query) {
+                                        $query->select('object_id', 'value');
+                                        $query->where('type', 'roomtype');
+                                        $query->where('language_id', 1);
+                                    },
+                                ]);
+                            },
+                        ]);
+
+                        $query->with([
+                            'translations' => function ($query) {
+                                $query->select('object_id', 'value', 'slug');
+                                $query->where('type', 'room');
+                                $query->where('language_id', 1);
+                            },
+                        ]);
+                    }
+                ])->where('channel_id', 1)->get()->toArray();
+
+        }
+
+
+        // Obtengo un listado de hoteles que no esten incluidos en $hotels_client
+        $hotels_id_onrequest = array();
+        foreach ($rates_on_request as $index_rate => $rate) {
+            $sw = false;
+            foreach ($hotels_client as $index_hotel => $hotel_client) {
+                if ($rate["room"]["hotel_id"] == $hotel_client["hotel"]["id"]) {
+                    $sw = true;
+                }
+            }
+            if ($sw == false) {
+                $hotels_id_onrequest[$rate["room"]["hotel_id"]] = $rate["room"]["hotel_id"];
+            }
+        }
+
+        if (count($hotels_id_onrequest) > 0) {
+            $hotels_client_on_request = $this->getDataHotelNoReturn($hotels_id_onrequest, $period, $client_id,
+                $date_from, $date_to, $language->id);
+            $hotels_client = array_merge($hotels_client, $hotels_client_on_request);
+        }
+
+        //validamos si hay habitaciones onRequest que no esten agregados a la matriz de los hoteles y las creamos pero si existen ya las agregamos
+        foreach ($rates_on_request as $index_rate => $rate) {
+            if ($rate["status"] == 1) {
+                foreach ($hotels_client as $index_hotel => $hotel_client) {
+                    if ($rate["room"]["hotel_id"] == $hotel_client["hotel"]["id"]) {
+
+                        $key = array_search($rate['room_id'], array_column($hotel_client["hotel"]["rooms"], 'id'));
+                        if ($key === false) {
+                            $rates_on_request[$index_rate]["status"] = 0;
+                            $rate["status"] = 0;
+                            $rate["room"]['rates_plan_room'][] = $rate;
+                            array_push($hotels_client[$index_hotel]["hotel"]["rooms"], $rate["room"]);
+                            break;
+                        } else {
+
+                            foreach ($hotel_client["hotel"]["rooms"] as $index_room => $room) {
+
+                                if ($rate["room_id"] == $room["id"]) {
+                                    $rates_on_request[$index_rate]["status"] = 0;
+                                    $rate["status"] = 0;
+                                    array_push($hotels_client[$index_hotel]["hotel"]["rooms"][$index_room]["rates_plan_room"],
+                                        $rate);
+                                    break 2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // $this->getHotelAvailAmadeus();
+        $faker = Faker::create();
+
+        $token_search = $faker->unique()->uuid;
+
+        if (env('SEARCH_HOTEL_TIME_LIVE')) {
+            $this->expiration_search_hotels = env('SEARCH_HOTEL_TIME_LIVE');
+        }
+
+        // print_r(json_encode($hotels_client));
+        // die('');
+        $this->storeTokenSearchHotels($token_search, $hotels_client, $this->expiration_search_hotels);
+        //procedimiento para estructurar json con los datos necesarios
+        $hotels = [
+            [
+                "city" => [
+                    "token_search" => $token_search,
+                    "token_search_frontend" => "",
+                    "ids" => $destiny["code"],
+                    "description" => $destiny["label"],
+                    "class" => [],
+                    "zones" => [],
+                    "hotels" => [],
+                    "search_parameters" => $search_parameters,
+                    "quantity_hotels" => 0
+                ],
+            ],
+        ];
+
+
+        $min_price_search = 0;
+        $max_price_search = 0;
+        foreach ($hotels_client as $index => $hotel_client) {
+            $hotel_description = "";
+            $hotel_address = "";
+            $hotel_logo = "";
+            $amenities = [];
+            $hotel_gallery = [];
+            $rooms = [];
+
+            $best_options = [];
+
+            if (count($hotel_client["best_options"]) > 0) {
+                $best_options = [
+                    "quantity_rooms" => $hotel_client["best_options"]["quantity_rooms"],
+                    "quantity_adults" => $hotel_client["best_options"]["quantity_adults"],
+                    "quantity_child" => $hotel_client["best_options"]["quantity_child"],
+                    "total_taxes_and_services_amount" => roundLito((float)number_format($hotel_client["best_options"]["total_taxes_and_services_amount"],
+                        2, '.', '')),
+                    "total_supplements_amount" => roundLito((float)number_format($hotel_client["best_options"]["total_supplements_amount"],
+                        2, '.', '')),
+                    "total_sub_rate_amount" => roundLito((float)number_format($hotel_client["best_options"]["total_sub_rate_amount"],
+                        2, '.', '')),
+                    "total_rate_amount" => roundLito((float)number_format($hotel_client["best_options"]["total_rate_amount"],
+                        2,
+                        '.', '')),
+                    "rooms" => [],
+                ];
+            }
+
+            //Agregar Arreglo de Zonas de Hoteles a la Busqueda
+            if ($city_id != "") {
+                $zones = Zone::where('city_id', $city_id)->with([
+                    'translations' => function ($query) use ($language) {
+                        $query->where('language_id', $language->id);
+                    }
+                ])->get();
+                foreach ($zones as $zone) {
+                    $find_zone = false;
+                    if (count($hotels[0]["city"]["zones"]) == 0) {
+                        array_push($hotels[0]["city"]["zones"], [
+                            "zone_name" => $zone["translations"][0]["value"],
+                            "status" => false,
+                        ]);
+                    } else {
+                        foreach ($hotels[0]["city"]["zones"] as $zone_new) {
+                            if ($zone_new["zone_name"] == $zone["translations"][0]["value"]) {
+                                $find_zone = true;
+                            }
+                        }
+                        if (!$find_zone) {
+                            array_push($hotels[0]["city"]["zones"], [
+                                "zone_name" => $zone["translations"][0]["value"],
+                                "status" => false,
+                            ]);
+                        }
+                    }
+                }
+            } else {
+                $state = State::where('iso', $state_id)->first();
+                $cities = City::where('state_id', $state->id)->get();
+                foreach ($cities as $city) {
+                    $zones = Zone::where('city_id', $city["id"])->with([
+                        'translations' => function ($query) use ($language) {
+                            $query->where('language_id', $language->id);
+                        }
+                    ])->get();
+                    foreach ($zones as $zone) {
+                        $find_zone = false;
+                        if (count($hotels[0]["city"]["zones"]) == 0) {
+                            array_push($hotels[0]["city"]["zones"], [
+                                "zone_name" => $zone["translations"][0]["value"],
+                                "status" => false,
+                            ]);
+                        } else {
+                            foreach ($hotels[0]["city"]["zones"] as $zone_new) {
+                                if ($zone_new["zone_name"] == $zone["translations"][0]["value"]) {
+                                    $find_zone = true;
+                                }
+                            }
+                            if (!$find_zone) {
+                                array_push($hotels[0]["city"]["zones"], [
+                                    "zone_name" => $zone["translations"][0]["value"],
+                                    "status" => false,
+                                ]);
+                            }
+                        }
+                    }
+                }
+            }
+
+            //Agregar Arreglo de Clases de Hoteles a la Busqueda
+            if (count($hotels[0]["city"]["class"]) == 0) {
+                array_push($hotels[0]["city"]["class"], [
+                    "class_name" => $hotel_client["hotel"]["typeclass"]["translations"][0]["value"],
+                    "status" => false,
+                ]);
+            } else {
+                $find_class = false;
+                foreach ($hotels[0]["city"]["class"] as $class) {
+                    if ($class["class_name"] == $hotel_client["hotel"]["typeclass"]["translations"][0]["value"]) {
+                        $find_class = true;
+                    }
+                }
+                if (!$find_class) {
+                    array_push($hotels[0]["city"]["class"], [
+                        "class_name" => $hotel_client["hotel"]["typeclass"]["translations"][0]["value"],
+                        "status" => false,
+                    ]);
+                }
+            }
+
+            //Agregar Precio Maximo y Minimo de hotel a Busqueda
+            if (count($hotel_client["best_options"]) > 0) {
+                if ($index === 0) {
+                    $min_price_search = $hotel_client["best_options"]["total_rate_amount"];
+                    $max_price_search = $hotel_client["best_options"]["total_rate_amount"];
+                } else {
+                    if ($hotel_client["best_options"]["total_rate_amount"] < $min_price_search) {
+                        $min_price_search = $hotel_client["best_options"]["total_rate_amount"];
+                    }
+                    if ($hotel_client["best_options"]["total_rate_amount"] > $max_price_search) {
+                        $max_price_search = $hotel_client["best_options"]["total_rate_amount"];
+                    }
+                }
+            }
+
+            //cargar traducciones
+            foreach ($hotel_client["hotel"]["translations"] as $translation) {
+                if ($translation["slug"] === "hotel_address") {
+                    $hotel_address = $translation["value"];
+                }
+                if ($translation["slug"] === "hotel_description") {
+                    $hotel_description = $translation["value"];
+                }
+            }
+
+            //cargar galeria de hotel
+            foreach ($hotel_client["hotel"]["galeries"] as $image) {
+                if ($image["slug"] === "hotel_logo") {
+                    $hotel_logo = secure_url('/').'/images/'.$image["url"];
+                }
+                if ($image["slug"] === "hotel_gallery") {
+                    array_push($hotel_gallery, secure_url('/').'/images/'.$image["url"]);
+                }
+            }
+
+            //cargar amenities de hotel
+            if (count($hotel_client["hotel"]["amenity"]) > 0) {
+                foreach ($hotel_client["hotel"]["amenity"] as $amenity) {
+                    array_push($amenities,
+                        [
+                            "name" => $amenity["translations"][0]["value"],
+                            "image" => count($amenity["galeries"]) > 0 ? secure_url('/').'/images/'.$amenity["galeries"][0]["url"] : ''
+                        ]);
+                }
+            }
+
+            // Filtar lo Texes and services que seran aplicadon al hotel segun si el cliente es local o extranjero
+            $applicable_fees = $this->getHotelApplicableFees($this->client(), $hotel_client['hotel']);
+
+            //cargar habitaciones de hotel
+            foreach ($hotel_client["hotel"]["rooms"] as $room) {
+                $room_name = "";
+                $room_description = "";
+                $room_gallery = [];
+                $rates = [];
+                //cargar traducciones de habitacion
+                foreach ($room["translations"] as $translation) {
+                    if ($translation["slug"] == "room_name") {
+                        $room_name = $translation["value"];
+                    }
+                    if ($translation["slug"] == "room_description") {
+                        $room_description = $translation["value"];
+                    }
+                }
+                //cargar galeria de habitacion
+                foreach ($room["galeries"] as $image) {
+                    array_push($room_gallery, secure_url('/').'/images/'.$image["url"]);
+                }
+                //cargar tarifas de habitacion
+                $ids_rates_channels_charged = [];
+                foreach ($room["rates_plan_room"] as $rate) {
+                    //calculo de inventario disponible dado un rango de fechas
+                    $min_inventory = 0;
+
+                    if (count($rate["inventories"]) == 0) {
+                        if (isset($rate["bag_rate"])) {
+                            $rate["inventories"] = $rate["bag_rate"]["bag_room"]["inventory_bags"];
+                        }
+                    }
+
+                    foreach ($rate["inventories"] as $index => $inventory) {
+                        if ($index === 0) {
+                            $min_inventory = $inventory["inventory_num"] - $inventory["total_booking"];
+                        } else {
+                            if ($inventory["inventory_num"] < $min_inventory) {
+                                $min_inventory = $inventory["inventory_num"] - $inventory["total_booking"];
+                            }
+                        }
+                    }
+
+                    if ($rate["status"] == 0) {
+                        $min_inventory = 10;
+                    }
+
+                    // print_r($rate);
+                    // die('min' . $min_inventory);
+
+//--------------------------------------------------calculo de importes para 1 adulto----------------------------------------------------------------
+
+                    $policies_cancellation = [];
+                    $check_other_step = true;
+                    for ($m = 0; $m < count($quantity_persons_rooms); $m++) {
+                        for ($n = 0; $n < count($quantity_persons_rooms[$m]["ages_child"]); $n++) {
+                            $quantity_persons_rooms[$m]["ages_child"][$n]["check"] = false;
+                        }
+                    }
+                    if ($rate["channel_id"] == 1) {
+//                        if ($rate["id"] == 5410 && $rate["rate_plan"]["id"] == 900)
+//                        {
+//                            $quantity_room_search = 0;
+                        $rates_new = [];
+                        $pivot_people_adults = $total_people_adults;
+                        $pivot_people_child = $total_people_child;
+                        $total_amount_general = 0;
+                        $supplements_total_amount_general = 0;
+                        $total_amount_tax_rate_general = 0;
+                        $markup_general = 0;
+                        if ($total_people_child == 0) {
+                            $quantity_room_search = ceil((float)($total_people_search / $room["max_adults"]));
+                        } else {
+                            $quantity_room_search = ceil((float)($total_people_search / $room["max_capacity"]));
+                        }
+
+                        if ($min_inventory >= $quantity_room_search) {
+                            $check_other_step = false;
+                            $new_people_adult = 0;
+                            $new_people_child = 0;
+                            $selected_policies_cancelation = [];
+                            $no_show_apply = [
+                                "executive" => Auth::user()->user_type_id,
+                                "political_child" => "",
+                                "message" => ""
+                            ];
+                            for ($i = 0; $i < $quantity_room_search; $i++) {
+                                if ($pivot_people_adults == 0) {
+                                    break;
+                                }
+                                if ($pivot_people_adults > $room['max_adults']) {
+                                    $new_people_adult = $room["max_adults"];
+                                    $pivot_people_adults -= $room["max_adults"];
+                                    if ($pivot_people_child > $room["max_child"]) {
+                                        $new_people_child = $room["max_child"];
+                                        $pivot_people_child -= $room["max_child"];
+                                    } else {
+                                        $new_people_child = $pivot_people_child;
+                                        $pivot_people_child = 0;
+                                    }
+                                } else {
+                                    $new_people_adult = $pivot_people_adults;
+                                    $pivot_people_adults = 0;
+                                    if ($pivot_people_child > $room["max_child"]) {
+                                        $new_people_child = $room["max_child"];
+                                        $pivot_people_child -= $room["max_child"];
+                                    } else {
+                                        $new_people_child = $pivot_people_child;
+                                        $pivot_people_child = 0;
+                                    }
+                                }
+                                $new_people_extras = 0;
+                                for ($l = 0; $l < $new_people_child; $l++) {
+                                    for ($j = 0; $j < count($quantity_persons_rooms); $j++) {
+                                        for ($k = 0; $k < count($quantity_persons_rooms[$i]["ages_child"]); $k++) {
+                                            if (($quantity_persons_rooms[$i]["ages_child"][$k]["age"] < $hotel_client["hotel"]["min_age_child"] ||
+                                                    $quantity_persons_rooms[$i]["ages_child"][$k]["age"] > $hotel_client["hotel"]["max_age_child"]) &&
+                                                $quantity_persons_rooms[$i]["ages_child"][$k]["check"] == false) {
+                                                $quantity_persons_rooms[$i]["ages_child"][$k]["check"] = true;
+                                                $new_people_child--;
+                                                $new_people_extras++;
+                                            }
+                                        }
+                                    }
+                                }
+//                                    dd($new_people_adult.''.$new_people_child.''.$new_people_extras);
+                                $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                    $hotel_client['hotel']['markup'], $rate), $new_people_adult, $new_people_child,
+                                    $new_people_extras);
+
+                                $markup_general = $rates_plan_room_new["markup"];
+
+                                $selected_policies_cancelation = collect($rates_plan_room_new["calendarys"][0]["policies_rates"]["policies_cancelation"]);
+
+                                $no_show_apply = [
+                                    "executive" => Auth::user()->user_type_id,
+                                    "political_child" => "",
+                                    "message" => ""
+                                ];
+                                if ($rates_plan_room_new["total_amount_child"] == 0) {
+                                    $no_show_apply["political_child"] = "Free";
+                                } else {
+                                    $no_show_apply["political_child"] = "Con costo";
+                                }
+
+                                if (count($rates_plan_room_new["calendarys"][0]["policies_rates"]) > 0) {
+                                    if (count($rates_plan_room_new["calendarys"][0]["policies_rates"]["policies_cancelation"]) > 0) {
+                                        $parameter_new = DB::table('policy_cancellation_parameters')
+                                            ->where('policy_cancelation_id',
+                                                $rates_plan_room_new["calendarys"][0]["policies_rates"]["policies_cancelation"][0]["id"])
+                                            ->where('min_day', 0)
+                                            ->where('max_day', 0)
+                                            ->first();
+
+                                        if ($parameter_new != null) {
+                                            $no_show_apply["message"] = "No Show Aplica 100%";
+                                        }
+                                    }
+                                }
+//                                dd($rates_plan_room_new["calendarys"][0]["policies_rates"]);
+
+                                $supplements = $this->calculateRateSupplementsRequired($rate["rates_plans_id"],
+                                    $hotel_client["hotel_id"], $from, $to, $client_id, $new_people_adult,
+                                    $new_people_child, [],
+                                    $rates_plan_room_new['markup']);
+
+                                $taxes_and_services = $this->addHotelExtraFees($applicable_fees, $rate["rate_plan"],
+                                    ($rates_plan_room_new["total_amount"] + $supplements["total_amount"]));
+
+                                $total_amount_rate = $rates_plan_room_new["total_amount"] + $taxes_and_services["amount_fees"] + $supplements["total_amount"];
+                                $total_amount_tax_rate = $taxes_and_services["amount_fees"];
+
+                                $total_amount_general += $total_amount_rate;
+                                $total_amount_tax_rate_general += $total_amount_tax_rate;
+                                $supplements_total_amount_general += $supplements["total_amount"];
+
+                                $total_amount_rate = roundLito((float)number_format($total_amount_rate, 2, '.', ''));
+                                $total_amount_tax_rate = roundLito((float)number_format($total_amount_tax_rate, 2, '.',
+                                    ''));
+
+                                $total_amount_general = roundLito((float)number_format($total_amount_general, 2, '.',
+                                    ''));
+                                $total_amount_tax_rate_general = roundLito((float)number_format($total_amount_tax_rate_general,
+                                    2, '.', ''));
+                                $supplements_total_amount_general = roundLito((float)number_format($supplements_total_amount_general,
+                                    2, '.', ''));
+
+                                $rates_calendars = $rates_plan_room_new["calendarys"];
+
+                                foreach ($rates_calendars as $idratecalen => $rates_calendar) {
+                                    unset($rates_calendars[$idratecalen]['policies_rates']['translations']);
+                                }
+
+                                array_push($rates_new, [
+                                    'total_amount' => $total_amount_rate,
+                                    'total_taxes_and_services' => $total_amount_tax_rate,
+                                    'avgPrice' => $total_amount_rate,
+                                    'quantity_adults' => $new_people_adult,
+                                    'quantity_child' => $new_people_child,
+                                    'quantity_extras' => $new_people_extras,
+                                    'quantity_adults_total' => $new_people_adult,
+                                    'quantity_child_total' => $new_people_child,
+                                    'quantity_extras_total' => $new_people_extras,
+                                    'total_amount_adult' => $rates_plan_room_new['total_amount_adult'],
+                                    'total_amount_child' => $rates_plan_room_new['total_amount_child'],
+                                    'total_amount_infants' => 0,
+                                    'total_amount_extras' => $rates_plan_room_new['total_amount_extra'],
+                                    'people_coverage' => $new_people_adult + $new_people_child + $new_people_extras,
+                                    'quantity_inventory_taken' => 1,
+                                    'amount_days' => $rates_calendars,
+                                ]);
+
+                            }
+
+                            $policy_cancellation_calculated = $this->calculateCancellationlPolicies($current_date,
+                                $check_in, $check_out, $total_amount_general + $supplements_total_amount_general,
+                                $selected_policies_cancelation, $total_people_search, $quantity_room_search);
+
+                            $message = empty($policy_cancellation_calculated['next_penalty']["message"]) ? '' : $policy_cancellation_calculated['next_penalty']["message"];
+
+
+                            $cancellation_details = [];
+                            if (isset($policy_cancellation_calculated['selected_policy_cancelation']["policy_cancellation_parameter"])) {
+                                foreach ($policy_cancellation_calculated['selected_policy_cancelation']["policy_cancellation_parameter"] as $detail) {
+                                    array_push($cancellation_details, [
+                                        'to' => $detail["min_day"],
+                                        'from' => $detail["max_day"],
+                                        'amount' => $detail["amount"] ? $detail["amount"] : 100,
+                                        'tax' => $detail["tax"],
+                                        'service' => $detail["service"],
+                                        'penalty' => $detail["penalty"]["name"],
+                                    ]);
+                                }
+                            } else {
+                                array_push($cancellation_details, [
+                                    'to' => 0,
+                                    'from' => 0,
+                                    'amount' => 100,
+                                    'tax' => 1,
+                                    'service' => 1,
+                                    'penalty' => 'total_reservation ',
+                                ]);
+                            }
+
+                            $max_occupancy = $rate["calendarys"][0]["policies_rates"]["max_occupancy"];
+
+                            $rate_plan_description = '';
+                            if ($rate['descriptions']) {
+                                $rate_plan_description = $rate['descriptions'][0]['value'];
+                            }
+
+                            $supplements = $this->calculateRateSupplementsRequired($rate["rates_plans_id"],
+                                $hotel_client["hotel_id"], $from, $to, $client_id, $total_people_adults,
+                                $total_people_child, [],
+                                $markup_general);
+
+                            $taxes_and_services = $this->addHotelExtraFees($applicable_fees, $rate["rate_plan"],
+                                ($total_amount_general + $supplements_total_amount_general));
+                            array_push($rates, [
+                                'rateId' => $rate["id"],
+                                'ratePlanId' => $rate["rate_plan"]["id"],
+                                'name' => $rate["rate_plan"]["translations"][0]["value"],
+                                'description' => $rate_plan_description,
+                                'meal_id' => $rate["rate_plan"]["meal"]['id'],
+                                'meal_name' => $rate["rate_plan"]["meal"]["translations"][0]["value"],
+                                'available' => $min_inventory,
+                                'onRequest' => $rate["status"],
+                                'rateProvider' => $rate["channel"]["name"],
+                                'no_show' => $rate["rate_plan"]["no_show"],
+                                'day_use' => $rate["rate_plan"]["day_use"],
+                                'total' => $total_amount_general,
+                                'total_taxes_and_services' => $total_amount_tax_rate_general,
+                                'avgPrice' => $total_amount_general,
+                                'political' => [
+                                    'rate' => [
+                                        'name' => $rate["calendarys"][0]["policies_rates"]["name"],
+//                                        'message' => "@".$rate["calendarys"][0]["policies_rates"]["translations"][0]['value'],
+//                                        'message' => "",
+                                        'message' => (isset($rate["calendarys"][0]["policies_rates"]["translations"]) ? $rate["calendarys"][0]["policies_rates"]["translations"][0]['value'] : ''),
+                                        'max_occupancy' => $max_occupancy,
+                                    ],
+                                    'cancellation' => [
+                                        "name" => $message,
+                                        "details" => $cancellation_details,
+                                    ],
+                                    "no_show_apply" => $no_show_apply
+                                ],
+                                'quantity_rates' => count($rates_new),
+                                'taken' => false,
+                                'cart_items_id' => [],
+                                'disabled_buttons' => false,
+                                'taxes_and_services' => $taxes_and_services,
+                                'supplements' => $supplements,
+                                'rate' => $rates_new,
+                                'show_message_error' => false,
+                                'message_error' => '',
+                            ]);
+                        } else {
+                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+                                $hotel_client['hotel']['markup'], $rate), 1, 0, 0);
+                        }
+//                        }else{
+//                            $rates_plan_room_new = $this->calculateRatePlanRoomCalendarByPersons($this->getMarkupFromsearch($hotel_client['client_markup'],
+//                                $hotel_client['hotel']['markup'], $rate), 1, 0, 0);
+//                        }
+
+                    } else {
+                        if (in_array($rate["id"], $ids_rates_channels_charged)) {
+                            continue;
+                        }
+
+                        $rates_plan_room_new = $this->getChannelsFirstAvailRate(
+                            $this->getMarkupFromsearch($hotel_client['client_markup'], $hotel_client['hotel']['markup'],
+                                $rate),
+                            $rate["id"]);
+                    }
+
+                    if ($rates_plan_room_new && $check_other_step) {
+                        $guest_quantity = 1;
+                        $rooms_quantity = 1;
+
+                        //calculo de detalle de politicas de cancelacion
+                        if ($rate["channel_id"] == 1) {
+                            $selected_policies_cancelation = collect($rates_plan_room_new["calendarys"][0]["policies_rates"]["policies_cancelation"]);
+                        } else {
+                            if (count($rates_plan_room_new['policies_cancelation']) == 0) {
+                                $selected_policies_cancelation = collect($rates_plan_room_new["calendarys"][0]["policies_cancelation"]);
+                            } else {
+                                $selected_policies_cancelation = collect($rates_plan_room_new["policies_cancelation"]);
+                            }
+                        }
+                        $no_show_apply = [
+                            "executive" => Auth::user()->user_type_id,
+                            "political_child" => "",
+                            "message" => ""
+                        ];
+                        if ($rates_plan_room_new["total_amount_child"] == 0) {
+                            $no_show_apply["political_child"] = "Free";
+                        } else {
+                            $no_show_apply["political_child"] = "Cost";
+                        }
+                        if (count($selected_policies_cancelation) > 0) {
+//                            if(count($rates_plan_room_new["calendarys"][0]["policies_rates"]["policies_cancelation"])>0)
+//                            {dd
+                            $policy_cancellation_id = null;
+                            if (!isset($selected_policies_cancelation[0])) {
+                                $policy_cancellation_id = $selected_policies_cancelation["id"];
+                            } else {
+                                $policy_cancellation_id = $selected_policies_cancelation[0]["id"];
+                            }
+                            $parameter_new = DB::table('policy_cancellation_parameters')
+                                ->where('policy_cancelation_id', $policy_cancellation_id)
+                                ->where('min_day', 0)
+                                ->where('max_day', 0)
+                                ->first();
+
+                            if ($parameter_new != null) {
+                                $no_show_apply["message"] = "No Show Aplica 100%";
+                            }
+//                            }
+                        }
+
+
+                        $supplements = $this->calculateRateSupplementsRequired($rate["rates_plans_id"],
+                            $hotel_client["hotel_id"], $from, $to, $client_id, 1, 0, [],
+                            $rates_plan_room_new['markup']);
+
+                        $policy_cancellation_calculated = $this->calculateCancellationlPolicies($current_date,
+                            $check_in, $check_out, $rates_plan_room_new["total_amount"] + $supplements["total_amount"],
+                            $selected_policies_cancelation, $guest_quantity, $rooms_quantity);
+
+                        $message = empty($policy_cancellation_calculated['next_penalty']["message"]) ? '' : $policy_cancellation_calculated['next_penalty']["message"];
+
+
+                        $taxes_and_services = $this->addHotelExtraFees($applicable_fees, $rate["rate_plan"],
+                            ($rates_plan_room_new["total_amount"] + $supplements["total_amount"]));
+
+                        $total_amount = $rates_plan_room_new["total_amount"] + $taxes_and_services["amount_fees"] + $supplements["total_amount"];
+                        $total_amount_tax = $taxes_and_services["amount_fees"];
+
+                        $total_amount = number_format($total_amount, 2, '.', '');
+                        $total_amount_tax = number_format($total_amount_tax, 2, '.', '');
+
+                        $rates_calendars = $rates_plan_room_new["calendarys"];
+
+                        foreach ($rates_calendars as $idratecalen => $rates_calendar) {
+                            unset($rates_calendars[$idratecalen]['policies_rates']['translations']);
+                        }
+
+                        $cancellation_details = [];
+                        if (isset($policy_cancellation_calculated['selected_policy_cancelation']["policy_cancellation_parameter"])) {
+                            foreach ($policy_cancellation_calculated['selected_policy_cancelation']["policy_cancellation_parameter"] as $detail) {
+                                array_push($cancellation_details, [
+                                    'to' => $detail["min_day"],
+                                    'from' => $detail["max_day"],
+                                    'amount' => $detail["amount"] ? $detail["amount"] : 100,
+                                    'tax' => $detail["tax"],
+                                    'service' => $detail["service"],
+                                    'penalty' => $detail["penalty"]["name"],
+                                ]);
+                            }
+                        } else {
+                            array_push($cancellation_details, [
+                                'to' => 0,
+                                'from' => 0,
+                                'amount' => 100,
+                                'tax' => 1,
+                                'service' => 1,
+                                'penalty' => 'total_reservation ',
+                            ]);
+                        }
+
+                        if ($rate["channel_id"] == 1) {
+                            $max_occupancy = $rate["calendarys"][0]["policies_rates"]["max_occupancy"];
+                        } else {
+                            $max_occupancy = $rate["calendarys"][0]["max_occupancy"];
+                        }
+
+                        $rate_plan_description = '';
+                        if ($rate['descriptions']) {
+                            $rate_plan_description = $rate['descriptions'][0]['value'];
+                        }
+
+                        //Agregar tarifa al arreglo
+                        if ($rate["channel_id"] == 1) {
+//                            if ($rate["id"] == 5410 && $rate["rate_plan"]["id"] == 900)
+//                            {
+//
+////                                dd($room["max_capacity"].'/'.$room['max_adults'].'/'.$room["max_child"]);
+//                               array_push($rates, [
+//                                    'rateId' => $rate["id"],
+//                                    'ratePlanId' => $rate["rate_plan"]["id"],
+//                                    'name' => $rate["rate_plan"]["translations"][0]["value"],
+//                                    'description' => $rate_plan_description,
+//                                    'meal_id' => $rate["rate_plan"]["meal"]['id'],
+//                                    'meal_name' => $rate["rate_plan"]["meal"]["translations"][0]["value"],
+//                                    'available' => $min_inventory,
+//                                    'onRequest' => $rate["status"],
+//                                    'rateProvider' => $rate["channel"]["name"],
+//                                    'total' => $total_amount,
+//                                    'total_taxes_and_services' => $total_amount_tax,
+//                                    'avgPrice' => $total_amount,
+//                                    'political' => [
+//                                        'rate' => [
+//                                            'name' => $rate["calendarys"][0]["policies_rates"]["name"],
+////                                        'message' => "@".$rate["calendarys"][0]["policies_rates"]["translations"][0]['value'],
+//                                            'message' => "",
+////                                        'message' => (isset($rate["calendarys"][0]["policies_rates"]["translations"]) ? $rate["calendarys"][0]["policies_rates"]["translations"][0]['value'] : ''),
+//                                            'max_occupancy' => $max_occupancy,
+//                                        ],
+//                                        'cancellation' => [
+//                                            "name" => $message,
+//                                            "details" => $cancellation_details,
+//                                        ],
+//                                    ],
+//                                    'quantity_rates' => 3,
+//                                    'taken' => false,
+//                                    'cart_items_id' => [],
+//                                    'disabled_buttons' => false,
+//                                    'taxes_and_services' => $taxes_and_services,
+//                                    'supplements' => $supplements,
+//                                    'rate' => [
+//                                        [
+//                                            'total_amount' => $total_amount,
+//                                            'total_taxes_and_services' => $total_amount_tax,
+//                                            'avgPrice' => $total_amount,
+//                                            'quantity_adults' => $rates_plan_room_new['quantity_adults'],
+//                                            'quantity_child' => 0,
+//                                            'quantity_extras' => 0,
+//                                            'quantity_adults_total' => $rates_plan_room_new['quantity_adults'],
+//                                            'quantity_child_total' => 0,
+//                                            'quantity_extras_total' => 0,
+//                                            'total_amount_adult' => $total_amount,
+//                                            'total_amount_child' => 0,
+//                                            'total_amount_infants' => 0,
+//                                            'total_amount_extras' => 0,
+//                                            'people_coverage' => 1,
+//                                            'quantity_inventory_taken' => 1,
+//                                            'amount_days' => $rates_calendars,
+//                                        ],
+//                                        [
+//                                            'total_amount' => $total_amount,
+//                                            'total_taxes_and_services' => $total_amount_tax,
+//                                            'avgPrice' => $total_amount,
+//                                            'quantity_adults' => $rates_plan_room_new['quantity_adults'],
+//                                            'quantity_child' => 0,
+//                                            'quantity_extras' => 0,
+//                                            'quantity_adults_total' => $rates_plan_room_new['quantity_adults'],
+//                                            'quantity_child_total' => 0,
+//                                            'quantity_extras_total' => 0,
+//                                            'total_amount_adult' => $total_amount,
+//                                            'total_amount_child' => 0,
+//                                            'total_amount_infants' => 0,
+//                                            'total_amount_extras' => 0,
+//                                            'people_coverage' => 1,
+//                                            'quantity_inventory_taken' => 1,
+//                                            'amount_days' => $rates_calendars,
+//                                        ],
+//                                        [
+//                                            'total_amount' => $total_amount,
+//                                            'total_taxes_and_services' => $total_amount_tax,
+//                                            'avgPrice' => $total_amount,
+//                                            'quantity_adults' => $rates_plan_room_new['quantity_adults'],
+//                                            'quantity_child' => 0,
+//                                            'quantity_extras' => 0,
+//                                            'quantity_adults_total' => $rates_plan_room_new['quantity_adults'],
+//                                            'quantity_child_total' => 0,
+//                                            'quantity_extras_total' => 0,
+//                                            'total_amount_adult' => $total_amount,
+//                                            'total_amount_child' => 0,
+//                                            'total_amount_infants' => 0,
+//                                            'total_amount_extras' => 0,
+//                                            'people_coverage' => 1,
+//                                            'quantity_inventory_taken' => 1,
+//                                            'amount_days' => $rates_calendars,
+//                                        ],
+//                                    ],
+//                                    'show_message_error' => false,
+//                                    'message_error' => '',
+//                                ]);
+//                            }
+//                            else{
+                            array_push($rates, [
+                                'rateId' => $rate["id"],
+                                'ratePlanId' => $rate["rate_plan"]["id"],
+                                'name' => $rate["rate_plan"]["translations"][0]["value"],
+                                'description' => $rate_plan_description,
+                                'meal_id' => $rate["rate_plan"]["meal"]['id'],
+                                'meal_name' => $rate["rate_plan"]["meal"]["translations"][0]["value"],
+                                'available' => $min_inventory,
+                                'onRequest' => $rate["status"],
+                                'rateProvider' => $rate["channel"]["name"],
+                                'total' => $total_amount,
+                                'total_taxes_and_services' => $total_amount_tax,
+                                'avgPrice' => $total_amount,
+                                'political' => [
+                                    'rate' => [
+                                        'name' => $rate["calendarys"][0]["policies_rates"]["name"],
+//                                        'message' => "@".$rate["calendarys"][0]["policies_rates"]["translations"][0]['value'],
+//                                        'message' => "",
+                                        'message' => (isset($rate["calendarys"][0]["policies_rates"]["translations"]) ? $rate["calendarys"][0]["policies_rates"]["translations"][0]['value'] : ''),
+                                        'max_occupancy' => $max_occupancy,
+                                        'example' => $rate
+                                    ],
+                                    'cancellation' => [
+                                        "name" => $message,
+                                        "details" => $cancellation_details,
+                                    ],
+                                    "no_show_apply" => $no_show_apply
+                                ],
+                                'quantity_rates' => 1,
+                                'taken' => false,
+                                'cart_items_id' => [],
+                                'disabled_buttons' => false,
+                                'taxes_and_services' => $taxes_and_services,
+                                'supplements' => $supplements,
+                                'rate' => [
+                                    [
+                                        'total_amount' => $total_amount,
+                                        'total_taxes_and_services' => $total_amount_tax,
+                                        'avgPrice' => $total_amount,
+                                        'quantity_adults' => $rates_plan_room_new['quantity_adults'],
+                                        'quantity_child' => 0,
+                                        'quantity_extras' => 0,
+                                        'quantity_adults_total' => $rates_plan_room_new['quantity_adults'],
+                                        'quantity_child_total' => 0,
+                                        'quantity_extras_total' => 0,
+                                        'total_amount_adult' => $total_amount,
+                                        'total_amount_child' => 0,
+                                        'total_amount_infants' => 0,
+                                        'total_amount_extras' => 0,
+                                        'people_coverage' => 1,
+                                        'quantity_inventory_taken' => 1,
+                                        'amount_days' => $rates_calendars,
+                                    ],
+                                ],
+                                'show_message_error' => false,
+                                'message_error' => '',
+                            ]);
+//                            }
+
+                        } else {
+                            if (!in_array($rate["id"], $ids_rates_channels_charged)) {
+                                array_push($rates, [
+                                    'rateId' => $rate["id"],
+                                    'ratePlanId' => $rate["rate_plan"]["id"],
+                                    'name' => $rate["rate_plan"]["translations"][0]["value"],
+                                    'description' => $rate_plan_description,
+                                    'meal_id' => $rate["rate_plan"]["meal"]['id'],
+                                    'meal_name' => $rate["rate_plan"]["meal"]["translations"][0]["value"],
+                                    'available' => $min_inventory,
+                                    'onRequest' => $rate["status"],
+                                    'rateProvider' => $rate["channel"]["name"],
+                                    'total' => $total_amount,
+                                    'total_taxes_and_services' => $total_amount_tax,
+                                    'avgPrice' => $total_amount,
+                                    'political' => [
+                                        'rate' => [
+                                            'name' => $rate["calendarys"][0]["policies_rates"]["name"],
+//                                            'message' => "@@".$rate["calendarys"][0]["policies_rates"]["translations"][0]['value'],
+                                            'message' => (isset($rate["calendarys"][0]["policies_rates"]["translations"]) ? $rate["calendarys"][0]["policies_rates"]["translations"][0]['value'] : ''),
+                                            'max_occupancy' => $max_occupancy,
+                                            'example' => $rate
+                                        ],
+                                        'cancellation' => [
+                                            "name" => $message,
+                                            "details" => $cancellation_details,
+                                        ],
+                                        "no_show_apply" => $no_show_apply
+                                    ],
+                                    'quantity_rates' => 1,
+                                    'taken' => false,
+                                    'cart_items_id' => [],
+                                    'disabled_buttons' => false,
+                                    'taxes_and_services' => $taxes_and_services,
+                                    'supplements' => $supplements,
+                                    'rate' => [
+                                        [
+                                            'total_amount' => $total_amount,
+                                            'total_taxes_and_services' => $total_amount_tax,
+                                            'avgPrice' => $total_amount,
+                                            'quantity_adults' => $rates_plan_room_new['quantity_adults'],
+                                            'quantity_child' => 0,
+                                            'quantity_extras' => 0,
+                                            'quantity_adults_total' => $rates_plan_room_new['quantity_adults'],
+                                            'quantity_child_total' => 0,
+                                            'quantity_extras_total' => 0,
+                                            'total_amount_adult' => $total_amount,
+                                            'total_amount_child' => 0,
+                                            'total_amount_infants' => 0,
+                                            'total_amount_extras' => 0,
+                                            'people_coverage' => 1,
+                                            'quantity_inventory_taken' => 1,
+                                            'amount_days' => $rates_calendars,
+                                        ],
+                                    ],
+                                    'show_message_error' => false,
+                                    'message_error' => '',
+                                ]);
+                                array_push($ids_rates_channels_charged, $rate["id"]);
+                            }
+                        }
+                    }
+                }
+
+                if (count($rates) == 0) {
+                    continue;
+                }
+
+                //agregar habitacion al arreglo
+                array_push($rooms, [
+                    'room_id' => $room["id"],
+                    'room_type' => $room['room_type']['translations'][0]['value'],
+                    'occupation' => $room['room_type']['occupation'],
+                    'name' => $room_name,
+                    'description' => $room_description,
+                    'gallery' => $room_gallery,
+                    'max_capacity' => $room["max_capacity"],
+                    'max_adults' => $room["max_adults"],
+                    'max_child' => $room["max_child"],
+                    'rates' => $rates,
+                ]);
+            }
+
+            if (count($hotel_client["best_options"]) > 0) {
+                // sacamos la cantidad de habitaciones seleccionadas
+                $rooms_quantity = count($hotel_client['best_options']['rooms']);
+                // contamos la cantidad total de pasajeros seleccionados
+                $guest_quantity = 0;
+                foreach ($hotel_client['best_options']['rooms'] as $room) {
+                    foreach ($room['tarifas_seleccionadas'] as $tarifas_seleccionada) {
+                        $guest_quantity += $tarifas_seleccionada['people_coverage'];
+                    }
+                }
+
+                if ($guest_quantity > 0) {
+
+                    //cargar mejor opciones de hotel
+                    foreach ($hotel_client["best_options"]["rooms"] as $opcion) {
+                        $room_name = "";
+                        $room_description = "";
+                        $room_gallery = [];
+                        $rates = [];
+                        //cargar traducciones de habitacion
+                        foreach ($opcion["translations"] as $translation) {
+                            if ($translation["slug"] == "room_name") {
+                                $room_name = $translation["value"];
+                            }
+                            if ($translation["slug"] == "room_description") {
+                                $room_description = $translation["value"];
+                            }
+                        }
+                        //cargar galeria de habitacion
+                        foreach ($opcion["galeries"] as $image) {
+                            array_push($room_gallery, url('/').'/images/'.$image["url"]);
+                        }
+
+                        //cargar tarifas de habitacion
+                        foreach ($opcion["tarifas_seleccionadas"] as $rate) {
+                            //calculo de inventario disponible dado un rango de fechas
+                            $min_inventory = 0;
+
+                            if (count($rate["rate"]["inventories"]) == 0) {
+                                if (isset($rate["rate"]["bag_rate"])) {
+                                    $rate["rate"]["inventories"] = $rate["rate"]["bag_rate"]["bag_room"]["inventory_bags"];
+                                }
+                            }
+
+                            foreach ($rate["rate"]["inventories"] as $index => $inventory) {
+                                if ($index === 0) {
+                                    $min_inventory = $inventory["inventory_num"] - $inventory["total_booking"];
+                                } else {
+                                    if ($inventory["inventory_num"] < $min_inventory) {
+                                        $min_inventory = $inventory["inventory_num"] - $inventory["total_booking"];
+                                    }
+                                }
+                            }
+
+                            //importes de tarifa
+                            $rates_calendars = [];
+                            foreach ($rate["rate"]["calendarys"] as $index => $calendary) {
+                                array_push($rates_calendars, [
+                                    'day' => Carbon::parse($calendary['date'])->format('d-m-Y'),
+                                    'total_amount' => $calendary['rate'][0]['total_amount'],
+                                    'total_adult' => $calendary['rate'][0]['total_adult'],
+                                    'total_child' => $calendary['rate'][0]['total_child'],
+                                    'total_extra' => $calendary['rate'][0]['total_extra'],
+                                    'price_total' => $calendary['rate'][0]['price_total'],
+                                    'price_adult' => $calendary['rate'][0]['price_adult'],
+                                    'price_child' => $calendary['rate'][0]['price_child'],
+                                    'price_infant' => $calendary['rate'][0]['price_infant'],
+                                    'price_extra' => $calendary['rate'][0]['price_extra'],
+                                ]);
+                            }
+
+                            //calculo de detalle de politicas de cancelacion
+                            if ($rate['rate']['channel_id'] == 1) {
+                                $selected_policies_cancelation = collect($tarifas_seleccionada['rate']["calendarys"][0]["policies_rates"]["policies_cancelation"]);
+                            } else {
+                                if (count($tarifas_seleccionada['rate']['policies_cancelation']) == 0) {
+                                    $selected_policies_cancelation = collect($tarifas_seleccionada['rate']["calendarys"][0]["policies_cancelation"]);
+                                } else {
+                                    $selected_policies_cancelation = collect($tarifas_seleccionada['rate']['policies_cancelation']);
+                                }
+                            }
+
+                            $selected_policy_cancelation = $this->getCancellationPolicyByTypeFit($selected_policies_cancelation,
+                                $guest_quantity, $rooms_quantity);
+
+                            $cancellation_details = [];
+                            if (isset($selected_policy_cancelation["policy_cancellation_parameter"])) {
+                                foreach ($selected_policy_cancelation["policy_cancellation_parameter"] as $detail) {
+                                    array_push($cancellation_details, [
+                                        'to' => $detail["min_day"],
+                                        'from' => $detail["max_day"],
+                                        'amount' => $detail["amount"],
+                                        'tax' => $detail["tax"],
+                                        'service' => $detail["service"],
+                                    ]);
+                                }
+                            }
+
+                            $message = $rate["policy_cancellation"]["message"];
+
+//                            if ($rate["rate"]["channel_id"] == 1) {
+//                                $message = $rate["policy_cancellation"]["message"];
+//                            } else {
+//                                $message = "";
+//                            }
+
+                            $rate_plan_description = '';
+                            if ($rate['rate']['descriptions']) {
+                                $rate_plan_description = $rate['rate']['descriptions'][0]['value'];
+                            }
+
+                            $total_amount = number_format($rate["total_amount"], 2, '.', '');
+                            $total_amount_tax = number_format($rate["total_taxes_and_services_amount"], 2, '.', '');
+
+                            //Agregar tarifa al arreglo
+                            array_push($rates, [
+                                'rateId' => $rate["rate"]["id"],
+                                'ratePlanId' => $rate["rate"]["rate_plan"]["id"],
+                                'name' => $rate["rate"]["rate_plan"]["translations"][0]["value"],
+                                'description' => $rate_plan_description,
+                                'meal_id' => $rate["rate"]["rate_plan"]["meal"]['id'],
+                                'meal_name' => $rate["rate"]["rate_plan"]["meal"]["translations"][0]["value"],
+                                'available' => $min_inventory,
+                                'inventories' => $rate["rate"]["inventories"],
+                                'onRequest' => 1,
+                                'rateProvider' => $rate["rate"]["channel"]["name"],
+                                'total' => $total_amount,
+                                'total_taxes_and_services' => $total_amount_tax,
+                                'avgPrice' => $total_amount,
+                                'political' => [
+                                    'rate' => [
+                                        'name' => $rate["rate"]["calendarys"][0]["policies_rates"]["name"],
+                                        //                                'message' => "@@@".$rate["rate"]["calendarys"][0]["policies_rates"]["translations"][0]['value'],
+                                        'message' => (isset($rate["rate"]["calendarys"][0]["policies_rates"]["translations"]) ? $rate["rate"]["calendarys"][0]["policies_rates"]["translations"][0]['value'] : ''),
+                                        'example' => $rate
+                                    ],
+                                    'cancellation' => [
+                                        "name" => $message,
+                                        "details" => $cancellation_details,
+                                    ],
+                                ],
+                                'taxes_and_services' => $rate["taxes_and_services"],
+                                'supplements' => $rate["supplements"],
+                                'rate' => [
+                                    'quantity_adults' => $rate["quantity_adults"],
+                                    'quantity_child' => $rate["quantity_child"],
+                                    'quantity_extras' => $rate["quantity_extras"],
+                                    'total_amount' => $total_amount,
+                                    'total_amount_adult' => $rate["total_amount_adult"],
+                                    'total_amount_child' => $rate["total_amount_child"],
+                                    'total_amount_infants' => $rate["total_amount_infants"],
+                                    'total_amount_extras' => $rate["total_amount_extras"],
+                                    'people_coverage' => $rate["people_coverage"],
+                                    'quantity_inventory_taken' => $rate["quantity_inventory_taken"],
+                                    'amount_days' => $rates_calendars,
+                                ],
+                            ]);
+                        }
+                        //agregar habitacion al arreglo
+                        array_push($best_options["rooms"], [
+                            'room_id' => $opcion["id"],
+                            'room_type' => $opcion['room_type']['translations'][0]['value'],
+                            'name' => $room_name,
+                            'description' => $room_description,
+                            'gallery' => $room_gallery,
+                            'max_capacity' => $opcion["max_capacity"],
+                            'max_adults' => $opcion["max_adults"],
+                            'max_child' => $opcion["max_child"],
+                            'quantity_adults' => $opcion["quantity_adults"],
+                            'quantity_child' => $opcion["quantity_child"],
+                            'quantity_infants' => $opcion["quantity_infants"],
+                            'quantity_rooms' => $opcion["quantity_rooms"],
+                            'total_amount' => number_format($opcion["total_amount"], 2, '.', ''),
+                            'rates' => $rates,
+                        ]);
+                    }
+
+                }
+            }
+
+            $princeHotel = 0;
+            if (count($best_options) > 0) {
+                if ($best_options["total_rate_amount"] > 0) {
+                    $princeHotel = $best_options["total_rate_amount"];
+                } else {
+                    if (count($rooms) > 0) {
+                        if (count($rooms[0]['rates']) > 0) {
+                            $princeHotel = $rooms[0]['rates'][0]['total'];
+                        }
+                    }
+                }
+            } else {
+                if (count($rooms[0]['rates']) > 0) {
+                    $princeHotel = $rooms[0]['rates'][0]['total'];
+                }
+            }
+
+            if ($princeHotel == 0) {
+                continue;
+            }
+
+            array_push($hotels[0]["city"]["hotels"], [
+                "id" => $hotel_client["hotel"]["id"],
+                "name" => $hotel_client["hotel"]["name"],
+                "country" => $hotel_client["hotel"]["country"]["translations"][0]["value"],
+                "state" => $hotel_client["hotel"]["state"]["translations"][0]["value"],
+                "city" => $hotel_client["hotel"]["city"]["translations"][0]["value"],
+                "district" => $hotel_client["hotel"]["district"]["translations"][0]["value"],
+                "zone" => $hotel_client["hotel"]["zone"]["translations"][0]["value"],
+                "description" => $hotel_description,
+                "address" => $hotel_address,
+                "chain" => $hotel_client["hotel"]["chain"]["name"],
+                "logo" => $hotel_logo,
+                "category" => $hotel_client["hotel"]["stars"],
+                "type" => $hotel_client["hotel"]["hoteltype"]["translations"][0]["value"],
+                "class" => $hotel_client["hotel"]["typeclass"]["translations"][0]["value"],
+                "color_class" => $hotel_client["hotel"]["typeclass"]["color"],
+                "price" => $princeHotel,
+                "coordinates" => [
+                    'latitude' => $hotel_client["hotel"]["latitude"],
+                    'longitude' => $hotel_client["hotel"]["longitude"],
+                ],
+                "popularity" => $hotel_client["hotel"]["preferential"],
+                "favorite" => $this->checkHotelFavorite($hotel_client["hotel"]["id"]),
+                "checkIn" => $hotel_client["hotel"]["check_in_time"],
+                "checkOut" => $hotel_client["hotel"]["check_out_time"],
+                "political_children" => [
+                    "child" => [
+                        "allows_child" => $hotel_client["hotel"]["allows_child"],
+                        "min_age_child" => $hotel_client["hotel"]["min_age_child"],
+                        "max_age_child" => $hotel_client["hotel"]["max_age_child"]
+                    ],
+                    "infant" => [
+                        "allows_teenagers" => $hotel_client["hotel"]["allows_teenagers"],
+                        "min_age_teenagers" => $hotel_client["hotel"]["min_age_teenagers"],
+                        "max_age_teenagers" => $hotel_client["hotel"]["max_age_teenagers"]
+                    ]
+                ],
+                "amenities" => $amenities,
+                "galleries" => $hotel_gallery,
+                "best_options" => $best_options,
+                "rooms" => $rooms,
+                "best_option_taken" => false,
+                "best_option_cart_items_id" => [],
+            ]);
+        }
+
+        $hotels[0]["city"]["min_price_search"] = number_format($min_price_search, 2, '.', '');
+        $hotels[0]["city"]["max_price_search"] = number_format($max_price_search, 2, '.', '');
+        $hotels[0]["city"]["quantity_hotels"] = count($hotels[0]["city"]["hotels"]);
+
+        $token_search_frontend = $faker->unique()->uuid;
+        $hotels[0]["city"]["token_search_frontend"] = $token_search_frontend;
+
+        $this->storeTokenSearchHotels($token_search_frontend, $hotels, $this->expiration_search_hotels);
+
+
+        // validamos el inventario de cada habitacion agregado a la mejor opcion si no sobre pasa.
+
+
+        foreach ($hotels[0]['city']['hotels'] as $index_hotel => $hotel) {
+
+            if (isset($hotel['best_options']) and isset($hotel['best_options']['rooms'])) {
+
+                $inventarioBestOptions = [];
+                foreach ($hotel['best_options']['rooms'] as $roomInd => $room) {
+                    foreach ($room['rates'] as $tarInd => $tarifa) {
+                        if (isset($tarifa['inventories'][0]['bag_room_id'])) {
+                            $inventarioBestOptions[$tarifa['inventories'][0]['bag_room_id']][$tarifa['rateId']][] = [
+                                'room_id' => $room['room_id'],
+                                'rateId' => $tarifa['rateId'],
+                                'available' => $tarifa['available'],
+//                                'available' => $tarifa['available'],
+                                'inventories' => $tarifa['inventories']
+                            ];
+                        }
+
+                        if (isset($tarifa['inventories'][0]['rate_plan_rooms_id'])) {
+                            $inventarioBestOptions[$tarifa['inventories'][0]['rate_plan_rooms_id']][$tarifa['rateId']][] = [
+                                'room_id' => $room['room_id'],
+                                'rateId' => $tarifa['rateId'],
+                                'available' => $tarifa['available'],
+//                                'available' => $tarifa['available'],
+                                'inventories' => $tarifa['inventories']
+                            ];
+                        }
+
+                    }
+                }
+
+                foreach ($inventarioBestOptions as $inventarioIdBagOrRatePlanRomId => $ratePlansRoomsIds) {
+                    $inventarioBolsaOrInventario = '';
+                    $totalRooms = 0;
+                    foreach ($ratePlansRoomsIds as $roomsSeleccionados) {
+                        $inventarioBolsaOrInventario = $roomsSeleccionados[0]['available'];
+                        $totalRooms = $totalRooms + count($roomsSeleccionados);
+                    }
+
+                    if ($inventarioBolsaOrInventario < $totalRooms) {
+                        $hotels[0]['city']['hotels'][$index_hotel]['best_options'] = [];
+                        break;
+                    }
+                }
+            }
+        }
+
+        // echo json_encode($inventarioBestOptions);
+        // // // echo json_encode($hotels_client[0]['best_options']);
+        // die('');
+
+
+        return Response::json([
+            'success' => true,
+            'data' => $hotels,
+            'expiration_token' => $this->expiration_search_hotels
+        ]);
+    }

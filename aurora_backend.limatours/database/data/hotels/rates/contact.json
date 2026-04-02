@@ -1,0 +1,4730 @@
+[
+    {
+        "hotel": "ABCHTA",
+        "nombre": "Julieth Gamarra",
+        "cargo": "DPTO. RESERVAS",
+        "email": "hotelturistas@yahoo.es"
+    },
+    {
+        "hotel": "ANSHSO",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "soldeorohotel2008@hotmail.com"
+    },
+    {
+        "hotel": "APXHSA",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@samaywasihotel.com"
+    },
+    {
+        "hotel": "APXHTA",
+        "nombre": "DPTO DE RESERVAS",
+        "cargo": ".",
+        "email": "hoteltampumayu@gmail.com"
+    },
+    {
+        "hotel": "AQPHAB",
+        "nombre": "DEPATAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "lacasa@terra.com.pe"
+    },
+    {
+        "hotel": "AQPHAC",
+        "nombre": "Reservas",
+        "cargo": "Reservas",
+        "email": "implant@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHAC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "cac-colca@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHAD",
+        "nombre": "Reservas",
+        "cargo": "RESERVAS",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHAD",
+        "nombre": "VOUCHER",
+        "cargo": "SENIOR RECEPCION",
+        "email": "recep1-castarequipa@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHAD",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "recep-castarequipa@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHAL",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@alwahotel.com, reservasalwa@gmail.com"
+    },
+    {
+        "hotel": "AQPHAL",
+        "nombre": "Janet Marquina Vega",
+        "cargo": "Gerente de Operaciones",
+        "email": "reservas@alwahotel.com"
+    },
+    {
+        "hotel": "AQPHAW",
+        "nombre": "Jos\u00e9 Garc\u00eda",
+        "cargo": "VOUCHER LITO",
+        "email": "jgarcia@aranwahotels.com"
+    },
+    {
+        "hotel": "AQPHBE",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "benavides@star.com.pe"
+    },
+    {
+        "hotel": "AQPHCB",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@cabildohotel.com"
+    },
+    {
+        "hotel": "AQPHCB",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "cabildohotel@star.com.pe"
+    },
+    {
+        "hotel": "AQPHCD",
+        "nombre": "-",
+        "cargo": "RESERVAS",
+        "email": "reservas@corregidor.pe"
+    },
+    {
+        "hotel": "AQPHCI",
+        "nombre": "Marleni Bernal",
+        "cargo": "VOUCHER",
+        "email": "reservas@hotelcolcainn.com"
+    },
+    {
+        "hotel": "AQPHCL",
+        "nombre": "Nataly Avenda\u00f1o Osorio",
+        "cargo": "VOUCHER",
+        "email": "info@colca-lodge.com"
+    },
+    {
+        "hotel": "AQPHCN",
+        "nombre": "LISBET HOLGINO",
+        "cargo": ".",
+        "email": "reservascphpuno@casonaplazahoteles.com"
+    },
+    {
+        "hotel": "AQPHCO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelconquistador.pe"
+    },
+    {
+        "hotel": "AQPHCP",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHCP",
+        "nombre": "vouchers",
+        "cargo": "RECEPCION",
+        "email": "recep-caparequipa@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHCP",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "recep1-caparequipa@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHCR",
+        "nombre": "PATRICIA",
+        "cargo": "MORALES",
+        "email": "crismar@terra.com.pe"
+    },
+    {
+        "hotel": "AQPHCS",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "info@casalindahoteles.com"
+    },
+    {
+        "hotel": "AQPHCT",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelcasonaterrace.com"
+    },
+    {
+        "hotel": "AQPHCW",
+        "nombre": "Vanessa Ortega",
+        "cargo": "Voucher",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "AQPHDH",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@dreamshotelboutique.com"
+    },
+    {
+        "hotel": "AQPHEI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservascolca@ecoinnhotels.com.pe"
+    },
+    {
+        "hotel": "AQPHEL",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "hmreservas@hotelmeliana.com.pe"
+    },
+    {
+        "hotel": "AQPHEN",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "ensuenohotel@star.com.pe"
+    },
+    {
+        "hotel": "AQPHER",
+        "nombre": "DPTO DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@refugiohotelcolca.com"
+    },
+    {
+        "hotel": "AQPHFO",
+        "nombre": "EDUARDO",
+        "cargo": "VELASQUEZ",
+        "email": "lafontana@terra.com.pe"
+    },
+    {
+        "hotel": "AQPHFU",
+        "nombre": "Noemi Oviedo",
+        "cargo": "Jefe Reservas",
+        "email": "reservas@fundador.pe"
+    },
+    {
+        "hotel": "AQPHGA",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@hotelgranadacolca.com"
+    },
+    {
+        "hotel": "AQPHGR",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "lagruta@lagrutahotel.com"
+    },
+    {
+        "hotel": "AQPHHE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservascolca@ecoinnhotels.com"
+    },
+    {
+        "hotel": "AQPHHI",
+        "nombre": "RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "reservas.hlago@hotelesestelar.com"
+    },
+    {
+        "hotel": "AQPHIK",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@inkantohotel.com"
+    },
+    {
+        "hotel": "AQPHKA",
+        "nombre": "Voucher",
+        "cargo": ".",
+        "email": "reservas@hotelkatari.com"
+    },
+    {
+        "hotel": "AQPHKI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "colca@killawasilodge.com"
+    },
+    {
+        "hotel": "AQPHKI",
+        "nombre": "RESERVAS2",
+        "cargo": ".",
+        "email": "killawasilodge@hotmail.com"
+    },
+    {
+        "hotel": "AQPHKS",
+        "nombre": "REBECA POCORI CHAMPI",
+        "cargo": "RESERVAS",
+        "email": "reservas@kunturwassi-colca.com"
+    },
+    {
+        "hotel": "AQPHLA",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@alwahotel.com, reservasalwa@gmail.com"
+    },
+    {
+        "hotel": "AQPHLA",
+        "nombre": "Janet Marquina Vega",
+        "cargo": "Gerente de Operaciones",
+        "email": "reservas@alwahotel.com"
+    },
+    {
+        "hotel": "AQPHLC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas.casitasdelcolca@ghlhoteles.com"
+    },
+    {
+        "hotel": "AQPHLH",
+        "nombre": "Andrea Velarde",
+        "cargo": "Voucher",
+        "email": "recepcion@lahosteriaqp.com.pe"
+    },
+    {
+        "hotel": "AQPHLI",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": "YNGRID CERVANTES",
+        "email": "recepcionarequipa@libertador.com.pe"
+    },
+    {
+        "hotel": "AQPHLI",
+        "nombre": "RESERVAS FITS - EXCLUSIVO LITO",
+        "cargo": "VOUCHERS",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "AQPHLI",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "grupos@libertador.com.pe"
+    },
+    {
+        "hotel": "AQPHLI",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservasarequipa@libertador.com.pe"
+    },
+    {
+        "hotel": "AQPHLL",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "hotelcollahua@hotmail.com"
+    },
+    {
+        "hotel": "AQPHLU",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@vitatours.com.pe"
+    },
+    {
+        "hotel": "AQPHMA",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@lacasademamayacchi.com"
+    },
+    {
+        "hotel": "AQPHME",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelmaisondelise.com"
+    },
+    {
+        "hotel": "AQPHML",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "hmreservas@hotelmeliana.com.pe"
+    },
+    {
+        "hotel": "AQPHMS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@maisondusoleil.com.pe"
+    },
+    {
+        "hotel": "AQPHMT",
+        "nombre": "Miriam Lazo Paredes",
+        "cargo": "Voucher",
+        "email": "reservas@minthotel.pe"
+    },
+    {
+        "hotel": "AQPHPB",
+        "nombre": "EDWIN MANCHEGO",
+        "cargo": "VOUCHER",
+        "email": "reservas@laplazaarequipahotel.pe"
+    },
+    {
+        "hotel": "AQPHPI",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "puertoinka@puertoinka.com.pe"
+    },
+    {
+        "hotel": "AQPHPO",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservasarequipa@sonestaperu.com"
+    },
+    {
+        "hotel": "AQPHPO",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RECEPCION",
+        "email": "recep_arequipa@sonestaperu.com"
+    },
+    {
+        "hotel": "AQPHPP",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@posadadelpuente.com"
+    },
+    {
+        "hotel": "AQPHPZ",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@pozodelcielo.com.pe"
+    },
+    {
+        "hotel": "AQPHQP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservations@qphotels.com"
+    },
+    {
+        "hotel": "AQPHQV",
+        "nombre": "Victoria Corimanya",
+        "cargo": "Dpto de Ventas y Reservas",
+        "email": "info@queensvillahotel.com"
+    },
+    {
+        "hotel": "AQPHSD",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "sandiego@terra.com.pe"
+    },
+    {
+        "hotel": "AQPHSE",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHSE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "cas-arequipa@casa-andina.com"
+    },
+    {
+        "hotel": "AQPHSO",
+        "nombre": "Polet Carrilo",
+        "cargo": "Voucher",
+        "email": "reservas.sonestaarequipa@ghlhoteles.com"
+    },
+    {
+        "hotel": "AQPHSP",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservasarequipa@hsaperu.com"
+    },
+    {
+        "hotel": "AQPHTA",
+        "nombre": "Voucher",
+        "cargo": "VOUCHER",
+        "email": "reservas@lostambos.com.pe"
+    },
+    {
+        "hotel": "AQPHTS",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "reservas@tierrasur.com"
+    },
+    {
+        "hotel": "AQPHTV",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@tierravivahoteles.com"
+    },
+    {
+        "hotel": "AQPHVL",
+        "nombre": "Voucher",
+        "cargo": "",
+        "email": "recepcion@villaelisahb.com"
+    },
+    {
+        "hotel": "AYPHPL",
+        "nombre": "Shirley Sunci\u00f3n",
+        "cargo": "VOUCHER",
+        "email": "ssuncion@dmhoteles.pe"
+    },
+    {
+        "hotel": "AYPHPL",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "itaboada@dmhoteles.pe"
+    },
+    {
+        "hotel": "AYPHRD",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@dmhoteles.pe"
+    },
+    {
+        "hotel": "AYPHSR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "hotel_santa_rosa@yahoo.es"
+    },
+    {
+        "hotel": "CHHHSA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@casahaciendasanjose.com"
+    },
+    {
+        "hotel": "CHJHCA",
+        "nombre": ".",
+        "cargo": "Reservas",
+        "email": "implant@casa-andina.com"
+    },
+    {
+        "hotel": "CHJHCH",
+        "nombre": "Didier Arce",
+        "cargo": "Gerente",
+        "email": "estanciaelchillo@gmail.com"
+    },
+    {
+        "hotel": "CHJHCL",
+        "nombre": ".",
+        "cargo": "",
+        "email": "lacasonadeleymebamba@gmail.com"
+    },
+    {
+        "hotel": "CHJHCV",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@casaviejaperu.com"
+    },
+    {
+        "hotel": "CHJHGL",
+        "nombre": "Vanessa Bardales",
+        "cargo": "Voucher",
+        "email": "info@goctalodge.com"
+    },
+    {
+        "hotel": "CHJHGO",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "info@goctalodge.com"
+    },
+    {
+        "hotel": "CHJHVP",
+        "nombre": "VOCUHER",
+        "cargo": ".",
+        "email": "contactenos@hotelvilladeparis.com"
+    },
+    {
+        "hotel": "CHJHXA",
+        "nombre": ".",
+        "cargo": "Reservas",
+        "email": "reservas@laxalcahotel.com"
+    },
+    {
+        "hotel": "CHJHXA",
+        "nombre": ".",
+        "cargo": "Reservas 2",
+        "email": "contactenos@laxalcahotel.com"
+    },
+    {
+        "hotel": "CHLHSA",
+        "nombre": ".",
+        "cargo": "RESERVAS",
+        "email": "fundosanjose@fundosanjose.com.pe"
+    },
+    {
+        "hotel": "CIXHCC",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "CIXHCC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "cas-chiclayo@casa-andina.com"
+    },
+    {
+        "hotel": "CIXHCS",
+        "nombre": "ADRIANA BARZOLA",
+        "cargo": "VOUCHER INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "CIXHCS",
+        "nombre": "ALEX MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "CIXHIH",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservaschiclayo@intiotel.com"
+    },
+    {
+        "hotel": "CIXHLP",
+        "nombre": "VOUCHER FITS",
+        "cargo": ".",
+        "email": "agencias@losportales.com.pe"
+    },
+    {
+        "hotel": "CIXHLP",
+        "nombre": "VOUCHER GRUPOS",
+        "cargo": ".",
+        "email": "grupos@losportales.com.pe"
+    },
+    {
+        "hotel": "CIXHSU",
+        "nombre": ".",
+        "cargo": "voucher",
+        "email": "ventas@sunechotel.com.pe"
+    },
+    {
+        "hotel": "CIXHWM",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@hotelwinmeier.pe"
+    },
+    {
+        "hotel": "CIXHWM",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "ventascix@hotelwinmeier.pe"
+    },
+    {
+        "hotel": "CJAHCS",
+        "nombre": "ADRIANA BARZOLA",
+        "cargo": "RESERVAS INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "CJAHCS",
+        "nombre": "ALEX MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "CJAHLS",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservaslima@lagunaseca.com.pe"
+    },
+    {
+        "hotel": "CJAHLS",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reserva@lagunaseca.com.pe"
+    },
+    {
+        "hotel": "CJAHPO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@portaldelmarques.com"
+    },
+    {
+        "hotel": "CJAHPP",
+        "nombre": "CARMEN",
+        "cargo": "GUTIERRZ",
+        "email": "informes@posadapuruay.com.pe"
+    },
+    {
+        "hotel": "COLHAC",
+        "nombre": "voucher",
+        "cargo": "Voucher",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "COLHAC",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep1-castcolca@casa-andina.com"
+    },
+    {
+        "hotel": "COLHAC",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recep-castcolca@casa-andina.com"
+    },
+    {
+        "hotel": "COLHAW",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER LITO",
+        "email": "rvalqui@aranwahotels.com"
+    },
+    {
+        "hotel": "COLHCB",
+        "nombre": "RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "perures.fits@belmond.com"
+    },
+    {
+        "hotel": "COLHCB",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "perures.groups@belmond.com"
+    },
+    {
+        "hotel": "COLHCI",
+        "nombre": "Marleni Bernal",
+        "cargo": "VOUCHER",
+        "email": "reservas@hotelcolcainn.com"
+    },
+    {
+        "hotel": "COLHCL",
+        "nombre": "Nataly Avenda\u00f1o Osorio",
+        "cargo": "VOUCHER",
+        "email": "info@colca-lodge.com"
+    },
+    {
+        "hotel": "COLHER",
+        "nombre": "DPTO DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@refugiohotelcolca.com"
+    },
+    {
+        "hotel": "COLHGA",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@hotelgranadacolca.com"
+    },
+    {
+        "hotel": "COLHHE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservascolca@ecoinnhotels.com.pe"
+    },
+    {
+        "hotel": "COLHKI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "colca@killawasilodge.com"
+    },
+    {
+        "hotel": "COLHLC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "perures.fits@belmond.com"
+    },
+    {
+        "hotel": "COLHLL",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "hotelcollahua@hotmail.com"
+    },
+    {
+        "hotel": "COLHPZ",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@pozodelcielo.com.pe"
+    },
+    {
+        "hotel": "CUSHAB",
+        "nombre": "reservas",
+        "cargo": "Reservas LITO",
+        "email": "rvalqui@aranwahotels.com"
+    },
+    {
+        "hotel": "CUSHAC",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@antiguacusco.com"
+    },
+    {
+        "hotel": "CUSHAD",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHAD",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-castcuscoplaza@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHAG",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hotelagustos.com"
+    },
+    {
+        "hotel": "CUSHAH",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@abittare-hotels.com"
+    },
+    {
+        "hotel": "CUSHAH",
+        "nombre": "Veronica Escalante",
+        "cargo": ".",
+        "email": "vescalante@abittare-hotels.com"
+    },
+    {
+        "hotel": "CUSHAI",
+        "nombre": "DPTO DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@amerinka.com"
+    },
+    {
+        "hotel": "CUSHAP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "info@losapushotel.com"
+    },
+    {
+        "hotel": "CUSHAQ",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservation@hotelarqueologo.com"
+    },
+    {
+        "hotel": "CUSHAR",
+        "nombre": "Jorge Polo y La Borda G",
+        "cargo": "Gerente",
+        "email": "jorge@tambodelarriero.com"
+    },
+    {
+        "hotel": "CUSHAR",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "info@tambodelarriero.com"
+    },
+    {
+        "hotel": "CUSHAR",
+        "nombre": "GUIDO",
+        "cargo": ".",
+        "email": "guido@tambodelarriero.com"
+    },
+    {
+        "hotel": "CUSHAS",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@andenesdesaphi.com"
+    },
+    {
+        "hotel": "CUSHAS",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RECEPCION",
+        "email": "hotel@andenesdesaphi.com"
+    },
+    {
+        "hotel": "CUSHAT",
+        "nombre": "Jorge Loayza",
+        "cargo": "Jefe de recepcion",
+        "email": "reservation@atiqhotel.com"
+    },
+    {
+        "hotel": "CUSHAT",
+        "nombre": "Marcel Cordier",
+        "cargo": "General Manager",
+        "email": "manager@atiqhotel.com"
+    },
+    {
+        "hotel": "CUSHAW",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@andeanwingshotel.com"
+    },
+    {
+        "hotel": "CUSHBA",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "info@balconcusco.com"
+    },
+    {
+        "hotel": "CUSHBL",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHBL",
+        "nombre": "voucher",
+        "cargo": "RECEPCION",
+        "email": "recep-castsanblas@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHBL",
+        "nombre": "Recepcion.",
+        "cargo": "RECEPCION",
+        "email": "recep-castsanblas@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHCA",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHCA",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recep-capcusco@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHCA",
+        "nombre": "Recepcion",
+        "cargo": ".",
+        "email": "recep1-capcusco@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHCC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "paula96@terra.com.pe"
+    },
+    {
+        "hotel": "CUSHCC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "info@hotelcasadecampo.com"
+    },
+    {
+        "hotel": "CUSHCH",
+        "nombre": "VOUCHER",
+        "cargo": "",
+        "email": "hostal@corihuasi.com"
+    },
+    {
+        "hotel": "CUSHCJ",
+        "nombre": "JONAR MOLINA CANA",
+        "cargo": "Voucher",
+        "email": "reservas@hotelcuscojungle.com"
+    },
+    {
+        "hotel": "CUSHCP",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@polocuscosuites.com"
+    },
+    {
+        "hotel": "CUSHCR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@casacartagena.com"
+    },
+    {
+        "hotel": "CUSHCT",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHCT",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-castcatedral@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHCT",
+        "nombre": "Recepcion",
+        "cargo": ".",
+        "email": "recep1-castcatedral@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHDI",
+        "nombre": "RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "hoteldelinca@hotmail.com"
+    },
+    {
+        "hotel": "CUSHDP",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "admin@delpradoinn.com"
+    },
+    {
+        "hotel": "CUSHEA",
+        "nombre": "Reservas",
+        "cargo": ".",
+        "email": "cereservas@ananayhotels.com"
+    },
+    {
+        "hotel": "CUSHEC",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@encantadaperu.com"
+    },
+    {
+        "hotel": "CUSHEI",
+        "nombre": "Robin Campos",
+        "cargo": "Voucher",
+        "email": "robin.campos@ximahotels.com"
+    },
+    {
+        "hotel": "CUSHEM",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@emperadorplaza.com"
+    },
+    {
+        "hotel": "CUSHES",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "ventastourandtravel@esplendorcusco.com"
+    },
+    {
+        "hotel": "CUSHET",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "hostaleltriunfo@terra.com.pe"
+    },
+    {
+        "hotel": "CUSHFR",
+        "nombre": "Carla Corrales",
+        "cargo": "Voucher",
+        "email": "reservas@hotelferrecusco.com"
+    },
+    {
+        "hotel": "CUSHG2",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelesgarcilaso.com"
+    },
+    {
+        "hotel": "CUSHGB",
+        "nombre": "MARGARITA",
+        "cargo": "VALENCIA",
+        "email": "gringobills@hotmail.com"
+    },
+    {
+        "hotel": "CUSHGH",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "gardenhouse@terra.com.pe"
+    },
+    {
+        "hotel": "CUSHGI",
+        "nombre": "DPTO RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelesgarcilaso.com"
+    },
+    {
+        "hotel": "CUSHHG",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "cuzgi.Reservations@hilton.com"
+    },
+    {
+        "hotel": "CUSHHG",
+        "nombre": "Voucher 2",
+        "cargo": "Voucher 2",
+        "email": "cuzgi.res@hilton.com"
+    },
+    {
+        "hotel": "CUSHHP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@cuscoplazadearmas.com"
+    },
+    {
+        "hotel": "CUSHHP",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcion@cuscoplazadearmas.com"
+    },
+    {
+        "hotel": "CUSHIC",
+        "nombre": "Voucher",
+        "cargo": ".",
+        "email": "reservasCDICusco@usil.edu.pe"
+    },
+    {
+        "hotel": "CUSHIC",
+        "nombre": "Voucher2",
+        "cargo": ".",
+        "email": "reservascdicusco@usil.edu.pe"
+    },
+    {
+        "hotel": "CUSHID",
+        "nombre": "Reservas",
+        "cargo": ".",
+        "email": "reservasCDICusco@usil.edu.pe"
+    },
+    {
+        "hotel": "CUSHIN",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "info@inkarrihostal.com"
+    },
+    {
+        "hotel": "CUSHIO",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "reservas@sarangahoteles.com.pe"
+    },
+    {
+        "hotel": "CUSHJA",
+        "nombre": "PAOLA",
+        "cargo": "BARCO",
+        "email": "reservas@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "CUSHJA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas2@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "CUSHKE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@cuscokenamarihotel.com"
+    },
+    {
+        "hotel": "CUSHKO",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHKO",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep1-castkorican@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHKO",
+        "nombre": "recepcion",
+        "cargo": "RECEPCION",
+        "email": "recep-castkoricancha@casa-andina.com"
+    },
+    {
+        "hotel": "CUSHLC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "central@inkaterra.com"
+    },
+    {
+        "hotel": "CUSHLC",
+        "nombre": "PAGOS",
+        "cargo": ".",
+        "email": "pagos@inkaterra.com"
+    },
+    {
+        "hotel": "CUSHLI",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcioncusco@libertador.com.pe"
+    },
+    {
+        "hotel": "CUSHLI",
+        "nombre": "RESERVAS FITS - EXCLUSIVO LITO",
+        "cargo": "VOUCHERS",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "CUSHLI",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "grupos@libertador.com.pe"
+    },
+    {
+        "hotel": "CUSHLI",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservascusco@libertador.com.pe"
+    },
+    {
+        "hotel": "CUSHLP",
+        "nombre": "VOUCHER FITS",
+        "cargo": ".",
+        "email": "agencias@losportales.com.pe"
+    },
+    {
+        "hotel": "CUSHLP",
+        "nombre": "VOUCHER GRUPOS",
+        "cargo": ".",
+        "email": "grupos@losportales.com.pe"
+    },
+    {
+        "hotel": "CUSHMA",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelmarqueses.com"
+    },
+    {
+        "hotel": "CUSHMC",
+        "nombre": "Voucher",
+        "cargo": "",
+        "email": "pmcreservas@ananayhotels.com"
+    },
+    {
+        "hotel": "CUSHME",
+        "nombre": "RESERVAS",
+        "cargo": "",
+        "email": "frontdesk@elmercadocusco.com"
+    },
+    {
+        "hotel": "CUSHME",
+        "nombre": "VOUCHER",
+        "cargo": "Karla Sanchez",
+        "email": "frontdesk@elmercadocusco.com"
+    },
+    {
+        "hotel": "CUSHMI",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "midorireservas@hotmail.com"
+    },
+    {
+        "hotel": "CUSHML",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservations@elmercadohotel.com"
+    },
+    {
+        "hotel": "CUSHMP",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hotelesmabey.com"
+    },
+    {
+        "hotel": "CUSHMR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservations.lima@marriott.com"
+    },
+    {
+        "hotel": "CUSHMR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "jesus.rodriguez1@marriott.com"
+    },
+    {
+        "hotel": "CUSHMR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "frontdesk.cusco@marriott.com"
+    },
+    {
+        "hotel": "CUSHMR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "milagros.garmendia@marriott.com"
+    },
+    {
+        "hotel": "CUSHMR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "roomscontroller.cusco@marriott.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": "VOUCHER GRUPOS",
+        "cargo": "GRUPOS",
+        "email": "perures.groups@belmond.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": "VOUCHER FITS",
+        "cargo": "FITS",
+        "email": "perures.fits@belmond.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": "Recepci\u00f3n",
+        "cargo": ".",
+        "email": "recepcion.mon@belmond.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": "Caja recepci\u00f3n",
+        "cargo": ".",
+        "email": "caja.recepcion.mon@belmond.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": "Jefe recepcion",
+        "cargo": ".",
+        "email": "Mirella.monteagudo@belmond.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "frontoffice.mon@belmond.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": ".",
+        "cargo": "A&B",
+        "email": "silvia.hilares@belmond.com"
+    },
+    {
+        "hotel": "CUSHMS",
+        "nombre": ".",
+        "cargo": "A&B",
+        "email": "eventos.mon@belmond.com"
+    },
+    {
+        "hotel": "CUSHMT",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservations@elmercadohotel.com"
+    },
+    {
+        "hotel": "CUSHMW",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservaciones@munaywasi.com"
+    },
+    {
+        "hotel": "CUSHMY",
+        "nombre": "VOUCHER",
+        "cargo": "reservas@maytaqhotel.com",
+        "email": "reservas@maytaqhotel.com"
+    },
+    {
+        "hotel": "CUSHMY",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCI\u00d3N",
+        "email": "maytaqrecepcion@gmail.com"
+    },
+    {
+        "hotel": "CUSHNI",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "niler@terra.com.pe"
+    },
+    {
+        "hotel": "CUSHNO",
+        "nombre": "NELLY HUAMAN",
+        "cargo": "RESERVAS",
+        "email": "h3254-re1@accor.com"
+    },
+    {
+        "hotel": "CUSHNO",
+        "nombre": "VANESSA FARFAN",
+        "cargo": "RESERVAS",
+        "email": "h3254-re2@accor.com"
+    },
+    {
+        "hotel": "CUSHNV",
+        "nombre": "NELLY HUAMAN",
+        "cargo": "RESERVAS",
+        "email": "h3254-re1@accor.com"
+    },
+    {
+        "hotel": "CUSHNV",
+        "nombre": "VANESSA FARFAN",
+        "cargo": "RESERVAS",
+        "email": "h3254-re2@accor.com"
+    },
+    {
+        "hotel": "CUSHPA",
+        "nombre": "reservas",
+        "cargo": ".",
+        "email": "reservas@cuscoplazahoteles.com"
+    },
+    {
+        "hotel": "CUSHPD",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "admin@delpradoinn.com"
+    },
+    {
+        "hotel": "CUSHPI",
+        "nombre": "Marcia",
+        "cargo": "VOUCHER INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "CUSHPI",
+        "nombre": "Alex MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "CUSHPL",
+        "nombre": "ABRAHAM",
+        "cargo": "MONTOYA",
+        "email": "hotelescuscoplaza@yahoo.es"
+    },
+    {
+        "hotel": "CUSHPM",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "prismahotel@terra.com.pe"
+    },
+    {
+        "hotel": "CUSHPN",
+        "nombre": "VOUCHER GRUPOS",
+        "cargo": "GRUPOS",
+        "email": "perures.groups@belmond.com"
+    },
+    {
+        "hotel": "CUSHPN",
+        "nombre": "VOUCHER FITS",
+        "cargo": "FITS",
+        "email": "perures.fits@belmond.com"
+    },
+    {
+        "hotel": "CUSHPN",
+        "nombre": "Mauricio Valencia",
+        "cargo": "Jefa de recepci\u00f3n",
+        "email": "mauricio.valencia@belmond.com"
+    },
+    {
+        "hotel": "CUSHPN",
+        "nombre": "Liliana Lozada",
+        "cargo": "A&b",
+        "email": "liliana.loza@belmond.com"
+    },
+    {
+        "hotel": "CUSHPS",
+        "nombre": "ANGELES",
+        "cargo": "PAZOS",
+        "email": "reservas.spicusco@ghlhoteles.com"
+    },
+    {
+        "hotel": "CUSHPU",
+        "nombre": "EDUARDO HERMOZA",
+        "cargo": "Res Contact",
+        "email": "reservas@elpumahotelcusco.com"
+    },
+    {
+        "hotel": "CUSHQA",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "qarmenqa@speedy.com.pe\\"
+    },
+    {
+        "hotel": "CUSHQA",
+        "nombre": "JUAN FRANSISCO GUEVARA GUERRA",
+        "cargo": "GERENTE",
+        "email": "."
+    },
+    {
+        "hotel": "CUSHQB",
+        "nombre": "Yolanda Huisa Farfan",
+        "cargo": ".",
+        "email": "info@quinua.com.pe"
+    },
+    {
+        "hotel": "CUSHQS",
+        "nombre": "MIGUEL SALAZAR",
+        "cargo": "GERENTE DE RESERVAS",
+        "email": "qsbreservas@ananayhotels.com"
+    },
+    {
+        "hotel": "CUSHR1",
+        "nombre": "IVONNE",
+        "cargo": "MENDIVAL",
+        "email": "royalinka@speedy.com.pe"
+    },
+    {
+        "hotel": "CUSHR1",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@hotelroyalinka.com"
+    },
+    {
+        "hotel": "CUSHR1",
+        "nombre": "VOUCHER2",
+        "cargo": "VOUCHER2",
+        "email": "reservas@royalinkahotel.pe"
+    },
+    {
+        "hotel": "CUSHR2",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hotelroyalinka.com"
+    },
+    {
+        "hotel": "CUSHRE",
+        "nombre": "Sanchez",
+        "cargo": "Reservas",
+        "email": "mlphotels@mountainlodgesofperu.com"
+    },
+    {
+        "hotel": "CUSHRE",
+        "nombre": "Karla Sanchez",
+        "cargo": "Reservas",
+        "email": "karla.sanchez@mountainlodgesofperu.com"
+    },
+    {
+        "hotel": "CUSHRI",
+        "nombre": "\u00c1ngela Nu\u00f1ez Salas",
+        "cargo": "Reservas",
+        "email": "reservas@royalinncusco.com"
+    },
+    {
+        "hotel": "CUSHRP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "info@rumipunku.com"
+    },
+    {
+        "hotel": "CUSHRS",
+        "nombre": "MARIA DEL CARMEN",
+        "cargo": "BARRIONUEVO",
+        "email": "resisol@terra.com.pe"
+    },
+    {
+        "hotel": "CUSHRU",
+        "nombre": "LARRISA",
+        "cargo": "ZUNIGA",
+        "email": "info@hotelruinas.com"
+    },
+    {
+        "hotel": "CUSHSA",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "reservas@mamasarahotel.com.pe"
+    },
+    {
+        "hotel": "CUSHSB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "info@casasanblas.com"
+    },
+    {
+        "hotel": "CUSHSB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservations@casasanblas.com"
+    },
+    {
+        "hotel": "CUSHSD",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservascusco@hsaperu.com"
+    },
+    {
+        "hotel": "CUSHSF",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "sanfranciscoplazacusco@gmail.com"
+    },
+    {
+        "hotel": "CUSHSF",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas_psfhotel@hotmail.com"
+    },
+    {
+        "hotel": "CUSHSG",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservascusco@hsaperu.com"
+    },
+    {
+        "hotel": "CUSHSH",
+        "nombre": "DPTO.",
+        "cargo": "RESERVAS",
+        "email": "reservas@samayhotel.com.pe"
+    },
+    {
+        "hotel": "CUSHSJ",
+        "nombre": "DPTO. RESERVAS",
+        "cargo": ".",
+        "email": "reservas@dmhoteles.pe"
+    },
+    {
+        "hotel": "CUSHSK",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@suenosdelinka.com"
+    },
+    {
+        "hotel": "CUSHSO",
+        "nombre": "DPTO DE RESERVAS",
+        "cargo": ".",
+        "email": "receptivo.sonestacusco@ghlhoteles.com"
+    },
+    {
+        "hotel": "CUSHSP",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservascusco@hsaperu.com"
+    },
+    {
+        "hotel": "CUSHSR",
+        "nombre": "MARIA DEL CARMEN",
+        "cargo": "BARRIONUEVO",
+        "email": "resisol@terra.com.pe"
+    },
+    {
+        "hotel": "CUSHSV",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelsieteventanas.com"
+    },
+    {
+        "hotel": "CUSHTA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@tierravivahoteles.com"
+    },
+    {
+        "hotel": "CUSHTC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@tierravivahoteles.com"
+    },
+    {
+        "hotel": "CUSHTG",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "theguesthouse@fallenangelincusco.com"
+    },
+    {
+        "hotel": "CUSHTH",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas_cusco@taypikala.com"
+    },
+    {
+        "hotel": "CUSHTI",
+        "nombre": "Voucher",
+        "cargo": "",
+        "email": "reservas@tierradelsolhoteles.com"
+    },
+    {
+        "hotel": "CUSHTN",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@terraandinahotel.com"
+    },
+    {
+        "hotel": "CUSHTP",
+        "nombre": "RESERVAS",
+        "cargo": "",
+        "email": "info@tampuhotel.com"
+    },
+    {
+        "hotel": "CUSHTP",
+        "nombre": "RESERVAS 2",
+        "cargo": "",
+        "email": "reservas@tampuhotel.com"
+    },
+    {
+        "hotel": "CUSHTQ",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "reception@tariqhotelcusco.com"
+    },
+    {
+        "hotel": "CUSHTV",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@tierravivahoteles.com"
+    },
+    {
+        "hotel": "CUSHTY",
+        "nombre": "Lesly Rojas",
+        "cargo": ".",
+        "email": "managerhoteltupacyupanqui@hotmail.com"
+    },
+    {
+        "hotel": "CUSHUO",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@unaytambocusco.com"
+    },
+    {
+        "hotel": "CUSHVA",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "hotelvilandre@hotmail.com"
+    },
+    {
+        "hotel": "CUSHVH",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "reservas@hotelesdelavillahermoza.com"
+    },
+    {
+        "hotel": "CUSHVI",
+        "nombre": "Liset Huillca",
+        "cargo": "VOUCHER",
+        "email": "reservas@elvirreyhostal.com"
+    },
+    {
+        "hotel": "CUSHVL",
+        "nombre": "ELIANA",
+        "cargo": "RODRIGUEZ",
+        "email": "hvilandre@telser.com.pe"
+    },
+    {
+        "hotel": "CUSHWY",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservaswyndhamhotelcusco@gmail.com"
+    },
+    {
+        "hotel": "CUSHXO",
+        "nombre": "Karla",
+        "cargo": "Voucher",
+        "email": "karla.sanchez@mountainlodgesofperu.com"
+    },
+    {
+        "hotel": "HAZHAN",
+        "nombre": ".",
+        "cargo": "RESERVACIONES",
+        "email": "andino@hotelandino.com"
+    },
+    {
+        "hotel": "HAZHFA",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "hostalelfarol@hotmail.com"
+    },
+    {
+        "hotel": "HAZHJO",
+        "nombre": "DEPARTAMENTO DE",
+        "cargo": "VENTAS",
+        "email": "ventas@hotellajoya.com.pe"
+    },
+    {
+        "hotel": "HAZHLP",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "hotelponcianas@gmail.com"
+    },
+    {
+        "hotel": "HAZHPA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@elpatio.com.pe"
+    },
+    {
+        "hotel": "HAZHPS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas-pastoruri@arawihotels.com"
+    },
+    {
+        "hotel": "HAZHSS",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "andeway@terra.com.pe"
+    },
+    {
+        "hotel": "HAZHTU",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hoteleseltumi.com.pe"
+    },
+    {
+        "hotel": "HUUHGH",
+        "nombre": ".",
+        "cargo": "",
+        "email": "reservas@grandhotelhuanuco.com"
+    },
+    {
+        "hotel": "HVCHPH",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "huancavelica@hotelpresidente.com.pe"
+    },
+    {
+        "hotel": "HVCHPR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "huancavelica@hotelpresidente.com.pe"
+    },
+    {
+        "hotel": "HYOHLV",
+        "nombre": ".",
+        "cargo": "RESERVAS",
+        "email": "reservas@lomaverdeperu.com"
+    },
+    {
+        "hotel": "HYOHPR",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "hotelhyo@speedy.com.pe"
+    },
+    {
+        "hotel": "HYOHUT",
+        "nombre": "SANTOS GIRALDO",
+        "cargo": ".",
+        "email": "galisantos75@hotmail.com"
+    },
+    {
+        "hotel": "ICAHAU",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@casasur.pe"
+    },
+    {
+        "hotel": "ICAHDU",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas2@lasdunashotel.com"
+    },
+    {
+        "hotel": "ICAHMO",
+        "nombre": ".",
+        "cargo": "VOUCHER",
+        "email": "reservas@dmhoteles.pe"
+    },
+    {
+        "hotel": "ICAHMO",
+        "nombre": ".",
+        "cargo": "VOUCHER2",
+        "email": "itaboada@dmhoteles.pe"
+    },
+    {
+        "hotel": "ICAHOS",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "hostesuiza@terra.com.pe"
+    },
+    {
+        "hotel": "ICAHQE",
+        "nombre": "Maria Teresa Almora",
+        "cargo": "RESERVAS",
+        "email": "mtalmora@hotelvinasqueirolo.com"
+    },
+    {
+        "hotel": "ICAHSI",
+        "nombre": "VOUCHER",
+        "cargo": "",
+        "email": "ventas@hotelsoldeica.com"
+    },
+    {
+        "hotel": "ICAHVJ",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "villajazminperu@yahoo.es"
+    },
+    {
+        "hotel": "ICAHVV",
+        "nombre": ".",
+        "cargo": "RESERVAS",
+        "email": "villadevalverde@hotmail.com"
+    },
+    {
+        "hotel": "ILOHLE",
+        "nombre": ".",
+        "cargo": "",
+        "email": "recepci\u00f3n@centurian.com.pe"
+    },
+    {
+        "hotel": "ILOHVP",
+        "nombre": ".",
+        "cargo": "RESERVAS",
+        "email": "viphotel@corporacionadc.net"
+    },
+    {
+        "hotel": "IQ4HEL",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "reservas@amazonrex.com"
+    },
+    {
+        "hotel": "IQTHA1",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@amazonrex.com"
+    },
+    {
+        "hotel": "IQTHA2",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@amazonrex.com"
+    },
+    {
+        "hotel": "IQTHAH",
+        "nombre": "Nncy Herrera",
+        "cargo": "Jefe de Reservas",
+        "email": "Hotel_Reservas@hotmail.com"
+    },
+    {
+        "hotel": "IQTHAH",
+        "nombre": "ventas lima",
+        "cargo": "ventas",
+        "email": "Jefeventaslima@AmazonApartHotel.com"
+    },
+    {
+        "hotel": "IQTHDO",
+        "nombre": "V",
+        "cargo": "Voucher",
+        "email": "reservas2@hoteleseldorado.com"
+    },
+    {
+        "hotel": "IQTHDO",
+        "nombre": "Mary Revilla",
+        "cargo": "Ejecutiva de cuenta",
+        "email": "mrevilla@junglexperiences.com"
+    },
+    {
+        "hotel": "IQTHDP",
+        "nombre": "Jackeline Murrieta",
+        "cargo": "Voucher",
+        "email": "reservas@doubletreeiquitos.com"
+    },
+    {
+        "hotel": "IQTHEX",
+        "nombre": "Ivanna R\u00edos",
+        "cargo": "VOUCHER",
+        "email": "reservas3@hoteleseldorado.com"
+    },
+    {
+        "hotel": "IQTHSJ",
+        "nombre": ".",
+        "cargo": "RESERVAS",
+        "email": "reservas@samiriajunglehotel.com"
+    },
+    {
+        "hotel": "JULHCJ",
+        "nombre": "RESERVAS LIMA",
+        "cargo": ".",
+        "email": "reservaslima@hotelesdoncarlos.com"
+    },
+    {
+        "hotel": "JULHDC",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservaslima@hotelesdoncarlos.com"
+    },
+    {
+        "hotel": "LIMH3B",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@3bhostal.com"
+    },
+    {
+        "hotel": "LIMHA2",
+        "nombre": "Voucher",
+        "cargo": "voucher",
+        "email": "info@hoteldeautor.com"
+    },
+    {
+        "hotel": "LIMHAC",
+        "nombre": "SILVIA",
+        "cargo": "MARTINEZ",
+        "email": "reserv@condado.com.pe"
+    },
+    {
+        "hotel": "LIMHAE",
+        "nombre": "Kenny Ticona",
+        "cargo": "Reservas",
+        "email": "reservas-lima@arawihotels.com"
+    },
+    {
+        "hotel": "LIMHAF",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHAH",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@antarahotel.com"
+    },
+    {
+        "hotel": "LIMHAH",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "ventas3@antarahotel.com"
+    },
+    {
+        "hotel": "LIMHAK",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@akuhotels.com"
+    },
+    {
+        "hotel": "LIMHAL",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@allpahotel.com"
+    },
+    {
+        "hotel": "LIMHAM",
+        "nombre": "Olga Cervantes",
+        "cargo": "VOUCHER",
+        "email": "reservas@atemporal.pe"
+    },
+    {
+        "hotel": "LIMHAO",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "info@aquavithotel.com"
+    },
+    {
+        "hotel": "LIMHAP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas2@hotelelpolo.com"
+    },
+    {
+        "hotel": "LIMHAS",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@thunderbirdresorts.com"
+    },
+    {
+        "hotel": "LIMHAT",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@antiguamiraflores.com"
+    },
+    {
+        "hotel": "LIMHAU",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "info@hoteldeautor.com"
+    },
+    {
+        "hotel": "LIMHAU",
+        "nombre": "VOUCHER 2",
+        "cargo": ".",
+        "email": "humberto@hoteldeautor.com"
+    },
+    {
+        "hotel": "LIMHAW",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "reservas-lima@arawihotels.com"
+    },
+    {
+        "hotel": "LIMHBA",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "info@hotelchavin.com.pe"
+    },
+    {
+        "hotel": "LIMHBB",
+        "nombre": "ORLANDO SANCHEZ",
+        "cargo": "RESERVAS",
+        "email": "casabellaperu@msn.com"
+    },
+    {
+        "hotel": "LIMHBH",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelb.pe"
+    },
+    {
+        "hotel": "LIMHBH",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "eventos@hotelb.pe"
+    },
+    {
+        "hotel": "LIMHBL",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservasboulevard@speedy.com.pe"
+    },
+    {
+        "hotel": "LIMHBM",
+        "nombre": "VOUCHER ALLOTMENTS",
+        "cargo": ".",
+        "email": "reservas@hbritaniamiraflores.com"
+    },
+    {
+        "hotel": "LIMHBM",
+        "nombre": "VOUCHER REGULARES",
+        "cargo": ".",
+        "email": "reservas@hbritaniamiraflores.com"
+    },
+    {
+        "hotel": "LIMHBS",
+        "nombre": "Yanet Medrano",
+        "cargo": "Ventas",
+        "email": "ventas@sanblashotel.com"
+    },
+    {
+        "hotel": "LIMHBU",
+        "nombre": "VOUCHER",
+        "cargo": "",
+        "email": "recepcion@smhotel.pe"
+    },
+    {
+        "hotel": "LIMHC2",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@thunderbirdresorts.com"
+    },
+    {
+        "hotel": "LIMHCA",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHCA",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-castsantonio@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHCD",
+        "nombre": "ADRIANA BARZOLA",
+        "cargo": "RESERVAS INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "LIMHCD",
+        "nombre": "ALEX MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "LIMHCE",
+        "nombre": "MAITEE",
+        "cargo": "GERENTE VENTAS",
+        "email": "reservas@casarepublica.com"
+    },
+    {
+        "hotel": "LIMHCL",
+        "nombre": "PILAR",
+        "cargo": "VAIZ",
+        "email": "reservas@hotelcarmel.com.pe"
+    },
+    {
+        "hotel": "LIMHCM",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHCM",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-castcentro@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHCO",
+        "nombre": "SILVIA",
+        "cargo": "MARTINEZ",
+        "email": "reserv@condado.com.pe"
+    },
+    {
+        "hotel": "LIMHCQ",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@swissmanagement.net"
+    },
+    {
+        "hotel": "LIMHCR",
+        "nombre": "Voucher",
+        "cargo": ".",
+        "email": "reservas@hotelsantacruz.com"
+    },
+    {
+        "hotel": "LIMHCY",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservations.lima@marriott.com"
+    },
+    {
+        "hotel": "LIMHD2",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "hotel@delpilarmiraflores.com.pe"
+    },
+    {
+        "hotel": "LIMHD2",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "arivera@delpilarmiraflores.com.pe"
+    },
+    {
+        "hotel": "LIMHDA",
+        "nombre": "Voucher",
+        "cargo": ".",
+        "email": "reservas@danielshotel.com.pe"
+    },
+    {
+        "hotel": "LIMHDC",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@ducado.pe"
+    },
+    {
+        "hotel": "LIMHDD",
+        "nombre": "MARIA ELENA",
+        "cargo": "ZAPATA",
+        "email": "doratur@terra.com.pe"
+    },
+    {
+        "hotel": "LIMHDF",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "ventastourandtravel@dazzlerlima.com"
+    },
+    {
+        "hotel": "LIMHDF",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@dazzlerlima.com"
+    },
+    {
+        "hotel": "LIMHDI",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "reservas@dazzlerlima.com"
+    },
+    {
+        "hotel": "LIMHDS",
+        "nombre": ".",
+        "cargo": "DPTO. DE RESERVAS",
+        "email": "reservas@decapolisperu.com"
+    },
+    {
+        "hotel": "LIMHDS",
+        "nombre": "-",
+        "cargo": "DPTO. DE RESERVAS",
+        "email": "reservas2@decapolisperu.com"
+    },
+    {
+        "hotel": "LIMHDZ",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "ventastourandtravel@dazzlerlima.com"
+    },
+    {
+        "hotel": "LIMHDZ",
+        "nombre": "VOUHER",
+        "cargo": ".",
+        "email": "reservas@dazzlerlima.com"
+    },
+    {
+        "hotel": "LIMHEA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas.peru@hotelesestelar.com"
+    },
+    {
+        "hotel": "LIMHEA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "grupos.peru@hotelesestelar.com"
+    },
+    {
+        "hotel": "LIMHEB",
+        "nombre": "MILAGROS ZU\u00d1IGA",
+        "cargo": "RESERVAS",
+        "email": "reservas@embajadoreshotel.com"
+    },
+    {
+        "hotel": "LIMHEC",
+        "nombre": ".",
+        "cargo": "RESERVAS",
+        "email": "reservas1@hotelempedrada.com"
+    },
+    {
+        "hotel": "LIMHEH",
+        "nombre": "VOUCHERS FITS Y GRUPOS",
+        "cargo": ".",
+        "email": "grupos.peru@hotelesestelar.com"
+    },
+    {
+        "hotel": "LIMHEX",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservaslima@hsaperu.com"
+    },
+    {
+        "hotel": "LIMHFA",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@faraonagrandhotel.com"
+    },
+    {
+        "hotel": "LIMHFC",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelferrecolonial.com"
+    },
+    {
+        "hotel": "LIMHFE",
+        "nombre": "GIULIANA PASTOR",
+        "cargo": "RESERVAS",
+        "email": "reservas@hotelferremiraflores.com"
+    },
+    {
+        "hotel": "LIMHFG",
+        "nombre": "Zenia Rubio Ruiz",
+        "cargo": "Jefe de Reservas",
+        "email": "reservas@faraonagrandhotel.com"
+    },
+    {
+        "hotel": "LIMHFL",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelferrecolonial.com"
+    },
+    {
+        "hotel": "LIMHFO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@foresta-hotel.pe"
+    },
+    {
+        "hotel": "LIMHFS",
+        "nombre": "Cintya Rodriguez",
+        "cargo": "Voucher",
+        "email": "reservas2@fourpointsmiraflores.com"
+    },
+    {
+        "hotel": "LIMHFV",
+        "nombre": "Allinson Hutchins",
+        "cargo": "Recepcion\/Reservas\/Operaciones",
+        "email": "reservas@devilleinnhotel.com"
+    },
+    {
+        "hotel": "LIMHGB",
+        "nombre": "DEPARTAMENTO RESERVAS",
+        "cargo": ".",
+        "email": "reservas@granhotelbolivar.com.pe"
+    },
+    {
+        "hotel": "LIMHGB",
+        "nombre": "RESERVAS ALIMENTACION",
+        "cargo": ".",
+        "email": "eventos3@granhotelbolivar.com.pe"
+    },
+    {
+        "hotel": "LIMHGO",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@golfincahotel.com"
+    },
+    {
+        "hotel": "LIMHHA",
+        "nombre": "ESTEFANIA TIRADO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hoteleslahacienda.com"
+    },
+    {
+        "hotel": "LIMHHB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "habitathotelperu@gmail.com"
+    },
+    {
+        "hotel": "LIMHHB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@habitathotelperu.com"
+    },
+    {
+        "hotel": "LIMHHI",
+        "nombre": "MARIBEL PFLUCKER",
+        "cargo": "RESERVAS",
+        "email": "reservaciones@cplazalimahotel.com.pe"
+    },
+    {
+        "hotel": "LIMHHN",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@nmlimahotel.com"
+    },
+    {
+        "hotel": "LIMHHO",
+        "nombre": "v",
+        "cargo": ".",
+        "email": "maribelp@hilima.com"
+    },
+    {
+        "hotel": "LIMHHT",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reserve.lima@hilton.com"
+    },
+    {
+        "hotel": "LIMHHW",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@huacawasihotel.com"
+    },
+    {
+        "hotel": "LIMHHY",
+        "nombre": "Macarena Yarleque",
+        "cargo": "Reservas",
+        "email": "limct.reservations@hyatt.com"
+    },
+    {
+        "hotel": "LIMHIB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "h6971-re1@accor.com"
+    },
+    {
+        "hotel": "LIMHIE",
+        "nombre": "INES VILLATORO",
+        "cargo": "Voucher",
+        "email": "RESERVAS.LIMSI@AGRISAL.COM"
+    },
+    {
+        "hotel": "LIMHIF",
+        "nombre": "Recepci\u00f3n",
+        "cargo": ".",
+        "email": "info@ifeboutique.com"
+    },
+    {
+        "hotel": "LIMHIK",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "reservas@inkariluxuryhotel.com.pe"
+    },
+    {
+        "hotel": "LIMHIL",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "h6971-re1@accor.com"
+    },
+    {
+        "hotel": "LIMHIR",
+        "nombre": "VOUCHER",
+        "cargo": "V.",
+        "email": "h8729-re@accor.com"
+    },
+    {
+        "hotel": "LIMHJA",
+        "nombre": "KATHERINE",
+        "cargo": "OYADOMARI",
+        "email": "reservas@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "LIMHJA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas2@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "LIMHJB",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "LIMHJE",
+        "nombre": "KATHERINE",
+        "cargo": "OYADOMARI",
+        "email": "reservas@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "LIMHKG",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "ventas6@kingdomhotelperu.com"
+    },
+    {
+        "hotel": "LIMHKI",
+        "nombre": "VOUCHER",
+        "cargo": "",
+        "email": "ventas1@kingdomhotelperu.com"
+    },
+    {
+        "hotel": "LIMHLC",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "recepcion@castellanahotel.com"
+    },
+    {
+        "hotel": "LIMHLD",
+        "nombre": "ANALIZ GALVEZ",
+        "cargo": "EJECUTIVA TOUR & TRAVEL",
+        "email": "agalvez@losdelfineshotel.com.pe"
+    },
+    {
+        "hotel": "LIMHLG",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@losgirasoleshotel.com"
+    },
+    {
+        "hotel": "LIMHLI",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcionlima@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHLI",
+        "nombre": "RESERVAS FIT'S",
+        "cargo": ".",
+        "email": "fits@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHLI",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "grupos@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHLI",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservaslima@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHLM",
+        "nombre": "Shirley Loo",
+        "cargo": "Voucher",
+        "email": "fits@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHLO",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@leondeoroperu.com"
+    },
+    {
+        "hotel": "LIMHLP",
+        "nombre": "Paola Da Silva",
+        "cargo": "Jefe Recepci\u00f3n",
+        "email": "recepcion@lapazapartotel.com"
+    },
+    {
+        "hotel": "LIMHMA",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@mariaangola.com.pe"
+    },
+    {
+        "hotel": "LIMHMB",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@mirafloresboutiquehotel.com"
+    },
+    {
+        "hotel": "LIMHMC",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@miraflorescolonhotel.com"
+    },
+    {
+        "hotel": "LIMHME",
+        "nombre": "CLAUDIA MAZA",
+        "cargo": "RESERVAS",
+        "email": "Claudia.maza@melia.com"
+    },
+    {
+        "hotel": "LIMHME",
+        "nombre": "VOUCHER (EN COPIA)",
+        "cargo": ".",
+        "email": "Cesar.melendez@melia.com"
+    },
+    {
+        "hotel": "LIMHME",
+        "nombre": "PEDIDOS ESPECIALES (COMIDA)",
+        "cargo": ".",
+        "email": "melissa.troncoso@melia.com"
+    },
+    {
+        "hotel": "LIMHME",
+        "nombre": "PEDIDOS ESPECIALES (COMIDA)",
+        "cargo": ".",
+        "email": "melissa.troncoso@melia.com"
+    },
+    {
+        "hotel": "LIMHME",
+        "nombre": "RESERVAS (EN COPIA)",
+        "cargo": "RESERVAS",
+        "email": "Catherine.galdos@melia.com"
+    },
+    {
+        "hotel": "LIMHMH",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hmanhattan.com"
+    },
+    {
+        "hotel": "LIMHMI",
+        "nombre": "Becky Garc\u00eda Alcazar",
+        "cargo": "Voucher",
+        "email": "HA7L9-FO@ACCOR.COM"
+    },
+    {
+        "hotel": "LIMHMM",
+        "nombre": "Maria Cordova Villa",
+        "cargo": "Reservas",
+        "email": "reservas@hotelmiramarperu.com"
+    },
+    {
+        "hotel": "LIMHMO",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@montereal.com.pe"
+    },
+    {
+        "hotel": "LIMHMR",
+        "nombre": "DPTO RESERVAS FITS",
+        "cargo": ".",
+        "email": "reservations.lima@marriott.com"
+    },
+    {
+        "hotel": "LIMHMR",
+        "nombre": "VOUCHERS",
+        "cargo": ".",
+        "email": "ysabel.arana@marriott.com"
+    },
+    {
+        "hotel": "LIMHMR",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "katty.vidal@marriott.com"
+    },
+    {
+        "hotel": "LIMHMR",
+        "nombre": "CLAUDIA TORRES",
+        "cargo": "SUPERVISORA",
+        "email": "claudia.torres@marriott.com"
+    },
+    {
+        "hotel": "LIMHMR",
+        "nombre": "YSABEL ARANA",
+        "cargo": "ROOM CONTROLLER",
+        "email": "ysabel.arana@marriott.com"
+    },
+    {
+        "hotel": "LIMHMS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@mariel-hotel.com"
+    },
+    {
+        "hotel": "LIMHMW",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "info@mirafloreswasi.com"
+    },
+    {
+        "hotel": "LIMHNB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelnobility.com"
+    },
+    {
+        "hotel": "LIMHNB",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcion@hotelnobility.com"
+    },
+    {
+        "hotel": "LIMHNC",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "ventas@newcorpachotel.com"
+    },
+    {
+        "hotel": "LIMHNG",
+        "nombre": "Karin Nalvarte",
+        "cargo": "Voucher",
+        "email": "reservas@hotelnobility.com"
+    },
+    {
+        "hotel": "LIMHNV",
+        "nombre": "EVA MARIA RUIZ",
+        "cargo": "RESERVAS",
+        "email": "h6339-re1@accor.com"
+    },
+    {
+        "hotel": "LIMHNV",
+        "nombre": "LUIS ALARCON",
+        "cargo": "RESERVAS",
+        "email": "h6339-re2@accor.com"
+    },
+    {
+        "hotel": "LIMHOL",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas.sonestaolivar1@ghlhoteles.com"
+    },
+    {
+        "hotel": "LIMHOV",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "karina.peching@swisslim.com.pe"
+    },
+    {
+        "hotel": "LIMHOV",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "karla.mori@swisslim.com.pe"
+    },
+    {
+        "hotel": "LIMHPA",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@doubletreeparacas.com.pe"
+    },
+    {
+        "hotel": "LIMHPA",
+        "nombre": "VOUCHER JUNIUS",
+        "cargo": ".",
+        "email": "reservas@junius.com.pe"
+    },
+    {
+        "hotel": "LIMHPA",
+        "nombre": "GISSELLA TAYSING",
+        "cargo": ".",
+        "email": "gissela.taysing@hilton.com"
+    },
+    {
+        "hotel": "LIMHPC",
+        "nombre": "Voucher",
+        "cargo": ".",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHPC",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recep1-capmiraflores@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHPD",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@plazadelbosque.com"
+    },
+    {
+        "hotel": "LIMHPH",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@miraflorespacifichotel.com"
+    },
+    {
+        "hotel": "LIMHPH",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "informes@miraflorespacifichotel.com"
+    },
+    {
+        "hotel": "LIMHPN",
+        "nombre": "Luis Enrique Cordova",
+        "cargo": "Voucher",
+        "email": "reservas@bth.pe"
+    },
+    {
+        "hotel": "LIMHPO",
+        "nombre": "URSULA",
+        "cargo": "HINOSTROZA",
+        "email": "reservas.sonestamiraflores@ghlhoteles.com"
+    },
+    {
+        "hotel": "LIMHPP",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "perures.groups@belmond.com"
+    },
+    {
+        "hotel": "LIMHPP",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "perures.fits@belmond.com"
+    },
+    {
+        "hotel": "LIMHPP",
+        "nombre": "Ibett Leon",
+        "cargo": "Jefa de recepcion",
+        "email": "ibett.leon@belmond.com"
+    },
+    {
+        "hotel": "LIMHPP",
+        "nombre": "Recepcio",
+        "cargo": "Recepcion",
+        "email": "mph.recepcion@belmond.com"
+    },
+    {
+        "hotel": "LIMHPP",
+        "nombre": "Front Desk",
+        "cargo": "Front Desk",
+        "email": "mph.frontdesk@belmond.com"
+    },
+    {
+        "hotel": "LIMHPP",
+        "nombre": "caja recpcion",
+        "cargo": "caja recepcion",
+        "email": "central.mph@belmond.com"
+    },
+    {
+        "hotel": "LIMHPQ",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHPQ",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "recep2casm@casa-andina.com"
+    },
+    {
+        "hotel": "LIMHPT",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservassanmiguel@palmettohoteles.com"
+    },
+    {
+        "hotel": "LIMHQM",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "b.hotel@quintamiraflores.com"
+    },
+    {
+        "hotel": "LIMHQP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservations@qphotels.com"
+    },
+    {
+        "hotel": "LIMHQR",
+        "nombre": "Nataly Gil",
+        "cargo": "Reservas Fits",
+        "email": "agencias@losportales.com.pe"
+    },
+    {
+        "hotel": "LIMHQR",
+        "nombre": "Lorena Vite",
+        "cargo": "Reservas Grupos",
+        "email": "grupos@losportales.com.pe"
+    },
+    {
+        "hotel": "LIMHRE",
+        "nombre": "C",
+        "cargo": ".",
+        "email": "reservas@ramadaencoresanisidro.com"
+    },
+    {
+        "hotel": "LIMHRI",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "recepriviera@hotelessanagustin.com.pe"
+    },
+    {
+        "hotel": "LIMHRQ",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "reservas@hotelruncu.com"
+    },
+    {
+        "hotel": "LIMHRV",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelroosevelt.com"
+    },
+    {
+        "hotel": "LIMHSA",
+        "nombre": "RESERVAS - JULIANA ROMERO",
+        "cargo": "EJECUTIVA",
+        "email": "HB462-RE1@ACCOR.COM"
+    },
+    {
+        "hotel": "LIMHSB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelbasadre.com"
+    },
+    {
+        "hotel": "LIMHSC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservaslim@hotelessanagustin.com.pe"
+    },
+    {
+        "hotel": "LIMHSE",
+        "nombre": "Recepci\u00f3n",
+        "cargo": "Recepci\u00f3n",
+        "email": "reception.lima@selina.com"
+    },
+    {
+        "hotel": "LIMHSH",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "lima.reservations@sheraton.com"
+    },
+    {
+        "hotel": "LIMHSH",
+        "nombre": "VOUCHERS",
+        "cargo": ".",
+        "email": "recepcion.lima@sheraton.com"
+    },
+    {
+        "hotel": "LIMHSI",
+        "nombre": "Reservas",
+        "cargo": ".",
+        "email": "reservas@decapolisperu.com"
+    },
+    {
+        "hotel": "LIMHSL",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@suitesdelbosque.com"
+    },
+    {
+        "hotel": "LIMHSN",
+        "nombre": "reservas",
+        "cargo": ".",
+        "email": "liliandelfin@gmail.com"
+    },
+    {
+        "hotel": "LIMHSO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@soldeoro.com.pe"
+    },
+    {
+        "hotel": "LIMHSP",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "hssipan@terra.com.pe"
+    },
+    {
+        "hotel": "LIMHSR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@royalparkhotel.com.pe"
+    },
+    {
+        "hotel": "LIMHSV",
+        "nombre": "ADRIANA BARZOLA",
+        "cargo": "VOUCHER INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "LIMHSV",
+        "nombre": "ALEX MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "LIMHTA",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hoteltallanes.com.pe"
+    },
+    {
+        "hotel": "LIMHTB",
+        "nombre": "Miguel Berr\u00fa",
+        "cargo": "Jefe de reservas",
+        "email": "reservas2@eltamboperu.com"
+    },
+    {
+        "hotel": "LIMHTL",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservations@thelothotel.com"
+    },
+    {
+        "hotel": "LIMHTM",
+        "nombre": "Fabiola Fuentes",
+        "cargo": "Jefe de Reservas",
+        "email": "reservas@eltamboperu.com"
+    },
+    {
+        "hotel": "LIMHTP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@thunderbirdresorts.com"
+    },
+    {
+        "hotel": "LIMHTR",
+        "nombre": "Vanessa Canaza",
+        "cargo": "Agente de Reservas",
+        "email": "vanessa.canaza@melia.com"
+    },
+    {
+        "hotel": "LIMHTT",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@hoteldosdemayo.com"
+    },
+    {
+        "hotel": "LIMHTV",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@tierravivahoteles.com"
+    },
+    {
+        "hotel": "LIMHVB",
+        "nombre": "V",
+        "cargo": ".",
+        "email": "vbreservas@ananayhotels.com"
+    },
+    {
+        "hotel": "LIMHWE",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "reservaswestin@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHWE",
+        "nombre": "RESERVAS FITS - EXCLUSIVO LITO",
+        "cargo": "VOUCHERS",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHWE",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcionwestin@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHWE",
+        "nombre": "VOUCHER",
+        "cargo": "",
+        "email": "reservaswestin@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHWE",
+        "nombre": "RECEPCION",
+        "cargo": "",
+        "email": "serviceexpresswestin@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHWE",
+        "nombre": "VOUCHER MARAS REST",
+        "cargo": "Voucher",
+        "email": "restaurantemaras@libertador.com.pe"
+    },
+    {
+        "hotel": "LIMHWE",
+        "nombre": "voucher",
+        "cargo": "Voucher",
+        "email": "market770@westinlima.com"
+    },
+    {
+        "hotel": "LIMHXE",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservaslim@hotelessanagustin.com.pe"
+    },
+    {
+        "hotel": "LP1HCB",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "lcarrasco@titicaca.com"
+    },
+    {
+        "hotel": "LP1HGL",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelgloria.com.bo"
+    },
+    {
+        "hotel": "LP1HOS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "rmaldonado@titicaca.com"
+    },
+    {
+        "hotel": "LP1HPR",
+        "nombre": "CRILLON TOURS",
+        "cargo": ".",
+        "email": "titicaca@entelnet.bo"
+    },
+    {
+        "hotel": "MIAHAI",
+        "nombre": "FIT Reservations",
+        "cargo": ".",
+        "email": "fit@haimarktravel.com"
+    },
+    {
+        "hotel": "MPIHAD",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@siahotels.com"
+    },
+    {
+        "hotel": "MPIHAT",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hatuchaytower.com"
+    },
+    {
+        "hotel": "MPIHCA",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "lapequenacasita@terra.com.pe"
+    },
+    {
+        "hotel": "MPIHCC",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "MPIHCC",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-castmapi@casa-andina.com"
+    },
+    {
+        "hotel": "MPIHCC",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "recep1-castmapi@casa-andina.com"
+    },
+    {
+        "hotel": "MPIHCH",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@byinkaterra.com"
+    },
+    {
+        "hotel": "MPIHCH",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "elmapipagos@byinkaterra.com"
+    },
+    {
+        "hotel": "MPIHCN",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@siahotels.com"
+    },
+    {
+        "hotel": "MPIHCS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@casadelsolhotels.com"
+    },
+    {
+        "hotel": "MPIHDS",
+        "nombre": "Sharon Ricce",
+        "cargo": "Voucher y pagos",
+        "email": "cobranzas@casadelsolhotels.com"
+    },
+    {
+        "hotel": "MPIHDS",
+        "nombre": "Sharon Ricce",
+        "cargo": "Reservas",
+        "email": "reservas@casadelsolhotels.com"
+    },
+    {
+        "hotel": "MPIHEN",
+        "nombre": "Tina Orue Ayma",
+        "cargo": "Voucher",
+        "email": "info@hotel-encanto.com"
+    },
+    {
+        "hotel": "MPIHEN",
+        "nombre": "Reymer Huaman\u00ed",
+        "cargo": "Contabilidad",
+        "email": "contabilidad.hotels@gmail.com"
+    },
+    {
+        "hotel": "MPIHFH",
+        "nombre": "voucher",
+        "cargo": "voucher",
+        "email": "flowersmachupicchu@gmail.com"
+    },
+    {
+        "hotel": "MPIHFR",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@hotelferremachupicchu.com"
+    },
+    {
+        "hotel": "MPIHGH",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "gringobills@yahoo.com"
+    },
+    {
+        "hotel": "MPIHHC",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@grupointi.com"
+    },
+    {
+        "hotel": "MPIHHC",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "hoteles@grupointi.com"
+    },
+    {
+        "hotel": "MPIHHH",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "hoteles@grupointi.com"
+    },
+    {
+        "hotel": "MPIHHH",
+        "nombre": "VOUCHER TOTO'S HOUSE",
+        "cargo": "TOTO'S HOUSE",
+        "email": "restaurantes@grupointi.com"
+    },
+    {
+        "hotel": "MPIHHP",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hanaqpachainn.com"
+    },
+    {
+        "hotel": "MPIHI3",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "hoteles@grupointi.com"
+    },
+    {
+        "hotel": "MPIHI5",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@grupointi.com"
+    },
+    {
+        "hotel": "MPIHI5",
+        "nombre": "VOUCHER REST. PUEBLO VIEJO",
+        "cargo": "PUEBLO VIEJO REST",
+        "email": "restaurantes@grupointi.com"
+    },
+    {
+        "hotel": "MPIHIB",
+        "nombre": "Voucher",
+        "cargo": "Voucher",
+        "email": "hoteles@grupointi.com"
+    },
+    {
+        "hotel": "MPIHIB",
+        "nombre": "VOUCHER TOTO'S HOUSE",
+        "cargo": "TOTO'S HOUSE",
+        "email": "restaurantes@grupointi.com"
+    },
+    {
+        "hotel": "MPIHIC",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@grupointi.com"
+    },
+    {
+        "hotel": "MPIHIC",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "hoteles@grupointi.com"
+    },
+    {
+        "hotel": "MPIHIM",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@imperiomachupicchu.com"
+    },
+    {
+        "hotel": "MPIHIQ",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "hoteles@grupointi.com"
+    },
+    {
+        "hotel": "MPIHIW",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "reservas@inkatownhotel.com"
+    },
+    {
+        "hotel": "MPIHKI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "ventas@grupokillamachupicchu.com"
+    },
+    {
+        "hotel": "MPIHMH",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "reservas@siahotels.com"
+    },
+    {
+        "hotel": "MPIHMP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "central@inkaterra.com"
+    },
+    {
+        "hotel": "MPIHMP",
+        "nombre": "PAGO",
+        "cargo": ".",
+        "email": "pagos@inkaterra.com"
+    },
+    {
+        "hotel": "MPIHPD",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "reservas@siahotels.com"
+    },
+    {
+        "hotel": "MPIHPL",
+        "nombre": "RECECPION",
+        "cargo": ".",
+        "email": "reservas@siahotels.com"
+    },
+    {
+        "hotel": "MPIHPU",
+        "nombre": "RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "reservas@iphoteles.com"
+    },
+    {
+        "hotel": "MPIHRL",
+        "nombre": "DPTO RECEPCION",
+        "cargo": "JEFE DE RECEPCION",
+        "email": "reservas@lacabanamachupicchu.com"
+    },
+    {
+        "hotel": "MPIHSH",
+        "nombre": "VOUCHER",
+        "cargo": "",
+        "email": "reservas@hatunsamayhotel.com"
+    },
+    {
+        "hotel": "MPIHSH",
+        "nombre": "voucher",
+        "cargo": "",
+        "email": "cobranzas1@hatunsamayhotel.com"
+    },
+    {
+        "hotel": "MPIHSI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@santuariohotel.com"
+    },
+    {
+        "hotel": "MPIHSL",
+        "nombre": "RESERVAS FITS",
+        "cargo": "FITS",
+        "email": "perures.fits@belmond.com"
+    },
+    {
+        "hotel": "MPIHSL",
+        "nombre": "RESERVAS GRUPOS & SERIES",
+        "cargo": "GRUPOS & SERIES",
+        "email": "perures.groups@belmond.com"
+    },
+    {
+        "hotel": "MPIHSL",
+        "nombre": "Recepci\u00f3n",
+        "cargo": "Recepci\u00f3n",
+        "email": "recepcion.mps@belmond.com"
+    },
+    {
+        "hotel": "MPIHSL",
+        "nombre": "Ana Orellana",
+        "cargo": "Alimentaci\u00f3n",
+        "email": "ana.orellana@belmond.com"
+    },
+    {
+        "hotel": "MPIHSL",
+        "nombre": ".",
+        "cargo": "Alimentaci\u00f3n",
+        "email": "adicion.tinkuy@belmond.com"
+    },
+    {
+        "hotel": "MPIHSL",
+        "nombre": "Caja recepci\u00f3n",
+        "cargo": ".",
+        "email": "equiporecepcion.mps@belmond.com"
+    },
+    {
+        "hotel": "MPIHSL",
+        "nombre": "Recepci\u00f3n",
+        "cargo": ".",
+        "email": "recepcion1.mps@belmond.com"
+    },
+    {
+        "hotel": "MPIHSN",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@santuariohotel.com"
+    },
+    {
+        "hotel": "MPIHSQ",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "facturacion@sumaqhotelperu.com"
+    },
+    {
+        "hotel": "MPIHSQ",
+        "nombre": "VOUCHERS",
+        "cargo": ".",
+        "email": "reservas@sumaqhotelperu.com"
+    },
+    {
+        "hotel": "MPIHTB",
+        "nombre": "RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "reservas@iphoteles.com"
+    },
+    {
+        "hotel": "MPIHTT",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "reservas@inkatownhotel.com"
+    },
+    {
+        "hotel": "MPIHTY",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas_machupicchu@taypikala.com"
+    },
+    {
+        "hotel": "MPIHUK",
+        "nombre": "RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "reservas@iphoteles.com"
+    },
+    {
+        "hotel": "MPIHWC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "wiracochainn@hotmail.com"
+    },
+    {
+        "hotel": "MPIHWH",
+        "nombre": "Heidi Lizonde",
+        "cargo": "VOUCHER",
+        "email": "reservas@wamanhotels.com"
+    },
+    {
+        "hotel": "NAZHAN",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "NAZHAN",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-castnasca@casa-andina.com"
+    },
+    {
+        "hotel": "NAZHDB",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@hotelmajoro.com"
+    },
+    {
+        "hotel": "NAZHHA",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hotelnuevocantalloc.com"
+    },
+    {
+        "hotel": "NAZHMS",
+        "nombre": ".",
+        "cargo": "reservas",
+        "email": "reservas@nazcagroup.com"
+    },
+    {
+        "hotel": "NAZHNA",
+        "nombre": "VOUCHER",
+        "cargo": "Series de Lito",
+        "email": "reservas@dmhoteles.pe"
+    },
+    {
+        "hotel": "NAZHNA",
+        "nombre": "VOUCHER",
+        "cargo": "Fits de Lito",
+        "email": "reservas@dmhoteles.pe"
+    },
+    {
+        "hotel": "NAZHOV",
+        "nombre": "Departamento",
+        "cargo": "Reservas",
+        "email": "oro_viejo@terra.com.pe"
+    },
+    {
+        "hotel": "NAZHPA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@paredoneshotel.com"
+    },
+    {
+        "hotel": "NAZHWP",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "wasipunko@hotmail.com"
+    },
+    {
+        "hotel": "PCLHBP",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@boulevardplaza.pe"
+    },
+    {
+        "hotel": "PCLHCA",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "PCLHCA",
+        "nombre": "voucher recepcion",
+        "cargo": "recepcion",
+        "email": "cas-pucallpa@casa-andina.com"
+    },
+    {
+        "hotel": "PCLHUR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@ucayaliriver.com"
+    },
+    {
+        "hotel": "PCSHAW",
+        "nombre": "voucher",
+        "cargo": "Reservas LITO",
+        "email": "rvalqui@aranwahotels.com"
+    },
+    {
+        "hotel": "PCSHCB",
+        "nombre": "ANALUZ HERNANDEZ CASSIA",
+        "cargo": "VOUCHER",
+        "email": "elcondor@hotelelcondor.com"
+    },
+    {
+        "hotel": "PCSHDT",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@doubletreeparacas.com.pe"
+    },
+    {
+        "hotel": "PCSHDT",
+        "nombre": "VOUCHER ALMUERZO S\/PERNOCTE",
+        "cargo": ".",
+        "email": "pfigari@doubletreeparacas.com.pe"
+    },
+    {
+        "hotel": "PCSHDT",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@doubletreeelpardo.com.pe"
+    },
+    {
+        "hotel": "PCSHGP",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelgranpalma.com"
+    },
+    {
+        "hotel": "PCSHHA",
+        "nombre": "ESTEFANIA TIRADO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hoteleslahacienda.com"
+    },
+    {
+        "hotel": "PCSHLI",
+        "nombre": "RESERVAS FITS - EXCLUSIVO LITO",
+        "cargo": "VOUCHERS",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "PCSHLI",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "grupos@libertador.com.pe"
+    },
+    {
+        "hotel": "PCSHLI",
+        "nombre": "TOURS BALLESTAS",
+        "cargo": ".",
+        "email": "tours@libertador.com.pe"
+    },
+    {
+        "hotel": "PCSHLI",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcionparacas@libertador.com.pe"
+    },
+    {
+        "hotel": "PCSHLI",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservasparacas@libertador.com.pe"
+    },
+    {
+        "hotel": "PCSHMI",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@elmiradorhotel.com"
+    },
+    {
+        "hotel": "PCSHPE",
+        "nombre": "ANALUZ HERNANDEZ CASSIA",
+        "cargo": "VOUCHER",
+        "email": "paracas@hotelemancipador.com"
+    },
+    {
+        "hotel": "PCSHPL",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservasparacas@libertador.com.pe"
+    },
+    {
+        "hotel": "PCSHSA",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservaslima@hsaperu.com"
+    },
+    {
+        "hotel": "PEMHCQ",
+        "nombre": "VOUCHER",
+        "cargo": "V",
+        "email": "reservas_cabanaquinta@hotmail.com"
+    },
+    {
+        "hotel": "PIUHAM",
+        "nombre": "RESERVAS FITS",
+        "cargo": "MARICARMEN PECEROS GERMAN",
+        "email": "agencias@losportales.com.pe"
+    },
+    {
+        "hotel": "PIUHAM",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "grupos@losportales.com.pe"
+    },
+    {
+        "hotel": "PIUHCT",
+        "nombre": "ADRIANA BARZOLA",
+        "cargo": "VOUCHER INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "PIUHCT",
+        "nombre": "ALEX MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "PIUHDC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "informes@hoteldco.com"
+    },
+    {
+        "hotel": "PIUHEA",
+        "nombre": ".",
+        "cargo": ".",
+        "email": "reservas@hotelelangolo.com"
+    },
+    {
+        "hotel": "PIUHER",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservaciones@elrefugiodevichayito.com"
+    },
+    {
+        "hotel": "PIUHHV",
+        "nombre": "Jos\u00e9 Garc\u00eda",
+        "cargo": "Reservas LITO",
+        "email": "jgarcia@aranwahotels.com"
+    },
+    {
+        "hotel": "PIUHLO",
+        "nombre": "Lucia Pe\u00f1a",
+        "cargo": "Reservas",
+        "email": "administracion@organosbeach.com"
+    },
+    {
+        "hotel": "PIUHMB",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@mancora-beach.com"
+    },
+    {
+        "hotel": "PIUHMM",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@mancoramarina.com"
+    },
+    {
+        "hotel": "PIUHPP",
+        "nombre": "VOUCHER FITS",
+        "cargo": ".",
+        "email": "agencias@losportales.com.pe"
+    },
+    {
+        "hotel": "PIUHPP",
+        "nombre": "VOUCHER GRUPOS",
+        "cargo": ".",
+        "email": "grupos@losportales.com.pe"
+    },
+    {
+        "hotel": "PIUHRC",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "PIUHRC",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "recep-cappiura@casa-andina.com"
+    },
+    {
+        "hotel": "PIUHRV",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "reservas@rioverde.com.pe"
+    },
+    {
+        "hotel": "PIUHSA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@saharamancora.com"
+    },
+    {
+        "hotel": "PIUHSR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "sunsetmancora@gmail.com"
+    },
+    {
+        "hotel": "PM6HCO",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "central@inkaterra.com"
+    },
+    {
+        "hotel": "PUNHAA",
+        "nombre": "RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "reservas@amanticalodge.com"
+    },
+    {
+        "hotel": "PUNHBI",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelbalsainn.com"
+    },
+    {
+        "hotel": "PUNHCN",
+        "nombre": "CESAR FLORES",
+        "cargo": "GERENTE RESIDENTE",
+        "email": "coloninn@titicaca-peru.com"
+    },
+    {
+        "hotel": "PUNHCN",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@coloninn.com"
+    },
+    {
+        "hotel": "PUNHCP",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "reservascphpuno@casonaplazahoteles.com"
+    },
+    {
+        "hotel": "PUNHEC",
+        "nombre": "DEPTO",
+        "cargo": "RESERVAS",
+        "email": "reservaspuno@ximahotels.com"
+    },
+    {
+        "hotel": "PUNHEC",
+        "nombre": "William Mendoz",
+        "cargo": "Gerente Residente",
+        "email": "william.mendoza@ximahotels.com"
+    },
+    {
+        "hotel": "PUNHEI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservaspuno@ecoinnhotels.com.pe"
+    },
+    {
+        "hotel": "PUNHEU",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "hoteleuropainn@hotmail.com"
+    },
+    {
+        "hotel": "PUNHGP",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "punoinn@hotmail.com"
+    },
+    {
+        "hotel": "PUNHHA",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hhp.com.pe"
+    },
+    {
+        "hotel": "PUNHHP",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@hhp.com.pe"
+    },
+    {
+        "hotel": "PUNHIE",
+        "nombre": "RECECPCION",
+        "cargo": ".",
+        "email": "recepcionpuno@libertador.com.pe"
+    },
+    {
+        "hotel": "PUNHIE",
+        "nombre": "RESERVAS - FITS EXCLUSIVO LITO",
+        "cargo": "VOUCHERS",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "PUNHIE",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "grupos@libertador.com.pe"
+    },
+    {
+        "hotel": "PUNHIE",
+        "nombre": "RECEPCION DE VOUCHER",
+        "cargo": ".",
+        "email": "reservaspuno@libertador.com.pe"
+    },
+    {
+        "hotel": "PUNHIE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservaspuno@libertador.com.pe"
+    },
+    {
+        "hotel": "PUNHIN",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@intiqahotel.com"
+    },
+    {
+        "hotel": "PUNHIS",
+        "nombre": "MARIA",
+        "cargo": "RESERVAS",
+        "email": "reservas@islasuasi.pe"
+    },
+    {
+        "hotel": "PUNHJA",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "PUNHJA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas2@hotelesjoseantonio.com"
+    },
+    {
+        "hotel": "PUNHMO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@mosoqinn.com"
+    },
+    {
+        "hotel": "PUNHPC",
+        "nombre": "Ana Luc\u00eda Geldres",
+        "cargo": "Rvas Fits",
+        "email": "ageldres@casa-andina.com"
+    },
+    {
+        "hotel": "PUNHPI",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas.sonestapuno@ghlhoteles.com"
+    },
+    {
+        "hotel": "PUNHPP",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "PUNHPP",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-cappuno@casa-andina.com"
+    },
+    {
+        "hotel": "PUNHPU",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@punuypampa.com"
+    },
+    {
+        "hotel": "PUNHQA",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@qalasaya.com"
+    },
+    {
+        "hotel": "PUNHQE",
+        "nombre": "LIZ",
+        "cargo": "SANTISTEBAN",
+        "email": "hotel@qelqatani.com"
+    },
+    {
+        "hotel": "PUNHRI",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@royalinnhoteles.com"
+    },
+    {
+        "hotel": "PUNHST",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "hotel@sillustani.com"
+    },
+    {
+        "hotel": "PUNHT2",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@taypikala.com"
+    },
+    {
+        "hotel": "PUNHTH",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": "RESERVAS",
+        "email": "reservas@titilaka.pe"
+    },
+    {
+        "hotel": "PUNHTI",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "PUNHTI",
+        "nombre": "VOUCHER",
+        "cargo": "RECEPCION",
+        "email": "recep-castpuno@casa-andina.com"
+    },
+    {
+        "hotel": "PUNHTI",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "recep-castpuno@casa-andina.com"
+    },
+    {
+        "hotel": "PUNHTV",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@tierravivahoteles.com"
+    },
+    {
+        "hotel": "SNIHTU",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "cvsicuani@hotmail.com"
+    },
+    {
+        "hotel": "TARHFL",
+        "nombre": "julio castillo",
+        "cargo": "gerente",
+        "email": "jcastil0@yahoo.com"
+    },
+    {
+        "hotel": "TARHPT",
+        "nombre": "VOUCHER FITS",
+        "cargo": ".",
+        "email": "agencias@losportales.com.pe"
+    },
+    {
+        "hotel": "TARHPT",
+        "nombre": "VOCUHER GRUPOS",
+        "cargo": ".",
+        "email": "grupos@losportales.com.pe"
+    },
+    {
+        "hotel": "TARHSM",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "informes@haciendasantamaria.com"
+    },
+    {
+        "hotel": "TBPHCC",
+        "nombre": "Voucher",
+        "cargo": "",
+        "email": "reservas@casacesartumbes.com"
+    },
+    {
+        "hotel": "TBPHCL",
+        "nombre": "Recepcion",
+        "cargo": "Recepcion",
+        "email": "hotelcolumbustumbes@hotmail.com"
+    },
+    {
+        "hotel": "TBPHCM",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelcaballitodemar.com"
+    },
+    {
+        "hotel": "TBPHCS",
+        "nombre": "ADRIANA BARZOLA",
+        "cargo": "RESERVAS INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "TBPHCS",
+        "nombre": "ALEX MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "TBPHDE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "to.peru@decameron.com"
+    },
+    {
+        "hotel": "TBPHDE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "gruposyconvenciones@decameron.com"
+    },
+    {
+        "hotel": "TBPHDE",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "cajero.peru@decameron.com"
+    },
+    {
+        "hotel": "TBPHMA",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@mancora-beach.com"
+    },
+    {
+        "hotel": "TBPHMG",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@costaazulperu.com"
+    },
+    {
+        "hotel": "TBPHOH",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "grupolanfranco1@gmail.com"
+    },
+    {
+        "hotel": "TBPHPS",
+        "nombre": "Isabela Decena",
+        "cargo": "RESERVAS",
+        "email": "reservas@puntasal.com.pe"
+    },
+    {
+        "hotel": "TBPHTB",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "TBPHTB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "recep1-cast@casa-andina.com"
+    },
+    {
+        "hotel": "TBPHTM",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "laposadadelostumpis@yahoo.com"
+    },
+    {
+        "hotel": "TCQHCA",
+        "nombre": "Voucher",
+        "cargo": ".",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "TCQHCA",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "cas-tacna@casa-andina.com"
+    },
+    {
+        "hotel": "TCQHCR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "caminorealhoteltacna@speedy.com.pe"
+    },
+    {
+        "hotel": "TCQHCR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "creal-hotel@star.com.pe"
+    },
+    {
+        "hotel": "TCQHDO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "doradohotel@outlook.com"
+    },
+    {
+        "hotel": "TCQHGH",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "ssuncion@dmhoteles.pe"
+    },
+    {
+        "hotel": "TCQHGH",
+        "nombre": "VOUCHER2",
+        "cargo": ".",
+        "email": "reservas@dmhoteles.pe"
+    },
+    {
+        "hotel": "TPPHPR",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "info@pumarinri.com"
+    },
+    {
+        "hotel": "TPPHRD",
+        "nombre": "Voucher",
+        "cargo": ".",
+        "email": "reservas@dmhoteles.pe"
+    },
+    {
+        "hotel": "TPPHTS",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "info@tucansuites.com"
+    },
+    {
+        "hotel": "TPPHTS",
+        "nombre": "VOUCHER2",
+        "cargo": "VOUCHER2",
+        "email": "resevas@tucansuites.com"
+    },
+    {
+        "hotel": "TRUHBJ",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@elbrujohotel.com"
+    },
+    {
+        "hotel": "TRUHCB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "informes@chicamabeach.com"
+    },
+    {
+        "hotel": "TRUHCH",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@chicamasurf.com"
+    },
+    {
+        "hotel": "TRUHCO",
+        "nombre": "ROY",
+        "cargo": "LESCANO",
+        "email": "reservas@losconquistadoreshotel.com"
+    },
+    {
+        "hotel": "TRUHCS",
+        "nombre": "Mayra Solis",
+        "cargo": "Voucher",
+        "email": "msolis@costadelsolperu.com"
+    },
+    {
+        "hotel": "TRUHCS",
+        "nombre": "Susana Perez",
+        "cargo": "Voucher",
+        "email": "reservastrujillo@costadelsolperu.com"
+    },
+    {
+        "hotel": "TRUHEG",
+        "nombre": "ADRIANA BARZOLA",
+        "cargo": "VOUCHER INDIVIDUALES",
+        "email": "reservasindividuales2@costadelsolperu.com"
+    },
+    {
+        "hotel": "TRUHEG",
+        "nombre": "ALEX MEDINA",
+        "cargo": "VOUCHER GRUPOS",
+        "email": "reservasgrupos@costadelsolperu.com"
+    },
+    {
+        "hotel": "TRUHHG",
+        "nombre": "DEPARTAMENTO",
+        "cargo": "RESERVAS",
+        "email": "reservas@elgranmarques.com"
+    },
+    {
+        "hotel": "TRUHKO",
+        "nombre": "ELENA GUTIERREZ PACHECO",
+        "cargo": "Gte.Adm.",
+        "email": "egp2009@korianka.com"
+    },
+    {
+        "hotel": "TRUHLI",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepciontrujillo@libertador.com.pe"
+    },
+    {
+        "hotel": "TRUHLI",
+        "nombre": "RESERVAS FITS - EXCLUSIVO LITO",
+        "cargo": "VOUCHERS",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "TRUHLI",
+        "nombre": "VOUCHER GRUPOS",
+        "cargo": ".",
+        "email": "grupos@libertador.com.pe"
+    },
+    {
+        "hotel": "TRUHLI",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservastrujillo@libertador.com.pe"
+    },
+    {
+        "hotel": "TRUHML",
+        "nombre": "Alexandrda Pantoja",
+        "cargo": "Voucher",
+        "email": "info@mochelodge.com"
+    },
+    {
+        "hotel": "TRUHPC",
+        "nombre": "voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "TRUHPC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "capc-trujillo@casa-andina.com"
+    },
+    {
+        "hotel": "TRUHPC",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recep-captrujillo@casa-andina.com"
+    },
+    {
+        "hotel": "TRUHPJ",
+        "nombre": "RESERVAS.",
+        "cargo": ".",
+        "email": "lucilita88@hotmail.com"
+    },
+    {
+        "hotel": "TRUHPO",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@laposadadelrey-peru.com"
+    },
+    {
+        "hotel": "TRUHPR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservastru@hotelesparaiso.com.pe"
+    },
+    {
+        "hotel": "TRUHPS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@laposadadelrey-peru.com"
+    },
+    {
+        "hotel": "TRUHQH",
+        "nombre": "Caridad Ortiz Melly",
+        "cargo": "Administradora",
+        "email": "qhamar.hotel@gmail.com"
+    },
+    {
+        "hotel": "TYLHAG",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "talara@hoteleselangolo.com"
+    },
+    {
+        "hotel": "TYLHAM",
+        "nombre": "RESERVAS",
+        "cargo": "MARICARMEN PECEROS GERMAN",
+        "email": "agencias@losportales.com.pe"
+    },
+    {
+        "hotel": "TYLHDC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "informes@hoteldco.com"
+    },
+    {
+        "hotel": "TYLHER",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservaciones@elrefugiodevichayito.com"
+    },
+    {
+        "hotel": "TYLHHV",
+        "nombre": "voucher",
+        "cargo": "Reservas LITO",
+        "email": "rvalqui@aranwahotels.com"
+    },
+    {
+        "hotel": "TYLHKI",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@kichic.com"
+    },
+    {
+        "hotel": "TYLHLO",
+        "nombre": "Lucia Pe\u00f1a",
+        "cargo": "Reservas",
+        "email": "administracion@organosbeach.com"
+    },
+    {
+        "hotel": "TYLHMB",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@mancora-beach.com"
+    },
+    {
+        "hotel": "TYLHMH",
+        "nombre": "VOUCHER",
+        "cargo": "",
+        "email": "informes@mancoramarina.com"
+    },
+    {
+        "hotel": "TYLHMM",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "informes@mancoramarina.com"
+    },
+    {
+        "hotel": "TYLHPC",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@hotelpacifico-talara.com"
+    },
+    {
+        "hotel": "TYLHRE",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "TYLHRE",
+        "nombre": "RECEPCION",
+        "cargo": "RECEPCION",
+        "email": "recep-castpiura@casa-andina.com"
+    },
+    {
+        "hotel": "TYLHSA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@saharamancora.com"
+    },
+    {
+        "hotel": "TYLHSM",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "sunsetmancora@gmail.com"
+    },
+    {
+        "hotel": "TYLHSR",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "sunsetmancora@gmail.com"
+    },
+    {
+        "hotel": "URUHAD",
+        "nombre": "Voucher",
+        "cargo": "Reservas",
+        "email": "pagos@casa-andina.com"
+    },
+    {
+        "hotel": "URUHAD",
+        "nombre": "Recepcion",
+        "cargo": ".",
+        "email": "recep-capvalle@casa-andina.com"
+    },
+    {
+        "hotel": "URUHAD",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recep1-capvalle@casa-andina.com"
+    },
+    {
+        "hotel": "URUHAD",
+        "nombre": "RECEP",
+        "cargo": "RECEPCION",
+        "email": "recep-capvalle@casa-andina.com"
+    },
+    {
+        "hotel": "URUHAG",
+        "nombre": "Jenifer,  Lizarraga",
+        "cargo": ".",
+        "email": "jlizarraga@hotelagustos.com"
+    },
+    {
+        "hotel": "URUHAG",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "recepcionurubamba@hotelagustos.com"
+    },
+    {
+        "hotel": "URUHAG",
+        "nombre": "katty kanashiro (en copia)",
+        "cargo": "jefe reservas",
+        "email": "reservas@hotelagustos.com"
+    },
+    {
+        "hotel": "URUHAO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@ollantaytambolodge.com"
+    },
+    {
+        "hotel": "URUHAQ",
+        "nombre": "voucher",
+        "cargo": "Reservas LITO",
+        "email": "rvalqui@aranwahotels.com"
+    },
+    {
+        "hotel": "URUHCB",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "lacasadebarrolodge@gmail.com"
+    },
+    {
+        "hotel": "URUHCB",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "lacasadebarrolodge@gmail.com"
+    },
+    {
+        "hotel": "URUHCC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "info@hotelcasadecampo.com"
+    },
+    {
+        "hotel": "URUHCY",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hotelcasonayucay.com"
+    },
+    {
+        "hotel": "URUHFK",
+        "nombre": "RUTH FIGUEROA",
+        "cargo": "VOUCHER",
+        "email": "reservasifk@ifk.pe"
+    },
+    {
+        "hotel": "URUHHA",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas2@hhp.com.pe"
+    },
+    {
+        "hotel": "URUHHR",
+        "nombre": "VOUCHER FITS",
+        "cargo": ".",
+        "email": "perures.fits@belmond.com"
+    },
+    {
+        "hotel": "URUHHR",
+        "nombre": "VOUCHER GRUPOS",
+        "cargo": ".",
+        "email": "perures.groups@belmond.com"
+    },
+    {
+        "hotel": "URUHHR",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcion.rsg@belmond.com"
+    },
+    {
+        "hotel": "URUHHS",
+        "nombre": "voucher",
+        "cargo": ".",
+        "email": "hotel@sol-ollantay.com"
+    },
+    {
+        "hotel": "URUHHT",
+        "nombre": "NELLY SILVA GUEVARA",
+        "cargo": "Administraci\u00f3n",
+        "email": "DIANY395@HOTMAIL.COM"
+    },
+    {
+        "hotel": "URUHHT",
+        "nombre": "YONY TAPIA DIAZ",
+        "cargo": "Reservas",
+        "email": "hoteltornado.reserva@gmail.com"
+    },
+    {
+        "hotel": "URUHHU",
+        "nombre": "voucher",
+        "cargo": "voucher",
+        "email": "central@inkaterra.com"
+    },
+    {
+        "hotel": "URUHHU",
+        "nombre": "PAGOS",
+        "cargo": "",
+        "email": "pagos@inkaterra.com"
+    },
+    {
+        "hotel": "URUHHV",
+        "nombre": "Yurema Mozo",
+        "cargo": "Reservas",
+        "email": "reservas@hatunvalley.com"
+    },
+    {
+        "hotel": "URUHIK",
+        "nombre": "NATALI BARRETO",
+        "cargo": "RESERVAS",
+        "email": "reservas@inkallpa.com"
+    },
+    {
+        "hotel": "URUHIN",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@intinanhotel.com"
+    },
+    {
+        "hotel": "URUHKU",
+        "nombre": "DEPARTAMENTO DE RESERVAS",
+        "cargo": ".",
+        "email": "info@urubamba.com"
+    },
+    {
+        "hotel": "URUHLC",
+        "nombre": "DPTO DE RESERVAS",
+        "cargo": ".",
+        "email": "lascasitasdelarcoiris@gmail.com"
+    },
+    {
+        "hotel": "URUHLC",
+        "nombre": "susy caballero",
+        "cargo": "GERENTE",
+        "email": "susy.caballero@gmail.com"
+    },
+    {
+        "hotel": "URUHLI",
+        "nombre": "RESERVAS FITS - EXCLUSIVO LITO",
+        "cargo": "VOUCHERS",
+        "email": "soportelito@libertador.com.pe"
+    },
+    {
+        "hotel": "URUHLI",
+        "nombre": "RESERVAS GRUPOS",
+        "cargo": ".",
+        "email": "grupos@libertador.com.pe"
+    },
+    {
+        "hotel": "URUHLI",
+        "nombre": "RECEPCION",
+        "cargo": ".",
+        "email": "recepcionurubamba@libertador.com.pe"
+    },
+    {
+        "hotel": "URUHLI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservastambodelinka@libertador.com.pe"
+    },
+    {
+        "hotel": "URUHLI",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservasurubamba@libertador.com.pe"
+    },
+    {
+        "hotel": "URUHLI",
+        "nombre": "MARI RIOS",
+        "cargo": "(A&B)",
+        "email": "mrios@tambodelinka.com.pe"
+    },
+    {
+        "hotel": "URUHLO",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas@ollantaytambolodge.com"
+    },
+    {
+        "hotel": "URUHLV",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservasurubamba@libertador.com.pe"
+    },
+    {
+        "hotel": "URUHMB",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "vallesagrado@hotelesmabey.com"
+    },
+    {
+        "hotel": "URUHMT",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@munaytika.com"
+    },
+    {
+        "hotel": "URUHOL",
+        "nombre": "GABRIELA",
+        "cargo": "VOUCHER",
+        "email": "reservas@elalbergue.com"
+    },
+    {
+        "hotel": "URUHOL",
+        "nombre": "Natalia V\u00e1squez",
+        "cargo": "VOUCHER",
+        "email": "reservas@elalbergue.com"
+    },
+    {
+        "hotel": "URUHPA",
+        "nombre": "ADRIANA",
+        "cargo": "SANTOS",
+        "email": "hotel@pakaritampu.com"
+    },
+    {
+        "hotel": "URUHPI",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "reservas.sonestayucay@ghlhoteles.com"
+    },
+    {
+        "hotel": "URUHPI",
+        "nombre": "voucher",
+        "cargo": "",
+        "email": "eventos.sonestayucay@ghlhoteles.com"
+    },
+    {
+        "hotel": "URUHPO",
+        "nombre": "PATRICIA COTA",
+        "cargo": "Reservas",
+        "email": "pcota@delpilarhotels.com"
+    },
+    {
+        "hotel": "URUHPS",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@pisonaypueblo.com"
+    },
+    {
+        "hotel": "URUHRI",
+        "nombre": "SDENKA CHEVARRIA",
+        "cargo": "RESERVAS",
+        "email": "royalinka@speedy.com.pe"
+    },
+    {
+        "hotel": "URUHRU",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "rese@ecoandinahotel.com"
+    },
+    {
+        "hotel": "URUHRU",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "reservas@eco-andina.com"
+    },
+    {
+        "hotel": "URUHSC",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@hostalsauce.com.pe"
+    },
+    {
+        "hotel": "URUHSD",
+        "nombre": ".",
+        "cargo": "",
+        "email": "info@sacred-dreams-lodge.com"
+    },
+    {
+        "hotel": "URUHSL",
+        "nombre": "VOUCHER ALOJAMIENTO",
+        "cargo": ".",
+        "email": "reservas@hotelsolyluna.com"
+    },
+    {
+        "hotel": "URUHSL",
+        "nombre": "Vicente Eguiguren",
+        "cargo": ".Reservas Actividades",
+        "email": "reservas2@hotelsolyluna.com"
+    },
+    {
+        "hotel": "URUHSL",
+        "nombre": "Vicente Eguiguren",
+        "cargo": ".Reservas Rest,Act y Traslado",
+        "email": "reservas2@hotelsolyluna.com"
+    },
+    {
+        "hotel": "URUHSL",
+        "nombre": "Mayra Ikeda",
+        "cargo": "Reservas FITS",
+        "email": "reservas1@hotelsolyluna.com"
+    },
+    {
+        "hotel": "URUHSL",
+        "nombre": "Claudia Carrillo",
+        "cargo": ".Reservas Grupos",
+        "email": "reservas3@hotelsolyluna.com"
+    },
+    {
+        "hotel": "URUHSR",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservasurubamba@hsaperu.com"
+    },
+    {
+        "hotel": "URUHSU",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservasurubamba@hsaperu.com"
+    },
+    {
+        "hotel": "URUHTH",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas_urubamba@taypikala.com"
+    },
+    {
+        "hotel": "URUHTI",
+        "nombre": "Shelly Carri\u00f3n Concha",
+        "cargo": ".",
+        "email": "tikawasivalley@yahoo.com"
+    },
+    {
+        "hotel": "URUHTR",
+        "nombre": "VOUCHER",
+        "cargo": "VOUCHER",
+        "email": "reservas@hoteltornado-cusco.com"
+    },
+    {
+        "hotel": "URUHTV",
+        "nombre": "lizeth celis",
+        "cargo": "reservas",
+        "email": "lcelis@tierravivahoteles.com"
+    },
+    {
+        "hotel": "URUHUA",
+        "nombre": "RESERVAS",
+        "cargo": ".",
+        "email": "huayoccari@qnet.com.pe"
+    },
+    {
+        "hotel": "URUHVU",
+        "nombre": "VOUCHER",
+        "cargo": "CARMEN ARROSPIDE",
+        "email": "marketing@villaurubamba.com"
+    },
+    {
+        "hotel": "URUHVU",
+        "nombre": "VOUCHER",
+        "cargo": ".",
+        "email": "info@villaurubamba.com"
+    },
+    {
+        "hotel": "URUHWT",
+        "nombre": "DPTO. DE RESERVAS",
+        "cargo": ".",
+        "email": "reservas@willkatika.com"
+    }
+]

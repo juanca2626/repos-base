@@ -1,0 +1,65 @@
+.filtros {
+  background: #fafafa;
+  border-radius: 10px;
+  margin: 10px 0 60px 0;
+  padding: 10px 40px;
+  font-size: 14px;
+  > .col-lg-4 {
+    padding: 0;
+    margin: 0;
+  }
+  > .col-lg-4 > div {
+    padding: 0 15px 0 0;
+    line-height: 40px;
+    height: 40px;
+  }
+  > .col-lg-4 > div i {
+    color: #c4c4c4;
+    font-size: 18px !important;
+  }
+  > .col-lg-4 > div .dropdown-menu i {
+    color: #4f4b4b;
+    font-size: 13px !important;
+    margin-right: 2px;
+  }
+  > .col-lg-4 > div.label.col-lg-4 {
+    max-width: 26%;
+  }
+  .form-control {
+    font-size: 16px;
+    height: 40px;
+    width: 238px;
+  }
+  .filtros-font .col.text {
+    padding: 0 !important;
+    max-width: 70px !important;
+  }
+  .col.font {
+    padding: 0;
+    max-width: 50px !important;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .content-vista > div.active i,
+  .content-vista > div:hover i,
+  .content-vista > div:active i,
+  .content-vista > div:focus i,
+  .col.font > div.active.dropdown a i,
+  .col.font > div.dropdown:hover a i,
+  .col.font > div.dropdown:active a i,
+  .col.font > div.dropdown:focus a i {
+    color: $rojo;
+    font-size: 18px !important;
+  }
+  .vista.row.col-lg-4 {
+    padding: 0 0 0 50px;
+  }
+  .vista .col-lg-4.text {
+    padding: 0 !important;
+    max-width: 100px !important;
+  }
+  .vista .content-vista {
+    padding: 0;
+    margin: 0;
+  }
+}

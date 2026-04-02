@@ -1,0 +1,212 @@
+.files-dashboard {
+  @mixin font-event {
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+  }
+
+  @mixin style-all {
+    background: #ffeded;
+    color: #c13b48;
+    border: 2px solid #ffdfe0;
+  }
+  @mixin style-transfers {
+    background: #fffad6 !important;
+    color: #ae8c12 !important;
+    border: 2px solid #fff8b3 !important;
+  }
+  @mixin style-exc {
+    background: #e8fff4 !important;
+    color: #3bc1b5 !important;
+    border: 2px solid #cdfff5 !important;
+  }
+
+  @mixin style-hotel {
+    color: #498ee0 !important;
+    background: #daebff !important;
+    border: 2px solid #cfe5ff !important;
+  }
+  @mixin style-res {
+    color: #812bcf !important;
+    background: #f4eaff !important;
+    border: 2px solid #ebdcf6 !important;
+  }
+  @mixin style-aec {
+    background: #e4e4e4 !important;
+    color: #060606 !important;
+    border: 2px solid #d7d7d7 !important;
+  }
+  @mixin style-tren {
+    background: #ffe5d6 !important;
+    color: #bb5e00 !important;
+    border: 2px solid #ffdda2 !important;
+  }
+
+  .TOT,
+  .TIN {
+    @include font-event;
+    @include style-transfers;
+  }
+  .AEC {
+    @include font-event;
+    @include style-aec;
+  }
+  .EXC {
+    @include font-event;
+    @include style-exc;
+  }
+  .HTL {
+    @include font-event;
+    @include style-hotel;
+  }
+  .RES {
+    @include font-event;
+    @include style-res;
+  }
+
+  .btn-light:not(:disabled):not(.disabled):active:focus,
+  .btn-light:not(:disabled):not(.disabled).active,
+  .show > .btn-light.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    background: #890005;
+    border-color: #890005;
+    color: white;
+  }
+
+  .btn-config {
+    border-radius: 0 1rem 1rem 0;
+    border: 2px solid #007bff;
+    padding: 1.2rem 1rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background: #007bff;
+  }
+  //Cabecera
+  .head-dashboard {
+    //overflow:hidden;
+    .content-title {
+      color: #4f4b4b;
+      .icon-menu {
+        color: #a71b20;
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+      b {
+        color: #343a40;
+      }
+    }
+  }
+  .head-filters {
+    //height: 20px;
+    a.badge-danger:focus,
+    a.badge-danger.focus {
+      outline: 0;
+      box-shadow: inherit;
+    }
+    .box-city {
+      border: 2px solid #e4e4e4;
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.3rem;
+      background: #eeeeee;
+      margin: 1rem;
+      font-size: 1.5rem;
+      color: #4f4b4b;
+    }
+    .btn-filter {
+      padding: 0.5rem;
+      font-size: 2rem;
+      cursor: pointer;
+      margin: 0 0.2rem;
+    }
+    .filter-all {
+      @include style-all;
+      border-radius: 2rem;
+    }
+    .filter-trans {
+      @include style-transfers;
+      border-radius: 2rem;
+    }
+    .filter-aec {
+      @include style-aec;
+      border-radius: 2rem;
+    }
+    .filter-exc {
+      @include style-exc;
+      border-radius: 2rem;
+    }
+    .filter-htl {
+      @include style-hotel;
+      border-radius: 2rem;
+    }
+    .filter-res {
+      @include style-res;
+      border-radius: 2rem;
+    }
+    .filter-tren {
+      @include style-tren;
+      border-radius: 2rem;
+    }
+  }
+  .card-file {
+    margin: 4rem;
+    border: 2px solid #454545;
+    background: #ffffff;
+    .card-header {
+      padding: 1.5rem 4rem;
+      margin-bottom: 0;
+      background-color: #454545;
+      border-bottom: 1px solid #454545;
+      font-size: 1.8rem;
+      color: #ffffff;
+      font-weight: 600;
+      &:first-child {
+        border-radius: calc(0.85rem - 1px) calc(0.85rem - 1px) 0 0;
+      }
+    }
+    .card-body {
+      padding: 2rem 4rem;
+
+      .title-section {
+        color: #4a90e2;
+        font-size: 1.8rem;
+        border-bottom: 2px solid;
+        margin: 2rem 0;
+      }
+      .vs--searchable:before {
+        top: 4px;
+      }
+
+      .vs--searchable .vs__selected-options .vs__selected {
+        width: 100%;
+      }
+    }
+  }
+  .modal {
+    .modal-body {
+      .btn-light {
+        color: #343a40;
+        background-color: #f4f4f4;
+        border: 1.6px solid #d7d7d7;
+        font-weight: 600;
+        font-size: 1.05rem;
+      }
+      .link-clear {
+        width: 130px;
+        color: #a71b20;
+        background: white;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+
+      .vs--searchable {
+        border-radius: 0.5rem;
+      }
+
+      .form-check input:checked:before {
+        left: 4px;
+        top: 2px;
+      }
+      .datepicker {
+      }
+    }
+  }
+}

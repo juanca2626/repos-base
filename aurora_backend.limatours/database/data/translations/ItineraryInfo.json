@@ -1,0 +1,93 @@
+{
+  "es": [
+	{
+		"nrolin" : 1,
+		"texto" : "RECOMENDACIONES INSTRUCCIONES PARA TRASLADO DE EQUIPAJE A BORDO DEL TREN RUTA A MACHU PICCHU",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Llevar el mismo documento que presentó a la agencia, dado que los tickets de tren e ingreso a Machu Picchu serán emitidos con la misma información. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "En todos los servicios de tren a Machu Picchu, el pasajero podrá llevar consigo en el tren hacia/de Machu Picchu únicamente equipaje de mano (mochila, bolso o maletín) con un peso no mayor a 5kg / 11lb. Encontrará su equipaje en el hotel elegido.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "Tamaño permitido: 62 pulgadas lineales  157cm (alto+largo+ancho)",
+		"estado" : "OK"
+	}
+  ]
+,
+  "en": [
+	{
+		"nrolin" : 1,
+		"texto" : "RECOMMENDATIONS AND INSTRUCTIONS FOR LUGGAGE TRANSFER ABOARD THE TRAIN TO MACHU PICCHU",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Carry the same ID card submitted to the agency, as train tickets and entrance ticket to Machu Picchu will be issued with the same information.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "In all train services to Machu Picchu the passenger may only carry hand luggage (backpack, purse or briefcase), with a maximum weight of 5kg / 11lb. You will find your luggage at your chosen hotel.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "Size allowance: 62 linear inches, 157cm (height + length + width)",
+		"estado" : "OK"
+	}
+  ]
+,
+  "pt": [
+	{
+		"nrolin" : 1,
+		"texto" : "RECOMENDA¸ªES E INSTRU¸ªES PARA TRANSLADO DE BAGAGEM A BORDO DO TREM ROTA A MACHU PICCHU",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Levar o mesmo documento que foi apresentado à agência, dado que os tickets de trem e o ingresso a Machu Picchu serío emitidos com a mesma informações. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Em todos os serviços de trem a Machu Picchu, o passageiro só poder levar consigo no trem para/de Machu Picchu somente uma bagagem de mão (mochila, bolsa ou maleta) com um peso não maior do que 5 kg / 11lb. Você encontrará sua bagagem no hotel escolhido.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "Tamanho permitido: 62 polegadas lineares 157 cm (altura+comprimento+largura)",
+		"estado" : "OK"
+	}
+  ]
+,
+  "it": [
+	{
+		"nrolin" : 1,
+		"texto" : "RECOMENDACIONES INSTRUCCIONES PARA TRASLADO DE EQUIPAJE A BORDO DEL TREN RUTA A MACHU PICCHU",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Llevar el mismo documento que presentó a la agencia, dado que los tickets de tren e ingreso a Machu Picchu serán emitidos con la misma información. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "En todos los servicios de tren a Machu Picchu, el pasajero podrá llevar consigo en el tren hacia/de Machu Picchu únicamente equipaje de mano (mochila, bolso o maletín) con un peso no mayor a 5kg / 11lb. Encontrará su equipaje en el hotel elegido.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "Tamaño permitido: 62 pulgadas lineales  157cm (alto+largo+ancho)",
+		"estado" : "OK"
+	}
+  ]
+}

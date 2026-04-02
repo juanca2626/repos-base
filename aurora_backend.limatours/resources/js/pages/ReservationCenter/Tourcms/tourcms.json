@@ -1,0 +1,66 @@
+{
+  "es": {
+    "bookingName": "Booking",
+    "code": "Código",
+    "status": "Estado",
+    "dates": "Fechas",
+    "service": "Servicio",
+    "customer": "Cliente",
+    "final_check": "Final Check",
+    "of": "de",
+    "from": "Desde",
+    "to": "Hasta",
+    "start": "Inicio",
+    "end": "Fin",
+    "creation_date": "Fecha de Creación",
+    "sales": "Ventas",
+    "state": "Estado",
+    "filter": "Filtrar por código o nombre de servicio",
+    "choose_date": "Elige fecha",
+    "search_by_client_surname": "Buscar por apellido del cliente",
+    "error": {
+      "messages": {
+        "system": "Por favor inténtalo más tarde",
+        "already_added": "Cliente ya agregado",
+        "choose_date": "Por favor elige una fecha"
+      }
+    },
+    "buttons": {
+      "add": "Agregar",
+      "choose": "Seleccionar",
+      "chooseAll": "Seleccionar Todo"
+    }
+  },
+  "en": {
+    "bookingName": "Booking",
+    "code": "Code",
+    "status": "Status",
+    "dates": "Dates",
+    "from": "From",
+    "service": "Service",
+    "customer": "Customer",
+    "final_check": "Final Check",
+    "to": "To",
+    "of": "of",
+    "start": "Start",
+    "end": "End",
+    "creation_date": "Creation Date",
+    "sales": "Sales",
+    "state": "State",
+    "filter": "Filter by code or service name",
+    "choose_date": "Choose date",
+    "search_by_client_surname": "Search by client surname",
+    "error": {
+      "messages": {
+        "system": "Please try again later",
+        "already_added": "Component already added",
+        "choose_date": "Please choose a date"
+      }
+    },
+    "buttons": {
+      "add": "Agregar",
+      "choose": "Choose",
+      "chooseAll": "Choose All"
+    }
+  }
+}

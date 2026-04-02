@@ -1,0 +1,60 @@
+{
+  "es": {
+    "schedule": "Horario",
+    "fixed_output": "Salida Fija",
+    "fixed": "Fijas",
+    "ranges": "Rangos",
+    "date": "Fecha",
+    "from": "Desde",
+    "to": "Hasta",
+    "room": "Cupo",
+    "code": "Código",
+    "state": "Estado",
+    "all": "Todos",
+    "monday": "Lunes",
+    "tuesday": "Martes",
+    "wednesday": "Miércoles",
+    "thursday": "Jueves",
+    "friday": "Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "error": {
+      "messages": {
+        "system": "Por favor inténtalo más tarde",
+        "schedule_null": "Active al menos un día de la semana"
+      }
+    },
+    "buttons": {
+      "add": "Agregar"
+    }
+  },
+  "en": {
+    "schedule": "Schedule",
+    "fixed_output": "Fixed Output",
+    "fixed": "Fijas",
+    "ranges": "Rangos",
+    "date": "Date",
+    "from": "From",
+    "to": "To",
+    "room": "Room",
+    "code": "Code",
+    "state": "State",
+    "all": "All",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Domingo",
+    "error": {
+      "messages": {
+        "system": "Please try again later",
+        "schedule_null": "Activate at least one day of the week"
+      }
+    },
+    "buttons": {
+      "add": "Agregar"
+    }
+  }
+}

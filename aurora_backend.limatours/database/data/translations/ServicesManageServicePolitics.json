@@ -1,0 +1,82 @@
+{
+  "es": {
+    "taxes": "Impuestos",
+    "configuration": "Configuración",
+    "cancellation_policy": "Políticas de cancelación",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "status": "Estado",
+    "delete": "Eliminar",
+    "it_allows": "Permite",
+    "children": "Niños",
+    "guide": "Guía",
+    "limit_confirmation": "Límite de horas de confirmación",
+    "age_minimum": "Edad mínima",
+    "age_maximum": "Edad máxima",
+    "infants": "Infantes",
+    "age": "Edad",
+    "hours": "Horas",
+    "apply": "Aplica",
+    "service": "Servicios",
+    "since": "Desde",
+    "hour_until": "horas, hasta",
+    "hour_before": "horas antes del inicio del servicio",
+    "select_penality": "Seleccione Penalidad",
+    "payment_taxes": "Cobro Impuestos",
+    "payment_services": "Cobro Servicios",
+    "add": "Agregar",
+    "amount": "Monto",
+    "percentage": "Porcentaje",
+    "details": "Detalles",
+    "type_penality": "Tipo Penalidad",
+    "value": "Valor",
+    "tax": "Impuestos",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "system": "Ocurrió un error interno por favor inténtelo más tarde",
+        "range_children_invalid": "Edades no válidas respecto a los rangos ya registrados"
+      }
+    },
+    "success": "Guardado correctamente"
+  },
+  "en": {
+    "taxes": "Taxes",
+    "configuration": "Configuration",
+    "cancellation_policy": "Cancellation policies",
+    "active": "Active",
+    "inactive": "Inactive",
+    "status": "Status",
+    "delete": "Delete",
+    "it_allows": "It allows",
+    "children": "Children",
+    "guide": "Guide",
+    "limit_confirmation": "Limit of confirmation hours",
+    "age_minimum": "Age minimum",
+    "age_maximum": "Age maximum",
+    "infants": "Infants",
+    "age": "Age",
+    "hours": "Hours",
+    "apply": "Apply",
+    "service": "Services",
+    "since": "Since",
+    "hour_until": "hours, up to",
+    "hours_before": "hours before the start of the service",
+    "select_penality": "Select Penality",
+    "payment_taxes": "Payment Taxes",
+    "payment_services": "Payment Services",
+    "add": "Add",
+    "amount": "Amount",
+    "percentage": "Percentage",
+    "details": "Details",
+    "type_penality": "Type Penality",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "system": "An internal error occurred please try again later",
+        "range_children_invalid": "Invalid ages with respect to the ranges already registered"
+      }
+    },
+    "success": "Stored Correctly"
+  }
+}

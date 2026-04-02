@@ -1,0 +1,8 @@
+{
+    "montserrat": {
+        "500": "\/var\/www\/html\/project\/public\/fonts\/montserrat_500_a81977400b30db686d405d4e6fe96ba7",
+        "normal": "\/var\/www\/public\/fonts\/montserrat_normal_e237db03ae8ace2be57151f9d37a4b67",
+        "600": "\/var\/www\/html\/project\/public\/fonts\/montserrat_600_c145b8eee6f140c9b3a0e0417a28cb7e",
+        "bold": "montserrat_bold_d2ce3bde9e63285fb8f3fb828970554d"
+    }
+}

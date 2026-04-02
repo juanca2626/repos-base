@@ -1,0 +1,34 @@
+{
+  "es": {
+    "name": "Nombre",
+    "tradename": "Nombre comercial",
+    "label": "Etiqueta",
+    "description": "Descripción",
+    "itinerary_label": "Etiqueta de Itinerario",
+    "itinerary": "Itinerario",
+    "itinerary_link": "Link de Itinerario",
+    "inclusion": "Inclusión",
+    "restriction": "Restricción",
+    "policies": "Politicas",
+    "messages": {
+      "information_complete": "Completar informacion en el formulario",
+      "successfully": "Registered Successfully"
+    }
+  },
+  "en": {
+    "name": "Name",
+    "tradename": "Commercial Name",
+    "label": "Label",
+    "description": "Description",
+    "itinerary_label": "Itinerary label",
+    "itinerary": "Itinerary",
+    "itinerary_link": "Itinerary Link",
+    "inclusion": "Inclusion",
+    "restriction": "Restriction",
+    "policies": "Policies",
+    "messages": {
+      "information_complete": "Please complete information in form",
+      "successfully": "Guardado correctamente"
+    }
+  }
+}

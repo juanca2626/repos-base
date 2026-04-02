@@ -1,0 +1,48 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  &-inner {
+  }
+  &-header {
+    background: $color-primary;
+    border-top-left-radius: $size-6px !important;
+    border-top-right-radius: $size-6px !important;
+    color: $color-white;
+    padding: 1.5em 1.3em !important;
+
+    .title-modal {
+      font-size: $font-size-lg;
+      font-weight: 600;
+      margin-bottom: 0em;
+    }
+  }
+  &-body {
+    // max-height: 55vh;
+    padding: 1.5em 1.3em !important;
+    .title-body {
+      font-size: $font-size-lg;
+      font-weight: 600;
+    }
+    .paragraph-modal {
+      padding: 1em;
+      font-size: 1.15em;
+      font-weight: 500;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  &-footer {
+    background-color: $color-white-3 !important;
+    border: none !important;
+  }
+}
+
+.ant-modal-header {
+  background: #bd0d12;
+}
+.ant-modal-title {
+  color: #ffffff;
+}
+.ant-modal-close-x {
+  color: #ffffff;
+}

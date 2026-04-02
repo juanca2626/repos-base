@@ -1,0 +1,38 @@
+{
+  "es": {
+    "title": "Channels",
+    "channel_name": "Channel",
+    "manage_user": "Administrar Usuario",
+    "channel_code": "Código",
+    "status": {
+      "title": "Estado",
+      "active": "Activado",
+      "disable": "Desactivado"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "channel_incorrect": "No puede registrar una canal ya existente.",
+        "channel_delete": "Error al eliminar el canal"
+      }
+    }
+  },
+  "en": {
+    "title": "Channels",
+    "channel_name": "Channel",
+    "channel_code": "Code",
+    "manage_user": "Manage User",
+    "status": {
+      "title": "Status",
+      "active": "Activate",
+      "disable": "Desactivate"
+    },
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "channel_incorrect": "You can not register an existing channel.",
+        "channel_delete": "Error to delete channel"
+      }
+    }
+  }
+}

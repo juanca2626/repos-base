@@ -1,0 +1,1626 @@
+[
+    {
+        "id": 1,
+        "name": "CASA ANDINA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "name": "CASONA PLAZA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 3,
+        "name": "COSTA DEL SOL",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 4,
+        "name": "QP HOTELES",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 5,
+        "name": "SONESTA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 6,
+        "name": "SAN AGUSTIN",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 7,
+        "name": "TIERRA VIVA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 8,
+        "name": "DM HOTELES",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 9,
+        "name": "ARANWA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 10,
+        "name": "BELMOND",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 11,
+        "name": "AGUSTOS",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 12,
+        "name": "ANANAY",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 13,
+        "name": "XIMA HOTELS",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 14,
+        "name": "FERN",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 15,
+        "name": "JOSE ANTONIO",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 16,
+        "name": "INKATERRA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 17,
+        "name": "LIBERTADOR",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 18,
+        "name": "LOS PORTALES",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 19,
+        "name": "MLP HOTEL",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 20,
+        "name": "MABEY",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 21,
+        "name": "MARRIOTT",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 22,
+        "name": "NOVOTEL",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 23,
+        "name": "TAYPIKALA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 24,
+        "name": "THUNDERBIRD",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 25,
+        "name": "RADISSON",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 26,
+        "name": "HOTELES ESTELAR",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 27,
+        "name": "FOUR POINTS",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 28,
+        "name": "LA HACIENDA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 29,
+        "name": "INTERCONTINENTAL HOTELS GROUP - IHG",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 30,
+        "name": "HILTON",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 31,
+        "name": "TALBOT HOTELS S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 32,
+        "name": "HOLIDAY INN EXPRESS",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 33,
+        "name": "ACCOR",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 34,
+        "name": "ACCORHOTELS",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 35,
+        "name": "DOUBLETREE",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 36,
+        "name": "WYNDHAM",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 37,
+        "name": "SHERATON",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 38,
+        "name": "TAMBO",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 39,
+        "name": "NINGUNA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 40,
+        "name": "DOUBLE TREE",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 41,
+        "name": "HOTELES HACIENDA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 42,
+        "name": "DEL PILAR",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 43,
+        "name": "SOL & LUNA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:40",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 44,
+        "name": "INVERSIONES AUCAPANA S.R.L",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:44",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 45,
+        "name": "HOTEL SOL DE ORO",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:45",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 46,
+        "name": "EL PORTON S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:45",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 47,
+        "name": "CNR REPRESENTACIONES E INVERSIONES SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 48,
+        "name": "EMANSAMO S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 49,
+        "name": "INVERSIONES TURISTICAS 4V SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 50,
+        "name": "INVERSIONES Y SERVICIOS TURISTICOS ARAGON E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 51,
+        "name": "AMERICAN TOURIST SERVICES E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 52,
+        "name": "SERVICIOS TURISTICOS YARABAYAS S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 53,
+        "name": "MAYO TOURS S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 54,
+        "name": "SERV.TURISTICOS PERU E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:46",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 55,
+        "name": "DERRAMA MAGISTERIAL",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:47",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 56,
+        "name": "TURISMO SAN JOSE S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:47",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 57,
+        "name": "ARCE CACERES OSCAR BALTAZAR",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:47",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 58,
+        "name": "ZUMAETA DIAZ JULIO MAYER",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:47",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 59,
+        "name": "PERU TRES NORTES S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 60,
+        "name": "DALMAU GUTSENS LLUIS",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 61,
+        "name": "CASTANEDA DE MOROCHO NANCY JANET",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 62,
+        "name": "MAORMO 29 EIRL",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 63,
+        "name": "GARIBALDI S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 64,
+        "name": "CORPORACION HOTELERA SAN ANDRES S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 65,
+        "name": "HOTEL LAGUNA SECA S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 66,
+        "name": "COLCA LODGE S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 67,
+        "name": "MAYO TOURS S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 68,
+        "name": "KILLAWASI LODGE S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 69,
+        "name": "INV.TURIS.POZO DEL CIELO SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 70,
+        "name": "HOTELERA DEL VALLE S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:48",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 71,
+        "name": "DOS A INVERSIONES S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:49",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 72,
+        "name": "GROUPE CODIER SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:49",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 73,
+        "name": "STEBO PERU S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:49",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 74,
+        "name": "HOTEL DEL PRADO INN E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:49",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 75,
+        "name": "CONSORCIO DE INVERSIONES SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:49",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 76,
+        "name": "INVERSIONES TURISTICAS FERRE CUSCO S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:49",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 77,
+        "name": "LANDMARK HOLDINGS S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:49",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 78,
+        "name": "CORPORACION FISCHER S.A.C",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:50",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 79,
+        "name": "UNIVERSIDAD SAN IGNACIO DE LOYOLA S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:50",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 80,
+        "name": "MUNAY WASI INN E.I.R.L",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:51",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 81,
+        "name": "QUATTRO HOTELES & RESTAURANTES S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:51",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 82,
+        "name": "NI\u00d1OS HOTEL SCRL",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:51",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 83,
+        "name": "INVERSIONES CONTINENTE S.R.LTD",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:52",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 84,
+        "name": "DEL PRADO INVERSIONES TURISTICAS E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:52",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 85,
+        "name": "INV.HTLS PLANETA TIERRA SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:52",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 86,
+        "name": "INVERSIONES FINOS EL DORADO S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:53",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 87,
+        "name": "MISKY SAMAI S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:53",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 88,
+        "name": "SERVICIOS TURISTICOS JBC SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:53",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 89,
+        "name": "ZERECEDA VASQUEZ HILDA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:53",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 90,
+        "name": "SERVICIOS TURISTICOS GUGILE S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:53",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 91,
+        "name": "CUZCO II VENTURES  LTD  S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:53",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 92,
+        "name": "EMP. DE TURISMO ANDINO S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:53",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 93,
+        "name": "COMPLEJO TURISTICO LAS PONCIANAS S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 94,
+        "name": "EL PATIO S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 95,
+        "name": "INEISA S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 96,
+        "name": "EMPRESA HOTELERA EL TUMI S.C.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 97,
+        "name": "INKA COMFORT HOTELES DEL PERU S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 98,
+        "name": "ALERTA SERVICIOS S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 99,
+        "name": "COMPA\u00d1\u00cdA HOTELERA DEL CENTRO SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 100,
+        "name": "INVERSIONES EN TURISMO SA INVERTUR",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:54",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 101,
+        "name": "ENOTOURS PERU SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 102,
+        "name": "CORP.HOTELERA DEL AMAZONAS SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 103,
+        "name": "CORP.HOTELERA Y TURIST.DEL AMAZONAS SA",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 104,
+        "name": "TURISMO SANTA ISABEL S.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 105,
+        "name": "HOTEL PLAZA S. A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 106,
+        "name": "HOTEL PLAZA S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 107,
+        "name": "INVERSIONES INMOBILIARIAS LAS GARZAS SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 108,
+        "name": "SERVICIOS E INVERSIONES CRISOL S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 109,
+        "name": "ANDEAN EXPERIENCE S.A.C",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 110,
+        "name": "POLO SERVICES S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 111,
+        "name": "BARTLEBY SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 112,
+        "name": "INEISA S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:55",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 113,
+        "name": "LA CASA DE BARRANCO S.A.C",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:56",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 114,
+        "name": "INVERSIONES GENERALES LIBRA S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:56",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 115,
+        "name": "C.C.M. HOTEL GROUP S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:56",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 116,
+        "name": "INVERSIONES PORTA COELI S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:56",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 117,
+        "name": "TURISMO COSTA SUR S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:56",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 118,
+        "name": "TECNOCASA S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:56",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 119,
+        "name": "INVERSIONES LA RIOJA S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:57",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 120,
+        "name": "INVERSIONES PIMI S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:57",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 121,
+        "name": "INVERSIONES TURISTICAS R.G.S.A",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:57",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 122,
+        "name": "AGROTURISMO PERU SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:57",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 123,
+        "name": "HOTELES ESTELAR DEL PERU S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:57",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 124,
+        "name": "FARAONA SERVICIOS HOTELEROS S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:57",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 125,
+        "name": "SUITES EL GOLF LOS INCAS S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:58",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 126,
+        "name": "INVERSIONES TULIP EIRL",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:58",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 127,
+        "name": "INVERSIONES DON QUIJOTE S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:58",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 128,
+        "name": "NUEVO MUNDO LIMA HOTEL S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:58",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 129,
+        "name": "LE SHENG INVERSIONES S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:59",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 130,
+        "name": "OPERADORA DE HOTELES QUIPUQ S.A.C",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:59",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 131,
+        "name": "CORPORACION EL GOLF S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:59",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 132,
+        "name": "HOTELERA LOS GIRASOLES S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:10:59",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 133,
+        "name": "E.M.F. S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:00",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 134,
+        "name": "EMPRESA DE SERVICIOS TURISTICOS COLON SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:00",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 135,
+        "name": "CORP. HOTELERA METOR S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:00",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 136,
+        "name": "INVERSIONES TURISTICAS SANTA MARIA SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:00",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 137,
+        "name": "100 PRE FELIZ SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:00",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 138,
+        "name": "100 PRE FELIZ SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:00",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 139,
+        "name": "HOTELERA COSTA DEL PACIFICO S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:01",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 140,
+        "name": "FIGTUR S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:01",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 141,
+        "name": "ATTON SAN ISIDRO S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:01",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 142,
+        "name": "TURISMO COSTA SUR S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:01",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 143,
+        "name": "SECOND HOMEPERU S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 144,
+        "name": "EDIF.Y CONST.SANTA PATRICIA S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 145,
+        "name": "INVERSIONES INMOBILIARIAS LA PAZ S.A.C",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 146,
+        "name": "HOTEL REY PALACE",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 147,
+        "name": "CAMINO REAL SUITES HOTEL",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 148,
+        "name": "HOTEL EUROPA",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 149,
+        "name": "LA CASONA BOUTIQUE",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 150,
+        "name": "CAMINO REAL  HOTEL",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 151,
+        "name": "HOTEL EUROPA",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 152,
+        "name": "LA CASONA BOUTIQUE",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 153,
+        "name": "OPERADOR TURISTICO LOS ANDES S.A.C. - OTAND SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 154,
+        "name": "ESCALANTE TAYPE WILLIAM",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 155,
+        "name": "FLOWER'S HOUSE E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 156,
+        "name": "FERRE MACHU PICCHU SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 157,
+        "name": "SERVICIOS TURISTICOS MIRANDA S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 158,
+        "name": "GRUPO RADA E.I.R.LTDA.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 159,
+        "name": "HATUN INTI SRL.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 160,
+        "name": "PRESTACIONES DE SERVICIOS MAPI S.R.Ltda",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:02",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 161,
+        "name": "BAEZ&TRIVE\u00d1O INVERSIONES TURISTICAS EIRL.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 162,
+        "name": "CLABE ANDINA SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 163,
+        "name": "PRESTACIONES DE SERVICIOS MAPI S.R.Ltda",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 164,
+        "name": "INKA TOWN TOWER E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 165,
+        "name": "PRESTACIONES DE SERVICIOS MAPI S.R.Ltda",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 166,
+        "name": "ANDEAN AMAZON E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 167,
+        "name": "INVERSIONES MAJORO S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 168,
+        "name": "INVERSIONES CANTALLOC SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 169,
+        "name": "HAPPY GROUP S.R.L",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 170,
+        "name": "INVERSIONES TURISTICAS DE LA AMAZONIA SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 171,
+        "name": "EMP.SERV.TUR.DE HOSP.LA POSADA DEL LIBER",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 172,
+        "name": "INVERSIONES PEREZ ALENCART S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 173,
+        "name": "HOTELERA PIURA S.A.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 174,
+        "name": "AMANTICA LODGE S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:03",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 175,
+        "name": "INTIQA HOTEL E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:04",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 176,
+        "name": "CONSORCIO DE ECOTURISMO Y HOTELERIA SUAS SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:04",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 177,
+        "name": "QELQATANI HOTEL E.I.R.LTDA",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:04",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 178,
+        "name": "OPERACIONES Y SERVICIOS GENERALES PUNO S",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:04",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 179,
+        "name": "ANDEAN EXPERIENCE S.A.C",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:04",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 180,
+        "name": "CHAVEZ KELLER DE ARANETA SANDRA BEATRIZ LUCIA",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:04",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 181,
+        "name": "INVERSIONES PARODI S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 182,
+        "name": "DALMAU GUTSENS LLUIS",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 183,
+        "name": "DALMAU GUTSENS LLUIS",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 184,
+        "name": "INMOBILIARIA BUENABRIGO S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 185,
+        "name": "INVERSIONES INMOBILIARIAS MAR S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 186,
+        "name": "UTROPIC PERU S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 187,
+        "name": "EMPRESA DE TURISMO Y ADMINISTRACION HOTELERA MAGIC TOURS S.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 188,
+        "name": "HOTELERA PIURA S.A",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 189,
+        "name": "INVERSIONES DEL SOL Y LA LUNA SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:05",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 190,
+        "name": "POESIA S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:06",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 191,
+        "name": "INVERSIONES Y GESTION HOTELERA S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:06",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 192,
+        "name": "INVERSIONES ROFACSA SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:06",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 193,
+        "name": "Sunset Mancora SRL",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:06",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 194,
+        "name": "Sunset Bar Risto & Residence E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:06",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 195,
+        "name": "INVERSIONES AUSANGATE S. R. L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:06",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 196,
+        "name": "DAVID ANTONIO TEJADA CACERES",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:08",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 197,
+        "name": "PROMOTORA MORAY SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:09",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 198,
+        "name": "LAS CASITAS DEL ARCO IRIS S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:09",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 199,
+        "name": "ALBERGUE OLLANTAYTAMBO E.I.R.L.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:09",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 200,
+        "name": "PAKARITAMPU S.A.C",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:09",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 201,
+        "name": "TACLLANCCA EVERGREEN SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:10",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 202,
+        "name": "INVERSIONES CONCHA S.A.C.",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:10",
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 203,
+        "name": "SERVILLA SAC",
+        "status": 1,
+        "created_at": "2019-09-07 21:11:10",
+        "updated_at": null,
+        "deleted_at": null
+    }
+]

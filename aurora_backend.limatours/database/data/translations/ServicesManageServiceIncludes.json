@@ -1,0 +1,42 @@
+{
+  "es": {
+    "includes": "Incluyente",
+    "yes_no": "Si / No",
+    "option": "Incluye - Si / No",
+    "save": "Guardar",
+    "messages": {
+      "successfully": "Registrado correctamente",
+      "delete": "Eliminado correctamente"
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "service_incorrect": "No pudo registrar los datos."
+      }
+    },
+    "validation": {
+      "duplicity_inclusion": "Ya se encuentra registrado"
+    }
+  },
+  "en": {
+    "includes": "Incluyente",
+    "yes_no": "Yes / No",
+    "option": "Incluye - Yes / No",
+    "save": "Save",
+    "messages": {
+      "successfully": "Registered Successfully",
+      "delete": "Delete Successfully"
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "service_incorrect": "Could not register the data."
+      }
+    },
+    "validation": {
+      "duplicity_inclusion": "Already registered"
+    }
+  }
+}

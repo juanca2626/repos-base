@@ -1,0 +1,393 @@
+{
+  "es": [
+	{
+		"nrolin" : 1,
+		"texto" : "TÉRMINOS Y CONDICIONES",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Nuestras tarifas se cotizan por persona, están sujetas a cambios sin previo aviso y solo pueden garantizarse después de la reserva. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Si los hoteles sugeridos/listados para este programa no están disponibles en el momento de la confirmación, LimaTours ofrecerá nuevas alternativas hoteleras con precios revisados.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "Las tarifas no aplican para viajeros corporativos. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "Las tarifas no son aplicables para ciudadanos peruanos o residentes extranjeros en Perú. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "La Catedral de Lima no abre los domingos. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 7,
+		"texto" : "El Templo Coricancha en Cusco no abre los domingos por la mañana ni en días festivos religiosos. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 8,
+		"texto" : "Las tarifas están sujetas a cambios si coinciden con las fechas del Festival Inti Raymi (del 20 al 27 de junio), el Día de la Independencia (28 y 29 de julio), celebraciones internacionales, Navidad y Año Nuevo. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 9,
+		"texto" : "Por cada reserva, es indispensable brindar la siguiente información del pasajero: ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 10,
+		"texto" : "Nombre completo de los pasajeros, fecha de nacimiento, nacionalidad y número de pasaporte para la reserva del tren ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 11,
+		"texto" : "Vuelo internacional de llegada/salida con PNR ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 12,
+		"texto" : "Vuelos nacionales involucrados en el programa ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 13,
+		"texto" : "Restricciones de dieta y solicitudes especiales ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 14,
+		"texto" : "Problemas médicos activos ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 15,
+		"texto" : "Las habitaciones con camas dobles están sujetas a disponibilidad en el momento del check-in. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 16,
+		"texto" : "La llegada anticipada el día 1 no garantiza la disponibilidad de habitaciones de hotel. Se aplica el horario de entrada estándar, a menos que se adquieran noches de alojamiento adicionales para garantizar el acceso inmediato a la (s) habitación (es). ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 17,
+		"texto" : "Asegúrese de preguntar a su embajada si se necesita una VISA para ingresar a Perú (o cualquier otro país incluido en su itinerario). Lima Tours no se hace responsable si un huésped no tiene toda la documentación necesaria para ingresar al país. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 18,
+		"texto" : "Las tarifas no aplican para residentes, pasajeros corporativos (quedándose 4 o más noches en Lima) ni pasajeros que permanezcan en el país más de 60 días. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 19,
+		"texto" : "Las tarifas no aplican para residentes, pasajeros corporativos (que permanecen 4 o más noches en Lima) ni pasajeros que permanecen más de 60 días en el país.",
+		"estado" : "OK"
+	}
+  ]
+,
+  "en": [
+	{
+		"nrolin" : 1,
+		"texto" : "IMPORTANT INFORMATION",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Subject to availability.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Our rates are quoted on a per person basis, subject to change without notice and may only be guaranteed after booking.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "If the suggested / listed hotels for this program are not available at the time of confirmation, LimaTours will offer new hotel alternatives with reviewed prices.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "Rates not applicable for corporate travellers.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "Rates are not applicable for Peruvian citizens or foreign residents in Peru.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 7,
+		"texto" : "The Cathedral of Lima does not open on Sundays.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 8,
+		"texto" : "Coricancha Temple in Cusco does not open on Sunday mornings or religious holidays.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 9,
+		"texto" : "Rates are subject to change if they match with Inti Raymi dates (from June 20th to 27th), Independence Day (July 28th and 29th), international events, Christmas and New Year.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 10,
+		"texto" : "For every booking entrusted to us, we require the following information:",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 11,
+		"texto" : "Full passengersË name, date of birth, nationality & passport number for train reservation",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 12,
+		"texto" : "International arrival/departure flight with PNRËs",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 13,
+		"texto" : "Domestic flights involved in the program",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 14,
+		"texto" : "Diet restrictions and special requests",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 15,
+		"texto" : "Active medical problems",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 16,
+		"texto" : "Double / twin bed preference (double bedded rooms are subject to availability at the moment of the check in)",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 17,
+		"texto" : "Early arrival on Day 1 does not guarantee hotel rooms will be available. Standard check in times applies, unless additional accommodation nights are purchased to guarantee immediate access to the room(s).",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 18,
+		"texto" : "Make sure you ask your embassy if a VISA is needed to enter Peru (or any other country included in your itinerary). Lima Tours takes no responsibility if a guest does not have all the documentation needed to enter the country.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 19,
+		"texto" : "Rates do not apply for residents, corporate passengers (staying 4 or more nights in Lima) nor passengers remaining more than 60 days in the country. ",
+		"estado" : "OK"
+	}
+  ]
+,
+  "pt": [
+	{
+		"nrolin" : 1,
+		"texto" : "TERMOS E CONDIÇÕES",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Sujeito a disponibilidade.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Nossas tarifas são pagas somente por pessoa, sujeitas a alterações a meio prazo e só podem ser garantidas mediante reserva.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "As sugestões / listagens para este programa não estão disponíveis, mas não há tempo para confirmar, o LimaTours oferecerá novas alternativas de alternativas quentes com revisões revisadas.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "Tarifas não aplicáveis para viajantes corporativos.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "As tarifas não são aplicáveis apenas a cidades peruanas ou residentes estrangeiros, e não ao Peru.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 7,
+		"texto" : "A Catedral de Lima não abre aos domingos.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 8,
+		"texto" : "O templo de Coricancha em Cusco não abre aos domingos de manh ou feriados religiosos.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 9,
+		"texto" : "As tarifas estão sujeitas a alterações e correspondem aos dados da Inti Raymi (de 20 a 27 de junho), Dia da Independência (28 e 29 de julho), eventos internacionais, Natal e Ano Novo.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 10,
+		"texto" : "Para cada reserva que nos foi confiada, solicitamos as seguintes informações:",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 11,
+		"texto" : "Nome completo do passageiro, data de nascimento, nacionalidade e número de passaporte para reserva de trem",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 12,
+		"texto" : "Bilhete / partida internacional com PNR",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 13,
+		"texto" : "As vozes domésticas envolvidas não programam",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 14,
+		"texto" : "Restrições alimentares e pedidos especiais",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 15,
+		"texto" : "Problemas médicos",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 16,
+		"texto" : "• Preferência para cama de casal ou de solteiro (os quartos com cama de casal estão sujeitos à disponibilidade Ÿ disponibilidade no momento do check-in)",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 17,
+		"texto" : "Chegada antecipada no dia 1 garante que os quartos do hotel estarão disponíveis. Hora de check-in aplicável para os pais, a menos que sejam adquiridas noites adicionais para garantir ou acessar imediatamente o quarto (s).",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 18,
+		"texto" : "Certifique-se de solicitar seu pacote - você precisará conhecer o Peru (que inclui outros países não incluídos no seu itinerário). A Lima Tours não é responsável por toda a documentação necessária para entrar em nenhum país.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 19,
+		"texto" : "As tarifas não se aplicam a residentes, passageiros corporativos (depósito 04 ou mais noites em Lima) e a passageiros que não ficam mais de 60 dias.",
+		"estado" : "OK"
+	}
+  ]
+,
+  "it": [
+	{
+		"nrolin" : 1,
+		"texto" : "TERMINI E CONDIZIONI",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "In base alla disponibilità",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Le nostre tariffe sono quotate per persona, soggette a modifiche senza preavviso e possono essere garantite solo dopo la prenotazione.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 4,
+		"texto" : "Se l'hotel ha proposto / elencato per motivi di un programma non dormiente disponibile al momento della conferenza, LimaTours offre un'alternativa alternativa a prezzi rivisti.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 5,
+		"texto" : "Tariffe non garantite per i viaggiatori aziendali.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 6,
+		"texto" : "Le tariffe sono non cittadini peruviani residenti stranieri in Peru",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 7,
+		"texto" : "La Cattedrale di Lima non è per la casa.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 8,
+		"texto" : "Il Cusco Coricancha Tempio Non - Afferra la dominazione mattutina o durante la festa religiosa.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 9,
+		"texto" : "La velocità del sonno varia quindi in base alla data di Inti Raymi (dal 20 al 27 giugno), il Giorno dell'Indipendenza (28 e 29 posti), l'evento internazionale, Natale e Capodanno.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 10,
+		"texto" : "Per ogni prenotazione affidata ai noi, richiediamo le Seguenti informazioni:",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 11,
+		"texto" : "Nome completo Passeggeri, data di nascita, nazionalità e numero di passaporto per la slitta",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 12,
+		"texto" : "In arrivo Volleyball / Party internazionale con PNR",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 13,
+		"texto" : "Voli nazionali coinvolti nel programma",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 14,
+		"texto" : "dietetiche restricti richieste speciali",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 15,
+		"texto" : "Problemi di salute",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 16,
+		"texto" : "Preferred letto doppia / matrimoniale (le camere doppie sleep soggette disponibile al check-in)",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 17,
+		"texto" : "La prospettiva futura del cugino senior non garantisce la disponibilità della sua macchina fotografica. Se applicabile verificando in standard, la menzione di non conoscenza non sarà a conoscenza di alcun accesso immediato alla telecamera.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 18,
+		"texto" : "Assicurazione di chiedere a tutti entrambi se necessario - è richiesto un visto per entrare in Peru (che è un altro paese incluso nell'itinerario). Lima Tours non si assume alcuna responsabilità se non si dispone della documentazione necessaria per entrare nel paese.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 19,
+		"texto" : "La tariffa non è applicabile al residente, al passaporto degli Aziendali (da soggiornano 4 ° pi notti a Lima) e ai passeggeri al soggiorno pi di 60 giorni nel paese.",
+		"estado" : "OK"
+	}
+  ]
+}

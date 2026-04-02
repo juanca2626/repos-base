@@ -1,0 +1,22 @@
+.box-meta {
+  border-radius: 0.375em;
+  border: 0.063em solid $color-white-3;
+  padding: 1.2em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+  .icon-users,
+  .icon-arrow-right {
+    font-size: 1.4em;
+  }
+}
+.input-range {
+  border: 0.063em solid #babcbd !important;
+  border-radius: 0.25em !important;
+  padding: 0.25em 0.5em !important;
+  height: 2.188em !important;
+  // width: 5em;
+  &:focus-visible {
+    border: red !important;
+    outline: inherit;
+  }
+}

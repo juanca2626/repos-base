@@ -1,0 +1,126 @@
+@import '../variables';
+
+.pageReport {
+  cursor: pointer;
+}
+
+.ant-layout-header {
+  border: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &-logo {
+    z-index: 2;
+  }
+
+  &-items {
+    flex: 1 1 auto;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 0;
+    padding-left: 52px;
+
+    .ant-menu-submenu-title,
+    .ant-menu-item {
+      color: $color-primary;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+
+    &-item {
+      display: flex;
+    }
+
+    &-item-profile {
+      display: flex;
+
+      svg {
+        position: relative;
+        display: inline;
+        vertical-align: auto;
+      }
+    }
+  }
+
+  :deep(.ant-select-selector) {
+    border: 0;
+    color: #eb5757;
+    text-align: center;
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none !important;
+    letter-spacing: -0.225px;
+    font-size: 14px;
+  }
+}
+
+.ant-btn-link {
+  color: #eb5757;
+
+  svg {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    width: 20px;
+  }
+}
+
+.nav-item-avatar {
+  background-color: #eb5757;
+}
+
+.ant-layout-header {
+  transition: 0.7s cubic-bezier(0.37, 0.31, 0.2, 0.85);
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  position: sticky;
+  top: -12px;
+}
+
+.ant-layout-header {
+  line-height: 60px;
+}
+
+.custom-layout-header {
+  background-color: #fff !important;
+  height: 61px !important;
+  z-index: 21;
+  padding: 0 50px 0 32px;
+}
+
+.ant-layout-header.custom-layout-header.sticky {
+  position: sticky;
+  top: 0;
+  -webkit-transition: 0.7s cubic-bezier(0.37, 0.31, 0.2, 0.85);
+  -o-transition: 0.7s cubic-bezier(0.37, 0.31, 0.2, 0.85);
+  transition: 0.7s cubic-bezier(0.37, 0.31, 0.2, 0.85);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  z-index: 99;
+}
+
+.header-items {
+  height: 60px !important;
+  line-height: 60px !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-menu {
+  width: 100%;
+  max-width: 100%;
+}

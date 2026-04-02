@@ -1,0 +1,45 @@
+{
+  "invoice": "INVOICE No",
+  "your_ref": "YOUR REF",
+  "name_passenger_group": "NAME OF PASSENGER/GROUP",
+  "arrival_date": "ARRIVAL DATE",
+  "departure_date": "DEPARTURE DATE",
+  "deadline": "Deadline",
+  "message_1": "FOR SERVICES TO BE PROVIDED TO YOUR ABOVE NAMED PASSENGER/GROUP",
+  "description": "Description",
+  "qty": "QTY",
+  "unit_price": "Unit Price",
+  "total": "TOTAL",
+  "payment_details": "Payment details",
+  "message_2": "PLEASE SEND PAYMENT BY WIRE TRANSFER AND SWIFT MESSAGE MT10",
+  "bank": "BANK",
+  "swift": "SWIFT",
+  "credit": "FOR THE CREDIT OF",
+  "account": "ACCOUNT No",
+  "for": "In order to",
+  "identify": "identify your payment",
+  "please": "please include the following reference",
+  "file_number": "File number",
+  "statement": "Statements",
+  "group_name": "Group name",
+  "concepts": [
+    {
+        "name": "NET PRICE PER PERSON - SINGLE ROOM"
+    },
+    {
+        "name": "NET PRICE PER PERSON - DOUBLE ROOM"
+    },
+    {
+        "name": "NET PRICE PER PERSON - TRIPLE ROOM"
+    },
+    {
+        "name": "DOMESTIC AIRLINE TICKETS"
+    },
+    {
+        "name": "INTERNATIONAL AIRLINE TICKETS"
+    },
+    {
+        "name": "OTHERS"
+    } 
+  ] 
+}

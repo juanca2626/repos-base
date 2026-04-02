@@ -1,0 +1,86 @@
+[
+	{
+		"id" : 1,
+		"name" : "OTS",
+		"code" : "HB",
+		"status" : 1
+	},
+	{
+		"id" : 2,
+		"name" : "ESPANA/ITALIA/PORTUGAL",
+		"code" : "3N",
+		"status" : 1
+	},
+	{
+		"id" : 3,
+		"name" : "USA CANADA",
+		"code" : "1A",
+		"status" : 1
+	},
+	{
+		"id" : 4,
+		"name" : "PACIFIC WORLD",
+		"code" : "2M",
+		"status" : 1
+	},
+	{
+		"id" : 5,
+		"name" : "EUROPA",
+		"code" : "2H",
+		"status" : 1
+	},
+	{
+		"id" : 6,
+		"name" : "LATINOAMERICA",
+		"code" : "3O",
+		"status" : 1
+	},
+	{
+		"id" : 7,
+		"name" : "PERU",
+		"code" : "08",
+		"status" : 1
+	},
+	{
+		"id" : 8,
+		"name" : "OPERACIONES LIMA",
+		"code" : "OA",
+		"status" : 1
+	},
+	{
+		"id" : 9,
+		"name" : "OPERACIONES PUNO",
+		"code" : "OB",
+		"status" : 1
+	},
+	{
+		"id" : 10,
+		"name" : "OPERACIONES CUSCO",
+		"code" : "OC",
+		"status" : 1
+	},
+	{
+		"id" : 11,
+		"name" : "OPERACIONES AREQUIPA",
+		"code" : "OD",
+		"status" : 1
+	},
+	{
+		"id" : 12,
+		"name" : "APAC & AFRICA",
+		"code" : "2J",
+		"status" : 1
+	},
+	{
+		"id" : 13,
+		"name" : "AVENTURA CUSCO",
+		"code" : "OH",
+		"status" : 1
+	},
+	{
+		"id" : 14,
+		"name" : "OPERACIONES VISTA",
+		"code" : "OV",
+		"status" : 1
+	}
+]

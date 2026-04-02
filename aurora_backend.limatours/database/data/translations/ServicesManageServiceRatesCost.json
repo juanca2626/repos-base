@@ -1,0 +1,150 @@
+{
+  "es": {
+    "modules": {
+      "ratescost": "Tarifas: Costo"
+    },
+    "name": "Nombre",
+    "code": "Código",
+    "commercial_name": "Nombre Comercial",
+    "policy_name": "Política",
+    "provider": "Proveedor",
+    "meal_name": "Meal",
+    "service_type_rate": "Tipo de Plan",
+    "charge_type": "Tipo de Cargo",
+    "date_range": "Rango de Fechas",
+    "to": "Hasta",
+    "range": "Rango",
+    "room": "Habitación",
+    "adult": "Adulto",
+    "child": "Niño",
+    "infant": "Infante",
+    "extra": "Extra",
+    "rate": "Tarifa",
+    "guide": "Guía",
+    "schedule": "Horario",
+    "days": {
+      "all": "Todos",
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "thursday": "Jueves",
+      "friday": "Viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo"
+    },
+    "month": "Mes",
+    "year": "Año",
+    "months": {
+      "january": "Enero",
+      "february": "Febrero",
+      "march": "Marzo",
+      "april": "Abril",
+      "may": "Mayo",
+      "june": "Junio",
+      "july": "Julio",
+      "august": "Agosto",
+      "september": "Setiembre",
+      "october": "Octubre",
+      "november": "Noviembre",
+      "december": "Diciembre"
+    },
+    "error": {
+      "messages": {
+        "name": "Tarifas",
+        "connection_error": "Error de conexión",
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "meal_incorrect": "Seleccione un alimento valido",
+        "rate_delete": "Error al eliminar el estado",
+        "missing_rates": "Ingrese por lo menos una tarifa"
+      }
+    },
+    "buttons": {
+      "submitAndRates": "Grabar y Crear Tarifario",
+      "editAndRates": "Editar y Crear Tarifario",
+      "cleanData": "Limpiar Tarifario",
+      "deleteVisible": "Eliminar tarifas visibles",
+      "delete": "Eliminar",
+      "add": "Agregar",
+      "cancel_edition": "Cancelar edición"
+    },
+    "delete": {
+      "confirmation": "Esta seguro que desea eliminar todas las tarifas con estos atributos:",
+      "message": "Seguro que desea eliminar esta tarifa?"
+    }
+  },
+  "en": {
+    "modules": {
+      "ratescost": "Rates: Cost"
+    },
+    "name": "Name",
+    "code": "Code",
+    "commercial_name": "Commercial Name",
+    "policy_name": "Politics",
+    "provider": "Provider",
+    "meal_name": "Meal",
+    "service_type_rate": "Rates Plan Type",
+    "charge_type": "Charge Type",
+    "date_range": "Date Range",
+    "to": "To",
+    "range": "Range",
+    "room": "Room",
+    "adult": "Adult",
+    "child": "Child",
+    "infant": "Infant",
+    "extra": "Extra",
+    "rate": "Rate",
+    "guide": "Guide",
+    "schedule": "Schedule",
+    "days": {
+      "all": "All",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "month": "Month",
+    "year": "Year",
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "error": {
+      "messages": {
+        "name": "Rates",
+        "connection_error": "Connection Error",
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "meal_incorrect": "Select the valid meal",
+        "rate_delete": "Error delete state",
+        "missing_rates": "Missing rates, it should be at least one"
+      }
+    },
+    "buttons": {
+      "submitAndRates": "Submit and Create Rates",
+      "editAndRates": "Edit and Create Rates",
+      "cleanData": "Clean Form",
+      "deleteVisible": "Delete visible rates",
+      "delete": "Delete",
+      "add": "Add",
+      "cancel_edition": "Cancel Edition"
+    },
+    "delete": {
+      "confirmation": "Are you sure you want to delete all the rates with these attributes:",
+      "message": "Are you sure you want to delete these rate?"
+    }
+  }
+}

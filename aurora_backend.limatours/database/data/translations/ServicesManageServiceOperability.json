@@ -1,0 +1,50 @@
+{
+  "es": {
+    "duration_total": "Duración total",
+    "available_shifts": "Turnos disponibles",
+    "departure_time": "Hora de salida",
+    "availability_sshh": "Disponibilidad de SSHH en ruta",
+    "operativity": "Operatividad",
+    "minutes": "Minutos",
+    "activity": "Actividad",
+    "type_operativity": "Tipo de Operatividad",
+    "operativity_detail": "Detalle de Operatividad",
+    "add": "Agregar",
+    "messages": {
+      "successfully": "Registrado correctamente",
+      "delete": "Eliminado correctamente"
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario",
+        "service_incorrect": "No se puede registrar los datos.",
+        "service_delete": "No se pudo eliminar el registro."
+      }
+    }
+  },
+  "en": {
+    "duration_total": "Total length",
+    "available_shifts": "Available shifts",
+    "departure_time": "Departure time",
+    "availability_sshh": "Availability of SSHH en route",
+    "operativity": "Operativity",
+    "minutes": "Minutos",
+    "activity": "Actividad",
+    "type_operativity": "Tipo de Operatividad",
+    "add": "Add",
+    "operativity_detail": "Details of operativity",
+    "messages": {
+      "successfully": "Registered Successfully",
+      "delete": "Delete Successfully"
+    },
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form",
+        "service_incorrect": "The data can not be registered.",
+        "service_delete": "The record could not be deleted."
+      }
+    }
+  }
+}

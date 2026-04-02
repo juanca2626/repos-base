@@ -1,0 +1,35 @@
+{
+  "es": {
+    "title": "Galería de Imagenes del Paquete",
+    "gallery_new": "Nueva Imagen",
+    "gallery_position": "Posición",
+    "gallery_add_images": "Agregue sus Imágenes",
+    "gallery_image_load": "Subir sus Imágenes",
+    "gallery_url_load": "Ingresar Urls",
+    "gallery_image": "Imagen",
+    "error": {
+      "messages": {
+        "information_complete": "Debe registrar una imagen o un enlace a una imagen.",
+        "gallery_incorrect": "No puede registrar una imagen de paquete.",
+        "gallery_delete": "Error al eliminar una imagen"
+      }
+    },
+    "accept": "Aceptar"
+  },
+  "en": {
+    "title": "Images Gallery of Package",
+    "gallery_new": "New Image",
+    "gallery_position": "Position",
+    "gallery_add_images": "Add yours Images",
+    "gallery_image_load": "Attach image",
+    "gallery_url_load": "Insert url",
+    "gallery_image": "Image",
+    "error": {
+      "messages": {
+        "information_complete": "You need register an image or image url.",
+        "gallery_incorrect": "You can not register an image package",
+        "gallery_delete": "Error to delete image"
+      }
+    }
+  }
+}

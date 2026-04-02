@@ -1,0 +1,28 @@
+{
+  "es": {
+    "title": "Categorías",
+    "servicetype_name": "Categoría",
+    "name": "Nombre",
+    "code": "Codigo",
+    "abbreviation": "Abreviatura",
+    "error": {
+      "messages": {
+        "information_error": "Error en datos ingresados",
+        "information_complete": "Completar informacion en el formulario"
+      }
+    }
+  },
+  "en": {
+    "title": "Categories",
+    "servicetype_name": "Category",
+    "name": "Name",
+    "code": "Code",
+    "abbreviation": "Abbreviation",
+    "error": {
+      "messages": {
+        "information_error": "Error in information charge",
+        "information_complete": "Please complete information in form"
+      }
+    }
+  }
+}

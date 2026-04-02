@@ -1,0 +1,73 @@
+{
+  "es": [
+	{
+		"nrolin" : 1,
+		"texto" : "RECOMENDACIONES",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "La ropa más cómoda y ligera es la opción más conveniente para viajar por la costa del Perú, mientras que la ropa más abrigada es lo mejor para las estancias en zonas de mayor altitud. Los pasajeros no deben usar camisetas sin mangas, pantalones cortos, minifaldas o ropa muy ajustada cuando visiten templos, lugares religiosos o edificios oficiales. Una loción con protector solar, gafas de sol, un sombrero o gorra y un repelente de mosquitos también pueden ser muy útiles durante el viaje. ",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Tenga en cuenta que la mayoría de los hoteles comienza a realizar sus check-in a las 13:00 hrs. Los huéspedes que lleguen temprano estarán sujetos a disponibilidad de habitaciones, mientras esperan en el lobby del hotel.",
+		"estado" : "OK"
+	}
+  ]
+,
+  "en": [
+	{
+		"nrolin" : 1,
+		"texto" : "RECOMMENDATIONS",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Comfortable and light clothes are the most convenient choice for traveling on Peruís coast, while warmer clothes are best for stays in the highlands. Passengers must not wear sleeveless T-shirts, shorts, miniskirts or very tight clothes when visiting temples, religious places or official buildings. Sunblock lotion, sun glasses, a hat or cap and a mosquito repellent can be also very helpful during the trip.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Please have in mind that check-in hour in most hotels starts at 13:00 hrs. Early-arriving guests will be subject to room availability, while waiting in the hotel lobby.",
+		"estado" : "OK"
+	}
+  ]
+,
+  "pt": [
+	{
+		"nrolin" : 1,
+		"texto" : "RECOMENDAÇÕES",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Roupas confortáveis e leves são um milho conveniente para viajar na costa do Peru, bem como roupas quentes de milho que são melhores para estadias nas terras altas. Os passageiros não devem usar camisetas sem mangas, shorts, minissaias ou roupas muito apenas para visitar templos, locais religiosos ou públicos oficiais. Loo solar, ulculos de sol, cap - u ou bon - e um repelente de mosquitos também podem ser muito ... teis durante a viagem.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "Por favor, tenha em mente que a hora do check-in na maioria dos dias quentes - é às 13h00. Os hsspedes que chegarem cedo estão sujeitos a disponibilidade de quartos, enquanto aguardam no hotel.",
+		"estado" : "OK"
+	}
+  ]
+,
+  "it": [
+	{
+		"nrolin" : 1,
+		"texto" : "RACCOMANDAZIONI",
+		"estado" : "TL"
+	},
+	{
+		"nrolin" : 2,
+		"texto" : "Roupas confortáveis e leves são a escolha mais confortável para viajar na costa Perú, enquanto roupas quentes são as melhores para estadias nas montanhas. Os passageiros não devem usar camisas sem mangas, bermudas, minissaias ou roupas apertadas ao visitar templos, locais religiosos ou edifícios oficiais. Protetor solar, óculos de sol, chapéu ou capuz e repelente de mosquitos também podem ser muito úteis durante a viagem.",
+		"estado" : "OK"
+	},
+	{
+		"nrolin" : 3,
+		"texto" : "· Observe que o horário do check-in na maioria dos hotéis começa às 13:00. Os hóspedes que chegarem cedo estarão sujeitos à disponibilidade do quarto enquanto aguardam no lobby do hotel.",
+		"estado" : "OK"
+	}
+  ]
+}

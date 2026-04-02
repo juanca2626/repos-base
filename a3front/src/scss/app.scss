@@ -1,0 +1,39 @@
+// Reset Ant
+@import 'ant-design-vue/dist/reset.css';
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+//Variables
+@import 'variables';
+// Global
+@import 'global';
+//Aurora icons
+@import 'icons';
+//Components
+@import 'components/button';
+@import 'components/header';
+@import 'components/menu';
+@import 'components/modal';
+@import 'components/navigation';
+@import 'components/title';
+@import 'components/vselect-custom';
+@import 'components/easy-data-table';
+@import 'components/input';
+@import 'components/operations/multiselect';
+@import 'components/operations/guidelines';
+@import 'components/operations/operation';
+@import 'components/operations/navbar';
+@import 'components/operations/sidebar';
+@import 'components/operations/menu';
+@import 'components/operations/client';
+@import 'components/operations/card';
+@import 'components/operations/tag';
+@import 'components/operations/guideModal';
+@import 'components/operations/tableModal';
+
+// Estilos por separado.. CADA UNO CON ID
+@import 'views/quotes';
+
+//Views Aurora Backend
+@import 'views/files';
+@import 'backend/negotiations';
+@import 'backend/operations';

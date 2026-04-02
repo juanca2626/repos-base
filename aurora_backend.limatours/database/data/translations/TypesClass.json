@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Clases",
+    "typeclass_name": "Clase",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "typeclass_incorrect": "No puede registrar una clase ya existente.",
+        "typeclass_delete": "Error al eliminar la clase"
+      }
+    }
+  },
+  "en": {
+    "title": "TypesClass",
+    "typeclass_name": "TypeClass",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "typeclass_incorrect": "You can not register an existing typeclass.",
+        "typeclass_delete": "Error to delete typeclass"
+      }
+    }
+  }
+}

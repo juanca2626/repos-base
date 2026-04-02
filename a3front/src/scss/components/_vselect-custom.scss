@@ -1,0 +1,112 @@
+/*
+>>> {
+  --vs-search-input-placeholder-color: #BDBDBD;
+  --vs-dropdown-option--active-bg: #BD0D12 ;
+  --vs-dropdown-option--active-color: #F9F9F9;
+}
+*/
+
+.select-import {
+  background-color: $color-white;
+  border: 0.1em solid $color-primary;
+  border-radius: 0.313em;
+  color: $color-primary;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  width: 15.625em;
+  .v-select.vs--single.vs--searchable {
+    width: 13.75em;
+    .vs__dropdown-toggle {
+      border: none !important;
+      border-radius: 0;
+      padding: 0;
+      .vs__selected-options {
+        .vs__selected,
+        .vs__search {
+          margin: 0;
+          &:active {
+          }
+          &::placeholder {
+            &:active {
+              color: $color-black;
+            }
+            color: $color-primary;
+            font-weight: 600;
+          }
+        }
+      }
+      .vs__actions {
+        padding: 0;
+      }
+    }
+    .vs__dropdown-menu {
+      color: $color-black;
+      margin-left: -38px;
+      margin-top: 0.8em;
+      width: 250px;
+    }
+  }
+}
+
+.v-select {
+  &.vs--single.vs--searchable {
+    background-color: $color-white;
+    &.search-select {
+      .vs__dropdown-toggle {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: none;
+        border: 0.063em solid $color-black-4;
+        border-radius: var(--vs-border-radius);
+        display: flex;
+        padding: 0 0 4px;
+        white-space: normal;
+      }
+      .icon-search {
+        color: $color-black-3;
+      }
+    }
+    .icon-chevron-down {
+      color: $color-black-3;
+    }
+  }
+
+  &.vs--open.vs--single.vs--searchable {
+    &.search-select {
+      .vs__open-indicator {
+        transform: none !important;
+        .icon-search {
+          color: $color-black-4;
+        }
+      }
+      .vs__dropdown-menu {
+        --vs-dropdown-option--active-bg: #f9f9f9;
+        --vs-dropdown-option--active-color: #bd0d12;
+      }
+    }
+    .icon-chevron-down {
+      color: $color-black-4;
+    }
+  }
+
+  &.vs--multiple.vs--searchable {
+    background-color: $color-white;
+    .vs__selected {
+      align-items: center;
+      background-color: $color-success;
+      border: var(--vs-selected-border-width) var(--vs-selected-border-style) $color-success;
+      border-radius: var(--vs-border-radius);
+      color: $color-white;
+      display: flex;
+      font-size: 0.875em;
+      line-height: var(--vs-line-height);
+      margin: 4px 2px 0;
+      padding: 0 0.25em;
+      z-index: 0;
+    }
+    .icon-chevron-down {
+      color: $color-black-3;
+    }
+  }
+}

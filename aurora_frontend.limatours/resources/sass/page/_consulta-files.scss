@@ -1,0 +1,319 @@
+.page-consulting__files {
+  padding: 92px 0;
+  background: $blanco;
+  .container {
+    h2{
+      color: $gris_oscuro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3.2rem;
+      line-height: 38px;
+      margin-bottom: 32px;
+    }
+    .form{
+      &-group{
+        label {
+          font-size: 12px;
+          font-weight: bold;
+          color: $gris_oscuro;
+        }
+        &.busqueda{
+          width: 25%;
+        }
+        &.fecha,
+        &.file,
+        &.orden,
+        &.localizador {
+          width: 32%;
+        }
+        &.btn-buscar {
+          width: 28%;
+        }
+
+      }
+    }
+
+    .table {
+      color: $gris_oscuro;
+      margin-top: 5rem;
+      thead {
+        tr {
+          font-size: 14px;
+        }
+        th {
+          border-bottom: 0;
+          border-top: none;
+        }
+      }
+      tbody {
+        font-size: 12px;
+        th {
+
+          font-weight: normal;
+        }
+        td {
+          padding-top: 15px;
+          padding-bottom: 0px!important;
+        }
+        a {
+          text-decoration-line: none;
+          /* color: #CE3B4D; */
+          font-size: 12px;
+          margin: 2px 1px;
+          i {
+            color: #CE3B4D;
+            font-weight: bold;
+          }
+        }
+        a:hover {
+          text-decoration-line: underline;
+          color: #CE3B4D;
+          font-weight: bold;
+        }
+        .b-dropdown {
+          .btn-secondary {
+            background-color: $blanco;
+            border: 1.5px solid $rojo;
+            color: $rojo;
+            padding: 2px 8px;
+          }
+          .btn-secondary:hover {
+            background-color: $rojo;
+            border: 1.5px solid $rojo;
+            color: $blanco;
+          }
+        }
+        .show {
+          .btn-secondary {
+            background-color: $rojo;
+            border: 1.5px solid $rojo;
+            color: $blanco;
+          }
+        }
+
+        .dropdown-menu {
+          top: 5px;
+          left: -20px;
+        }
+
+        .dropdown-menu:before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-right: 0;
+          border-top: 0;
+          border-left: 0;
+          border-bottom: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+        }
+        .dropdown-menu:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-right: 0;
+          border-top: 0 solid transparent;
+          border-left: 0;
+          border-bottom: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+          opacity: 0;
+        }
+
+      }
+    }
+  }
+}
+
+
+#services,
+#skeleton,
+#scheduled,
+#paxs,
+#hotels,
+#invoice,
+#guides,
+#detail,
+#modal-pax,
+#flights{
+  .modal-content {
+    font-size: 13px;
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: $gris_oscuro;
+      text-transform: uppercase;
+      i {
+        color: $rojo;
+      }
+    }
+    h3 {
+      font-size: 18px !important;
+      line-height: 29px !important;
+      color: $rojo-oscuro !important;
+      font-weight: bold!important;
+    }
+    .form-row .form-group .form-control {
+      font-size: 12px;
+    }
+
+    label {
+      color: $gris_oscuro;
+      font-weight: bold;
+    }
+    .origen,
+    .destino,
+    .pnr,
+    .aereolinea {
+      width: 255px;
+    }
+    .pax {
+      width: 120px;
+    }
+    .observaciones {
+      width: 930px;
+    }
+    .form-prod {
+      background: #FAFAFA;
+      border-radius: 10px;
+      padding: 40px 60px 40px 60px;
+      position: relative;
+    }
+    .form-group {
+      .llegada,
+      .salida {
+        padding-top: 1rem;
+        width: 100px;
+        .time {
+          width: 80px;
+          outline:0px;
+        }
+      }
+
+    }
+    .agregar,
+    .guardar {
+      width: 200px;
+    }
+    .table {
+      thead {
+        font-size: 13px;
+        text-align: center;
+
+        .w-fecha,
+        .w-ciudad,
+        w-habitacion {
+          width: 140px;
+        }
+        .w-partida,
+        .w-llegada {
+          width: 150px;
+        }
+        .w-descripcion {
+          width: 300px;
+        }
+        .w-hotel,
+        w-servicio {
+          width: 250px;
+        }
+        .w-confirmacion,
+        .w-icons {
+          width: 70px;
+        }
+        .w-status,
+        w-pax,
+        w-hora {
+          width: 50px;
+        }
+        .w-torre {
+          width: 180px;
+        }
+
+        th {
+          background: $blanco;
+          border-bottom: 1px solid $gris_border;
+          text-transform: uppercase;
+          color: #6c757d;
+        }
+      }
+      tbody {
+        font-size: 13px;
+        td {
+          border:none;
+          border-bottom: 1px solid $gris_border;
+          background: $blanco;
+          text-align: center;
+        }
+
+      }
+      tfoot {
+        font-size: 13px;
+        td {
+          border:none;
+          text-align: center;
+          background: $blanco;
+        }
+        .preuni-invoice,
+        .pretot-invoice {
+          font-weight: bold;
+          background-color: #fff9d0;
+        }
+      }
+    }
+    .content-factura {
+      background: #f4f4f4;
+      border-radius: 10px;
+      padding: 2rem;
+      font-size: 13px;
+      .row {
+        padding: .2rem 0;
+      }
+    }
+    .bootstrap-datetimepicker-widget {
+      width: 230px;
+      table {
+        border:none;
+        thead {
+          th {
+            cursor: pointer;
+            background: $blanco;
+            border-radius: 0;
+            color: #000;
+          }
+        }
+        tbody {
+          td {
+            border: none;
+            background-color: $blanco;
+
+          }
+          td.active {
+            color: $rojo;
+            font-weight: bold;
+            font-size: 12px;
+            background-color: #f8f9fa;
+          }
+          td:hover, td.active:hover {
+            background-color: $rojo;
+            color: #fafafa;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+    }
+    .bootstrap-datetimepicker-widget .picker-switch td span, .bootstrap-datetimepicker-widget .picker-switch {
+      table {
+        tbody {
+          td {
+            border:none;
+          }
+        }
+      }
+    }
+  }
+}
+

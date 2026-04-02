@@ -1,0 +1,287 @@
+[
+	{
+		"service_type" : "T",
+		"description" : "Aeropuerto Internacional Jorge Chavez > Centro Histórico de Lima",
+		"internal_code" : "LIN1H2"
+	},
+	{
+		"service_type" : "T",
+		"description" : "Aeropuerto Internacional Jorge Chavez > Distritos Miraflores y San Isidro",
+		"internal_code" : "LIN1H2"
+	},
+	{
+		"service_type" : "T",
+		"description" : "Aeropuerto Velazco Astete > Centro Histórico de Cusco",
+		"internal_code" : "CUZ1H2"
+	},
+	{
+		"service_type" : "T",
+		"description" : "Centro Histórico de Cusco > Aeropuerto Velazco Astete",
+		"internal_code" : "CUZ2H2"
+	},
+	{
+		"service_type" : "T",
+		"description" : "Centro Histórico de Lima > Aeropuerto Internacional Jorge Chavez",
+		"internal_code" : "LIN2H2"
+	},
+	{
+		"service_type" : "T",
+		"description" : "Distritos Miraflores y San Isidro > Aeropuerto Internacional Jorge Chavez",
+		"internal_code" : "LIN2H2"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Almuerzo Buffet en el Restaurante Mangos Larcomar",
+		"internal_code" : "LIM8MG"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Almuerzo en el Restaurante Huaca Pucllana",
+		"internal_code" : "LIM8HC"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Bus Turístico de Cusco hasta Puno",
+		"internal_code" : "BUSCUS"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Cena en el Restaurant La Rosa Naútica con Traslados",
+		"internal_code" : "LIM9RN"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Cena en el Restaurant La Rosa Naútica sin Traslados",
+		"internal_code" : "LIM9RN"
+	},
+	{
+		"service_type" : "X",
+		"description" : "City tour Lima",
+		"internal_code" : "LIN473"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Islas Flotantes de los Uros y Taquile",
+		"internal_code" : "PUV523"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Ejecutivo Inca Rail (Con almuerzo)",
+		"internal_code" : "FULMAP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Ejecutivo Inca Rail (Sin almuerzo)",
+		"internal_code" : "SUPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Ejecutivo Inca Rail MP (Con almuerzo)",
+		"internal_code" : "FULMAP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Ejecutivo Inca Rail MP (Sin almuerzo)",
+		"internal_code" : "FULNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Expedition Peru Rail (Sin almuerzo)",
+		"internal_code" : "EXPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Expedition PeruRail (Con almuerzo)",
+		"internal_code" : "FULEXP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Voyager Inca Rail (Con almuerzo)",
+		"internal_code" : "FULMAP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Voyager Inca Rail (Sin almuerzo)",
+		"internal_code" : "SUPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Voyager Inca Rail MP (Con almuerzo)",
+		"internal_code" : "FULMAP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Voyager Inca Rail MP (Sin almuerzo)",
+		"internal_code" : "SUPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo Machu Picchu Tren Voyager Inca Rail OLL (Sin almuerzo)",
+		"internal_code" : "SUPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a Machu Picchu Tren Expedition OLL-sin almuerzo",
+		"internal_code" : "EXPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a Machu Picchu Tren Expedition PeruRail (con almuerzo)",
+		"internal_code" : "FULEXP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a Machu Picchu Tren Vistadome PeruRail (Sin almuerzo)",
+		"internal_code" : "VISNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a Machu Picchu Tren Vistadome PeruRail (con almuerzo)",
+		"internal_code" : "FULVIS"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a Machu Picchu Tren Voyager Inca Rail (con almuerzo)",
+		"internal_code" : "FULMAP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a MachuPicchu Tren Expedition PeruRail",
+		"internal_code" : "EXPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a MachuPicchu Tren Expedition PeruRail (sin almuerzo)",
+		"internal_code" : "EXPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Día Completo a MachuPicchu Tren Voyager Inca Rail (sin almuerzo)",
+		"internal_code" : "FULNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Lima Colonial y Moderna",
+		"internal_code" : "LIN473"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Machu Picchu Tren Expedition - 2 Días\/ 1 Noche",
+		"internal_code" : "2D1EXP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Machu Picchu Tren Vistadome - 2 Días\/ 1 Noche",
+		"internal_code" : "2D1VIS"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Machu Picchu Tren Voyager Inca Rail - 2 Dias\/1 Noche",
+		"internal_code" : "SUPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Medio Dia - Tipón, Pikillacta y Andahuaylillas",
+		"internal_code" : "CUZ414"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Medio Día Ciudad de Lima y Museo Larco - Compartido Matutino",
+		"internal_code" : "LIN432"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Medio Día Ciudad de Lima y Museo Larco - Compartido Tarde",
+		"internal_code" : "LIN40H"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Medio Día Pachacamac y, Barranco  - Compartido Matutino",
+		"internal_code" : "LIN476"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Medio Día Pachacamac, Barranco y Chorrillos - Compartido Matutino",
+		"internal_code" : "LIN476"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Medio Día Pachacamac, Barranco y Chorrillos - Compartido Tarde",
+		"internal_code" : "LIN476"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Paquete 2 Días \/ 1 Noche Valle y Cañón del Colca - Hoteles en Chivay",
+		"internal_code" : "AQVP03"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Sobrevuelo Líneas de Nasca desde Nasca - Media hora",
+		"internal_code" : "NAZFLY"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Ciudad de Lima y Museo Arqueológico",
+		"internal_code" : "LIN459"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Día Completo a Machu Picchu Tren Expedition MP (con almuerzo)",
+		"internal_code" : "FULEXP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Día Completo a Machu Picchu Tren Expedition MP (sin almuerzo)",
+		"internal_code" : "EXPNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Día Completo a Machu Picchu Tren Expedition OLL (con almuerzo)",
+		"internal_code" : "FULEXP"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Día Completo a Machu Picchu Tren Vistadome MP (Sin almuerzo)",
+		"internal_code" : "VISNOL"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Día Completo a Machu Picchu Tren Vistadome MP (con almuerzo)",
+		"internal_code" : "FULVIS"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Día Completo a Machu Picchu Tren Vistadome OLL (con almuerzo)",
+		"internal_code" : "FULVIS"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Gastronómico de Medio Dia c\/ Almuerzo",
+		"internal_code" : "LIN574"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Medio Día Visita a las Islas Uros",
+		"internal_code" : "PUV404"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour Panorámico de Lima con Cena Show",
+		"internal_code" : "LIN605"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour de Medio Día Ciudad de Trujillo",
+		"internal_code" : "TRU405"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour de Medio Día Pachacamac y Barranco",
+		"internal_code" : "LIN476"
+	},
+	{
+		"service_type" : "X",
+		"description" : "Tour por las Fuentes Mágicas con Cena y Show Folklorico",
+		"internal_code" : "LIN606"
+	}
+]

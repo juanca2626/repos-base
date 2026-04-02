@@ -1,0 +1,42 @@
+{
+  "es": {
+    "title": "Hotel",
+    "period": "Periodo",
+    "update": "Actualizar",
+    "available_hotels": "Hoteles Disponibles",
+    "hotels_added": "Hoteles Agregados",
+    "associated_fees": "Tarifas Asociadas",
+    "personal_markup": "Markup Personalizado",
+    "add": "Agregar",
+    "error": {
+      "messages": {
+        "information_complete": "Completar informacion en el formulario",
+        "select_period": "Seleccione un periodo",
+        "select_rate": "Seleccione un plan de tarifa",
+        "add_markup": "Ingrese un markup %",
+        "hotel_incorrect": "Seleccione un hotel valido",
+        "manage_hotel_delete": "Error al eliminar el contacto"
+      }
+    }
+  },
+  "en": {
+    "available_hotels": "Available Hoteles",
+    "hotels_added": "Hoteles Agregados",
+    "period": "Period",
+    "update": "Update",
+    "add": "Add",
+    "title": "Hotel",
+    "personal_markup": "Personal Markup",
+    "associated_fees": "Associated Fees",
+    "error": {
+      "messages": {
+        "information_complete": "Please complete information in form",
+        "select_period": "Select period",
+        "select_rate": "select a rate plan",
+        "add_markup": "Add markup %",
+        "hotel_incorrect": "Select the valid hotel",
+        "Administrar Contacts_delete": "Error delete contacts"
+      }
+    }
+  }
+}

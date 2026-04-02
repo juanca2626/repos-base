@@ -1,0 +1,7498 @@
+[
+  {
+    "city_id": 1,
+    "name": "Chachapoyas"
+  },
+  {
+    "city_id": 1,
+    "name": "Asuncion"
+  },
+  {
+    "city_id": 1,
+    "name": "Balsas"
+  },
+  {
+    "city_id": 1,
+    "name": "Cheto"
+  },
+  {
+    "city_id": 1,
+    "name": "Chiliquin"
+  },
+  {
+    "city_id": 1,
+    "name": "Chuquibamba"
+  },
+  {
+    "city_id": 1,
+    "name": "Granada"
+  },
+  {
+    "city_id": 1,
+    "name": "Huancas"
+  },
+  {
+    "city_id": 1,
+    "name": "La Jalca"
+  },
+  {
+    "city_id": 1,
+    "name": "Leimebamba"
+  },
+  {
+    "city_id": 1,
+    "name": "Levanto"
+  },
+  {
+    "city_id": 1,
+    "name": "Magdalena"
+  },
+  {
+    "city_id": 1,
+    "name": "Mariscal Castilla"
+  },
+  {
+    "city_id": 1,
+    "name": "Molinopampa"
+  },
+  {
+    "city_id": 1,
+    "name": "Montevideo"
+  },
+  {
+    "city_id": 1,
+    "name": "Olleros"
+  },
+  {
+    "city_id": 1,
+    "name": "Quinjalca"
+  },
+  {
+    "city_id": 1,
+    "name": "San Francisco de Daguas"
+  },
+  {
+    "city_id": 1,
+    "name": "San Isidro de Maino"
+  },
+  {
+    "city_id": 1,
+    "name": "Soloco"
+  },
+  {
+    "city_id": 1,
+    "name": "Sonche"
+  },
+  {
+    "city_id": 2,
+    "name": "Bagua"
+  },
+  {
+    "city_id": 2,
+    "name": "Aramango"
+  },
+  {
+    "city_id": 2,
+    "name": "Copallin"
+  },
+  {
+    "city_id": 2,
+    "name": "El Parco"
+  },
+  {
+    "city_id": 2,
+    "name": "Imaza"
+  },
+  {
+    "city_id": 2,
+    "name": "La Peca"
+  },
+  {
+    "city_id": 3,
+    "name": "Jumbilla"
+  },
+  {
+    "city_id": 3,
+    "name": "Chisquilla"
+  },
+  {
+    "city_id": 3,
+    "name": "Churuja"
+  },
+  {
+    "city_id": 3,
+    "name": "Corosha"
+  },
+  {
+    "city_id": 3,
+    "name": "Cuispes"
+  },
+  {
+    "city_id": 3,
+    "name": "Florida"
+  },
+  {
+    "city_id": 3,
+    "name": "Jazan"
+  },
+  {
+    "city_id": 3,
+    "name": "Recta"
+  },
+  {
+    "city_id": 3,
+    "name": "San Carlos"
+  },
+  {
+    "city_id": 3,
+    "name": "Shipasbamba"
+  },
+  {
+    "city_id": 3,
+    "name": "Valera"
+  },
+  {
+    "city_id": 3,
+    "name": "Yambrasbamba"
+  },
+  {
+    "city_id": 4,
+    "name": "Nieva"
+  },
+  {
+    "city_id": 4,
+    "name": "El Cenepa"
+  },
+  {
+    "city_id": 4,
+    "name": "Rio Santiago"
+  },
+  {
+    "city_id": 5,
+    "name": "Lamud"
+  },
+  {
+    "city_id": 5,
+    "name": "Camporredondo"
+  },
+  {
+    "city_id": 5,
+    "name": "Cocabamba"
+  },
+  {
+    "city_id": 5,
+    "name": "Colcamar"
+  },
+  {
+    "city_id": 5,
+    "name": "Conila"
+  },
+  {
+    "city_id": 5,
+    "name": "Inguilpata"
+  },
+  {
+    "city_id": 5,
+    "name": "Longuita"
+  },
+  {
+    "city_id": 5,
+    "name": "Lonya Chico"
+  },
+  {
+    "city_id": 5,
+    "name": "Luya"
+  },
+  {
+    "city_id": 5,
+    "name": "Luya Viejo"
+  },
+  {
+    "city_id": 5,
+    "name": "Maria"
+  },
+  {
+    "city_id": 5,
+    "name": "Ocalli"
+  },
+  {
+    "city_id": 5,
+    "name": "Ocumal"
+  },
+  {
+    "city_id": 5,
+    "name": "Pisuquia"
+  },
+  {
+    "city_id": 5,
+    "name": "Providencia"
+  },
+  {
+    "city_id": 5,
+    "name": "San Cristobal"
+  },
+  {
+    "city_id": 5,
+    "name": "San Francisco del Yeso"
+  },
+  {
+    "city_id": 5,
+    "name": "San Jeronimo"
+  },
+  {
+    "city_id": 5,
+    "name": "San Juan de Lopecancha"
+  },
+  {
+    "city_id": 5,
+    "name": "Santa Catalina"
+  },
+  {
+    "city_id": 5,
+    "name": "Santo Tomas"
+  },
+  {
+    "city_id": 5,
+    "name": "Tingo"
+  },
+  {
+    "city_id": 5,
+    "name": "Trita"
+  },
+  {
+    "city_id": 6,
+    "name": "San Nicolas"
+  },
+  {
+    "city_id": 6,
+    "name": "Chirimoto"
+  },
+  {
+    "city_id": 6,
+    "name": "Cochamal"
+  },
+  {
+    "city_id": 6,
+    "name": "Huambo"
+  },
+  {
+    "city_id": 6,
+    "name": "Limabamba"
+  },
+  {
+    "city_id": 6,
+    "name": "Longar"
+  },
+  {
+    "city_id": 6,
+    "name": "Mariscal Benavides"
+  },
+  {
+    "city_id": 6,
+    "name": "Milpuc"
+  },
+  {
+    "city_id": 6,
+    "name": "Omia"
+  },
+  {
+    "city_id": 6,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 6,
+    "name": "Totora"
+  },
+  {
+    "city_id": 6,
+    "name": "Vista Alegre"
+  },
+  {
+    "city_id": 7,
+    "name": "Bagua Grande"
+  },
+  {
+    "city_id": 7,
+    "name": "Cajaruro"
+  },
+  {
+    "city_id": 7,
+    "name": "Cumba"
+  },
+  {
+    "city_id": 7,
+    "name": "El Milagro"
+  },
+  {
+    "city_id": 7,
+    "name": "Jamalca"
+  },
+  {
+    "city_id": 7,
+    "name": "Lonya Grande"
+  },
+  {
+    "city_id": 7,
+    "name": "Yamon"
+  },
+  {
+    "city_id": 8,
+    "name": "Huaraz"
+  },
+  {
+    "city_id": 8,
+    "name": "Cochabamba"
+  },
+  {
+    "city_id": 8,
+    "name": "Colcabamba"
+  },
+  {
+    "city_id": 8,
+    "name": "Huanchay"
+  },
+  {
+    "city_id": 8,
+    "name": "Independencia"
+  },
+  {
+    "city_id": 8,
+    "name": "Jangas"
+  },
+  {
+    "city_id": 8,
+    "name": "La Libertad"
+  },
+  {
+    "city_id": 8,
+    "name": "Olleros"
+  },
+  {
+    "city_id": 8,
+    "name": "Pampas"
+  },
+  {
+    "city_id": 8,
+    "name": "Pariacoto"
+  },
+  {
+    "city_id": 8,
+    "name": "Pira"
+  },
+  {
+    "city_id": 8,
+    "name": "Tarica"
+  },
+  {
+    "city_id": 9,
+    "name": "Aija"
+  },
+  {
+    "city_id": 9,
+    "name": "Coris"
+  },
+  {
+    "city_id": 9,
+    "name": "Huacllan"
+  },
+  {
+    "city_id": 9,
+    "name": "La Merced"
+  },
+  {
+    "city_id": 9,
+    "name": "Succha"
+  },
+  {
+    "city_id": 10,
+    "name": "Llamellin"
+  },
+  {
+    "city_id": 10,
+    "name": "Aczo"
+  },
+  {
+    "city_id": 10,
+    "name": "Chaccho"
+  },
+  {
+    "city_id": 10,
+    "name": "Chingas"
+  },
+  {
+    "city_id": 10,
+    "name": "Mirgas"
+  },
+  {
+    "city_id": 10,
+    "name": "San Juan de Rontoy"
+  },
+  {
+    "city_id": 11,
+    "name": "Chacas"
+  },
+  {
+    "city_id": 11,
+    "name": "Acochaca"
+  },
+  {
+    "city_id": 12,
+    "name": "Chiquian"
+  },
+  {
+    "city_id": 12,
+    "name": "Abelardo Pardo Lezameta"
+  },
+  {
+    "city_id": 12,
+    "name": "Antonio Raymondi"
+  },
+  {
+    "city_id": 12,
+    "name": "Aquia"
+  },
+  {
+    "city_id": 12,
+    "name": "Cajacay"
+  },
+  {
+    "city_id": 12,
+    "name": "Canis"
+  },
+  {
+    "city_id": 12,
+    "name": "Colquioc"
+  },
+  {
+    "city_id": 12,
+    "name": "Huallanca"
+  },
+  {
+    "city_id": 12,
+    "name": "Huasta"
+  },
+  {
+    "city_id": 12,
+    "name": "Huayllacayan"
+  },
+  {
+    "city_id": 12,
+    "name": "La Primavera"
+  },
+  {
+    "city_id": 12,
+    "name": "Mangas"
+  },
+  {
+    "city_id": 12,
+    "name": "Pacllon"
+  },
+  {
+    "city_id": 12,
+    "name": "San Miguel de Corpanqui"
+  },
+  {
+    "city_id": 12,
+    "name": "Ticllos"
+  },
+  {
+    "city_id": 13,
+    "name": "Carhuaz"
+  },
+  {
+    "city_id": 13,
+    "name": "Acopampa"
+  },
+  {
+    "city_id": 13,
+    "name": "Amashca"
+  },
+  {
+    "city_id": 13,
+    "name": "Anta"
+  },
+  {
+    "city_id": 13,
+    "name": "Ataquero"
+  },
+  {
+    "city_id": 13,
+    "name": "Marcara"
+  },
+  {
+    "city_id": 13,
+    "name": "Pariahuanca"
+  },
+  {
+    "city_id": 13,
+    "name": "San Miguel de Aco"
+  },
+  {
+    "city_id": 13,
+    "name": "Shilla"
+  },
+  {
+    "city_id": 13,
+    "name": "Tinco"
+  },
+  {
+    "city_id": 13,
+    "name": "Yungar"
+  },
+  {
+    "city_id": 14,
+    "name": "San Luis"
+  },
+  {
+    "city_id": 14,
+    "name": "San Nicolas"
+  },
+  {
+    "city_id": 14,
+    "name": "Yauya"
+  },
+  {
+    "city_id": 15,
+    "name": "Casma"
+  },
+  {
+    "city_id": 15,
+    "name": "Buena Vista Alta"
+  },
+  {
+    "city_id": 15,
+    "name": "Comandante Noel"
+  },
+  {
+    "city_id": 15,
+    "name": "Yautan"
+  },
+  {
+    "city_id": 16,
+    "name": "Corongo"
+  },
+  {
+    "city_id": 16,
+    "name": "Aco"
+  },
+  {
+    "city_id": 16,
+    "name": "Bambas"
+  },
+  {
+    "city_id": 16,
+    "name": "Cusca"
+  },
+  {
+    "city_id": 16,
+    "name": "La Pampa"
+  },
+  {
+    "city_id": 16,
+    "name": "Yanac"
+  },
+  {
+    "city_id": 16,
+    "name": "Yupan"
+  },
+  {
+    "city_id": 17,
+    "name": "Huari"
+  },
+  {
+    "city_id": 17,
+    "name": "Anra"
+  },
+  {
+    "city_id": 17,
+    "name": "Cajay"
+  },
+  {
+    "city_id": 17,
+    "name": "Chavin de Huantar"
+  },
+  {
+    "city_id": 17,
+    "name": "Huacachi"
+  },
+  {
+    "city_id": 17,
+    "name": "Huacchis"
+  },
+  {
+    "city_id": 17,
+    "name": "Huachis"
+  },
+  {
+    "city_id": 17,
+    "name": "Huantar"
+  },
+  {
+    "city_id": 17,
+    "name": "Masin"
+  },
+  {
+    "city_id": 17,
+    "name": "Paucas"
+  },
+  {
+    "city_id": 17,
+    "name": "Ponto"
+  },
+  {
+    "city_id": 17,
+    "name": "Rahuapampa"
+  },
+  {
+    "city_id": 17,
+    "name": "Rapayan"
+  },
+  {
+    "city_id": 17,
+    "name": "San Marcos"
+  },
+  {
+    "city_id": 17,
+    "name": "San Pedro de Chana"
+  },
+  {
+    "city_id": 17,
+    "name": "Uco"
+  },
+  {
+    "city_id": 18,
+    "name": "Huarmey"
+  },
+  {
+    "city_id": 18,
+    "name": "Cochapeti"
+  },
+  {
+    "city_id": 18,
+    "name": "Culebras"
+  },
+  {
+    "city_id": 18,
+    "name": "Huayan"
+  },
+  {
+    "city_id": 18,
+    "name": "Malvas"
+  },
+  {
+    "city_id": 19,
+    "name": "Caraz"
+  },
+  {
+    "city_id": 19,
+    "name": "Huallanca"
+  },
+  {
+    "city_id": 19,
+    "name": "Huata"
+  },
+  {
+    "city_id": 19,
+    "name": "Huaylas"
+  },
+  {
+    "city_id": 19,
+    "name": "Mato"
+  },
+  {
+    "city_id": 19,
+    "name": "Pamparomas"
+  },
+  {
+    "city_id": 19,
+    "name": "Pueblo Libre"
+  },
+  {
+    "city_id": 19,
+    "name": "Santa Cruz"
+  },
+  {
+    "city_id": 19,
+    "name": "Santo Toribio"
+  },
+  {
+    "city_id": 19,
+    "name": "Yuracmarca"
+  },
+  {
+    "city_id": 20,
+    "name": "Piscobamba"
+  },
+  {
+    "city_id": 20,
+    "name": "Casca"
+  },
+  {
+    "city_id": 20,
+    "name": "Eleazar Guzman Barron"
+  },
+  {
+    "city_id": 20,
+    "name": "Fidel Olivas Escudero"
+  },
+  {
+    "city_id": 20,
+    "name": "Llama"
+  },
+  {
+    "city_id": 20,
+    "name": "Llumpa"
+  },
+  {
+    "city_id": 20,
+    "name": "Lucma"
+  },
+  {
+    "city_id": 20,
+    "name": "Musga"
+  },
+  {
+    "city_id": 21,
+    "name": "Ocros"
+  },
+  {
+    "city_id": 21,
+    "name": "Acas"
+  },
+  {
+    "city_id": 21,
+    "name": "Cajamarquilla"
+  },
+  {
+    "city_id": 21,
+    "name": "Carhuapampa"
+  },
+  {
+    "city_id": 21,
+    "name": "Cochas"
+  },
+  {
+    "city_id": 21,
+    "name": "Congas"
+  },
+  {
+    "city_id": 21,
+    "name": "Llipa"
+  },
+  {
+    "city_id": 21,
+    "name": "San Cristobal de Rajan"
+  },
+  {
+    "city_id": 21,
+    "name": "San Pedro"
+  },
+  {
+    "city_id": 21,
+    "name": "Santiago de Chilcas"
+  },
+  {
+    "city_id": 22,
+    "name": "Cabana"
+  },
+  {
+    "city_id": 22,
+    "name": "Bolognesi"
+  },
+  {
+    "city_id": 22,
+    "name": "Conchucos"
+  },
+  {
+    "city_id": 22,
+    "name": "Huacaschuque"
+  },
+  {
+    "city_id": 22,
+    "name": "Huandoval"
+  },
+  {
+    "city_id": 22,
+    "name": "Lacabamba"
+  },
+  {
+    "city_id": 22,
+    "name": "Llapo"
+  },
+  {
+    "city_id": 22,
+    "name": "Pallasca"
+  },
+  {
+    "city_id": 22,
+    "name": "Pampas"
+  },
+  {
+    "city_id": 22,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 22,
+    "name": "Tauca"
+  },
+  {
+    "city_id": 23,
+    "name": "Pomabamba"
+  },
+  {
+    "city_id": 23,
+    "name": "Huayllan"
+  },
+  {
+    "city_id": 23,
+    "name": "Parobamba"
+  },
+  {
+    "city_id": 23,
+    "name": "Quinuabamba"
+  },
+  {
+    "city_id": 24,
+    "name": "Recuay"
+  },
+  {
+    "city_id": 24,
+    "name": "Catac"
+  },
+  {
+    "city_id": 24,
+    "name": "Cotaparaco"
+  },
+  {
+    "city_id": 24,
+    "name": "Huayllapampa"
+  },
+  {
+    "city_id": 24,
+    "name": "Llacllin"
+  },
+  {
+    "city_id": 24,
+    "name": "Marca"
+  },
+  {
+    "city_id": 24,
+    "name": "Pampas Chico"
+  },
+  {
+    "city_id": 24,
+    "name": "Pararin"
+  },
+  {
+    "city_id": 24,
+    "name": "Tapacocha"
+  },
+  {
+    "city_id": 24,
+    "name": "Ticapampa"
+  },
+  {
+    "city_id": 25,
+    "name": "Chimbote"
+  },
+  {
+    "city_id": 25,
+    "name": "Caceres del Peru"
+  },
+  {
+    "city_id": 25,
+    "name": "Coishco"
+  },
+  {
+    "city_id": 25,
+    "name": "Macate"
+  },
+  {
+    "city_id": 25,
+    "name": "Moro"
+  },
+  {
+    "city_id": 25,
+    "name": "Nepeña"
+  },
+  {
+    "city_id": 25,
+    "name": "Samanco"
+  },
+  {
+    "city_id": 25,
+    "name": "Santa"
+  },
+  {
+    "city_id": 25,
+    "name": "Nuevo Chimbote"
+  },
+  {
+    "city_id": 26,
+    "name": "Sihuas"
+  },
+  {
+    "city_id": 26,
+    "name": "Acobamba"
+  },
+  {
+    "city_id": 26,
+    "name": "Alfonso Ugarte"
+  },
+  {
+    "city_id": 26,
+    "name": "Cashapampa"
+  },
+  {
+    "city_id": 26,
+    "name": "Chingalpo"
+  },
+  {
+    "city_id": 26,
+    "name": "Huayllabamba"
+  },
+  {
+    "city_id": 26,
+    "name": "Quiches"
+  },
+  {
+    "city_id": 26,
+    "name": "Ragash"
+  },
+  {
+    "city_id": 26,
+    "name": "San Juan"
+  },
+  {
+    "city_id": 26,
+    "name": "Sicsibamba"
+  },
+  {
+    "city_id": 27,
+    "name": "Yungay"
+  },
+  {
+    "city_id": 27,
+    "name": "Cascapara"
+  },
+  {
+    "city_id": 27,
+    "name": "Mancos"
+  },
+  {
+    "city_id": 27,
+    "name": "Matacoto"
+  },
+  {
+    "city_id": 27,
+    "name": "Quillo"
+  },
+  {
+    "city_id": 27,
+    "name": "Ranrahirca"
+  },
+  {
+    "city_id": 27,
+    "name": "Shupluy"
+  },
+  {
+    "city_id": 27,
+    "name": "Yanama"
+  },
+  {
+    "city_id": 28,
+    "name": "Abancay"
+  },
+  {
+    "city_id": 28,
+    "name": "Chacoche"
+  },
+  {
+    "city_id": 28,
+    "name": "Circa"
+  },
+  {
+    "city_id": 28,
+    "name": "Curahuasi"
+  },
+  {
+    "city_id": 28,
+    "name": "Huanipaca"
+  },
+  {
+    "city_id": 28,
+    "name": "Lambrama"
+  },
+  {
+    "city_id": 28,
+    "name": "Pichirhua"
+  },
+  {
+    "city_id": 28,
+    "name": "San Pedro de Cachora"
+  },
+  {
+    "city_id": 28,
+    "name": "Tamburco"
+  },
+  {
+    "city_id": 29,
+    "name": "Andahuaylas"
+  },
+  {
+    "city_id": 29,
+    "name": "Andarapa"
+  },
+  {
+    "city_id": 29,
+    "name": "Chiara"
+  },
+  {
+    "city_id": 29,
+    "name": "Huancarama"
+  },
+  {
+    "city_id": 29,
+    "name": "Huancaray"
+  },
+  {
+    "city_id": 29,
+    "name": "Huayana"
+  },
+  {
+    "city_id": 29,
+    "name": "Kishuara"
+  },
+  {
+    "city_id": 29,
+    "name": "Pacobamba"
+  },
+  {
+    "city_id": 29,
+    "name": "Pacucha"
+  },
+  {
+    "city_id": 29,
+    "name": "Pampachiri"
+  },
+  {
+    "city_id": 29,
+    "name": "Pomacocha"
+  },
+  {
+    "city_id": 29,
+    "name": "San Antonio de Cachi"
+  },
+  {
+    "city_id": 29,
+    "name": "San Jeronimo"
+  },
+  {
+    "city_id": 29,
+    "name": "San Miguel de Chaccrampa"
+  },
+  {
+    "city_id": 29,
+    "name": "Santa Maria de Chicmo"
+  },
+  {
+    "city_id": 29,
+    "name": "Talavera"
+  },
+  {
+    "city_id": 29,
+    "name": "Tumay Huaraca"
+  },
+  {
+    "city_id": 29,
+    "name": "Turpo"
+  },
+  {
+    "city_id": 29,
+    "name": "Kaquiabamba"
+  },
+  {
+    "city_id": 29,
+    "name": "José María Arguedas"
+  },
+  {
+    "city_id": 30,
+    "name": "Antabamba"
+  },
+  {
+    "city_id": 30,
+    "name": "El Oro"
+  },
+  {
+    "city_id": 30,
+    "name": "Huaquirca"
+  },
+  {
+    "city_id": 30,
+    "name": "Juan Espinoza Medrano"
+  },
+  {
+    "city_id": 30,
+    "name": "Oropesa"
+  },
+  {
+    "city_id": 30,
+    "name": "Pachaconas"
+  },
+  {
+    "city_id": 30,
+    "name": "Sabaino"
+  },
+  {
+    "city_id": 31,
+    "name": "Chalhuanca"
+  },
+  {
+    "city_id": 31,
+    "name": "Capaya"
+  },
+  {
+    "city_id": 31,
+    "name": "Caraybamba"
+  },
+  {
+    "city_id": 31,
+    "name": "Chapimarca"
+  },
+  {
+    "city_id": 31,
+    "name": "Colcabamba"
+  },
+  {
+    "city_id": 31,
+    "name": "Cotaruse"
+  },
+  {
+    "city_id": 31,
+    "name": "Huayllo"
+  },
+  {
+    "city_id": 31,
+    "name": "Justo Apu Sahuaraura"
+  },
+  {
+    "city_id": 31,
+    "name": "Lucre"
+  },
+  {
+    "city_id": 31,
+    "name": "Pocohuanca"
+  },
+  {
+    "city_id": 31,
+    "name": "San Juan de Chacña"
+  },
+  {
+    "city_id": 31,
+    "name": "Sañayca"
+  },
+  {
+    "city_id": 31,
+    "name": "Soraya"
+  },
+  {
+    "city_id": 31,
+    "name": "Tapairihua"
+  },
+  {
+    "city_id": 31,
+    "name": "Tintay"
+  },
+  {
+    "city_id": 31,
+    "name": "Toraya"
+  },
+  {
+    "city_id": 31,
+    "name": "Yanaca"
+  },
+  {
+    "city_id": 32,
+    "name": "Tambobamba"
+  },
+  {
+    "city_id": 32,
+    "name": "Cotabambas"
+  },
+  {
+    "city_id": 32,
+    "name": "Coyllurqui"
+  },
+  {
+    "city_id": 32,
+    "name": "Haquira"
+  },
+  {
+    "city_id": 32,
+    "name": "Mara"
+  },
+  {
+    "city_id": 32,
+    "name": "Challhuahuacho"
+  },
+  {
+    "city_id": 33,
+    "name": "Chincheros"
+  },
+  {
+    "city_id": 33,
+    "name": "Anco_Huallo"
+  },
+  {
+    "city_id": 33,
+    "name": "Cocharcas"
+  },
+  {
+    "city_id": 33,
+    "name": "Huaccana"
+  },
+  {
+    "city_id": 33,
+    "name": "Ocobamba"
+  },
+  {
+    "city_id": 33,
+    "name": "Ongoy"
+  },
+  {
+    "city_id": 33,
+    "name": "Uranmarca"
+  },
+  {
+    "city_id": 33,
+    "name": "Ranracancha"
+  },
+  {
+    "city_id": 33,
+    "name": "Rocchacc"
+  },
+  {
+    "city_id": 33,
+    "name": "El Porvenir"
+  },
+  {
+    "city_id": 33,
+    "name": "Los Chankas"
+  },
+  {
+    "city_id": 34,
+    "name": "Chuquibambilla"
+  },
+  {
+    "city_id": 34,
+    "name": "Curpahuasi"
+  },
+  {
+    "city_id": 34,
+    "name": "Gamarra"
+  },
+  {
+    "city_id": 34,
+    "name": "Huayllati"
+  },
+  {
+    "city_id": 34,
+    "name": "Mamara"
+  },
+  {
+    "city_id": 34,
+    "name": "Micaela Bastidas"
+  },
+  {
+    "city_id": 34,
+    "name": "Pataypampa"
+  },
+  {
+    "city_id": 34,
+    "name": "Progreso"
+  },
+  {
+    "city_id": 34,
+    "name": "San Antonio"
+  },
+  {
+    "city_id": 34,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 34,
+    "name": "Turpay"
+  },
+  {
+    "city_id": 34,
+    "name": "Vilcabamba"
+  },
+  {
+    "city_id": 34,
+    "name": "Virundo"
+  },
+  {
+    "city_id": 34,
+    "name": "Curasco"
+  },
+  {
+    "city_id": 35,
+    "name": "Arequipa"
+  },
+  {
+    "city_id": 35,
+    "name": "Alto Selva Alegre"
+  },
+  {
+    "city_id": 35,
+    "name": "Cayma"
+  },
+  {
+    "city_id": 35,
+    "name": "Cerro Colorado"
+  },
+  {
+    "city_id": 35,
+    "name": "Characato"
+  },
+  {
+    "city_id": 35,
+    "name": "Chiguata"
+  },
+  {
+    "city_id": 35,
+    "name": "Jacobo Hunter"
+  },
+  {
+    "city_id": 35,
+    "name": "La Joya"
+  },
+  {
+    "city_id": 35,
+    "name": "Mariano Melgar"
+  },
+  {
+    "city_id": 35,
+    "name": "Miraflores"
+  },
+  {
+    "city_id": 35,
+    "name": "Mollebaya"
+  },
+  {
+    "city_id": 35,
+    "name": "Paucarpata"
+  },
+  {
+    "city_id": 35,
+    "name": "Pocsi"
+  },
+  {
+    "city_id": 35,
+    "name": "Polobaya"
+  },
+  {
+    "city_id": 35,
+    "name": "Quequeña"
+  },
+  {
+    "city_id": 35,
+    "name": "Sabandia"
+  },
+  {
+    "city_id": 35,
+    "name": "Sachaca"
+  },
+  {
+    "city_id": 35,
+    "name": "San Juan de Siguas"
+  },
+  {
+    "city_id": 35,
+    "name": "San Juan de Tarucani"
+  },
+  {
+    "city_id": 35,
+    "name": "Santa Isabel de Siguas"
+  },
+  {
+    "city_id": 35,
+    "name": "Santa Rita de Siguas"
+  },
+  {
+    "city_id": 35,
+    "name": "Socabaya"
+  },
+  {
+    "city_id": 35,
+    "name": "Tiabaya"
+  },
+  {
+    "city_id": 35,
+    "name": "Uchumayo"
+  },
+  {
+    "city_id": 35,
+    "name": "Vitor"
+  },
+  {
+    "city_id": 35,
+    "name": "Yanahuara"
+  },
+  {
+    "city_id": 35,
+    "name": "Yarabamba"
+  },
+  {
+    "city_id": 35,
+    "name": "Yura"
+  },
+  {
+    "city_id": 35,
+    "name": "Jose Luis Bustamante y Rivero"
+  },
+  {
+    "city_id": 36,
+    "name": "Camana"
+  },
+  {
+    "city_id": 36,
+    "name": "Jose Maria Quimper"
+  },
+  {
+    "city_id": 36,
+    "name": "Mariano Nicolas Valcarcel"
+  },
+  {
+    "city_id": 36,
+    "name": "Mariscal Caceres"
+  },
+  {
+    "city_id": 36,
+    "name": "Nicolas de Pierola"
+  },
+  {
+    "city_id": 36,
+    "name": "Ocoña"
+  },
+  {
+    "city_id": 36,
+    "name": "Quilca"
+  },
+  {
+    "city_id": 36,
+    "name": "Samuel Pastor"
+  },
+  {
+    "city_id": 37,
+    "name": "Caraveli"
+  },
+  {
+    "city_id": 37,
+    "name": "Acari"
+  },
+  {
+    "city_id": 37,
+    "name": "Atico"
+  },
+  {
+    "city_id": 37,
+    "name": "Atiquipa"
+  },
+  {
+    "city_id": 37,
+    "name": "Bella Union"
+  },
+  {
+    "city_id": 37,
+    "name": "Cahuacho"
+  },
+  {
+    "city_id": 37,
+    "name": "Chala"
+  },
+  {
+    "city_id": 37,
+    "name": "Chaparra"
+  },
+  {
+    "city_id": 37,
+    "name": "Huanuhuanu"
+  },
+  {
+    "city_id": 37,
+    "name": "Jaqui"
+  },
+  {
+    "city_id": 37,
+    "name": "Lomas"
+  },
+  {
+    "city_id": 37,
+    "name": "Quicacha"
+  },
+  {
+    "city_id": 37,
+    "name": "Yauca"
+  },
+  {
+    "city_id": 38,
+    "name": "Aplao"
+  },
+  {
+    "city_id": 38,
+    "name": "Andagua"
+  },
+  {
+    "city_id": 38,
+    "name": "Ayo"
+  },
+  {
+    "city_id": 38,
+    "name": "Chachas"
+  },
+  {
+    "city_id": 38,
+    "name": "Chilcaymarca"
+  },
+  {
+    "city_id": 38,
+    "name": "Choco"
+  },
+  {
+    "city_id": 38,
+    "name": "Huancarqui"
+  },
+  {
+    "city_id": 38,
+    "name": "Machaguay"
+  },
+  {
+    "city_id": 38,
+    "name": "Orcopampa"
+  },
+  {
+    "city_id": 38,
+    "name": "Pampacolca"
+  },
+  {
+    "city_id": 38,
+    "name": "Tipan"
+  },
+  {
+    "city_id": 38,
+    "name": "Uñon"
+  },
+  {
+    "city_id": 38,
+    "name": "Uraca"
+  },
+  {
+    "city_id": 38,
+    "name": "Viraco"
+  },
+  {
+    "city_id": 39,
+    "name": "Chivay"
+  },
+  {
+    "city_id": 39,
+    "name": "Achoma"
+  },
+  {
+    "city_id": 39,
+    "name": "Cabanaconde"
+  },
+  {
+    "city_id": 39,
+    "name": "Callalli"
+  },
+  {
+    "city_id": 39,
+    "name": "Caylloma"
+  },
+  {
+    "city_id": 39,
+    "name": "Coporaque"
+  },
+  {
+    "city_id": 39,
+    "name": "Huambo"
+  },
+  {
+    "city_id": 39,
+    "name": "Huanca"
+  },
+  {
+    "city_id": 39,
+    "name": "Ichupampa"
+  },
+  {
+    "city_id": 39,
+    "name": "Lari"
+  },
+  {
+    "city_id": 39,
+    "name": "Lluta"
+  },
+  {
+    "city_id": 39,
+    "name": "Maca"
+  },
+  {
+    "city_id": 39,
+    "name": "Madrigal"
+  },
+  {
+    "city_id": 39,
+    "name": "San Antonio de Chuca"
+  },
+  {
+    "city_id": 39,
+    "name": "Sibayo"
+  },
+  {
+    "city_id": 39,
+    "name": "Tapay"
+  },
+  {
+    "city_id": 39,
+    "name": "Tisco"
+  },
+  {
+    "city_id": 39,
+    "name": "Tuti"
+  },
+  {
+    "city_id": 39,
+    "name": "Yanque"
+  },
+  {
+    "city_id": 39,
+    "name": "Majes"
+  },
+  {
+    "city_id": 40,
+    "name": "Chuquibamba"
+  },
+  {
+    "city_id": 40,
+    "name": "Andaray"
+  },
+  {
+    "city_id": 40,
+    "name": "Cayarani"
+  },
+  {
+    "city_id": 40,
+    "name": "Chichas"
+  },
+  {
+    "city_id": 40,
+    "name": "Iray"
+  },
+  {
+    "city_id": 40,
+    "name": "Rio Grande"
+  },
+  {
+    "city_id": 40,
+    "name": "Salamanca"
+  },
+  {
+    "city_id": 40,
+    "name": "Yanaquihua"
+  },
+  {
+    "city_id": 41,
+    "name": "Mollendo"
+  },
+  {
+    "city_id": 41,
+    "name": "Cocachacra"
+  },
+  {
+    "city_id": 41,
+    "name": "Dean Valdivia"
+  },
+  {
+    "city_id": 41,
+    "name": "Islay"
+  },
+  {
+    "city_id": 41,
+    "name": "Mejia"
+  },
+  {
+    "city_id": 41,
+    "name": "Punta de Bombon"
+  },
+  {
+    "city_id": 42,
+    "name": "Cotahuasi"
+  },
+  {
+    "city_id": 42,
+    "name": "Alca"
+  },
+  {
+    "city_id": 42,
+    "name": "Charcana"
+  },
+  {
+    "city_id": 42,
+    "name": "Huaynacotas"
+  },
+  {
+    "city_id": 42,
+    "name": "Pampamarca"
+  },
+  {
+    "city_id": 42,
+    "name": "Puyca"
+  },
+  {
+    "city_id": 42,
+    "name": "Quechualla"
+  },
+  {
+    "city_id": 42,
+    "name": "Sayla"
+  },
+  {
+    "city_id": 42,
+    "name": "Tauria"
+  },
+  {
+    "city_id": 42,
+    "name": "Tomepampa"
+  },
+  {
+    "city_id": 42,
+    "name": "Toro"
+  },
+  {
+    "city_id": 43,
+    "name": "Ayacucho"
+  },
+  {
+    "city_id": 43,
+    "name": "Acocro"
+  },
+  {
+    "city_id": 43,
+    "name": "Acos Vinchos"
+  },
+  {
+    "city_id": 43,
+    "name": "Carmen Alto"
+  },
+  {
+    "city_id": 43,
+    "name": "Chiara"
+  },
+  {
+    "city_id": 43,
+    "name": "Ocros"
+  },
+  {
+    "city_id": 43,
+    "name": "Pacaycasa"
+  },
+  {
+    "city_id": 43,
+    "name": "Quinua"
+  },
+  {
+    "city_id": 43,
+    "name": "San Jose de Ticllas"
+  },
+  {
+    "city_id": 43,
+    "name": "San Juan Bautista"
+  },
+  {
+    "city_id": 43,
+    "name": "Santiago de Pischa"
+  },
+  {
+    "city_id": 43,
+    "name": "Socos"
+  },
+  {
+    "city_id": 43,
+    "name": "Tambillo"
+  },
+  {
+    "city_id": 43,
+    "name": "Vinchos"
+  },
+  {
+    "city_id": 43,
+    "name": "Jesus Nazareno"
+  },
+  {
+    "city_id": 43,
+    "name": "Andrés Avelino Cáceres Dorregaray"
+  },
+  {
+    "city_id": 44,
+    "name": "Cangallo"
+  },
+  {
+    "city_id": 44,
+    "name": "Chuschi"
+  },
+  {
+    "city_id": 44,
+    "name": "Los Morochucos"
+  },
+  {
+    "city_id": 44,
+    "name": "Maria Parado de Bellido"
+  },
+  {
+    "city_id": 44,
+    "name": "Paras"
+  },
+  {
+    "city_id": 44,
+    "name": "Totos"
+  },
+  {
+    "city_id": 45,
+    "name": "Sancos"
+  },
+  {
+    "city_id": 45,
+    "name": "Carapo"
+  },
+  {
+    "city_id": 45,
+    "name": "Sacsamarca"
+  },
+  {
+    "city_id": 45,
+    "name": "Santiago de Lucanamarca"
+  },
+  {
+    "city_id": 46,
+    "name": "Huanta"
+  },
+  {
+    "city_id": 46,
+    "name": "Ayahuanco"
+  },
+  {
+    "city_id": 46,
+    "name": "Huamanguilla"
+  },
+  {
+    "city_id": 46,
+    "name": "Iguain"
+  },
+  {
+    "city_id": 46,
+    "name": "Luricocha"
+  },
+  {
+    "city_id": 46,
+    "name": "Santillana"
+  },
+  {
+    "city_id": 46,
+    "name": "Sivia"
+  },
+  {
+    "city_id": 46,
+    "name": "Llochegua"
+  },
+  {
+    "city_id": 46,
+    "name": "Canayre"
+  },
+  {
+    "city_id": 46,
+    "name": "Uchuraccay"
+  },
+  {
+    "city_id": 46,
+    "name": "Pucacolpa"
+  },
+  {
+    "city_id": 46,
+    "name": "Chaca"
+  },
+  {
+    "city_id": 47,
+    "name": "San Miguel"
+  },
+  {
+    "city_id": 47,
+    "name": "Anco"
+  },
+  {
+    "city_id": 47,
+    "name": "Ayna"
+  },
+  {
+    "city_id": 47,
+    "name": "Chilcas"
+  },
+  {
+    "city_id": 47,
+    "name": "Chungui"
+  },
+  {
+    "city_id": 47,
+    "name": "Luis Carranza"
+  },
+  {
+    "city_id": 47,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 47,
+    "name": "Tambo"
+  },
+  {
+    "city_id": 47,
+    "name": "Samugari"
+  },
+  {
+    "city_id": 47,
+    "name": "Anchihuay"
+  },
+  {
+    "city_id": 47,
+    "name": "Oronccoy"
+  },
+  {
+    "city_id": 48,
+    "name": "Puquio"
+  },
+  {
+    "city_id": 48,
+    "name": "Aucara"
+  },
+  {
+    "city_id": 48,
+    "name": "Cabana"
+  },
+  {
+    "city_id": 48,
+    "name": "Carmen Salcedo"
+  },
+  {
+    "city_id": 48,
+    "name": "Chaviña"
+  },
+  {
+    "city_id": 48,
+    "name": "Chipao"
+  },
+  {
+    "city_id": 48,
+    "name": "Huac-Huas"
+  },
+  {
+    "city_id": 48,
+    "name": "Laramate"
+  },
+  {
+    "city_id": 48,
+    "name": "Leoncio Prado"
+  },
+  {
+    "city_id": 48,
+    "name": "Llauta"
+  },
+  {
+    "city_id": 48,
+    "name": "Lucanas"
+  },
+  {
+    "city_id": 48,
+    "name": "Ocaña"
+  },
+  {
+    "city_id": 48,
+    "name": "Otoca"
+  },
+  {
+    "city_id": 48,
+    "name": "Saisa"
+  },
+  {
+    "city_id": 48,
+    "name": "San Cristobal"
+  },
+  {
+    "city_id": 48,
+    "name": "San Juan"
+  },
+  {
+    "city_id": 48,
+    "name": "San Pedro"
+  },
+  {
+    "city_id": 48,
+    "name": "San Pedro de Palco"
+  },
+  {
+    "city_id": 48,
+    "name": "Sancos"
+  },
+  {
+    "city_id": 48,
+    "name": "Santa Ana de Huaycahuacho"
+  },
+  {
+    "city_id": 48,
+    "name": "Santa Lucia"
+  },
+  {
+    "city_id": 49,
+    "name": "Coracora"
+  },
+  {
+    "city_id": 49,
+    "name": "Chumpi"
+  },
+  {
+    "city_id": 49,
+    "name": "Coronel Castañeda"
+  },
+  {
+    "city_id": 49,
+    "name": "Pacapausa"
+  },
+  {
+    "city_id": 49,
+    "name": "Pullo"
+  },
+  {
+    "city_id": 49,
+    "name": "Puyusca"
+  },
+  {
+    "city_id": 49,
+    "name": "San Francisco de Ravacayco"
+  },
+  {
+    "city_id": 49,
+    "name": "Upahuacho"
+  },
+  {
+    "city_id": 50,
+    "name": "Pausa"
+  },
+  {
+    "city_id": 50,
+    "name": "Colta"
+  },
+  {
+    "city_id": 50,
+    "name": "Corculla"
+  },
+  {
+    "city_id": 50,
+    "name": "Lampa"
+  },
+  {
+    "city_id": 50,
+    "name": "Marcabamba"
+  },
+  {
+    "city_id": 50,
+    "name": "Oyolo"
+  },
+  {
+    "city_id": 50,
+    "name": "Pararca"
+  },
+  {
+    "city_id": 50,
+    "name": "San Javier de Alpabamba"
+  },
+  {
+    "city_id": 50,
+    "name": "San Jose de Ushua"
+  },
+  {
+    "city_id": 50,
+    "name": "Sara Sara"
+  },
+  {
+    "city_id": 51,
+    "name": "Querobamba"
+  },
+  {
+    "city_id": 51,
+    "name": "Belen"
+  },
+  {
+    "city_id": 51,
+    "name": "Chalcos"
+  },
+  {
+    "city_id": 51,
+    "name": "Chilcayoc"
+  },
+  {
+    "city_id": 51,
+    "name": "Huacaña"
+  },
+  {
+    "city_id": 51,
+    "name": "Morcolla"
+  },
+  {
+    "city_id": 51,
+    "name": "Paico"
+  },
+  {
+    "city_id": 51,
+    "name": "San Pedro de Larcay"
+  },
+  {
+    "city_id": 51,
+    "name": "San Salvador de Quije"
+  },
+  {
+    "city_id": 51,
+    "name": "Santiago de Paucaray"
+  },
+  {
+    "city_id": 51,
+    "name": "Soras"
+  },
+  {
+    "city_id": 52,
+    "name": "Huancapi"
+  },
+  {
+    "city_id": 52,
+    "name": "Alcamenca"
+  },
+  {
+    "city_id": 52,
+    "name": "Apongo"
+  },
+  {
+    "city_id": 52,
+    "name": "Asquipata"
+  },
+  {
+    "city_id": 52,
+    "name": "Canaria"
+  },
+  {
+    "city_id": 52,
+    "name": "Cayara"
+  },
+  {
+    "city_id": 52,
+    "name": "Colca"
+  },
+  {
+    "city_id": 52,
+    "name": "Huamanquiquia"
+  },
+  {
+    "city_id": 52,
+    "name": "Huancaraylla"
+  },
+  {
+    "city_id": 52,
+    "name": "Huaya"
+  },
+  {
+    "city_id": 52,
+    "name": "Sarhua"
+  },
+  {
+    "city_id": 52,
+    "name": "Vilcanchos"
+  },
+  {
+    "city_id": 53,
+    "name": "Vilcas Huaman"
+  },
+  {
+    "city_id": 53,
+    "name": "Accomarca"
+  },
+  {
+    "city_id": 53,
+    "name": "Carhuanca"
+  },
+  {
+    "city_id": 53,
+    "name": "Concepcion"
+  },
+  {
+    "city_id": 53,
+    "name": "Huambalpa"
+  },
+  {
+    "city_id": 53,
+    "name": "Independencia"
+  },
+  {
+    "city_id": 53,
+    "name": "Saurama"
+  },
+  {
+    "city_id": 53,
+    "name": "Vischongo"
+  },
+  {
+    "city_id": 54,
+    "name": "Cajamarca"
+  },
+  {
+    "city_id": 54,
+    "name": "Asuncion"
+  },
+  {
+    "city_id": 54,
+    "name": "Chetilla"
+  },
+  {
+    "city_id": 54,
+    "name": "Cospan"
+  },
+  {
+    "city_id": 54,
+    "name": "Encañada"
+  },
+  {
+    "city_id": 54,
+    "name": "Jesus"
+  },
+  {
+    "city_id": 54,
+    "name": "Llacanora"
+  },
+  {
+    "city_id": 54,
+    "name": "Los Baños del Inca"
+  },
+  {
+    "city_id": 54,
+    "name": "Magdalena"
+  },
+  {
+    "city_id": 54,
+    "name": "Matara"
+  },
+  {
+    "city_id": 54,
+    "name": "Namora"
+  },
+  {
+    "city_id": 54,
+    "name": "San Juan"
+  },
+  {
+    "city_id": 55,
+    "name": "Cajabamba"
+  },
+  {
+    "city_id": 55,
+    "name": "Cachachi"
+  },
+  {
+    "city_id": 55,
+    "name": "Condebamba"
+  },
+  {
+    "city_id": 55,
+    "name": "Sitacocha"
+  },
+  {
+    "city_id": 56,
+    "name": "Celendin"
+  },
+  {
+    "city_id": 56,
+    "name": "Chumuch"
+  },
+  {
+    "city_id": 56,
+    "name": "Cortegana"
+  },
+  {
+    "city_id": 56,
+    "name": "Huasmin"
+  },
+  {
+    "city_id": 56,
+    "name": "Jorge Chavez"
+  },
+  {
+    "city_id": 56,
+    "name": "Jose Galvez"
+  },
+  {
+    "city_id": 56,
+    "name": "Miguel Iglesias"
+  },
+  {
+    "city_id": 56,
+    "name": "Oxamarca"
+  },
+  {
+    "city_id": 56,
+    "name": "Sorochuco"
+  },
+  {
+    "city_id": 56,
+    "name": "Sucre"
+  },
+  {
+    "city_id": 56,
+    "name": "Utco"
+  },
+  {
+    "city_id": 56,
+    "name": "La Libertad de Pallan"
+  },
+  {
+    "city_id": 57,
+    "name": "Chota"
+  },
+  {
+    "city_id": 57,
+    "name": "Anguia"
+  },
+  {
+    "city_id": 57,
+    "name": "Chadin"
+  },
+  {
+    "city_id": 57,
+    "name": "Chiguirip"
+  },
+  {
+    "city_id": 57,
+    "name": "Chimban"
+  },
+  {
+    "city_id": 57,
+    "name": "Choropampa"
+  },
+  {
+    "city_id": 57,
+    "name": "Cochabamba"
+  },
+  {
+    "city_id": 57,
+    "name": "Conchan"
+  },
+  {
+    "city_id": 57,
+    "name": "Huambos"
+  },
+  {
+    "city_id": 57,
+    "name": "Lajas"
+  },
+  {
+    "city_id": 57,
+    "name": "Llama"
+  },
+  {
+    "city_id": 57,
+    "name": "Miracosta"
+  },
+  {
+    "city_id": 57,
+    "name": "Paccha"
+  },
+  {
+    "city_id": 57,
+    "name": "Pion"
+  },
+  {
+    "city_id": 57,
+    "name": "Querocoto"
+  },
+  {
+    "city_id": 57,
+    "name": "San Juan de Licupis"
+  },
+  {
+    "city_id": 57,
+    "name": "Tacabamba"
+  },
+  {
+    "city_id": 57,
+    "name": "Tocmoche"
+  },
+  {
+    "city_id": 57,
+    "name": "Chalamarca"
+  },
+  {
+    "city_id": 58,
+    "name": "Contumaza"
+  },
+  {
+    "city_id": 58,
+    "name": "Chilete"
+  },
+  {
+    "city_id": 58,
+    "name": "Cupisnique"
+  },
+  {
+    "city_id": 58,
+    "name": "Guzmango"
+  },
+  {
+    "city_id": 58,
+    "name": "San Benito"
+  },
+  {
+    "city_id": 58,
+    "name": "Santa Cruz de Toled"
+  },
+  {
+    "city_id": 58,
+    "name": "Tantarica"
+  },
+  {
+    "city_id": 58,
+    "name": "Yonan"
+  },
+  {
+    "city_id": 59,
+    "name": "Cutervo"
+  },
+  {
+    "city_id": 59,
+    "name": "Callayuc"
+  },
+  {
+    "city_id": 59,
+    "name": "Choros"
+  },
+  {
+    "city_id": 59,
+    "name": "Cujillo"
+  },
+  {
+    "city_id": 59,
+    "name": "La Ramada"
+  },
+  {
+    "city_id": 59,
+    "name": "Pimpingos"
+  },
+  {
+    "city_id": 59,
+    "name": "Querocotillo"
+  },
+  {
+    "city_id": 59,
+    "name": "San Andres de Cutervo"
+  },
+  {
+    "city_id": 59,
+    "name": "San Juan de Cutervo"
+  },
+  {
+    "city_id": 59,
+    "name": "San Luis de Lucma"
+  },
+  {
+    "city_id": 59,
+    "name": "Santa Cruz"
+  },
+  {
+    "city_id": 59,
+    "name": "Santo Domingo de La Capilla"
+  },
+  {
+    "city_id": 59,
+    "name": "Santo Tomas"
+  },
+  {
+    "city_id": 59,
+    "name": "Socota"
+  },
+  {
+    "city_id": 59,
+    "name": "Toribio Casanova"
+  },
+  {
+    "city_id": 60,
+    "name": "Bambamarca"
+  },
+  {
+    "city_id": 60,
+    "name": "Chugur"
+  },
+  {
+    "city_id": 60,
+    "name": "Hualgayoc"
+  },
+  {
+    "city_id": 61,
+    "name": "Jaen"
+  },
+  {
+    "city_id": 61,
+    "name": "Bellavista"
+  },
+  {
+    "city_id": 61,
+    "name": "Chontali"
+  },
+  {
+    "city_id": 61,
+    "name": "Colasay"
+  },
+  {
+    "city_id": 61,
+    "name": "Huabal"
+  },
+  {
+    "city_id": 61,
+    "name": "Las Pirias"
+  },
+  {
+    "city_id": 61,
+    "name": "Pomahuaca"
+  },
+  {
+    "city_id": 61,
+    "name": "Pucara"
+  },
+  {
+    "city_id": 61,
+    "name": "Sallique"
+  },
+  {
+    "city_id": 61,
+    "name": "San Felipe"
+  },
+  {
+    "city_id": 61,
+    "name": "San Jose del Alto"
+  },
+  {
+    "city_id": 61,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 62,
+    "name": "San Ignacio"
+  },
+  {
+    "city_id": 62,
+    "name": "Chirinos"
+  },
+  {
+    "city_id": 62,
+    "name": "Huarango"
+  },
+  {
+    "city_id": 62,
+    "name": "La Coipa"
+  },
+  {
+    "city_id": 62,
+    "name": "Namballe"
+  },
+  {
+    "city_id": 62,
+    "name": "San Jose de Lourdes"
+  },
+  {
+    "city_id": 62,
+    "name": "Tabaconas"
+  },
+  {
+    "city_id": 63,
+    "name": "Pedro Galvez"
+  },
+  {
+    "city_id": 63,
+    "name": "Chancay"
+  },
+  {
+    "city_id": 63,
+    "name": "Eduardo Villanueva"
+  },
+  {
+    "city_id": 63,
+    "name": "Gregorio Pita"
+  },
+  {
+    "city_id": 63,
+    "name": "Ichocan"
+  },
+  {
+    "city_id": 63,
+    "name": "Jose Manuel Quiroz"
+  },
+  {
+    "city_id": 63,
+    "name": "Jose Sabogal"
+  },
+  {
+    "city_id": 64,
+    "name": "San Miguel"
+  },
+  {
+    "city_id": 64,
+    "name": "Bolivar"
+  },
+  {
+    "city_id": 64,
+    "name": "Calquis"
+  },
+  {
+    "city_id": 64,
+    "name": "Catilluc"
+  },
+  {
+    "city_id": 64,
+    "name": "El Prado"
+  },
+  {
+    "city_id": 64,
+    "name": "La Florida"
+  },
+  {
+    "city_id": 64,
+    "name": "Llapa"
+  },
+  {
+    "city_id": 64,
+    "name": "Nanchoc"
+  },
+  {
+    "city_id": 64,
+    "name": "Niepos"
+  },
+  {
+    "city_id": 64,
+    "name": "San Gregorio"
+  },
+  {
+    "city_id": 64,
+    "name": "San Silvestre de Cochan"
+  },
+  {
+    "city_id": 64,
+    "name": "Tongod"
+  },
+  {
+    "city_id": 64,
+    "name": "Union Agua Blanca"
+  },
+  {
+    "city_id": 65,
+    "name": "San Pablo"
+  },
+  {
+    "city_id": 65,
+    "name": "San Bernardino"
+  },
+  {
+    "city_id": 65,
+    "name": "San Luis"
+  },
+  {
+    "city_id": 65,
+    "name": "Tumbaden"
+  },
+  {
+    "city_id": 66,
+    "name": "Santa Cruz"
+  },
+  {
+    "city_id": 66,
+    "name": "Andabamba"
+  },
+  {
+    "city_id": 66,
+    "name": "Catache"
+  },
+  {
+    "city_id": 66,
+    "name": "Chancaybaños"
+  },
+  {
+    "city_id": 66,
+    "name": "La Esperanza"
+  },
+  {
+    "city_id": 66,
+    "name": "Ninabamba"
+  },
+  {
+    "city_id": 66,
+    "name": "Pulan"
+  },
+  {
+    "city_id": 66,
+    "name": "Saucepampa"
+  },
+  {
+    "city_id": 66,
+    "name": "Sexi"
+  },
+  {
+    "city_id": 66,
+    "name": "Uticyacu"
+  },
+  {
+    "city_id": 66,
+    "name": "Yauyucan"
+  },
+  {
+    "city_id": 67,
+    "name": "Callao"
+  },
+  {
+    "city_id": 67,
+    "name": "Bellavista"
+  },
+  {
+    "city_id": 67,
+    "name": "Carmen de La Legua"
+  },
+  {
+    "city_id": 67,
+    "name": "La Perla"
+  },
+  {
+    "city_id": 67,
+    "name": "La Punta"
+  },
+  {
+    "city_id": 67,
+    "name": "Ventanilla"
+  },
+  {
+    "city_id": 67,
+    "name": "Mi Peru"
+  },
+  {
+    "city_id": 68,
+    "name": "Cusco"
+  },
+  {
+    "city_id": 68,
+    "name": "Ccorca"
+  },
+  {
+    "city_id": 68,
+    "name": "Poroy"
+  },
+  {
+    "city_id": 68,
+    "name": "San Jeronimo"
+  },
+  {
+    "city_id": 68,
+    "name": "San Sebastian"
+  },
+  {
+    "city_id": 68,
+    "name": "Santiago"
+  },
+  {
+    "city_id": 68,
+    "name": "Saylla"
+  },
+  {
+    "city_id": 68,
+    "name": "Wanchaq"
+  },
+  {
+    "city_id": 69,
+    "name": "Acomayo"
+  },
+  {
+    "city_id": 69,
+    "name": "Acopia"
+  },
+  {
+    "city_id": 69,
+    "name": "Acos"
+  },
+  {
+    "city_id": 69,
+    "name": "Mosoc Llacta"
+  },
+  {
+    "city_id": 69,
+    "name": "Pomacanchi"
+  },
+  {
+    "city_id": 69,
+    "name": "Rondocan"
+  },
+  {
+    "city_id": 69,
+    "name": "Sangarara"
+  },
+  {
+    "city_id": 70,
+    "name": "Anta"
+  },
+  {
+    "city_id": 70,
+    "name": "Ancahuasi"
+  },
+  {
+    "city_id": 70,
+    "name": "Cachimayo"
+  },
+  {
+    "city_id": 70,
+    "name": "Chinchaypujio"
+  },
+  {
+    "city_id": 70,
+    "name": "Huarocondo"
+  },
+  {
+    "city_id": 70,
+    "name": "Limatambo"
+  },
+  {
+    "city_id": 70,
+    "name": "Mollepata"
+  },
+  {
+    "city_id": 70,
+    "name": "Pucyura"
+  },
+  {
+    "city_id": 70,
+    "name": "Zurite"
+  },
+  {
+    "city_id": 71,
+    "name": "Calca"
+  },
+  {
+    "city_id": 71,
+    "name": "Coya"
+  },
+  {
+    "city_id": 71,
+    "name": "Lamay"
+  },
+  {
+    "city_id": 71,
+    "name": "Lares"
+  },
+  {
+    "city_id": 71,
+    "name": "Pisac"
+  },
+  {
+    "city_id": 71,
+    "name": "San Salvador"
+  },
+  {
+    "city_id": 71,
+    "name": "Taray"
+  },
+  {
+    "city_id": 71,
+    "name": "Yanatile"
+  },
+  {
+    "city_id": 72,
+    "name": "Yanaoca"
+  },
+  {
+    "city_id": 72,
+    "name": "Checca"
+  },
+  {
+    "city_id": 72,
+    "name": "Kunturkanki"
+  },
+  {
+    "city_id": 72,
+    "name": "Langui"
+  },
+  {
+    "city_id": 72,
+    "name": "Layo"
+  },
+  {
+    "city_id": 72,
+    "name": "Pampamarca"
+  },
+  {
+    "city_id": 72,
+    "name": "Quehue"
+  },
+  {
+    "city_id": 72,
+    "name": "Tupac Amaru"
+  },
+  {
+    "city_id": 73,
+    "name": "Sicuani"
+  },
+  {
+    "city_id": 73,
+    "name": "Checacupe"
+  },
+  {
+    "city_id": 73,
+    "name": "Combapata"
+  },
+  {
+    "city_id": 73,
+    "name": "Marangani"
+  },
+  {
+    "city_id": 73,
+    "name": "Pitumarca"
+  },
+  {
+    "city_id": 73,
+    "name": "San Pablo"
+  },
+  {
+    "city_id": 73,
+    "name": "San Pedro"
+  },
+  {
+    "city_id": 73,
+    "name": "Tinta"
+  },
+  {
+    "city_id": 74,
+    "name": "Santo Tomas"
+  },
+  {
+    "city_id": 74,
+    "name": "Capacmarca"
+  },
+  {
+    "city_id": 74,
+    "name": "Chamaca"
+  },
+  {
+    "city_id": 74,
+    "name": "Colquemarca"
+  },
+  {
+    "city_id": 74,
+    "name": "Livitaca"
+  },
+  {
+    "city_id": 74,
+    "name": "Llusco"
+  },
+  {
+    "city_id": 74,
+    "name": "Quiñota"
+  },
+  {
+    "city_id": 74,
+    "name": "Velille"
+  },
+  {
+    "city_id": 75,
+    "name": "Espinar"
+  },
+  {
+    "city_id": 75,
+    "name": "Condoroma"
+  },
+  {
+    "city_id": 75,
+    "name": "Coporaque"
+  },
+  {
+    "city_id": 75,
+    "name": "Ocoruro"
+  },
+  {
+    "city_id": 75,
+    "name": "Pallpata"
+  },
+  {
+    "city_id": 75,
+    "name": "Pichigua"
+  },
+  {
+    "city_id": 75,
+    "name": "Suyckutambo"
+  },
+  {
+    "city_id": 75,
+    "name": "Alto Pichigua"
+  },
+  {
+    "city_id": 76,
+    "name": "Santa Ana"
+  },
+  {
+    "city_id": 76,
+    "name": "Echarate"
+  },
+  {
+    "city_id": 76,
+    "name": "Huayopata"
+  },
+  {
+    "city_id": 76,
+    "name": "Maranura"
+  },
+  {
+    "city_id": 76,
+    "name": "Ocobamba"
+  },
+  {
+    "city_id": 76,
+    "name": "Quellouno"
+  },
+  {
+    "city_id": 76,
+    "name": "Kimbiri"
+  },
+  {
+    "city_id": 76,
+    "name": "Santa Teresa"
+  },
+  {
+    "city_id": 76,
+    "name": "Vilcabamba"
+  },
+  {
+    "city_id": 76,
+    "name": "Pichari"
+  },
+  {
+    "city_id": 76,
+    "name": "Inkawasi"
+  },
+  {
+    "city_id": 76,
+    "name": "Villa Virgen"
+  },
+  {
+    "city_id": 76,
+    "name": "Villa Kintiarina"
+  },
+  {
+    "city_id": 76,
+    "name": "Megantoni"
+  },
+  {
+    "city_id": 77,
+    "name": "Paruro"
+  },
+  {
+    "city_id": 77,
+    "name": "Accha"
+  },
+  {
+    "city_id": 77,
+    "name": "Ccapi"
+  },
+  {
+    "city_id": 77,
+    "name": "Colcha"
+  },
+  {
+    "city_id": 77,
+    "name": "Huanoquite"
+  },
+  {
+    "city_id": 77,
+    "name": "Omacha"
+  },
+  {
+    "city_id": 77,
+    "name": "Paccaritambo"
+  },
+  {
+    "city_id": 77,
+    "name": "Pillpinto"
+  },
+  {
+    "city_id": 77,
+    "name": "Yaurisque"
+  },
+  {
+    "city_id": 78,
+    "name": "Paucartambo"
+  },
+  {
+    "city_id": 78,
+    "name": "Caicay"
+  },
+  {
+    "city_id": 78,
+    "name": "Challabamba"
+  },
+  {
+    "city_id": 78,
+    "name": "Colquepata"
+  },
+  {
+    "city_id": 78,
+    "name": "Huancarani"
+  },
+  {
+    "city_id": 78,
+    "name": "Kosñipata"
+  },
+  {
+    "city_id": 79,
+    "name": "Urcos"
+  },
+  {
+    "city_id": 79,
+    "name": "Andahuaylillas"
+  },
+  {
+    "city_id": 79,
+    "name": "Camanti"
+  },
+  {
+    "city_id": 79,
+    "name": "Ccarhuayo"
+  },
+  {
+    "city_id": 79,
+    "name": "Ccatca"
+  },
+  {
+    "city_id": 79,
+    "name": "Cusipata"
+  },
+  {
+    "city_id": 79,
+    "name": "Huaro"
+  },
+  {
+    "city_id": 79,
+    "name": "Lucre"
+  },
+  {
+    "city_id": 79,
+    "name": "Marcapata"
+  },
+  {
+    "city_id": 79,
+    "name": "Ocongate"
+  },
+  {
+    "city_id": 79,
+    "name": "Oropesa"
+  },
+  {
+    "city_id": 79,
+    "name": "Quiquijana"
+  },
+  {
+    "city_id": 80,
+    "name": "Urubamba"
+  },
+  {
+    "city_id": 80,
+    "name": "Chinchero"
+  },
+  {
+    "city_id": 80,
+    "name": "Huayllabamba"
+  },
+  {
+    "city_id": 80,
+    "name": "Machupicchu"
+  },
+  {
+    "city_id": 80,
+    "name": "Maras"
+  },
+  {
+    "city_id": 80,
+    "name": "Ollantaytambo"
+  },
+  {
+    "city_id": 80,
+    "name": "Yucay"
+  },
+  {
+    "city_id": 81,
+    "name": "Huancavelica"
+  },
+  {
+    "city_id": 81,
+    "name": "Acobambilla"
+  },
+  {
+    "city_id": 81,
+    "name": "Acoria"
+  },
+  {
+    "city_id": 81,
+    "name": "Conayca"
+  },
+  {
+    "city_id": 81,
+    "name": "Cuenca"
+  },
+  {
+    "city_id": 81,
+    "name": "Huachocolpa"
+  },
+  {
+    "city_id": 81,
+    "name": "Huayllahuara"
+  },
+  {
+    "city_id": 81,
+    "name": "Izcuchaca"
+  },
+  {
+    "city_id": 81,
+    "name": "Laria"
+  },
+  {
+    "city_id": 81,
+    "name": "Manta"
+  },
+  {
+    "city_id": 81,
+    "name": "Mariscal Caceres"
+  },
+  {
+    "city_id": 81,
+    "name": "Moya"
+  },
+  {
+    "city_id": 81,
+    "name": "Nuevo Occoro"
+  },
+  {
+    "city_id": 81,
+    "name": "Palca"
+  },
+  {
+    "city_id": 81,
+    "name": "Pilchaca"
+  },
+  {
+    "city_id": 81,
+    "name": "Vilca"
+  },
+  {
+    "city_id": 81,
+    "name": "Yauli"
+  },
+  {
+    "city_id": 81,
+    "name": "Ascension"
+  },
+  {
+    "city_id": 81,
+    "name": "Huando"
+  },
+  {
+    "city_id": 82,
+    "name": "Acobamba"
+  },
+  {
+    "city_id": 82,
+    "name": "Andabamba"
+  },
+  {
+    "city_id": 82,
+    "name": "Anta"
+  },
+  {
+    "city_id": 82,
+    "name": "Caja"
+  },
+  {
+    "city_id": 82,
+    "name": "Marcas"
+  },
+  {
+    "city_id": 82,
+    "name": "Paucara"
+  },
+  {
+    "city_id": 82,
+    "name": "Pomacocha"
+  },
+  {
+    "city_id": 82,
+    "name": "Rosario"
+  },
+  {
+    "city_id": 83,
+    "name": "Lircay"
+  },
+  {
+    "city_id": 83,
+    "name": "Anchonga"
+  },
+  {
+    "city_id": 83,
+    "name": "Callanmarca"
+  },
+  {
+    "city_id": 83,
+    "name": "Ccochaccasa"
+  },
+  {
+    "city_id": 83,
+    "name": "Chincho"
+  },
+  {
+    "city_id": 83,
+    "name": "Congalla"
+  },
+  {
+    "city_id": 83,
+    "name": "Huanca-Huanca"
+  },
+  {
+    "city_id": 83,
+    "name": "Huayllay Grande"
+  },
+  {
+    "city_id": 83,
+    "name": "Julcamarca"
+  },
+  {
+    "city_id": 83,
+    "name": "San Antonio de Antaparco"
+  },
+  {
+    "city_id": 83,
+    "name": "Santo Tomas de Pata"
+  },
+  {
+    "city_id": 83,
+    "name": "Secclla"
+  },
+  {
+    "city_id": 84,
+    "name": "Castrovirreyna"
+  },
+  {
+    "city_id": 84,
+    "name": "Arma"
+  },
+  {
+    "city_id": 84,
+    "name": "Aurahua"
+  },
+  {
+    "city_id": 84,
+    "name": "Capillas"
+  },
+  {
+    "city_id": 84,
+    "name": "Chupamarca"
+  },
+  {
+    "city_id": 84,
+    "name": "Cocas"
+  },
+  {
+    "city_id": 84,
+    "name": "Huachos"
+  },
+  {
+    "city_id": 84,
+    "name": "Huamatambo"
+  },
+  {
+    "city_id": 84,
+    "name": "Mollepampa"
+  },
+  {
+    "city_id": 84,
+    "name": "San Juan"
+  },
+  {
+    "city_id": 84,
+    "name": "Santa Ana"
+  },
+  {
+    "city_id": 84,
+    "name": "Tantara"
+  },
+  {
+    "city_id": 84,
+    "name": "Ticrapo"
+  },
+  {
+    "city_id": 85,
+    "name": "Churcampa"
+  },
+  {
+    "city_id": 85,
+    "name": "Anco"
+  },
+  {
+    "city_id": 85,
+    "name": "Chinchihuasi"
+  },
+  {
+    "city_id": 85,
+    "name": "El Carmen"
+  },
+  {
+    "city_id": 85,
+    "name": "La Merced"
+  },
+  {
+    "city_id": 85,
+    "name": "Locroja"
+  },
+  {
+    "city_id": 85,
+    "name": "Paucarbamba"
+  },
+  {
+    "city_id": 85,
+    "name": "San Miguel de Mayocc"
+  },
+  {
+    "city_id": 85,
+    "name": "San Pedro de Coris"
+  },
+  {
+    "city_id": 85,
+    "name": "Pachamarca"
+  },
+  {
+    "city_id": 85,
+    "name": "Cosme"
+  },
+  {
+    "city_id": 86,
+    "name": "Huaytara"
+  },
+  {
+    "city_id": 86,
+    "name": "Ayavi"
+  },
+  {
+    "city_id": 86,
+    "name": "Cordova"
+  },
+  {
+    "city_id": 86,
+    "name": "Huayacundo Arma"
+  },
+  {
+    "city_id": 86,
+    "name": "Laramarca"
+  },
+  {
+    "city_id": 86,
+    "name": "Ocoyo"
+  },
+  {
+    "city_id": 86,
+    "name": "Pilpichaca"
+  },
+  {
+    "city_id": 86,
+    "name": "Querco"
+  },
+  {
+    "city_id": 86,
+    "name": "Quito-Arma"
+  },
+  {
+    "city_id": 86,
+    "name": "San Antonio de Cusicancha"
+  },
+  {
+    "city_id": 86,
+    "name": "San Francisco de Sangayaico"
+  },
+  {
+    "city_id": 86,
+    "name": "San Isidro"
+  },
+  {
+    "city_id": 86,
+    "name": "Santiago de Chocorvos"
+  },
+  {
+    "city_id": 86,
+    "name": "Santiago de Quirahuara"
+  },
+  {
+    "city_id": 86,
+    "name": "Santo Domingo de Capillas"
+  },
+  {
+    "city_id": 86,
+    "name": "Tambo"
+  },
+  {
+    "city_id": 87,
+    "name": "Pampas"
+  },
+  {
+    "city_id": 87,
+    "name": "Acostambo"
+  },
+  {
+    "city_id": 87,
+    "name": "Acraquia"
+  },
+  {
+    "city_id": 87,
+    "name": "Ahuaycha"
+  },
+  {
+    "city_id": 87,
+    "name": "Colcabamba"
+  },
+  {
+    "city_id": 87,
+    "name": "Daniel Hernandez"
+  },
+  {
+    "city_id": 87,
+    "name": "Huachocolpa"
+  },
+  {
+    "city_id": 87,
+    "name": "Huaribamba"
+  },
+  {
+    "city_id": 87,
+    "name": "Ñahuimpuquio"
+  },
+  {
+    "city_id": 87,
+    "name": "Pazos"
+  },
+  {
+    "city_id": 87,
+    "name": "Quishuar"
+  },
+  {
+    "city_id": 87,
+    "name": "Salcabamba"
+  },
+  {
+    "city_id": 87,
+    "name": "Salcahuasi"
+  },
+  {
+    "city_id": 87,
+    "name": "San Marcos de Rocchac"
+  },
+  {
+    "city_id": 87,
+    "name": "Surcubamba"
+  },
+  {
+    "city_id": 87,
+    "name": "Tintay Puncu"
+  },
+  {
+    "city_id": 87,
+    "name": "Quichuas"
+  },
+  {
+    "city_id": 87,
+    "name": "Andaymarca"
+  },
+  {
+    "city_id": 87,
+    "name": "Roble"
+  },
+  {
+    "city_id": 87,
+    "name": "Pichos"
+  },
+  {
+    "city_id": 87,
+    "name": "Santiago de Túcuma"
+  },
+  {
+    "city_id": 88,
+    "name": "Huanuco"
+  },
+  {
+    "city_id": 88,
+    "name": "Amarilis"
+  },
+  {
+    "city_id": 88,
+    "name": "Chinchao"
+  },
+  {
+    "city_id": 88,
+    "name": "Churubamba"
+  },
+  {
+    "city_id": 88,
+    "name": "Margos"
+  },
+  {
+    "city_id": 88,
+    "name": "Quisqui"
+  },
+  {
+    "city_id": 88,
+    "name": "San Francisco de Cayran"
+  },
+  {
+    "city_id": 88,
+    "name": "San Pedro de Chaulan"
+  },
+  {
+    "city_id": 88,
+    "name": "Santa Maria del Valle"
+  },
+  {
+    "city_id": 88,
+    "name": "Yarumayo"
+  },
+  {
+    "city_id": 88,
+    "name": "Pillco Marca"
+  },
+  {
+    "city_id": 88,
+    "name": "Yacus"
+  },
+  {
+    "city_id": 88,
+    "name": "San Pablo de Pillao"
+  },
+  {
+    "city_id": 89,
+    "name": "Ambo"
+  },
+  {
+    "city_id": 89,
+    "name": "Cayna"
+  },
+  {
+    "city_id": 89,
+    "name": "Colpas"
+  },
+  {
+    "city_id": 89,
+    "name": "Conchamarca"
+  },
+  {
+    "city_id": 89,
+    "name": "Huacar"
+  },
+  {
+    "city_id": 89,
+    "name": "San Francisco"
+  },
+  {
+    "city_id": 89,
+    "name": "San Rafael"
+  },
+  {
+    "city_id": 89,
+    "name": "Tomay Kichwa"
+  },
+  {
+    "city_id": 90,
+    "name": "La Union"
+  },
+  {
+    "city_id": 90,
+    "name": "Chuquis"
+  },
+  {
+    "city_id": 90,
+    "name": "Marias"
+  },
+  {
+    "city_id": 90,
+    "name": "Pachas"
+  },
+  {
+    "city_id": 90,
+    "name": "Quivilla"
+  },
+  {
+    "city_id": 90,
+    "name": "Ripan"
+  },
+  {
+    "city_id": 90,
+    "name": "Shunqui"
+  },
+  {
+    "city_id": 90,
+    "name": "Sillapata"
+  },
+  {
+    "city_id": 90,
+    "name": "Yanas"
+  },
+  {
+    "city_id": 91,
+    "name": "Huacaybamba"
+  },
+  {
+    "city_id": 91,
+    "name": "Canchabamba"
+  },
+  {
+    "city_id": 91,
+    "name": "Cochabamba"
+  },
+  {
+    "city_id": 91,
+    "name": "Pinra"
+  },
+  {
+    "city_id": 92,
+    "name": "Llata"
+  },
+  {
+    "city_id": 92,
+    "name": "Arancay"
+  },
+  {
+    "city_id": 92,
+    "name": "Chavin de Pariarca"
+  },
+  {
+    "city_id": 92,
+    "name": "Jacas Grande"
+  },
+  {
+    "city_id": 92,
+    "name": "Jircan"
+  },
+  {
+    "city_id": 92,
+    "name": "Miraflores"
+  },
+  {
+    "city_id": 92,
+    "name": "Monzon"
+  },
+  {
+    "city_id": 92,
+    "name": "Punchao"
+  },
+  {
+    "city_id": 92,
+    "name": "Puños"
+  },
+  {
+    "city_id": 92,
+    "name": "Singa"
+  },
+  {
+    "city_id": 92,
+    "name": "Tantamayo"
+  },
+  {
+    "city_id": 93,
+    "name": "Rupa-Rupa"
+  },
+  {
+    "city_id": 93,
+    "name": "Daniel Alomias Robles"
+  },
+  {
+    "city_id": 93,
+    "name": "Hermilio Valdizan"
+  },
+  {
+    "city_id": 93,
+    "name": "Jose Crespo y Castillo"
+  },
+  {
+    "city_id": 93,
+    "name": "Luyando"
+  },
+  {
+    "city_id": 93,
+    "name": "Mariano Damaso Beraun"
+  },
+  {
+    "city_id": 93,
+    "name": "Pucayacu"
+  },
+  {
+    "city_id": 93,
+    "name": "Castillo Grande"
+  },
+  {
+    "city_id": 93,
+    "name": "Pueblo Nuevo"
+  },
+  {
+    "city_id": 93,
+    "name": "Santo Domingo de Anda"
+  },
+  {
+    "city_id": 94,
+    "name": "Huacrachuco"
+  },
+  {
+    "city_id": 94,
+    "name": "Cholon"
+  },
+  {
+    "city_id": 94,
+    "name": "San Buenaventura"
+  },
+  {
+    "city_id": 94,
+    "name": "La Morada"
+  },
+  {
+    "city_id": 94,
+    "name": "Santa Rosa de Alto Yanajanca"
+  },
+  {
+    "city_id": 95,
+    "name": "Panao"
+  },
+  {
+    "city_id": 95,
+    "name": "Chaglla"
+  },
+  {
+    "city_id": 95,
+    "name": "Molino"
+  },
+  {
+    "city_id": 95,
+    "name": "Umari"
+  },
+  {
+    "city_id": 96,
+    "name": "Puerto Inca"
+  },
+  {
+    "city_id": 96,
+    "name": "Codo del Pozuzo"
+  },
+  {
+    "city_id": 96,
+    "name": "Honoria"
+  },
+  {
+    "city_id": 96,
+    "name": "Tournavista"
+  },
+  {
+    "city_id": 96,
+    "name": "Yuyapichis"
+  },
+  {
+    "city_id": 97,
+    "name": "Jesus"
+  },
+  {
+    "city_id": 97,
+    "name": "Baños"
+  },
+  {
+    "city_id": 97,
+    "name": "Jivia"
+  },
+  {
+    "city_id": 97,
+    "name": "Queropalca"
+  },
+  {
+    "city_id": 97,
+    "name": "Rondos"
+  },
+  {
+    "city_id": 97,
+    "name": "San Francisco de Asis"
+  },
+  {
+    "city_id": 97,
+    "name": "San Miguel de Cauri"
+  },
+  {
+    "city_id": 98,
+    "name": "Chavinillo"
+  },
+  {
+    "city_id": 98,
+    "name": "Cahuac"
+  },
+  {
+    "city_id": 98,
+    "name": "Chacabamba"
+  },
+  {
+    "city_id": 98,
+    "name": "Aparicio Pomares"
+  },
+  {
+    "city_id": 98,
+    "name": "Jacas Chico"
+  },
+  {
+    "city_id": 98,
+    "name": "Obas"
+  },
+  {
+    "city_id": 98,
+    "name": "Pampamarca"
+  },
+  {
+    "city_id": 98,
+    "name": "Choras"
+  },
+  {
+    "city_id": 99,
+    "name": "Ica"
+  },
+  {
+    "city_id": 99,
+    "name": "La Tinguiña"
+  },
+  {
+    "city_id": 99,
+    "name": "Los Aquijes"
+  },
+  {
+    "city_id": 99,
+    "name": "Ocucaje"
+  },
+  {
+    "city_id": 99,
+    "name": "Pachacutec"
+  },
+  {
+    "city_id": 99,
+    "name": "Parcona"
+  },
+  {
+    "city_id": 99,
+    "name": "Pueblo Nuevo"
+  },
+  {
+    "city_id": 99,
+    "name": "Salas"
+  },
+  {
+    "city_id": 99,
+    "name": "San Jose de los Molinos"
+  },
+  {
+    "city_id": 99,
+    "name": "San Juan Bautista"
+  },
+  {
+    "city_id": 99,
+    "name": "Santiago"
+  },
+  {
+    "city_id": 99,
+    "name": "Subtanjalla"
+  },
+  {
+    "city_id": 99,
+    "name": "Tate"
+  },
+  {
+    "city_id": 99,
+    "name": "Yauca del Rosario"
+  },
+  {
+    "city_id": 100,
+    "name": "Chincha Alta"
+  },
+  {
+    "city_id": 100,
+    "name": "Alto Laran"
+  },
+  {
+    "city_id": 100,
+    "name": "Chavin"
+  },
+  {
+    "city_id": 100,
+    "name": "Chincha Baja"
+  },
+  {
+    "city_id": 100,
+    "name": "El Carmen"
+  },
+  {
+    "city_id": 100,
+    "name": "Grocio Prado"
+  },
+  {
+    "city_id": 100,
+    "name": "Pueblo Nuevo"
+  },
+  {
+    "city_id": 100,
+    "name": "San Juan de Yanac"
+  },
+  {
+    "city_id": 100,
+    "name": "San Pedro de Huacarpana"
+  },
+  {
+    "city_id": 100,
+    "name": "Sunampe"
+  },
+  {
+    "city_id": 100,
+    "name": "Tambo de Mora"
+  },
+  {
+    "city_id": 101,
+    "name": "Nazca"
+  },
+  {
+    "city_id": 101,
+    "name": "Changuillo"
+  },
+  {
+    "city_id": 101,
+    "name": "El Ingenio"
+  },
+  {
+    "city_id": 101,
+    "name": "Marcona"
+  },
+  {
+    "city_id": 101,
+    "name": "Vista Alegre"
+  },
+  {
+    "city_id": 102,
+    "name": "Palpa"
+  },
+  {
+    "city_id": 102,
+    "name": "Llipata"
+  },
+  {
+    "city_id": 102,
+    "name": "Rio Grande"
+  },
+  {
+    "city_id": 102,
+    "name": "Santa Cruz"
+  },
+  {
+    "city_id": 102,
+    "name": "Tibillo"
+  },
+  {
+    "city_id": 103,
+    "name": "Pisco"
+  },
+  {
+    "city_id": 103,
+    "name": "Huancano"
+  },
+  {
+    "city_id": 103,
+    "name": "Humay"
+  },
+  {
+    "city_id": 103,
+    "name": "Independencia"
+  },
+  {
+    "city_id": 103,
+    "name": "Paracas"
+  },
+  {
+    "city_id": 103,
+    "name": "San Andres"
+  },
+  {
+    "city_id": 103,
+    "name": "San Clemente"
+  },
+  {
+    "city_id": 103,
+    "name": "Tupac Amaru Inca"
+  },
+  {
+    "city_id": 104,
+    "name": "Huancayo"
+  },
+  {
+    "city_id": 104,
+    "name": "Carhuacallanga"
+  },
+  {
+    "city_id": 104,
+    "name": "Chacapampa"
+  },
+  {
+    "city_id": 104,
+    "name": "Chicche"
+  },
+  {
+    "city_id": 104,
+    "name": "Chilca"
+  },
+  {
+    "city_id": 104,
+    "name": "Chongos Alto"
+  },
+  {
+    "city_id": 104,
+    "name": "Chupuro"
+  },
+  {
+    "city_id": 104,
+    "name": "Colca"
+  },
+  {
+    "city_id": 104,
+    "name": "Cullhuas"
+  },
+  {
+    "city_id": 104,
+    "name": "El Tambo"
+  },
+  {
+    "city_id": 104,
+    "name": "Huacrapuquio"
+  },
+  {
+    "city_id": 104,
+    "name": "Hualhuas"
+  },
+  {
+    "city_id": 104,
+    "name": "Huancan"
+  },
+  {
+    "city_id": 104,
+    "name": "Huasicancha"
+  },
+  {
+    "city_id": 104,
+    "name": "Huayucachi"
+  },
+  {
+    "city_id": 104,
+    "name": "Ingenio"
+  },
+  {
+    "city_id": 104,
+    "name": "Pariahuanca"
+  },
+  {
+    "city_id": 104,
+    "name": "Pilcomayo"
+  },
+  {
+    "city_id": 104,
+    "name": "Pucara"
+  },
+  {
+    "city_id": 104,
+    "name": "Quichuay"
+  },
+  {
+    "city_id": 104,
+    "name": "Quilcas"
+  },
+  {
+    "city_id": 104,
+    "name": "San Agustin"
+  },
+  {
+    "city_id": 104,
+    "name": "San Jeronimo de Tunan"
+  },
+  {
+    "city_id": 104,
+    "name": "Saño"
+  },
+  {
+    "city_id": 104,
+    "name": "Sapallanga"
+  },
+  {
+    "city_id": 104,
+    "name": "Sicaya"
+  },
+  {
+    "city_id": 104,
+    "name": "Santo Domingo de Acobamba"
+  },
+  {
+    "city_id": 104,
+    "name": "Viques"
+  },
+  {
+    "city_id": 105,
+    "name": "Concepcion"
+  },
+  {
+    "city_id": 105,
+    "name": "Aco"
+  },
+  {
+    "city_id": 105,
+    "name": "Andamarca"
+  },
+  {
+    "city_id": 105,
+    "name": "Chambara"
+  },
+  {
+    "city_id": 105,
+    "name": "Cochas"
+  },
+  {
+    "city_id": 105,
+    "name": "Comas"
+  },
+  {
+    "city_id": 105,
+    "name": "Heroinas Toledo"
+  },
+  {
+    "city_id": 105,
+    "name": "Manzanares"
+  },
+  {
+    "city_id": 105,
+    "name": "Mariscal Castilla"
+  },
+  {
+    "city_id": 105,
+    "name": "Matahuasi"
+  },
+  {
+    "city_id": 105,
+    "name": "Mito"
+  },
+  {
+    "city_id": 105,
+    "name": "Nueve de Julio"
+  },
+  {
+    "city_id": 105,
+    "name": "Orcotuna"
+  },
+  {
+    "city_id": 105,
+    "name": "San Jose de Quero"
+  },
+  {
+    "city_id": 105,
+    "name": "Santa Rosa de Ocopa"
+  },
+  {
+    "city_id": 106,
+    "name": "Chanchamayo"
+  },
+  {
+    "city_id": 106,
+    "name": "Perene"
+  },
+  {
+    "city_id": 106,
+    "name": "Pichanaqui"
+  },
+  {
+    "city_id": 106,
+    "name": "San Luis de Shuaro"
+  },
+  {
+    "city_id": 106,
+    "name": "San Ramon"
+  },
+  {
+    "city_id": 106,
+    "name": "Vitoc"
+  },
+  {
+    "city_id": 107,
+    "name": "Jauja"
+  },
+  {
+    "city_id": 107,
+    "name": "Acolla"
+  },
+  {
+    "city_id": 107,
+    "name": "Apata"
+  },
+  {
+    "city_id": 107,
+    "name": "Ataura"
+  },
+  {
+    "city_id": 107,
+    "name": "Canchayllo"
+  },
+  {
+    "city_id": 107,
+    "name": "Curicaca"
+  },
+  {
+    "city_id": 107,
+    "name": "El Mantaro"
+  },
+  {
+    "city_id": 107,
+    "name": "Huamali"
+  },
+  {
+    "city_id": 107,
+    "name": "Huaripampa"
+  },
+  {
+    "city_id": 107,
+    "name": "Huertas"
+  },
+  {
+    "city_id": 107,
+    "name": "Janjaillo"
+  },
+  {
+    "city_id": 107,
+    "name": "Julcan"
+  },
+  {
+    "city_id": 107,
+    "name": "Leonor Ordoñez"
+  },
+  {
+    "city_id": 107,
+    "name": "Llocllapampa"
+  },
+  {
+    "city_id": 107,
+    "name": "Marco"
+  },
+  {
+    "city_id": 107,
+    "name": "Masma"
+  },
+  {
+    "city_id": 107,
+    "name": "Masma Chicche"
+  },
+  {
+    "city_id": 107,
+    "name": "Molinos"
+  },
+  {
+    "city_id": 107,
+    "name": "Monobamba"
+  },
+  {
+    "city_id": 107,
+    "name": "Muqui"
+  },
+  {
+    "city_id": 107,
+    "name": "Muquiyauyo"
+  },
+  {
+    "city_id": 107,
+    "name": "Paca"
+  },
+  {
+    "city_id": 107,
+    "name": "Paccha"
+  },
+  {
+    "city_id": 107,
+    "name": "Pancan"
+  },
+  {
+    "city_id": 107,
+    "name": "Parco"
+  },
+  {
+    "city_id": 107,
+    "name": "Pomacancha"
+  },
+  {
+    "city_id": 107,
+    "name": "Ricran"
+  },
+  {
+    "city_id": 107,
+    "name": "San Lorenzo"
+  },
+  {
+    "city_id": 107,
+    "name": "San Pedro de Chunan"
+  },
+  {
+    "city_id": 107,
+    "name": "Sausa"
+  },
+  {
+    "city_id": 107,
+    "name": "Sincos"
+  },
+  {
+    "city_id": 107,
+    "name": "Tunan Marca"
+  },
+  {
+    "city_id": 107,
+    "name": "Yauli"
+  },
+  {
+    "city_id": 107,
+    "name": "Yauyos"
+  },
+  {
+    "city_id": 108,
+    "name": "Junin"
+  },
+  {
+    "city_id": 108,
+    "name": "Carhuamayo"
+  },
+  {
+    "city_id": 108,
+    "name": "Ondores"
+  },
+  {
+    "city_id": 108,
+    "name": "Ulcumayo"
+  },
+  {
+    "city_id": 109,
+    "name": "Satipo"
+  },
+  {
+    "city_id": 109,
+    "name": "Coviriali"
+  },
+  {
+    "city_id": 109,
+    "name": "Llaylla"
+  },
+  {
+    "city_id": 109,
+    "name": "Mazamari"
+  },
+  {
+    "city_id": 109,
+    "name": "Pampa Hermosa"
+  },
+  {
+    "city_id": 109,
+    "name": "Pangoa"
+  },
+  {
+    "city_id": 109,
+    "name": "Rio Negro"
+  },
+  {
+    "city_id": 109,
+    "name": "Rio Tambo"
+  },
+  {
+    "city_id": 109,
+    "name": "Vizcatán del Ene"
+  },
+  {
+    "city_id": 110,
+    "name": "Tarma"
+  },
+  {
+    "city_id": 110,
+    "name": "Acobamba"
+  },
+  {
+    "city_id": 110,
+    "name": "Huaricolca"
+  },
+  {
+    "city_id": 110,
+    "name": "Huasahuasi"
+  },
+  {
+    "city_id": 110,
+    "name": "La Union"
+  },
+  {
+    "city_id": 110,
+    "name": "Palca"
+  },
+  {
+    "city_id": 110,
+    "name": "Palcamayo"
+  },
+  {
+    "city_id": 110,
+    "name": "San Pedro de Cajas"
+  },
+  {
+    "city_id": 110,
+    "name": "Tapo"
+  },
+  {
+    "city_id": 111,
+    "name": "La Oroya"
+  },
+  {
+    "city_id": 111,
+    "name": "Chacapalpa"
+  },
+  {
+    "city_id": 111,
+    "name": "Huay-Huay"
+  },
+  {
+    "city_id": 111,
+    "name": "Marcapomacocha"
+  },
+  {
+    "city_id": 111,
+    "name": "Morococha"
+  },
+  {
+    "city_id": 111,
+    "name": "Paccha"
+  },
+  {
+    "city_id": 111,
+    "name": "Santa Barbara de Carhuacayan"
+  },
+  {
+    "city_id": 111,
+    "name": "Santa Rosa de Sacco"
+  },
+  {
+    "city_id": 111,
+    "name": "Suitucancha"
+  },
+  {
+    "city_id": 111,
+    "name": "Yauli"
+  },
+  {
+    "city_id": 112,
+    "name": "Chupaca"
+  },
+  {
+    "city_id": 112,
+    "name": "Ahuac"
+  },
+  {
+    "city_id": 112,
+    "name": "Chongos Bajo"
+  },
+  {
+    "city_id": 112,
+    "name": "Huachac"
+  },
+  {
+    "city_id": 112,
+    "name": "Huamancaca Chico"
+  },
+  {
+    "city_id": 112,
+    "name": "San Juan de Yscos"
+  },
+  {
+    "city_id": 112,
+    "name": "San Juan de Jarpa"
+  },
+  {
+    "city_id": 112,
+    "name": "Tres de Diciembre"
+  },
+  {
+    "city_id": 112,
+    "name": "Yanacancha"
+  },
+  {
+    "city_id": 113,
+    "name": "Trujillo"
+  },
+  {
+    "city_id": 113,
+    "name": "El Porvenir"
+  },
+  {
+    "city_id": 113,
+    "name": "Florencia de Mora"
+  },
+  {
+    "city_id": 113,
+    "name": "Huanchaco"
+  },
+  {
+    "city_id": 113,
+    "name": "La Esperanza"
+  },
+  {
+    "city_id": 113,
+    "name": "Laredo"
+  },
+  {
+    "city_id": 113,
+    "name": "Moche"
+  },
+  {
+    "city_id": 113,
+    "name": "Poroto"
+  },
+  {
+    "city_id": 113,
+    "name": "Salaverry"
+  },
+  {
+    "city_id": 113,
+    "name": "Simbal"
+  },
+  {
+    "city_id": 113,
+    "name": "Victor Larco Herrera"
+  },
+  {
+    "city_id": 114,
+    "name": "Ascope"
+  },
+  {
+    "city_id": 114,
+    "name": "Chicama"
+  },
+  {
+    "city_id": 114,
+    "name": "Chocope"
+  },
+  {
+    "city_id": 114,
+    "name": "Magdalena de Cao"
+  },
+  {
+    "city_id": 114,
+    "name": "Paijan"
+  },
+  {
+    "city_id": 114,
+    "name": "Razuri"
+  },
+  {
+    "city_id": 114,
+    "name": "Santiago de Cao"
+  },
+  {
+    "city_id": 114,
+    "name": "Casa Grande"
+  },
+  {
+    "city_id": 115,
+    "name": "Bolivar"
+  },
+  {
+    "city_id": 115,
+    "name": "Bambamarca"
+  },
+  {
+    "city_id": 115,
+    "name": "Condormarca"
+  },
+  {
+    "city_id": 115,
+    "name": "Longotea"
+  },
+  {
+    "city_id": 115,
+    "name": "Uchumarca"
+  },
+  {
+    "city_id": 115,
+    "name": "Ucuncha"
+  },
+  {
+    "city_id": 116,
+    "name": "Chepen"
+  },
+  {
+    "city_id": 116,
+    "name": "Pacanga"
+  },
+  {
+    "city_id": 116,
+    "name": "Pueblo Nuevo"
+  },
+  {
+    "city_id": 117,
+    "name": "Julcan"
+  },
+  {
+    "city_id": 117,
+    "name": "Calamarca"
+  },
+  {
+    "city_id": 117,
+    "name": "Carabamba"
+  },
+  {
+    "city_id": 117,
+    "name": "Huaso"
+  },
+  {
+    "city_id": 118,
+    "name": "Otuzco"
+  },
+  {
+    "city_id": 118,
+    "name": "Agallpampa"
+  },
+  {
+    "city_id": 118,
+    "name": "Charat"
+  },
+  {
+    "city_id": 118,
+    "name": "Huaranchal"
+  },
+  {
+    "city_id": 118,
+    "name": "La Cuesta"
+  },
+  {
+    "city_id": 118,
+    "name": "Mache"
+  },
+  {
+    "city_id": 118,
+    "name": "Paranday"
+  },
+  {
+    "city_id": 118,
+    "name": "Salpo"
+  },
+  {
+    "city_id": 118,
+    "name": "Sinsicap"
+  },
+  {
+    "city_id": 118,
+    "name": "Usquil"
+  },
+  {
+    "city_id": 119,
+    "name": "San Pedro de Lloc"
+  },
+  {
+    "city_id": 119,
+    "name": "Guadalupe"
+  },
+  {
+    "city_id": 119,
+    "name": "Jequetepeque"
+  },
+  {
+    "city_id": 119,
+    "name": "Pacasmayo"
+  },
+  {
+    "city_id": 119,
+    "name": "San Jose"
+  },
+  {
+    "city_id": 120,
+    "name": "Tayabamba"
+  },
+  {
+    "city_id": 120,
+    "name": "Buldibuyo"
+  },
+  {
+    "city_id": 120,
+    "name": "Chillia"
+  },
+  {
+    "city_id": 120,
+    "name": "Huancaspata"
+  },
+  {
+    "city_id": 120,
+    "name": "Huaylillas"
+  },
+  {
+    "city_id": 120,
+    "name": "Huayo"
+  },
+  {
+    "city_id": 120,
+    "name": "Ongon"
+  },
+  {
+    "city_id": 120,
+    "name": "Parcoy"
+  },
+  {
+    "city_id": 120,
+    "name": "Pataz"
+  },
+  {
+    "city_id": 120,
+    "name": "Pias"
+  },
+  {
+    "city_id": 120,
+    "name": "Santiago de Challas"
+  },
+  {
+    "city_id": 120,
+    "name": "Taurija"
+  },
+  {
+    "city_id": 120,
+    "name": "Urpay"
+  },
+  {
+    "city_id": 121,
+    "name": "Huamachuco"
+  },
+  {
+    "city_id": 121,
+    "name": "Chugay"
+  },
+  {
+    "city_id": 121,
+    "name": "Cochorco"
+  },
+  {
+    "city_id": 121,
+    "name": "Curgos"
+  },
+  {
+    "city_id": 121,
+    "name": "Marcabal"
+  },
+  {
+    "city_id": 121,
+    "name": "Sanagoran"
+  },
+  {
+    "city_id": 121,
+    "name": "Sarin"
+  },
+  {
+    "city_id": 121,
+    "name": "Sartimbamba"
+  },
+  {
+    "city_id": 122,
+    "name": "Santiago de Chuco"
+  },
+  {
+    "city_id": 122,
+    "name": "Angasmarca"
+  },
+  {
+    "city_id": 122,
+    "name": "Cachicadan"
+  },
+  {
+    "city_id": 122,
+    "name": "Mollebamba"
+  },
+  {
+    "city_id": 122,
+    "name": "Mollepata"
+  },
+  {
+    "city_id": 122,
+    "name": "Quiruvilca"
+  },
+  {
+    "city_id": 122,
+    "name": "Santa Cruz de Chuca"
+  },
+  {
+    "city_id": 122,
+    "name": "Sitabamba"
+  },
+  {
+    "city_id": 123,
+    "name": "Cascas"
+  },
+  {
+    "city_id": 123,
+    "name": "Lucma"
+  },
+  {
+    "city_id": 123,
+    "name": "Compin"
+  },
+  {
+    "city_id": 123,
+    "name": "Sayapullo"
+  },
+  {
+    "city_id": 124,
+    "name": "Viru"
+  },
+  {
+    "city_id": 124,
+    "name": "Chao"
+  },
+  {
+    "city_id": 124,
+    "name": "Guadalupito"
+  },
+  {
+    "city_id": 125,
+    "name": "Chiclayo"
+  },
+  {
+    "city_id": 125,
+    "name": "Chongoyape"
+  },
+  {
+    "city_id": 125,
+    "name": "Eten"
+  },
+  {
+    "city_id": 125,
+    "name": "Eten Puerto"
+  },
+  {
+    "city_id": 125,
+    "name": "Jose Leonardo Ortiz"
+  },
+  {
+    "city_id": 125,
+    "name": "La Victoria"
+  },
+  {
+    "city_id": 125,
+    "name": "Lagunas"
+  },
+  {
+    "city_id": 125,
+    "name": "Monsefu"
+  },
+  {
+    "city_id": 125,
+    "name": "Nueva Arica"
+  },
+  {
+    "city_id": 125,
+    "name": "Oyotun"
+  },
+  {
+    "city_id": 125,
+    "name": "Picsi"
+  },
+  {
+    "city_id": 125,
+    "name": "Pimentel"
+  },
+  {
+    "city_id": 125,
+    "name": "Reque"
+  },
+  {
+    "city_id": 125,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 125,
+    "name": "Saña"
+  },
+  {
+    "city_id": 125,
+    "name": "Cayalti"
+  },
+  {
+    "city_id": 125,
+    "name": "Patapo"
+  },
+  {
+    "city_id": 125,
+    "name": "Pomalca"
+  },
+  {
+    "city_id": 125,
+    "name": "Pucala"
+  },
+  {
+    "city_id": 125,
+    "name": "Tuman"
+  },
+  {
+    "city_id": 126,
+    "name": "Ferreñafe"
+  },
+  {
+    "city_id": 126,
+    "name": "Cañaris"
+  },
+  {
+    "city_id": 126,
+    "name": "Incahuasi"
+  },
+  {
+    "city_id": 126,
+    "name": "Manuel Antonio Mesones Muro"
+  },
+  {
+    "city_id": 126,
+    "name": "Pitipo"
+  },
+  {
+    "city_id": 126,
+    "name": "Pueblo Nuevo"
+  },
+  {
+    "city_id": 127,
+    "name": "Lambayeque"
+  },
+  {
+    "city_id": 127,
+    "name": "Chochope"
+  },
+  {
+    "city_id": 127,
+    "name": "Illimo"
+  },
+  {
+    "city_id": 127,
+    "name": "Jayanca"
+  },
+  {
+    "city_id": 127,
+    "name": "Mochumi"
+  },
+  {
+    "city_id": 127,
+    "name": "Morrope"
+  },
+  {
+    "city_id": 127,
+    "name": "Motupe"
+  },
+  {
+    "city_id": 127,
+    "name": "Olmos"
+  },
+  {
+    "city_id": 127,
+    "name": "Pacora"
+  },
+  {
+    "city_id": 127,
+    "name": "Salas"
+  },
+  {
+    "city_id": 127,
+    "name": "San Jose"
+  },
+  {
+    "city_id": 127,
+    "name": "Tucume"
+  },
+  {
+    "city_id": 128,
+    "name": "Lima"
+  },
+  {
+    "city_id": 128,
+    "name": "Ancon"
+  },
+  {
+    "city_id": 128,
+    "name": "Ate"
+  },
+  {
+    "city_id": 128,
+    "name": "Barranco"
+  },
+  {
+    "city_id": 128,
+    "name": "Breña"
+  },
+  {
+    "city_id": 128,
+    "name": "Carabayllo"
+  },
+  {
+    "city_id": 128,
+    "name": "Chaclacayo"
+  },
+  {
+    "city_id": 128,
+    "name": "Chorrillos"
+  },
+  {
+    "city_id": 128,
+    "name": "Cieneguilla"
+  },
+  {
+    "city_id": 128,
+    "name": "Comas"
+  },
+  {
+    "city_id": 128,
+    "name": "El Agustino"
+  },
+  {
+    "city_id": 128,
+    "name": "Independencia"
+  },
+  {
+    "city_id": 128,
+    "name": "Jesus Maria"
+  },
+  {
+    "city_id": 128,
+    "name": "La Molina"
+  },
+  {
+    "city_id": 128,
+    "name": "La Victoria"
+  },
+  {
+    "city_id": 128,
+    "name": "Lince"
+  },
+  {
+    "city_id": 128,
+    "name": "Los Olivos"
+  },
+  {
+    "city_id": 128,
+    "name": "Lurigancho"
+  },
+  {
+    "city_id": 128,
+    "name": "Lurin"
+  },
+  {
+    "city_id": 128,
+    "name": "Magdalena del Mar"
+  },
+  {
+    "city_id": 128,
+    "name": "Pueblo Libre"
+  },
+  {
+    "city_id": 128,
+    "name": "Miraflores"
+  },
+  {
+    "city_id": 128,
+    "name": "Pachacamac"
+  },
+  {
+    "city_id": 128,
+    "name": "Pucusana"
+  },
+  {
+    "city_id": 128,
+    "name": "Puente Piedra"
+  },
+  {
+    "city_id": 128,
+    "name": "Punta Hermosa"
+  },
+  {
+    "city_id": 128,
+    "name": "Punta Negra"
+  },
+  {
+    "city_id": 128,
+    "name": "Rimac"
+  },
+  {
+    "city_id": 128,
+    "name": "San Bartolo"
+  },
+  {
+    "city_id": 128,
+    "name": "San Borja"
+  },
+  {
+    "city_id": 128,
+    "name": "San Isidro"
+  },
+  {
+    "city_id": 128,
+    "name": "San Juan de Lurigancho"
+  },
+  {
+    "city_id": 128,
+    "name": "San Juan de Miraflores"
+  },
+  {
+    "city_id": 128,
+    "name": "San Luis"
+  },
+  {
+    "city_id": 128,
+    "name": "San Martin de Porres"
+  },
+  {
+    "city_id": 128,
+    "name": "San Miguel"
+  },
+  {
+    "city_id": 128,
+    "name": "Santa Anita"
+  },
+  {
+    "city_id": 128,
+    "name": "Santa Maria del Mar"
+  },
+  {
+    "city_id": 128,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 128,
+    "name": "Santiago de Surco"
+  },
+  {
+    "city_id": 128,
+    "name": "Surquillo"
+  },
+  {
+    "city_id": 128,
+    "name": "Villa El Salvador"
+  },
+  {
+    "city_id": 128,
+    "name": "Villa Maria del Triunfo"
+  },
+  {
+    "city_id": 129,
+    "name": "Barranca"
+  },
+  {
+    "city_id": 129,
+    "name": "Paramonga"
+  },
+  {
+    "city_id": 129,
+    "name": "Pativilca"
+  },
+  {
+    "city_id": 129,
+    "name": "Supe"
+  },
+  {
+    "city_id": 129,
+    "name": "Supe Puerto"
+  },
+  {
+    "city_id": 130,
+    "name": "Cajatambo"
+  },
+  {
+    "city_id": 130,
+    "name": "Copa"
+  },
+  {
+    "city_id": 130,
+    "name": "Gorgor"
+  },
+  {
+    "city_id": 130,
+    "name": "Huancapon"
+  },
+  {
+    "city_id": 130,
+    "name": "Manas"
+  },
+  {
+    "city_id": 131,
+    "name": "Canta"
+  },
+  {
+    "city_id": 131,
+    "name": "Arahuay"
+  },
+  {
+    "city_id": 131,
+    "name": "Huamantanga"
+  },
+  {
+    "city_id": 131,
+    "name": "Huaros"
+  },
+  {
+    "city_id": 131,
+    "name": "Lachaqui"
+  },
+  {
+    "city_id": 131,
+    "name": "San Buenaventura"
+  },
+  {
+    "city_id": 131,
+    "name": "Santa Rosa de Quives"
+  },
+  {
+    "city_id": 132,
+    "name": "San Vicente de Cañete"
+  },
+  {
+    "city_id": 132,
+    "name": "Asia"
+  },
+  {
+    "city_id": 132,
+    "name": "Calango"
+  },
+  {
+    "city_id": 132,
+    "name": "Cerro Azul"
+  },
+  {
+    "city_id": 132,
+    "name": "Chilca"
+  },
+  {
+    "city_id": 132,
+    "name": "Coayllo"
+  },
+  {
+    "city_id": 132,
+    "name": "Imperial"
+  },
+  {
+    "city_id": 132,
+    "name": "Lunahuana"
+  },
+  {
+    "city_id": 132,
+    "name": "Mala"
+  },
+  {
+    "city_id": 132,
+    "name": "Nuevo Imperial"
+  },
+  {
+    "city_id": 132,
+    "name": "Pacaran"
+  },
+  {
+    "city_id": 132,
+    "name": "Quilmana"
+  },
+  {
+    "city_id": 132,
+    "name": "San Antonio"
+  },
+  {
+    "city_id": 132,
+    "name": "San Luis"
+  },
+  {
+    "city_id": 132,
+    "name": "Santa Cruz de Flores"
+  },
+  {
+    "city_id": 132,
+    "name": "Zuñiga"
+  },
+  {
+    "city_id": 133,
+    "name": "Huaral"
+  },
+  {
+    "city_id": 133,
+    "name": "Atavillos Alto"
+  },
+  {
+    "city_id": 133,
+    "name": "Atavillos Bajo"
+  },
+  {
+    "city_id": 133,
+    "name": "Aucallama"
+  },
+  {
+    "city_id": 133,
+    "name": "Chancay"
+  },
+  {
+    "city_id": 133,
+    "name": "Ihuari"
+  },
+  {
+    "city_id": 133,
+    "name": "Lampian"
+  },
+  {
+    "city_id": 133,
+    "name": "Pacaraos"
+  },
+  {
+    "city_id": 133,
+    "name": "San Miguel de Acos"
+  },
+  {
+    "city_id": 133,
+    "name": "Santa Cruz de Andamarca"
+  },
+  {
+    "city_id": 133,
+    "name": "Sumbilca"
+  },
+  {
+    "city_id": 133,
+    "name": "Veintisiete de Noviembre"
+  },
+  {
+    "city_id": 134,
+    "name": "Matucana"
+  },
+  {
+    "city_id": 134,
+    "name": "Antioquia"
+  },
+  {
+    "city_id": 134,
+    "name": "Callahuanca"
+  },
+  {
+    "city_id": 134,
+    "name": "Carampoma"
+  },
+  {
+    "city_id": 134,
+    "name": "Chicla"
+  },
+  {
+    "city_id": 134,
+    "name": "Cuenca"
+  },
+  {
+    "city_id": 134,
+    "name": "Huachupampa"
+  },
+  {
+    "city_id": 134,
+    "name": "Huanza"
+  },
+  {
+    "city_id": 134,
+    "name": "Huarochiri"
+  },
+  {
+    "city_id": 134,
+    "name": "Lahuaytambo"
+  },
+  {
+    "city_id": 134,
+    "name": "Langa"
+  },
+  {
+    "city_id": 134,
+    "name": "Laraos"
+  },
+  {
+    "city_id": 134,
+    "name": "Mariatana"
+  },
+  {
+    "city_id": 134,
+    "name": "Ricardo Palma"
+  },
+  {
+    "city_id": 134,
+    "name": "San Andres de Tupicocha"
+  },
+  {
+    "city_id": 134,
+    "name": "San Antonio"
+  },
+  {
+    "city_id": 134,
+    "name": "San Bartolome"
+  },
+  {
+    "city_id": 134,
+    "name": "San Damian"
+  },
+  {
+    "city_id": 134,
+    "name": "San Juan de Iris"
+  },
+  {
+    "city_id": 134,
+    "name": "San Juan de Tantaranche"
+  },
+  {
+    "city_id": 134,
+    "name": "San Lorenzo de Quinti"
+  },
+  {
+    "city_id": 134,
+    "name": "San Mateo"
+  },
+  {
+    "city_id": 134,
+    "name": "San Mateo de Otao"
+  },
+  {
+    "city_id": 134,
+    "name": "San Pedro de Casta"
+  },
+  {
+    "city_id": 134,
+    "name": "San Pedro de Huancayre"
+  },
+  {
+    "city_id": 134,
+    "name": "Sangallaya"
+  },
+  {
+    "city_id": 134,
+    "name": "Santa Cruz de Cocachacra"
+  },
+  {
+    "city_id": 134,
+    "name": "Santa Eulalia"
+  },
+  {
+    "city_id": 134,
+    "name": "Santiago de Anchucaya"
+  },
+  {
+    "city_id": 134,
+    "name": "Santiago de Tuna"
+  },
+  {
+    "city_id": 134,
+    "name": "Santo Domingo de los Olleros"
+  },
+  {
+    "city_id": 134,
+    "name": "Surco"
+  },
+  {
+    "city_id": 135,
+    "name": "Huacho"
+  },
+  {
+    "city_id": 135,
+    "name": "Ambar"
+  },
+  {
+    "city_id": 135,
+    "name": "Caleta de Carquin"
+  },
+  {
+    "city_id": 135,
+    "name": "Checras"
+  },
+  {
+    "city_id": 135,
+    "name": "Hualmay"
+  },
+  {
+    "city_id": 135,
+    "name": "Huaura"
+  },
+  {
+    "city_id": 135,
+    "name": "Leoncio Prado"
+  },
+  {
+    "city_id": 135,
+    "name": "Paccho"
+  },
+  {
+    "city_id": 135,
+    "name": "Santa Leonor"
+  },
+  {
+    "city_id": 135,
+    "name": "Santa Maria"
+  },
+  {
+    "city_id": 135,
+    "name": "Sayan"
+  },
+  {
+    "city_id": 135,
+    "name": "Vegueta"
+  },
+  {
+    "city_id": 136,
+    "name": "Oyon"
+  },
+  {
+    "city_id": 136,
+    "name": "Andajes"
+  },
+  {
+    "city_id": 136,
+    "name": "Caujul"
+  },
+  {
+    "city_id": 136,
+    "name": "Cochamarca"
+  },
+  {
+    "city_id": 136,
+    "name": "Navan"
+  },
+  {
+    "city_id": 136,
+    "name": "Pachangara"
+  },
+  {
+    "city_id": 137,
+    "name": "Yauyos"
+  },
+  {
+    "city_id": 137,
+    "name": "Alis"
+  },
+  {
+    "city_id": 137,
+    "name": "Ayauca"
+  },
+  {
+    "city_id": 137,
+    "name": "Ayaviri"
+  },
+  {
+    "city_id": 137,
+    "name": "Azangaro"
+  },
+  {
+    "city_id": 137,
+    "name": "Cacra"
+  },
+  {
+    "city_id": 137,
+    "name": "Carania"
+  },
+  {
+    "city_id": 137,
+    "name": "Catahuasi"
+  },
+  {
+    "city_id": 137,
+    "name": "Chocos"
+  },
+  {
+    "city_id": 137,
+    "name": "Cochas"
+  },
+  {
+    "city_id": 137,
+    "name": "Colonia"
+  },
+  {
+    "city_id": 137,
+    "name": "Hongos"
+  },
+  {
+    "city_id": 137,
+    "name": "Huampara"
+  },
+  {
+    "city_id": 137,
+    "name": "Huancaya"
+  },
+  {
+    "city_id": 137,
+    "name": "Huangascar"
+  },
+  {
+    "city_id": 137,
+    "name": "Huantan"
+  },
+  {
+    "city_id": 137,
+    "name": "Huañec"
+  },
+  {
+    "city_id": 137,
+    "name": "Laraos"
+  },
+  {
+    "city_id": 137,
+    "name": "Lincha"
+  },
+  {
+    "city_id": 137,
+    "name": "Madean"
+  },
+  {
+    "city_id": 137,
+    "name": "Miraflores"
+  },
+  {
+    "city_id": 137,
+    "name": "Omas"
+  },
+  {
+    "city_id": 137,
+    "name": "Putinza"
+  },
+  {
+    "city_id": 137,
+    "name": "Quinches"
+  },
+  {
+    "city_id": 137,
+    "name": "Quinocay"
+  },
+  {
+    "city_id": 137,
+    "name": "San Joaquin"
+  },
+  {
+    "city_id": 137,
+    "name": "San Pedro de Pilas"
+  },
+  {
+    "city_id": 137,
+    "name": "Tanta"
+  },
+  {
+    "city_id": 137,
+    "name": "Tauripampa"
+  },
+  {
+    "city_id": 137,
+    "name": "Tomas"
+  },
+  {
+    "city_id": 137,
+    "name": "Tupe"
+  },
+  {
+    "city_id": 137,
+    "name": "Viñac"
+  },
+  {
+    "city_id": 137,
+    "name": "Vitis"
+  },
+  {
+    "city_id": 138,
+    "name": "Iquitos"
+  },
+  {
+    "city_id": 138,
+    "name": "Alto Nanay"
+  },
+  {
+    "city_id": 138,
+    "name": "Fernando Lores"
+  },
+  {
+    "city_id": 138,
+    "name": "Indiana"
+  },
+  {
+    "city_id": 138,
+    "name": "Las Amazonas"
+  },
+  {
+    "city_id": 138,
+    "name": "Mazan"
+  },
+  {
+    "city_id": 138,
+    "name": "Napo"
+  },
+  {
+    "city_id": 138,
+    "name": "Punchana"
+  },
+  {
+    "city_id": 138,
+    "name": "Torres Causana"
+  },
+  {
+    "city_id": 138,
+    "name": "Belen"
+  },
+  {
+    "city_id": 138,
+    "name": "San Juan Bautista"
+  },
+  {
+    "city_id": 139,
+    "name": "Yurimaguas"
+  },
+  {
+    "city_id": 139,
+    "name": "Balsapuerto"
+  },
+  {
+    "city_id": 139,
+    "name": "Jeberos"
+  },
+  {
+    "city_id": 139,
+    "name": "Lagunas"
+  },
+  {
+    "city_id": 139,
+    "name": "Santa Cruz"
+  },
+  {
+    "city_id": 139,
+    "name": "Teniente Cesar Lopez Rojas"
+  },
+  {
+    "city_id": 140,
+    "name": "Nauta"
+  },
+  {
+    "city_id": 140,
+    "name": "Parinari"
+  },
+  {
+    "city_id": 140,
+    "name": "Tigre"
+  },
+  {
+    "city_id": 140,
+    "name": "Trompeteros"
+  },
+  {
+    "city_id": 140,
+    "name": "Urarinas"
+  },
+  {
+    "city_id": 141,
+    "name": "Ramon Castilla"
+  },
+  {
+    "city_id": 141,
+    "name": "Pebas"
+  },
+  {
+    "city_id": 141,
+    "name": "Yavari"
+  },
+  {
+    "city_id": 141,
+    "name": "San Pablo"
+  },
+  {
+    "city_id": 142,
+    "name": "Requena"
+  },
+  {
+    "city_id": 142,
+    "name": "Alto Tapiche"
+  },
+  {
+    "city_id": 142,
+    "name": "Capelo"
+  },
+  {
+    "city_id": 142,
+    "name": "Emilio San Martin"
+  },
+  {
+    "city_id": 142,
+    "name": "Maquia"
+  },
+  {
+    "city_id": 142,
+    "name": "Puinahua"
+  },
+  {
+    "city_id": 142,
+    "name": "Saquena"
+  },
+  {
+    "city_id": 142,
+    "name": "Soplin"
+  },
+  {
+    "city_id": 142,
+    "name": "Tapiche"
+  },
+  {
+    "city_id": 142,
+    "name": "Jenaro Herrera"
+  },
+  {
+    "city_id": 142,
+    "name": "Yaquerana"
+  },
+  {
+    "city_id": 143,
+    "name": "Contamana"
+  },
+  {
+    "city_id": 143,
+    "name": "Inahuaya"
+  },
+  {
+    "city_id": 143,
+    "name": "Padre Marquez"
+  },
+  {
+    "city_id": 143,
+    "name": "Pampa Hermosa"
+  },
+  {
+    "city_id": 143,
+    "name": "Sarayacu"
+  },
+  {
+    "city_id": 143,
+    "name": "Vargas Guerra"
+  },
+  {
+    "city_id": 144,
+    "name": "Barranca"
+  },
+  {
+    "city_id": 144,
+    "name": "Cahuapanas"
+  },
+  {
+    "city_id": 144,
+    "name": "Manseriche"
+  },
+  {
+    "city_id": 144,
+    "name": "Morona"
+  },
+  {
+    "city_id": 144,
+    "name": "Pastaza"
+  },
+  {
+    "city_id": 144,
+    "name": "Andoas"
+  },
+  {
+    "city_id": 145,
+    "name": "Putumayo"
+  },
+  {
+    "city_id": 145,
+    "name": "Rosa Panduro"
+  },
+  {
+    "city_id": 145,
+    "name": "Teniente Manuel Clavero"
+  },
+  {
+    "city_id": 145,
+    "name": "Yaguas"
+  },
+  {
+    "city_id": 146,
+    "name": "Tambopata"
+  },
+  {
+    "city_id": 146,
+    "name": "Inambari"
+  },
+  {
+    "city_id": 146,
+    "name": "Las Piedras"
+  },
+  {
+    "city_id": 146,
+    "name": "Laberinto"
+  },
+  {
+    "city_id": 147,
+    "name": "Manu"
+  },
+  {
+    "city_id": 147,
+    "name": "Fitzcarrald"
+  },
+  {
+    "city_id": 147,
+    "name": "Madre de Dios"
+  },
+  {
+    "city_id": 147,
+    "name": "Huepetuhe"
+  },
+  {
+    "city_id": 148,
+    "name": "Iñapari"
+  },
+  {
+    "city_id": 148,
+    "name": "Iberia"
+  },
+  {
+    "city_id": 148,
+    "name": "Tahuamanu"
+  },
+  {
+    "city_id": 149,
+    "name": "Moquegua"
+  },
+  {
+    "city_id": 149,
+    "name": "Carumas"
+  },
+  {
+    "city_id": 149,
+    "name": "Cuchumbaya"
+  },
+  {
+    "city_id": 149,
+    "name": "Samegua"
+  },
+  {
+    "city_id": 149,
+    "name": "San Cristobal"
+  },
+  {
+    "city_id": 149,
+    "name": "Torata"
+  },
+  {
+    "city_id": 150,
+    "name": "Omate"
+  },
+  {
+    "city_id": 150,
+    "name": "Chojata"
+  },
+  {
+    "city_id": 150,
+    "name": "Coalaque"
+  },
+  {
+    "city_id": 150,
+    "name": "Ichuña"
+  },
+  {
+    "city_id": 150,
+    "name": "La Capilla"
+  },
+  {
+    "city_id": 150,
+    "name": "Lloque"
+  },
+  {
+    "city_id": 150,
+    "name": "Matalaque"
+  },
+  {
+    "city_id": 150,
+    "name": "Puquina"
+  },
+  {
+    "city_id": 150,
+    "name": "Quinistaquillas"
+  },
+  {
+    "city_id": 150,
+    "name": "Ubinas"
+  },
+  {
+    "city_id": 150,
+    "name": "Yunga"
+  },
+  {
+    "city_id": 151,
+    "name": "Ilo"
+  },
+  {
+    "city_id": 151,
+    "name": "El Algarrobal"
+  },
+  {
+    "city_id": 151,
+    "name": "Pacocha"
+  },
+  {
+    "city_id": 152,
+    "name": "Chaupimarca"
+  },
+  {
+    "city_id": 152,
+    "name": "Huachon"
+  },
+  {
+    "city_id": 152,
+    "name": "Huariaca"
+  },
+  {
+    "city_id": 152,
+    "name": "Huayllay"
+  },
+  {
+    "city_id": 152,
+    "name": "Ninacaca"
+  },
+  {
+    "city_id": 152,
+    "name": "Pallanchacra"
+  },
+  {
+    "city_id": 152,
+    "name": "Paucartambo"
+  },
+  {
+    "city_id": 152,
+    "name": "San Francisco de Asis de Yarusyacan"
+  },
+  {
+    "city_id": 152,
+    "name": "Simon Bolivar"
+  },
+  {
+    "city_id": 152,
+    "name": "Ticlacayan"
+  },
+  {
+    "city_id": 152,
+    "name": "Tinyahuarco"
+  },
+  {
+    "city_id": 152,
+    "name": "Vicco"
+  },
+  {
+    "city_id": 152,
+    "name": "Yanacancha"
+  },
+  {
+    "city_id": 153,
+    "name": "Yanahuanca"
+  },
+  {
+    "city_id": 153,
+    "name": "Chacayan"
+  },
+  {
+    "city_id": 153,
+    "name": "Goyllarisquizga"
+  },
+  {
+    "city_id": 153,
+    "name": "Paucar"
+  },
+  {
+    "city_id": 153,
+    "name": "San Pedro de Pillao"
+  },
+  {
+    "city_id": 153,
+    "name": "Santa Ana de Tusi"
+  },
+  {
+    "city_id": 153,
+    "name": "Tapuc"
+  },
+  {
+    "city_id": 153,
+    "name": "Vilcabamba"
+  },
+  {
+    "city_id": 154,
+    "name": "Oxapampa"
+  },
+  {
+    "city_id": 154,
+    "name": "Chontabamba"
+  },
+  {
+    "city_id": 154,
+    "name": "Huancabamba"
+  },
+  {
+    "city_id": 154,
+    "name": "Palcazu"
+  },
+  {
+    "city_id": 154,
+    "name": "Pozuzo"
+  },
+  {
+    "city_id": 154,
+    "name": "Puerto Bermudez"
+  },
+  {
+    "city_id": 154,
+    "name": "Villa Rica"
+  },
+  {
+    "city_id": 154,
+    "name": "Constitución"
+  },
+  {
+    "city_id": 155,
+    "name": "Piura"
+  },
+  {
+    "city_id": 155,
+    "name": "Castilla"
+  },
+  {
+    "city_id": 155,
+    "name": "Catacaos"
+  },
+  {
+    "city_id": 155,
+    "name": "Cura Mori"
+  },
+  {
+    "city_id": 155,
+    "name": "El Tallan"
+  },
+  {
+    "city_id": 155,
+    "name": "La Arena"
+  },
+  {
+    "city_id": 155,
+    "name": "La Union"
+  },
+  {
+    "city_id": 155,
+    "name": "Las Lomas"
+  },
+  {
+    "city_id": 155,
+    "name": "Tambo Grande"
+  },
+  {
+    "city_id": 155,
+    "name": "26 de Octubre"
+  },
+  {
+    "city_id": 156,
+    "name": "Ayabaca"
+  },
+  {
+    "city_id": 156,
+    "name": "Frias"
+  },
+  {
+    "city_id": 156,
+    "name": "Jilili"
+  },
+  {
+    "city_id": 156,
+    "name": "Lagunas"
+  },
+  {
+    "city_id": 156,
+    "name": "Montero"
+  },
+  {
+    "city_id": 156,
+    "name": "Pacaipampa"
+  },
+  {
+    "city_id": 156,
+    "name": "Paimas"
+  },
+  {
+    "city_id": 156,
+    "name": "Sapillica"
+  },
+  {
+    "city_id": 156,
+    "name": "Sicchez"
+  },
+  {
+    "city_id": 156,
+    "name": "Suyo"
+  },
+  {
+    "city_id": 157,
+    "name": "Huancabamba"
+  },
+  {
+    "city_id": 157,
+    "name": "Canchaque"
+  },
+  {
+    "city_id": 157,
+    "name": "El Carmen de La Frontera"
+  },
+  {
+    "city_id": 157,
+    "name": "Huarmaca"
+  },
+  {
+    "city_id": 157,
+    "name": "Lalaquiz"
+  },
+  {
+    "city_id": 157,
+    "name": "San Miguel de El Faique"
+  },
+  {
+    "city_id": 157,
+    "name": "Sondor"
+  },
+  {
+    "city_id": 157,
+    "name": "Sondorillo"
+  },
+  {
+    "city_id": 158,
+    "name": "Chulucanas"
+  },
+  {
+    "city_id": 158,
+    "name": "Buenos Aires"
+  },
+  {
+    "city_id": 158,
+    "name": "Chalaco"
+  },
+  {
+    "city_id": 158,
+    "name": "La Matanza"
+  },
+  {
+    "city_id": 158,
+    "name": "Morropon"
+  },
+  {
+    "city_id": 158,
+    "name": "Salitral"
+  },
+  {
+    "city_id": 158,
+    "name": "San Juan de Bigote"
+  },
+  {
+    "city_id": 158,
+    "name": "Santa Catalina de Mossa"
+  },
+  {
+    "city_id": 158,
+    "name": "Santo Domingo"
+  },
+  {
+    "city_id": 158,
+    "name": "Yamango"
+  },
+  {
+    "city_id": 159,
+    "name": "Paita"
+  },
+  {
+    "city_id": 159,
+    "name": "Amotape"
+  },
+  {
+    "city_id": 159,
+    "name": "Arenal"
+  },
+  {
+    "city_id": 159,
+    "name": "Colan"
+  },
+  {
+    "city_id": 159,
+    "name": "La Huaca"
+  },
+  {
+    "city_id": 159,
+    "name": "Tamarindo"
+  },
+  {
+    "city_id": 159,
+    "name": "Vichayal"
+  },
+  {
+    "city_id": 160,
+    "name": "Sullana"
+  },
+  {
+    "city_id": 160,
+    "name": "Bellavista"
+  },
+  {
+    "city_id": 160,
+    "name": "Ignacio Escudero"
+  },
+  {
+    "city_id": 160,
+    "name": "Lancones"
+  },
+  {
+    "city_id": 160,
+    "name": "Marcavelica"
+  },
+  {
+    "city_id": 160,
+    "name": "Miguel Checa"
+  },
+  {
+    "city_id": 160,
+    "name": "Querecotillo"
+  },
+  {
+    "city_id": 160,
+    "name": "Salitral"
+  },
+  {
+    "city_id": 161,
+    "name": "Pariñas"
+  },
+  {
+    "city_id": 161,
+    "name": "El Alto"
+  },
+  {
+    "city_id": 161,
+    "name": "La Brea"
+  },
+  {
+    "city_id": 161,
+    "name": "Lobitos"
+  },
+  {
+    "city_id": 161,
+    "name": "Los Organos"
+  },
+  {
+    "city_id": 161,
+    "name": "Mancora"
+  },
+  {
+    "city_id": 162,
+    "name": "Sechura"
+  },
+  {
+    "city_id": 162,
+    "name": "Bellavista de La Union"
+  },
+  {
+    "city_id": 162,
+    "name": "Bernal"
+  },
+  {
+    "city_id": 162,
+    "name": "Cristo Nos Valga"
+  },
+  {
+    "city_id": 162,
+    "name": "Vice"
+  },
+  {
+    "city_id": 162,
+    "name": "Rinconada Llicuar"
+  },
+  {
+    "city_id": 163,
+    "name": "Puno"
+  },
+  {
+    "city_id": 163,
+    "name": "Acora"
+  },
+  {
+    "city_id": 163,
+    "name": "Amantani"
+  },
+  {
+    "city_id": 163,
+    "name": "Atuncolla"
+  },
+  {
+    "city_id": 163,
+    "name": "Capachica"
+  },
+  {
+    "city_id": 163,
+    "name": "Chucuito"
+  },
+  {
+    "city_id": 163,
+    "name": "Coata"
+  },
+  {
+    "city_id": 163,
+    "name": "Huata"
+  },
+  {
+    "city_id": 163,
+    "name": "Mañazo"
+  },
+  {
+    "city_id": 163,
+    "name": "Paucarcolla"
+  },
+  {
+    "city_id": 163,
+    "name": "Pichacani"
+  },
+  {
+    "city_id": 163,
+    "name": "Plateria"
+  },
+  {
+    "city_id": 163,
+    "name": "San Antonio"
+  },
+  {
+    "city_id": 163,
+    "name": "Tiquillaca"
+  },
+  {
+    "city_id": 163,
+    "name": "Vilque"
+  },
+  {
+    "city_id": 164,
+    "name": "Azangaro"
+  },
+  {
+    "city_id": 164,
+    "name": "Achaya"
+  },
+  {
+    "city_id": 164,
+    "name": "Arapa"
+  },
+  {
+    "city_id": 164,
+    "name": "Asillo"
+  },
+  {
+    "city_id": 164,
+    "name": "Caminaca"
+  },
+  {
+    "city_id": 164,
+    "name": "Chupa"
+  },
+  {
+    "city_id": 164,
+    "name": "Jose Domingo Choquehuanca"
+  },
+  {
+    "city_id": 164,
+    "name": "Muñani"
+  },
+  {
+    "city_id": 164,
+    "name": "Potoni"
+  },
+  {
+    "city_id": 164,
+    "name": "Saman"
+  },
+  {
+    "city_id": 164,
+    "name": "San Anton"
+  },
+  {
+    "city_id": 164,
+    "name": "San Jose"
+  },
+  {
+    "city_id": 164,
+    "name": "San Juan de Salinas"
+  },
+  {
+    "city_id": 164,
+    "name": "Santiago de Pupuja"
+  },
+  {
+    "city_id": 164,
+    "name": "Tirapata"
+  },
+  {
+    "city_id": 165,
+    "name": "Macusani"
+  },
+  {
+    "city_id": 165,
+    "name": "Ajoyani"
+  },
+  {
+    "city_id": 165,
+    "name": "Ayapata"
+  },
+  {
+    "city_id": 165,
+    "name": "Coasa"
+  },
+  {
+    "city_id": 165,
+    "name": "Corani"
+  },
+  {
+    "city_id": 165,
+    "name": "Crucero"
+  },
+  {
+    "city_id": 165,
+    "name": "Ituata"
+  },
+  {
+    "city_id": 165,
+    "name": "Ollachea"
+  },
+  {
+    "city_id": 165,
+    "name": "San Gaban"
+  },
+  {
+    "city_id": 165,
+    "name": "Usicayos"
+  },
+  {
+    "city_id": 166,
+    "name": "Juli"
+  },
+  {
+    "city_id": 166,
+    "name": "Desaguadero"
+  },
+  {
+    "city_id": 166,
+    "name": "Huacullani"
+  },
+  {
+    "city_id": 166,
+    "name": "Kelluyo"
+  },
+  {
+    "city_id": 166,
+    "name": "Pisacoma"
+  },
+  {
+    "city_id": 166,
+    "name": "Pomata"
+  },
+  {
+    "city_id": 166,
+    "name": "Zepita"
+  },
+  {
+    "city_id": 167,
+    "name": "Ilave"
+  },
+  {
+    "city_id": 167,
+    "name": "Capazo"
+  },
+  {
+    "city_id": 167,
+    "name": "Pilcuyo"
+  },
+  {
+    "city_id": 167,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 167,
+    "name": "Conduriri"
+  },
+  {
+    "city_id": 168,
+    "name": "Huancane"
+  },
+  {
+    "city_id": 168,
+    "name": "Cojata"
+  },
+  {
+    "city_id": 168,
+    "name": "Huatasani"
+  },
+  {
+    "city_id": 168,
+    "name": "Inchupalla"
+  },
+  {
+    "city_id": 168,
+    "name": "Pusi"
+  },
+  {
+    "city_id": 168,
+    "name": "Rosaspata"
+  },
+  {
+    "city_id": 168,
+    "name": "Taraco"
+  },
+  {
+    "city_id": 168,
+    "name": "Vilque Chico"
+  },
+  {
+    "city_id": 169,
+    "name": "Lampa"
+  },
+  {
+    "city_id": 169,
+    "name": "Cabanilla"
+  },
+  {
+    "city_id": 169,
+    "name": "Calapuja"
+  },
+  {
+    "city_id": 169,
+    "name": "Nicasio"
+  },
+  {
+    "city_id": 169,
+    "name": "Ocuviri"
+  },
+  {
+    "city_id": 169,
+    "name": "Palca"
+  },
+  {
+    "city_id": 169,
+    "name": "Paratia"
+  },
+  {
+    "city_id": 169,
+    "name": "Pucara"
+  },
+  {
+    "city_id": 169,
+    "name": "Santa Lucia"
+  },
+  {
+    "city_id": 169,
+    "name": "Vilavila"
+  },
+  {
+    "city_id": 170,
+    "name": "Ayaviri"
+  },
+  {
+    "city_id": 170,
+    "name": "Antauta"
+  },
+  {
+    "city_id": 170,
+    "name": "Cupi"
+  },
+  {
+    "city_id": 170,
+    "name": "Llalli"
+  },
+  {
+    "city_id": 170,
+    "name": "Macari"
+  },
+  {
+    "city_id": 170,
+    "name": "Nuñoa"
+  },
+  {
+    "city_id": 170,
+    "name": "Orurillo"
+  },
+  {
+    "city_id": 170,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 170,
+    "name": "Umachiri"
+  },
+  {
+    "city_id": 171,
+    "name": "Moho"
+  },
+  {
+    "city_id": 171,
+    "name": "Conima"
+  },
+  {
+    "city_id": 171,
+    "name": "Huayrapata"
+  },
+  {
+    "city_id": 171,
+    "name": "Tilali"
+  },
+  {
+    "city_id": 172,
+    "name": "Putina"
+  },
+  {
+    "city_id": 172,
+    "name": "Ananea"
+  },
+  {
+    "city_id": 172,
+    "name": "Pedro Vilca Apaza"
+  },
+  {
+    "city_id": 172,
+    "name": "Quilcapuncu"
+  },
+  {
+    "city_id": 172,
+    "name": "Sina"
+  },
+  {
+    "city_id": 173,
+    "name": "Juliaca"
+  },
+  {
+    "city_id": 173,
+    "name": "Cabana"
+  },
+  {
+    "city_id": 173,
+    "name": "Cabanillas"
+  },
+  {
+    "city_id": 173,
+    "name": "Caracoto"
+  },
+  {
+    "city_id": 173,
+    "name": "San Miguel"
+  },
+  {
+    "city_id": 174,
+    "name": "Sandia"
+  },
+  {
+    "city_id": 174,
+    "name": "Cuyocuyo"
+  },
+  {
+    "city_id": 174,
+    "name": "Limbani"
+  },
+  {
+    "city_id": 174,
+    "name": "Patambuco"
+  },
+  {
+    "city_id": 174,
+    "name": "Phara"
+  },
+  {
+    "city_id": 174,
+    "name": "Quiaca"
+  },
+  {
+    "city_id": 174,
+    "name": "San Juan del Oro"
+  },
+  {
+    "city_id": 174,
+    "name": "Yanahuaya"
+  },
+  {
+    "city_id": 174,
+    "name": "Alto Inambari"
+  },
+  {
+    "city_id": 174,
+    "name": "San Pedro de Putina Punco"
+  },
+  {
+    "city_id": 175,
+    "name": "Yunguyo"
+  },
+  {
+    "city_id": 175,
+    "name": "Anapia"
+  },
+  {
+    "city_id": 175,
+    "name": "Copani"
+  },
+  {
+    "city_id": 175,
+    "name": "Cuturapi"
+  },
+  {
+    "city_id": 175,
+    "name": "Ollaraya"
+  },
+  {
+    "city_id": 175,
+    "name": "Tinicachi"
+  },
+  {
+    "city_id": 175,
+    "name": "Unicachi"
+  },
+  {
+    "city_id": 176,
+    "name": "Moyobamba"
+  },
+  {
+    "city_id": 176,
+    "name": "Calzada"
+  },
+  {
+    "city_id": 176,
+    "name": "Habana"
+  },
+  {
+    "city_id": 176,
+    "name": "Jepelacio"
+  },
+  {
+    "city_id": 176,
+    "name": "Soritor"
+  },
+  {
+    "city_id": 176,
+    "name": "Yantalo"
+  },
+  {
+    "city_id": 177,
+    "name": "Bellavista"
+  },
+  {
+    "city_id": 177,
+    "name": "Alto Biavo"
+  },
+  {
+    "city_id": 177,
+    "name": "Bajo Biavo"
+  },
+  {
+    "city_id": 177,
+    "name": "Huallaga"
+  },
+  {
+    "city_id": 177,
+    "name": "San Pablo"
+  },
+  {
+    "city_id": 177,
+    "name": "San Rafael"
+  },
+  {
+    "city_id": 178,
+    "name": "San Jose de Sisa"
+  },
+  {
+    "city_id": 178,
+    "name": "Agua Blanca"
+  },
+  {
+    "city_id": 178,
+    "name": "San Martin"
+  },
+  {
+    "city_id": 178,
+    "name": "Santa Rosa"
+  },
+  {
+    "city_id": 178,
+    "name": "Shatoja"
+  },
+  {
+    "city_id": 179,
+    "name": "Saposoa"
+  },
+  {
+    "city_id": 179,
+    "name": "Alto Saposoa"
+  },
+  {
+    "city_id": 179,
+    "name": "El Eslabon"
+  },
+  {
+    "city_id": 179,
+    "name": "Piscoyacu"
+  },
+  {
+    "city_id": 179,
+    "name": "Sacanche"
+  },
+  {
+    "city_id": 179,
+    "name": "Tingo de Saposoa"
+  },
+  {
+    "city_id": 180,
+    "name": "Lamas"
+  },
+  {
+    "city_id": 180,
+    "name": "Alonso de Alvarado"
+  },
+  {
+    "city_id": 180,
+    "name": "Barranquita"
+  },
+  {
+    "city_id": 180,
+    "name": "Caynarachi"
+  },
+  {
+    "city_id": 180,
+    "name": "Cuñumbuqui"
+  },
+  {
+    "city_id": 180,
+    "name": "Pinto Recodo"
+  },
+  {
+    "city_id": 180,
+    "name": "Rumisapa"
+  },
+  {
+    "city_id": 180,
+    "name": "San Roque de Cumbaza"
+  },
+  {
+    "city_id": 180,
+    "name": "Shanao"
+  },
+  {
+    "city_id": 180,
+    "name": "Tabalosos"
+  },
+  {
+    "city_id": 180,
+    "name": "Zapatero"
+  },
+  {
+    "city_id": 181,
+    "name": "Juanjui"
+  },
+  {
+    "city_id": 181,
+    "name": "Campanilla"
+  },
+  {
+    "city_id": 181,
+    "name": "Huicungo"
+  },
+  {
+    "city_id": 181,
+    "name": "Pachiza"
+  },
+  {
+    "city_id": 181,
+    "name": "Pajarillo"
+  },
+  {
+    "city_id": 182,
+    "name": "Picota"
+  },
+  {
+    "city_id": 182,
+    "name": "Buenos Aires"
+  },
+  {
+    "city_id": 182,
+    "name": "Caspisapa"
+  },
+  {
+    "city_id": 182,
+    "name": "Pilluana"
+  },
+  {
+    "city_id": 182,
+    "name": "Pucacaca"
+  },
+  {
+    "city_id": 182,
+    "name": "San Cristobal"
+  },
+  {
+    "city_id": 182,
+    "name": "San Hilarion"
+  },
+  {
+    "city_id": 182,
+    "name": "Shamboyacu"
+  },
+  {
+    "city_id": 182,
+    "name": "Tingo de Ponasa"
+  },
+  {
+    "city_id": 182,
+    "name": "Tres Unidos"
+  },
+  {
+    "city_id": 183,
+    "name": "Rioja"
+  },
+  {
+    "city_id": 183,
+    "name": "Awajun"
+  },
+  {
+    "city_id": 183,
+    "name": "Elias Soplin Vargas"
+  },
+  {
+    "city_id": 183,
+    "name": "Nueva Cajamarca"
+  },
+  {
+    "city_id": 183,
+    "name": "Pardo Miguel"
+  },
+  {
+    "city_id": 183,
+    "name": "Posic"
+  },
+  {
+    "city_id": 183,
+    "name": "San Fernando"
+  },
+  {
+    "city_id": 183,
+    "name": "Yorongos"
+  },
+  {
+    "city_id": 183,
+    "name": "Yuracyacu"
+  },
+  {
+    "city_id": 184,
+    "name": "Tarapoto"
+  },
+  {
+    "city_id": 184,
+    "name": "Alberto Leveau"
+  },
+  {
+    "city_id": 184,
+    "name": "Cacatachi"
+  },
+  {
+    "city_id": 184,
+    "name": "Chazuta"
+  },
+  {
+    "city_id": 184,
+    "name": "Chipurana"
+  },
+  {
+    "city_id": 184,
+    "name": "El Porvenir"
+  },
+  {
+    "city_id": 184,
+    "name": "Huimbayoc"
+  },
+  {
+    "city_id": 184,
+    "name": "Juan Guerra"
+  },
+  {
+    "city_id": 184,
+    "name": "La Banda de Shilcayo"
+  },
+  {
+    "city_id": 184,
+    "name": "Morales"
+  },
+  {
+    "city_id": 184,
+    "name": "Papaplaya"
+  },
+  {
+    "city_id": 184,
+    "name": "San Antonio"
+  },
+  {
+    "city_id": 184,
+    "name": "Sauce"
+  },
+  {
+    "city_id": 184,
+    "name": "Shapaja"
+  },
+  {
+    "city_id": 185,
+    "name": "Tocache"
+  },
+  {
+    "city_id": 185,
+    "name": "Nuevo Progreso"
+  },
+  {
+    "city_id": 185,
+    "name": "Polvora"
+  },
+  {
+    "city_id": 185,
+    "name": "Shunte"
+  },
+  {
+    "city_id": 185,
+    "name": "Uchiza"
+  },
+  {
+    "city_id": 186,
+    "name": "Tacna"
+  },
+  {
+    "city_id": 186,
+    "name": "Alto de La Alianza"
+  },
+  {
+    "city_id": 186,
+    "name": "Calana"
+  },
+  {
+    "city_id": 186,
+    "name": "Ciudad Nueva"
+  },
+  {
+    "city_id": 186,
+    "name": "Inclan"
+  },
+  {
+    "city_id": 186,
+    "name": "Pachia"
+  },
+  {
+    "city_id": 186,
+    "name": "Palca"
+  },
+  {
+    "city_id": 186,
+    "name": "Pocollay"
+  },
+  {
+    "city_id": 186,
+    "name": "Sama"
+  },
+  {
+    "city_id": 186,
+    "name": "Coronel Gregorio Albarracin Lanchipa"
+  },
+  {
+    "city_id": 186,
+    "name": "La Yarada-Los Palos"
+  },
+  {
+    "city_id": 187,
+    "name": "Candarave"
+  },
+  {
+    "city_id": 187,
+    "name": "Cairani"
+  },
+  {
+    "city_id": 187,
+    "name": "Camilaca"
+  },
+  {
+    "city_id": 187,
+    "name": "Curibaya"
+  },
+  {
+    "city_id": 187,
+    "name": "Huanuara"
+  },
+  {
+    "city_id": 187,
+    "name": "Quilahuani"
+  },
+  {
+    "city_id": 188,
+    "name": "Locumba"
+  },
+  {
+    "city_id": 188,
+    "name": "Ilabaya"
+  },
+  {
+    "city_id": 188,
+    "name": "Ite"
+  },
+  {
+    "city_id": 189,
+    "name": "Tarata"
+  },
+  {
+    "city_id": 189,
+    "name": "Heroes Albarracin"
+  },
+  {
+    "city_id": 189,
+    "name": "Estique"
+  },
+  {
+    "city_id": 189,
+    "name": "Estique-Pampa"
+  },
+  {
+    "city_id": 189,
+    "name": "Sitajara"
+  },
+  {
+    "city_id": 189,
+    "name": "Susapaya"
+  },
+  {
+    "city_id": 189,
+    "name": "Tarucachi"
+  },
+  {
+    "city_id": 189,
+    "name": "Ticaco"
+  },
+  {
+    "city_id": 190,
+    "name": "Tumbes"
+  },
+  {
+    "city_id": 190,
+    "name": "Corrales"
+  },
+  {
+    "city_id": 190,
+    "name": "La Cruz"
+  },
+  {
+    "city_id": 190,
+    "name": "Pampas de Hospital"
+  },
+  {
+    "city_id": 190,
+    "name": "San Jacinto"
+  },
+  {
+    "city_id": 190,
+    "name": "San Juan de La Virgen"
+  },
+  {
+    "city_id": 191,
+    "name": "Zorritos"
+  },
+  {
+    "city_id": 191,
+    "name": "Casitas"
+  },
+  {
+    "city_id": 191,
+    "name": "Canoas de Punta Sal"
+  },
+  {
+    "city_id": 192,
+    "name": "Zarumilla"
+  },
+  {
+    "city_id": 192,
+    "name": "Aguas Verdes"
+  },
+  {
+    "city_id": 192,
+    "name": "Matapalo"
+  },
+  {
+    "city_id": 192,
+    "name": "Papayal"
+  },
+  {
+    "city_id": 193,
+    "name": "Calleria"
+  },
+  {
+    "city_id": 193,
+    "name": "Campoverde"
+  },
+  {
+    "city_id": 193,
+    "name": "Iparia"
+  },
+  {
+    "city_id": 193,
+    "name": "Masisea"
+  },
+  {
+    "city_id": 193,
+    "name": "Yarinacocha"
+  },
+  {
+    "city_id": 193,
+    "name": "Nueva Requena"
+  },
+  {
+    "city_id": 193,
+    "name": "Manantay"
+  },
+  {
+    "city_id": 194,
+    "name": "Raymondi"
+  },
+  {
+    "city_id": 194,
+    "name": "Sepahua"
+  },
+  {
+    "city_id": 194,
+    "name": "Tahuania"
+  },
+  {
+    "city_id": 194,
+    "name": "Yurua"
+  },
+  {
+    "city_id": 195,
+    "name": "Padre Abad"
+  },
+  {
+    "city_id": 195,
+    "name": "Irazola"
+  },
+  {
+    "city_id": 195,
+    "name": "Curimana"
+  },
+  {
+    "city_id": 195,
+    "name": "Neshuya"
+  },
+  {
+    "city_id": 195,
+    "name": "Alexander von Humboldt"
+  },
+  {
+    "city_id": 196,
+    "name": "Purus"
+  }
+]
